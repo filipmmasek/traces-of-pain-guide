@@ -52,7 +52,7 @@
           '<span class="cap"><h3>' + esc(i.title) + '</h3><span class="meta">' +
           esc([i.artist, i.date, i.where].filter(Boolean).join(", ")) + "</span>" +
           (i.text ? '<span class="note">' + paras(i.text) + "</span>" : "") +
-          '<span class="more-link">' + esc(T.readMore || "View larger") + " &#8599;</span></span></button>";
+          '<span class="more-link">' + esc(T.readMore || "View larger") + " &#8599;&#65038;</span></span></button>";
       }).join("");
     }
     if (P) return '<figure class="insp"><div class="slot"></div><figcaption>' + sk([70, 45]) + sk([100, 92, 60]) + "</figcaption></figure>";
@@ -112,7 +112,7 @@
       h += '<section class="block"><span class="label">' + esc(T.inThisPhoto) + '</span><ul class="hs-list">' +
         hs.map(function (p, i) {
           return '<li><button type="button" data-open="' + w.id + '" data-hs="' + i + '"><span class="n">' + (i + 1) + "</span>" +
-            (p.preview ? sk([40 + (i * 17) % 35]) : "<span>" + esc(p.title) + "</span>") + '<span class="go" aria-hidden="true">&#8599;</span></button></li>';
+            (p.preview ? sk([40 + (i * 17) % 35]) : "<span>" + esc(p.title) + "</span>") + "</button></li>";
         }).join("") + "</ul></section>";
     }
     if (insp) h += '<section class="block"><span class="label">' + esc(T.inspiredBy) + "</span>" + insp + "</section>";
