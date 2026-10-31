@@ -2,7 +2,7 @@
   "use strict";
   // Where the guide lives. Saving commits data.js (and uploaded images) to this branch,
   // which GitHub Pages serves.
-  var OWNER = "filipmmasek", REPO = "traces-of-pain-guide", BRANCH = "prototype";
+  var OWNER = "filipmmasek", REPO = "traces-of-pain-guide", BRANCH = "main";
   var DATA_PATH = "data.js", API = "https://api.github.com/repos/" + OWNER + "/" + REPO + "/contents/";
   var TOKEN_KEY = "tp-admin-token";
 
