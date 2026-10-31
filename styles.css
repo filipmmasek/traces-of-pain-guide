@@ -352,3 +352,8 @@ a.collab .name::after { content: " \2197\FE0E"; font: 400 14px var(--body); colo
   .menu { justify-content: space-between; gap: 8px; }
   .menu a { font-size: 10px; letter-spacing: .03em; }
 }
+
+/* QR: full column width, caption underneath */
+.qr { grid-template-columns: 1fr; gap: 10px; justify-items: stretch; }
+.qr svg { width: 100%; max-width: none; }
+.qr figcaption { text-align: center; font-size: 12px; letter-spacing: .16em; }
