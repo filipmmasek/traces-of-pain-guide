@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Traces of Pain Guide Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;1,6..96,400&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<header class="abar">
+  <strong>Guide admin</strong>
+  <span class="status" id="status" aria-live="polite"></span>
+  <a class="view-site" href="./" target="_blank" rel="noopener">View site</a>
+  <button type="button" id="saveBtn" class="primary" disabled>Save</button>
+  <button type="button" id="signOut" class="ghost" hidden>Sign out</button>
+</header>
+
+<section id="login" class="login" hidden>
+  <h1>Sign in to edit the guide</h1>
+  <p>Saving writes your changes to the GitHub repository, and the live guide updates about a minute later. To allow that, paste a GitHub access key. You only do this once on each device.</p>
+  <ol>
+    <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">New fine-grained token</a> on GitHub (signed in as the repo owner or a collaborator).</li>
+    <li>Name it "Guide admin". Under <b>Repository access</b> choose <b>Only select repositories</b> and pick <b>traces-of-pain-guide</b>.</li>
+    <li>Under <b>Permissions → Repository permissions</b>, set <b>Contents</b> to <b>Read and write</b>.</li>
+    <li>Click <b>Generate token</b>, copy it, and paste it here.</li>
+  </ol>
+  <form id="loginForm">
+    <label for="token">Access key</label>
+    <input id="token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…">
+    <button type="submit" class="primary">Sign in</button>
+    <p class="err" id="loginErr" aria-live="polite"></p>
+  </form>
+</section>
+
+<div id="app" class="app" hidden>
+  <nav class="side" id="side" aria-label="Sections"></nav>
+  <main class="pane" id="pane"></main>
+</div>
+
+<script src="admin.js"></script>
+</body>
+</html>

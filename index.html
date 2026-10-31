@@ -50,7 +50,14 @@
   </form>
 </div>
 
-<script src="data.js"></script>
-<script src="app.js"></script>
+<script>
+// Load the texts fresh each visit so edits saved in the admin show up without waiting for caches.
+(function () {
+  var d = document.createElement("script");
+  d.src = "data.js?v=" + Date.now();
+  d.onload = function () { var a = document.createElement("script"); a.src = "app.js"; document.body.appendChild(a); };
+  document.body.appendChild(d);
+})();
+</script>
 </body>
 </html>
