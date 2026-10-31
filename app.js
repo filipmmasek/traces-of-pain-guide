@@ -43,14 +43,16 @@
       "</div>" + (w.title ? '<span class="t">' + esc(w.title) + "</span>" : "") + "</a>";
   }
 
+  var INSP = []; // inspirations on the current page, for the large view
   function inspirationCards(list) {
     if (list.length) {
       return list.map(function (i) {
-        return '<figure class="insp">' + (i.image ? '<img src="' + esc(i.image) + '" alt="">' : "") +
-          "<figcaption><h3>" + esc(i.title) + '</h3><div class="meta">' +
-          esc([i.artist, i.date, i.where].filter(Boolean).join(", ")) + "</div>" +
-          (i.text ? '<div class="note">' + paras(i.text) + "</div>" : "") +
-          (i.credit ? '<p class="credit">' + esc(i.credit) + "</p>" : "") + "</figcaption></figure>";
+        var k = INSP.push(i) - 1;
+        return '<button type="button" class="insp" data-insp="' + k + '">' + (i.image ? '<img src="' + esc(i.image) + '" alt="">' : "") +
+          '<span class="cap"><h3>' + esc(i.title) + '</h3><span class="meta">' +
+          esc([i.artist, i.date, i.where].filter(Boolean).join(", ")) + "</span>" +
+          (i.text ? '<span class="note">' + paras(i.text) + "</span>" : "") +
+          '<span class="more-link">' + esc(T.readMore || "View larger") + " &#8599;</span></span></button>";
       }).join("");
     }
     if (P) return '<figure class="insp"><div class="slot"></div><figcaption>' + sk([70, 45]) + sk([100, 92, 60]) + "</figcaption></figure>";
@@ -161,6 +163,7 @@
   // ---------- Router (plain #name hashes) ----------
   function route() {
     var h = location.hash.replace(/^#/, ""), m, html;
+    INSP = []; closeInsp();
     closeFs();
     document.body.classList.remove("on-work");
     if ((m = h.match(/^series-(.+)$/)) && bySeries[m[1]]) html = series(bySeries[m[1]]);
@@ -179,11 +182,31 @@
 
   view.addEventListener("click", function (e) {
     if (e.target.closest("[data-jump]")) { openJump(); return; }
+    var ib = e.target.closest("[data-insp]");
+    if (ib) { openInsp(INSP[+ib.getAttribute("data-insp")]); return; }
     var b = e.target.closest("[data-open]");
     if (!b) return;
     var hs = b.getAttribute("data-hs");
     openFs(byId[b.getAttribute("data-open")], hs == null ? null : +hs);
   });
+
+  // ---------- Inspiration large view ----------
+  var iv = $("inspView");
+  function openInsp(i) {
+    if (!i) return;
+    $("ivImg").innerHTML = i.image ? '<img src="' + esc(i.image) + '" alt="' + esc(i.title) + '">' : "";
+    iv.classList.toggle("no-img", !i.image);
+    $("ivText").innerHTML = '<span class="label">' + esc(T.inspiredBy) + "</span><h2>" + esc(i.title) + '</h2><p class="meta">' +
+      esc([i.artist, i.date, i.where].filter(Boolean).join(", ")) + "</p>" +
+      (i.text ? '<div class="lead">' + paras(i.text) + "</div>" : "") +
+      (i.more ? '<div class="more">' + paras(i.more) + "</div>" : "") +
+      (i.credit ? '<p class="credit">' + esc(i.credit) + "</p>" : "");
+    iv.hidden = false; document.body.style.overflow = "hidden";
+    $("ivText").scrollTop = 0; $("ivClose").focus({ preventScroll: true });
+  }
+  function closeInsp() { if (iv && !iv.hidden) { iv.hidden = true; document.body.style.overflow = ""; } }
+  $("ivClose").addEventListener("click", closeInsp);
+  iv.addEventListener("click", function (e) { if (e.target === iv) closeInsp(); });
 
   // ---------- Fullscreen viewer with hotspots ----------
   var fs = $("fs"), fsImg = $("fsImg"), fsFrame = $("fsFrame"), fsDots = $("fsDots"), fsStage = $("fsStage");
@@ -292,7 +315,7 @@
   jump.addEventListener("click", function (e) { if (e.target === jump) closeJump(); });
 
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") { if (!jump.hidden) closeJump(); else if (!sheet.hidden) hideSheet(); else closeFs(); }
+    if (e.key === "Escape") { if (!jump.hidden) closeJump(); else if (!iv.hidden) closeInsp(); else if (!sheet.hidden) hideSheet(); else closeFs(); }
     if (!fs.hidden && e.key === "ArrowRight") step(1);
     if (!fs.hidden && e.key === "ArrowLeft") step(-1);
   });

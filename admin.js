@@ -181,7 +181,8 @@
           '<div class="card-head"><strong>Inspiration ' + (k + 1) + '</strong><span class="sp"><button type="button" class="ghost small danger" data-del="' + base + '" data-i="' + k + '">Delete</button></span></div>' +
           field("Title of the work", p + ".title", i.title) +
           '<div class="row">' + field("Artist", p + ".artist", i.artist) + field("Date", p + ".date", i.date) + field("Where it is", p + ".where", i.where) + "</div>" +
-          field("Text", p + ".text", i.text, { multi: true, rows: 4 }) +
+          field("Short text (on the card)", p + ".text", i.text, { multi: true, rows: 4, hint: "What the photograph takes from this work, in a sentence or two." }) +
+          field("Longer explanation (in the large view)", p + ".more", i.more, { multi: true, rows: 6, hint: "Shown when visitors open the inspiration. Leave an empty line between paragraphs." }) +
           field("Image credit", p + ".credit", i.credit, { hint: "Title, Author, Source, Licence. Example: Fight with Cudgels, Francisco de Goya, via Wikimedia Commons, public domain." }) +
           "</div></div>";
       }).join("") + "</div>" +

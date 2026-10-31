@@ -264,7 +264,7 @@ html:not(.unlocked) body > :not(#gate) { display: none !important; }
 .page-read h1 { font-size: clamp(44px, 6vw, 80px); line-height: 1; margin: 12px 0 28px; }
 
 /* Film grain on the page surfaces only; photos sit on top and stay clean. */
-body, .bar, .panel-grain, .insp, .series-card, .pager, .sheet, .jump-box, #gate {
+body, .bar, .panel-grain, .insp, .series-card, .pager, .sheet, .jump-box, #gate, .iv-box, .iv-text {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .13 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   background-size: 180px 180px;
 }
@@ -290,3 +290,37 @@ body, .bar, .panel-grain, .insp, .series-card, .pager, .sheet, .jump-box, #gate 
 @media (min-width: 1000px) {
   .sheet { left: auto; right: 16px; bottom: auto; top: 50%; transform: translateY(-50%); width: 320px; max-height: 70%; }
 }
+
+/* Inspiration card is a button that opens the large view */
+button.insp { width: 100%; text-align: left; color: inherit; font: inherit; border-top: 0; border-right: 0; border-bottom: 0; cursor: pointer; transition: background .2s; }
+button.insp:hover { background-color: #221f1c; }
+.insp .cap { display: block; }
+.insp .cap h3 { display: block; }
+.insp .meta, .insp .note { display: block; }
+.insp .more-link { display: inline-block; margin-top: 12px; font: 600 12px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; color: var(--bone); border-bottom: 1px solid var(--blood); padding-bottom: 4px; }
+
+/* Inspiration large view */
+.iv { position: fixed; inset: 0; z-index: 25; background: rgba(5,5,5,.88); display: grid; place-items: center; padding: clamp(12px, 3vw, 40px); }
+.iv[hidden] { display: none; }
+.iv-box { position: relative; width: min(1180px, 100%); height: min(860px, 100%); background: var(--panel); border-top: 3px solid var(--blood);
+  display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr); overflow: hidden; }
+.iv.no-img .iv-box { grid-template-columns: 1fr; width: min(760px, 100%); }
+.iv-img { background: #000; display: grid; place-items: center; min-height: 0; padding: 16px; }
+.iv-img img { max-width: 100%; max-height: 100%; object-fit: contain; }
+.iv-text { overflow: auto; padding: 40px 36px 36px; }
+.iv-text h2 { font-size: clamp(32px, 3.6vw, 46px); font-style: italic; line-height: 1.05; margin: 10px 0 8px; }
+.iv-text .meta { color: var(--ash); margin: 0 0 22px; font-size: 16px; }
+.iv-text .lead { font-size: 20px; line-height: 1.6; }
+.iv-text .more { color: var(--ash); font-size: 17px; line-height: 1.65; margin-top: 8px; }
+.iv-text p { margin: 0 0 1em; }
+.iv-text .credit { font-size: 13px; color: var(--ash); border-top: 1px solid var(--line); padding-top: 12px; margin-top: 20px; }
+.iv-close { position: absolute; top: 10px; right: 10px; z-index: 2; width: 48px; height: 48px; border: 0; border-radius: 50%; background: rgba(15,14,13,.85); font-size: 28px; }
+@media (max-width: 799px) {
+  .iv { padding: 0; }
+  .iv-box { grid-template-columns: 1fr; grid-template-rows: 42% 1fr; height: 100%; border-top: 0; }
+  .iv-text { padding: 24px 20px 32px; }
+  .iv-text .lead { font-size: 18px; }
+}
+.iv-img { overflow: hidden; height: 100%; }
+@media (max-width: 799px) { .iv-img img { max-height: calc(42vh - 32px); } }
+@media (min-width: 800px) { .iv-img img { max-height: calc(min(860px, 100vh - 80px) - 40px); } }
