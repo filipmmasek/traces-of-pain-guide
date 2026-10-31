@@ -132,8 +132,11 @@
     if (key) url += "?k=" + encodeURIComponent(key);
     url += "#work-" + w.id;
     var q = window.qrcode(0, "M"); q.addData(url); q.make();
-    return '<figure class="qr">' + q.createSvgTag({ cellSize: 4, margin: 2, scalable: true }) +
-      "<figcaption>" + esc(T.openOnPhone || "Open on your phone") + "</figcaption></figure>";
+    // Light modules drawn on the dark page (an inverted code), so it sits quietly in the layout.
+    var n = q.getModuleCount(), m = 2, d = "";
+    for (var r = 0; r < n; r++) for (var c = 0; c < n; c++) if (q.isDark(r, c)) d += "M" + (c + m) + " " + (r + m) + "h1v1h-1z";
+    var svg = '<svg viewBox="0 0 ' + (n + 2 * m) + " " + (n + 2 * m) + '" shape-rendering="crispEdges" aria-hidden="true"><path d="' + d + '"/></svg>';
+    return '<figure class="qr">' + svg + "<figcaption>" + esc(T.openOnPhone || "Open on your phone") + "</figcaption></figure>";
   }
 
   function page(key) {

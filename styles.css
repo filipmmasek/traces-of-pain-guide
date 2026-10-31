@@ -277,3 +277,10 @@ body, .bar, .panel-grain, .insp, .series-card, .pager, .sheet, .jump-box, #gate 
   .confirm .explore, .confirm .qr { grid-column: 1 / -1; }
   .qr svg { max-width: 150px; }
 }
+
+/* QR, integrated: light code on the dark page, caption beside it */
+.qr { background: none; color: var(--bone); padding: 18px 0 0; margin: 6px 0 0; border-top: 1px solid var(--line);
+  display: grid; grid-template-columns: 104px 1fr; gap: 16px; align-items: center; justify-items: start; }
+.qr svg { width: 104px; max-width: none; height: auto; }
+.qr svg path { fill: var(--bone); opacity: .9; }
+.qr figcaption { text-align: left; color: var(--ash); font-size: 11px; line-height: 1.5; }
