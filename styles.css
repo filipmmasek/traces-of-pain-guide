@@ -357,3 +357,29 @@ a.collab .name::after { content: " \2197\FE0E"; font: 400 14px var(--body); colo
 .qr { grid-template-columns: 1fr; gap: 10px; justify-items: stretch; }
 .qr svg { width: 100%; max-width: none; }
 .qr figcaption { text-align: center; font-size: 12px; letter-spacing: .16em; }
+
+/* Detail dots: plain translucent white, no numbers, no pulse */
+.dot span { width: 18px; height: 18px; background: rgba(255,255,255,.32); border: 1.5px solid rgba(255,255,255,.8);
+  box-shadow: 0 0 0 1px rgba(0,0,0,.18), 0 1px 6px rgba(0,0,0,.25); animation: none; }
+.dot.active span { background: rgba(255,255,255,.92); border-color: #fff; }
+.dot:hover span { background: rgba(255,255,255,.6); }
+
+/* List of details inside the panel */
+.fs-list { list-style: none; padding: 0; margin: 6px 0 0; }
+.fs-list button { width: 100%; text-align: left; background: none; border: 0; border-top: 1px solid var(--line); padding: 14px 0; min-height: 52px; font-size: 18px; }
+.sheet.listing h3 { font: 600 12px/1.2 var(--body); letter-spacing: .18em; text-transform: uppercase; color: var(--ash); margin-bottom: 4px; }
+.sheet.listing .sheet-close { display: none; }
+
+/* Landscape tablets: photo on the left, details panel on the right, never over the photo */
+@media (min-width: 900px) and (orientation: landscape) {
+  .fs.has-hs { grid-template-columns: minmax(0, 1fr) 360px; }
+  .fs.has-hs:has(.sheet[hidden]) { grid-template-columns: minmax(0, 1fr); }
+  .fs.has-hs .fs-top { grid-column: 1 / -1; }
+  .fs.has-hs .fs-stage { grid-column: 1; grid-row: 2; }
+  .fs.has-hs .fs-hint { grid-column: 1; grid-row: 3; }
+  .fs.has-hs .sheet { position: static; transform: none; left: auto; right: auto; top: auto; bottom: auto; width: auto; max-height: none;
+    grid-column: 2; grid-row: 2 / 4; margin: 0 16px 16px 0; overflow: auto; align-self: stretch; padding: 26px 56px 26px 26px; }
+  .fs.has-hs .sheet.listing { padding-right: 26px; }
+  .fs.has-hs .fs-nav.next { right: 376px; }
+  .fs.has-hs:has(.sheet[hidden]) .fs-nav.next { right: 0; }
+}

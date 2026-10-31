@@ -242,9 +242,10 @@
     $("fsCount").textContent = "No. " + w.number + " / " + G.works.length;
     fsDots.innerHTML = curHs.map(function (p, i) {
       return '<button class="dot" type="button" data-i="' + i + '" style="left:' + p.x + "%;top:" + p.y +
-        '%" aria-label="' + esc(p.title || String(i + 1)) + '"><span>' + (i + 1) + "</span></button>";
+        '%" aria-label="' + esc(p.title || String(i + 1)) + '"><span></span></button>';
     }).join("");
     var has = curHs.length > 0;
+    fs.classList.toggle("has-hs", has);
     $("fsToggle").hidden = !has;
     $("fsHint").textContent = has ? T.tapHint : "";
     setDots(true); hideSheet(); fit();
@@ -260,18 +261,34 @@
     fsDots.classList.toggle("off", !on);
     $("fsToggle").setAttribute("aria-pressed", on ? "true" : "false");
     $("fsToggle").textContent = on ? T.hideDetails : T.showDetails;
-    if (!on) hideSheet();
+    if (cur) hideSheet();
   }
+  // Landscape tablets: the note lives in a side panel next to the photo; with nothing
+  // selected the panel lists the details. Elsewhere it is an overlay that hides when closed.
+  var sideMq = matchMedia("(min-width: 900px) and (orientation: landscape)");
+  function sideMode() { return sideMq.matches && curHs.length > 0; }
+  function showList() {
+    $("sheetTitle").textContent = T.inThisPhoto;
+    $("sheetText").innerHTML = '<ul class="fs-list">' + curHs.map(function (p, i) {
+      return '<li><button type="button" data-i="' + i + '">' + (p.preview ? sk([60]) : esc(p.title)) + "</button></li>";
+    }).join("") + "</ul>";
+    sheet.hidden = false; sheet.classList.add("listing"); fit();
+  }
+  sideMq.addEventListener("change", function () { if (cur) { fit(); if (sheet.hidden || sheet.classList.contains("listing")) hideSheet(); } });
   function showSheet(i) {
     var p = curHs[i];
+    sheet.classList.remove("listing");
     if (p.preview) { $("sheetTitle").innerHTML = sk([55]); $("sheetText").innerHTML = sk([100, 94, 70]); }
     else { $("sheetTitle").textContent = p.title; $("sheetText").innerHTML = paras(p.text || ""); }
     sheet.hidden = false;
     [].forEach.call(fsDots.children, function (d, k) { d.classList.toggle("active", k === i); });
+    fit();
   }
   function hideSheet() {
+    if (cur && sideMode() && dotsOn) { showList(); [].forEach.call(fsDots.children, function (d) { d.classList.remove("active"); }); return; }
     sheet.hidden = true;
     [].forEach.call(fsDots.children, function (d) { d.classList.remove("active"); });
+    fit();
   }
   function step(d) {
     if (!cur) return;
@@ -287,6 +304,9 @@
   $("fsToggle").addEventListener("click", function () { setDots(!dotsOn); });
   $("fsClose").addEventListener("click", closeFs);
   $("sheetClose").addEventListener("click", hideSheet);
+  sheet.addEventListener("click", function (e) {
+    var b = e.target.closest(".fs-list button"); if (b) showSheet(+b.getAttribute("data-i"));
+  });
   $("fsPrev").addEventListener("click", function () { step(-1); });
   $("fsNext").addEventListener("click", function () { step(1); });
 
