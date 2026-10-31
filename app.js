@@ -151,6 +151,19 @@
       "</div></article>" + footer();
   }
 
+  function initials(name) {
+    return String(name || "").split(/\s+/).filter(Boolean).slice(0, 2).map(function (w) { return w[0]; }).join("").toUpperCase();
+  }
+  function collaborators() {
+    var list = G.collaborators || [];
+    return '<a class="back" href="#">' + esc(T.back) + '</a><section class="page-read collab-head"><h1>' + esc(T.menuCollaborators || "Collaborators") + "</h1></section>" +
+      '<ul class="collab-grid">' + list.map(function (c) {
+        var inner = '<span class="ph">' + (c.image ? '<img loading="lazy" src="' + esc(c.image) + '" alt="">' : '<span class="mono">' + esc(initials(c.name)) + "</span>") + "</span>" +
+          '<span class="role">' + esc(c.role) + '</span><span class="name">' + esc(c.name) + "</span>";
+        return "<li>" + (c.link ? '<a class="collab" href="' + esc(c.link) + '" target="_blank" rel="noopener">' + inner + "</a>" : '<div class="collab">' + inner + "</div>") + "</li>";
+      }).join("") + "</ul>" + footer();
+  }
+
   function credits() {
     var all = [];
     G.series.forEach(function (s) { all = all.concat(s.inspirations); });
@@ -171,6 +184,7 @@
     else if ((m = h.match(/^work-(.+)$/)) && byId[m[1]]) { html = work(byId[m[1]]); document.body.classList.add("on-work"); }
     else if (h === "credits") html = credits();
     else if (h === "concept" || h === "about") html = page(h);
+    else if (h === "collaborators") html = collaborators();
     else html = home();
     view.innerHTML = html;
     [].forEach.call(document.querySelectorAll(".menu a"), function (a) {

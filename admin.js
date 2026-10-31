@@ -120,6 +120,8 @@
       return '<button type="button" class="text-only" data-k="page" data-id="' + x[0] + '"><span>' + x[1] + "</span>" +
         (pg.text ? '<span class="has" title="Has content"></span>' : "") + "</button>";
     }).join("");
+    data.collaborators = data.collaborators || [];
+    h += '<button type="button" class="text-only" data-k="collab"><span>Collaborators</span>' + (data.collaborators.length ? '<span class="has" title="Has content"></span>' : "") + "</button>";
     h += "<h4>Series</h4>" + data.series.map(function (s) {
       return '<button type="button" class="text-only" data-k="series" data-id="' + s.id + '"><span>' + esc(s.name) + "</span>" +
         (s.text || s.inspirations.length ? '<span class="has" title="Has content"></span>' : "") + "</button>";
@@ -221,6 +223,12 @@
 
   $("pane").addEventListener("click", function (e) {
     var t = e.target.closest("button"); if (!t) return;
+    if (t.hasAttribute("data-add-collab")) {
+      data.collaborators.push({ name: "", role: "", link: "", image: "" });
+      setDirty(true); renderPane(); renderSide();
+      var ins = document.querySelectorAll('[data-path$=".name"]'); if (ins.length) ins[ins.length - 1].focus();
+      return;
+    }
     if (t.hasAttribute("data-add-insp")) {
       getPath(t.getAttribute("data-add-insp")).push({ title: "", artist: "", date: "", where: "", text: "", credit: "", image: "" });
       setDirty(true); renderPane(); renderSide();
@@ -246,6 +254,21 @@
       h = "<h1>Exhibition details</h1><p class=\"sub\">Shown on the home page and in the footer.</p>" +
         field("Artist", "exhibition.artist", e.artist) + field("Exhibition title", "exhibition.title", e.title) +
         field("Venue", "exhibition.venue", e.venue);
+    } else if (current.kind === "collab") {
+      h = '<h1>Collaborators</h1><p class="sub">Everyone involved in the exhibition, shown as tiles on the Collaborators page in the menu. Use the arrows to change the order.</p><div class="cards">' +
+        (data.collaborators.length ? "" : '<p class="empty">No collaborators yet.</p>') +
+        data.collaborators.map(function (c, k) {
+          var p = "collaborators." + k, img = c.image ? (previews[c.image] || c.image) : "";
+          return '<div class="card insp-card"><div class="insp-img"><div class="ph">' + (img ? '<img src="' + esc(img) + '" alt="">' : "No photo") + "</div>" +
+            '<label class="ghost small" style="text-align:center">Choose photo<input type="file" accept="image/*" data-upload="' + p + '" hidden></label>' +
+            (c.image ? '<button type="button" class="ghost small danger" data-clear-img="' + p + '">Remove photo</button>' : "") + "</div><div>" +
+            '<div class="card-head"><strong>' + esc(c.name || "New person") + '</strong><span class="sp">' +
+            '<button type="button" class="ghost small" data-move="collaborators" data-i="' + k + '" data-d="-1" aria-label="Move up">&#8593;</button>' +
+            '<button type="button" class="ghost small" data-move="collaborators" data-i="' + k + '" data-d="1" aria-label="Move down">&#8595;</button>' +
+            '<button type="button" class="ghost small danger" data-del="collaborators" data-i="' + k + '">Delete</button></span></div>' +
+            field("Name", p + ".name", c.name) + field("Role", p + ".role", c.role, { hint: "For example: Styling, Makeup, Model, Videography." }) +
+            field("Link (optional)", p + ".link", c.link, { hint: "Website or Instagram, starting with https://" }) + "</div></div>";
+        }).join("") + '</div><p><button type="button" class="primary" data-add-collab>Add person</button></p>';
     } else if (current.kind === "page") {
       var pk = current.id, pg = data.pages[pk], pb = "pages." + pk, pimg = pg.image ? (previews[pg.image] || pg.image) : "";
       h = "<h1>" + (pk === "about" ? "The photographer" : "The concept") + '</h1><p class="sub">A page in the main menu of the guide.</p>' +

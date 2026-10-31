@@ -30,7 +30,8 @@ window.GUIDE = {
   "openOnPhone": "Open on your phone",
   "menuWorks": "Works",
   "menuConcept": "The concept",
-  "menuAbout": "The photographer"
+  "menuAbout": "The photographer",
+  "menuCollaborators": "Collaborators"
  },
  "series": [
   {
@@ -494,5 +495,73 @@ window.GUIDE = {
    "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nCurabitur pretium tincidunt lacus, nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.",
    "image": ""
   }
- }
+ },
+ "collaborators": [
+  {
+   "name": "Lorem Ipsum",
+   "role": "Creative direction",
+   "link": "",
+   "image": ""
+  },
+  {
+   "name": "Dolor Amet",
+   "role": "Styling",
+   "link": "",
+   "image": ""
+  },
+  {
+   "name": "Consectetur Elit",
+   "role": "Makeup",
+   "link": "",
+   "image": ""
+  },
+  {
+   "name": "Sed Tempor",
+   "role": "Hair",
+   "link": "",
+   "image": ""
+  },
+  {
+   "name": "Magna Aliqua",
+   "role": "Model",
+   "link": "",
+   "image": ""
+  },
+  {
+   "name": "Ut Enim",
+   "role": "Model",
+   "link": "",
+   "image": ""
+  },
+  {
+   "name": "Minim Veniam",
+   "role": "Model agency",
+   "link": "",
+   "image": ""
+  },
+  {
+   "name": "Quis Nostrud",
+   "role": "Videography",
+   "link": "",
+   "image": ""
+  },
+  {
+   "name": "Ullamco Laboris",
+   "role": "Graphic design",
+   "link": "",
+   "image": ""
+  },
+  {
+   "name": "Nisi Aliquip",
+   "role": "Props",
+   "link": "",
+   "image": ""
+  },
+  {
+   "name": "Commodo Consequat",
+   "role": "Architecture and interior design",
+   "link": "",
+   "image": ""
+  }
+ ]
 };

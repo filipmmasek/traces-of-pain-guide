@@ -329,3 +329,26 @@ button.insp:hover { background-color: #1a1816; }
 .iv-img { overflow: hidden; height: 100%; }
 @media (max-width: 799px) { .iv-img img { max-height: calc(42vh - 32px); } }
 @media (min-width: 800px) { .iv-img img { max-height: calc(min(860px, 100vh - 80px) - 40px); } }
+
+/* Collaborators */
+.collab-head { padding-top: 12px; }
+.collab-grid { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 28px 18px; }
+@media (min-width: 900px) { .collab-grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); } }
+.collab { display: grid; gap: 4px; text-decoration: none; color: inherit; }
+.collab .ph { aspect-ratio: 1; background: var(--panel); display: grid; place-items: center; overflow: hidden; margin-bottom: 10px; }
+.collab .ph img { width: 100%; height: 100%; object-fit: cover; filter: grayscale(1); transition: filter .3s; }
+a.collab:hover .ph img { filter: none; }
+.collab .mono { font: 400 clamp(36px, 5vw, 56px)/1 var(--display); color: var(--ash); letter-spacing: .02em; }
+.collab .role { font: 600 11px/1.3 var(--body); letter-spacing: .16em; text-transform: uppercase; color: var(--ash); }
+.collab .name { font: 400 24px/1.15 var(--display); }
+a.collab .name::after { content: " \2197"; font: 400 14px var(--body); color: var(--ash); }
+@media (max-width: 860px) { .menu { gap: 14px; } .menu a { letter-spacing: .1em; } }
+@media (max-width: 560px) {
+  .menu { justify-content: flex-start; gap: 20px; overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+  .menu::-webkit-scrollbar { display: none; }
+  .menu a { white-space: nowrap; font-size: 11px; letter-spacing: .1em; }
+}
+@media (max-width: 560px) {
+  .menu { justify-content: space-between; gap: 8px; }
+  .menu a { font-size: 10px; letter-spacing: .03em; }
+}
