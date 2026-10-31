@@ -285,7 +285,6 @@ body, .bar, .panel-grain, .insp, .series-card, .pager, .sheet, .jump-box, #gate 
 .qr svg path { fill: var(--bone); opacity: .9; }
 .qr figcaption { text-align: left; color: var(--ash); font-size: 11px; line-height: 1.5; }
 
-.mock-banner { background: var(--blood); color: var(--bone); text-align: center; font: 600 12px/1.3 var(--body); letter-spacing: .08em; padding: 6px 12px; }
 
 /* Wide screens: detail note sits at the side so it doesn't cover the lower part of the photo */
 @media (min-width: 1000px) {
