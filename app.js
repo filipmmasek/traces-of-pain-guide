@@ -100,7 +100,8 @@
     h += '<aside class="confirm"><button class="thumb" type="button" data-open="' + w.id + '" aria-label="' + esc(T.fullscreen) + '">' +
       '<img src="' + w.thumb + '" alt="' + esc(workName(w)) + '"><span class="fs-ic" aria-hidden="true"></span></button>' +
       '<div class="confirm-meta"><span class="no">' + w.number + '</span><span class="label">' + esc(s.name) + "</span></div>" +
-      '<button class="explore" type="button" data-open="' + w.id + '">' + esc(hs.length ? T.explore : T.fullscreen) + "</button></aside>";
+      '<button class="explore" type="button" data-open="' + w.id + '">' + esc(hs.length ? T.explore : T.fullscreen) + "</button>" +
+      qrBlock(w) + "</aside>";
     h += '<div class="read"><a class="back" href="#series-' + s.id + '">' + esc(s.name) + "</a>" +
       "<h1>" + esc(workName(w)) + "</h1>";
     if (w.text) h += '<div class="body">' + paras(w.text) + "</div>";
@@ -122,6 +123,28 @@
     return h;
   }
 
+  // QR code that opens this exact photo page on a visitor's phone. While the preview password is on,
+  // the code carries the key so visitors skip the password screen.
+  function qrBlock(w) {
+    if (typeof window.qrcode !== "function") return "";
+    var url = location.origin + location.pathname, key = null;
+    try { key = localStorage.getItem("tp-key"); } catch (e) {}
+    if (key) url += "?k=" + encodeURIComponent(key);
+    url += "#work-" + w.id;
+    var q = window.qrcode(0, "M"); q.addData(url); q.make();
+    return '<figure class="qr">' + q.createSvgTag({ cellSize: 4, margin: 2, scalable: true }) +
+      "<figcaption>" + esc(T.openOnPhone || "Open on your phone") + "</figcaption></figure>";
+  }
+
+  function page(key) {
+    var pg = (G.pages || {})[key] || {};
+    var img = pg.image ? '<img class="page-img" src="' + esc(pg.image) + '" alt="">' : "";
+    return '<a class="back" href="#">' + esc(T.back) + '</a><article class="page' + (img ? " has-img" : "") + '">' + img +
+      '<div class="page-read"><h1>' + esc(pg.title || "") + "</h1>" +
+      (pg.text ? '<div class="body">' + paras(pg.text) + "</div>" : P ? '<div class="body">' + sk([100, 96, 92, 98, 60]) + sk([97, 94, 88, 45]) + "</div>" : "") +
+      "</div></article>" + footer();
+  }
+
   function credits() {
     var all = [];
     G.series.forEach(function (s) { all = all.concat(s.inspirations); });
@@ -140,8 +163,13 @@
     if ((m = h.match(/^series-(.+)$/)) && bySeries[m[1]]) html = series(bySeries[m[1]]);
     else if ((m = h.match(/^work-(.+)$/)) && byId[m[1]]) { html = work(byId[m[1]]); document.body.classList.add("on-work"); }
     else if (h === "credits") html = credits();
+    else if (h === "concept" || h === "about") html = page(h);
     else html = home();
     view.innerHTML = html;
+    [].forEach.call(document.querySelectorAll(".menu a"), function (a) {
+      var on = a.getAttribute("href") === "#" + h || (a.getAttribute("href") === "#" && (h === "" || /^(series|work)-/.test(h)));
+      a.setAttribute("aria-current", on ? "page" : "false");
+    });
     window.scrollTo(0, 0);
   }
   window.addEventListener("hashchange", route);
@@ -264,6 +292,11 @@
     if (e.key === "Escape") { if (!jump.hidden) closeJump(); else if (!sheet.hidden) hideSheet(); else closeFs(); }
     if (!fs.hidden && e.key === "ArrowRight") step(1);
     if (!fs.hidden && e.key === "ArrowLeft") step(-1);
+  });
+
+  // Menu labels come from the editable texts.
+  [].forEach.call(document.querySelectorAll(".menu a[data-ui]"), function (a) {
+    var k = a.getAttribute("data-ui"); if (T[k]) a.textContent = T[k];
   });
 
   route();

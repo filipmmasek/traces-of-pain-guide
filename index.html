@@ -9,11 +9,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<script src="vendor/qrcode.js"></script>
 <script src="gate.js"></script>
 </head>
 <body>
 <header class="bar" id="bar">
   <a class="wordmark" href="#">Gabriel Matula <span>Traces of Pain</span></a>
+  <nav class="menu" aria-label="Main">
+    <a href="#" data-ui="menuWorks">Works</a>
+    <a href="#concept" data-ui="menuConcept">The concept</a>
+    <a href="#about" data-ui="menuAbout">The photographer</a>
+  </nav>
   <button class="jump-btn" id="jumpBtn" type="button" aria-haspopup="dialog">No.</button>
 </header>
 <main id="view" tabindex="-1"></main>

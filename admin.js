@@ -114,6 +114,12 @@
   function hasContent(w) { return !!(w.title || w.text || w.hotspots.length || w.inspirations.length); }
   function renderSide() {
     var h = '<h4>Exhibition</h4><button type="button" class="text-only" data-k="exhibition"><span>Exhibition details</span></button>';
+    data.pages = data.pages || { concept: { title: "The concept", text: "", image: "" }, about: { title: "", text: "", image: "" } };
+    h += "<h4>Pages</h4>" + [["concept", "The concept"], ["about", "The photographer"]].map(function (x) {
+      var pg = data.pages[x[0]];
+      return '<button type="button" class="text-only" data-k="page" data-id="' + x[0] + '"><span>' + x[1] + "</span>" +
+        (pg.text ? '<span class="has" title="Has content"></span>' : "") + "</button>";
+    }).join("");
     h += "<h4>Series</h4>" + data.series.map(function (s) {
       return '<button type="button" class="text-only" data-k="series" data-id="' + s.id + '"><span>' + esc(s.name) + "</span>" +
         (s.text || s.inspirations.length ? '<span class="has" title="Has content"></span>' : "") + "</button>";
@@ -239,6 +245,14 @@
       h = "<h1>Exhibition details</h1><p class=\"sub\">Shown on the home page and in the footer.</p>" +
         field("Artist", "exhibition.artist", e.artist) + field("Exhibition title", "exhibition.title", e.title) +
         field("Venue", "exhibition.venue", e.venue);
+    } else if (current.kind === "page") {
+      var pk = current.id, pg = data.pages[pk], pb = "pages." + pk, pimg = pg.image ? (previews[pg.image] || pg.image) : "";
+      h = "<h1>" + (pk === "about" ? "The photographer" : "The concept") + '</h1><p class="sub">A page in the main menu of the guide.</p>' +
+        field("Page title", pb + ".title", pg.title) +
+        field("Text", pb + ".text", pg.text, { multi: true, rows: 14, hint: "Leave an empty line between paragraphs." }) +
+        '<div class="section"><h2>Image</h2><p class="help">Optional. Shown beside the text' + (pk === "about" ? ", for example a portrait of Gabriel." : ".") + '</p><div class="insp-img"><div class="ph">' +
+        (pimg ? '<img src="' + esc(pimg) + '" alt="">' : "No image") + '</div><label class="ghost small" style="text-align:center">Choose image<input type="file" accept="image/*" data-upload="' + pb + '" hidden></label>' +
+        (pg.image ? '<button type="button" class="ghost small danger" data-clear-img="' + pb + '">Remove image</button>' : "") + "</div></div>";
     } else if (current.kind === "series") {
       var si = indexOf(data.series, current.id), s = data.series[si];
       h = "<h1>" + esc(s.name) + '</h1><p class="sub">Series page. Inspirations here also show on every photo in the series that has none of its own.</p>' +

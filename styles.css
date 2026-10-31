@@ -235,3 +235,45 @@ html:not(.unlocked) body > :not(#gate) { display: none !important; }
 .gate-box input { background: var(--panel); border: 1px solid var(--line); color: var(--bone); font: 400 22px/1 var(--body); padding: 14px; width: 100%; }
 .gate-box button { min-height: 56px; background: var(--blood); border: 0; font: 600 14px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; }
 .gate-box p { margin: 0; min-height: 1.4em; color: #e0806f; font-size: 14px; }
+
+/* Main menu */
+.menu { display: flex; gap: clamp(14px, 2.4vw, 32px); margin-right: auto; margin-left: clamp(16px, 3vw, 40px); }
+.menu a { text-decoration: none; font: 600 12px/1 var(--body); letter-spacing: .16em; text-transform: uppercase; color: var(--ash); padding: 16px 0; border-bottom: 2px solid transparent; }
+.menu a[aria-current="page"] { color: var(--bone); border-bottom-color: var(--blood); }
+@media (max-width: 860px) { .wordmark span { display: none; } }
+@media (max-width: 560px) {
+  .bar { height: auto; flex-wrap: wrap; padding-top: 10px; row-gap: 0; }
+  .menu { order: 3; width: 100%; margin: 0; justify-content: space-between; }
+  .menu a { padding: 12px 0; font-size: 11px; letter-spacing: .12em; }
+  .confirm { position: static; }
+}
+
+/* QR code under the explore button (tablet and up) */
+.qr { margin: 10px 0 0; padding: 14px; background: var(--bone); color: #111; display: grid; gap: 8px; justify-items: center; width: 100%; }
+.qr svg { width: 100%; max-width: 168px; height: auto; display: block; }
+.qr svg path, .qr svg rect[fill="black"] { fill: #111; }
+.qr figcaption { font: 600 12px/1.2 var(--body); letter-spacing: .14em; text-transform: uppercase; text-align: center; }
+@media (max-width: 699px) { .qr { display: none; } }
+
+/* Concept and photographer pages */
+.page { display: grid; gap: 32px; padding: 20px 0 8px; }
+.page.has-img { grid-template-columns: minmax(200px, 340px) minmax(0, 1fr); align-items: start; }
+@media (max-width: 699px) { .page.has-img { grid-template-columns: 1fr; } .page-img { max-width: 260px; } }
+.page-img { width: 100%; }
+.page-read { max-width: 68ch; }
+.page-read h1 { font-size: clamp(44px, 6vw, 80px); line-height: 1; margin: 12px 0 28px; }
+
+/* Film grain on the page surfaces only; photos sit on top and stay clean. */
+body, .bar, .panel-grain, .insp, .series-card, .pager, .sheet, .jump-box, #gate {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 .07 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+}
+
+/* Tablet confirm column: thumbnail beside the number so the QR fits on screen */
+@media (min-width: 700px) {
+  .confirm { grid-template-columns: 120px 1fr; column-gap: 16px; align-items: end; }
+  .confirm .thumb { grid-row: span 1; }
+  .confirm-meta { flex-direction: column; align-items: flex-start; gap: 6px; }
+  .confirm .explore, .confirm .qr { grid-column: 1 / -1; }
+  .qr svg { max-width: 150px; }
+}

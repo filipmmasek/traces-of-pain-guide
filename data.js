@@ -26,7 +26,11 @@ window.GUIDE = {
   "notFound": "No work with that number",
   "credits": "Image credits",
   "creditsIntro": "Images in this guide that are not by Gabriel Matula, with their title, author, source and licence.",
-  "copyright": "All exhibition photographs © Gabriel Matula."
+  "copyright": "All exhibition photographs © Gabriel Matula.",
+  "openOnPhone": "Open on your phone",
+  "menuWorks": "Works",
+  "menuConcept": "The concept",
+  "menuAbout": "The photographer"
  },
  "series": [
   {
@@ -407,5 +411,17 @@ window.GUIDE = {
    "src": "img/full/the-duel-1216.jpg",
    "thumb": "img/thumb/the-duel-1216.jpg"
   }
- ]
+ ],
+ "pages": {
+  "concept": {
+   "title": "The concept",
+   "text": "",
+   "image": ""
+  },
+  "about": {
+   "title": "Gabriel Matula",
+   "text": "",
+   "image": ""
+  }
+ }
 };
