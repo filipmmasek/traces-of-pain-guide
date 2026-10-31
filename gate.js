@@ -4,8 +4,14 @@
   var HASH = "5c78c8e7160e76ba9b6c41f74247bb7ba4887f5c06faecd6b9a009785b248c72";
   var KEY = "tp-unlocked";
   var root = document.documentElement;
+  // Visitors who arrive by scanning a QR code are on their own phone: remember that so no QR is shown.
+  if (/[?&]k=/.test(location.search)) { try { sessionStorage.setItem("tp-from-qr", "1"); } catch (e) {} }
   function ok() { try { return localStorage.getItem(KEY) === HASH && !!localStorage.getItem("tp-key"); } catch (e) { return false; } }
-  if (ok()) { root.classList.add("unlocked"); return; }
+  if (ok()) {
+    root.classList.add("unlocked");
+    if (/[?&]k=/.test(location.search)) history.replaceState(null, "", location.pathname + location.hash);
+    return;
+  }
   // A QR code from the venue tablet carries ?k=<password> so phones skip this screen.
   var m = location.search.match(/[?&]k=([^&]+)/);
   if (m) {

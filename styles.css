@@ -263,10 +263,13 @@ html:not(.unlocked) body > :not(#gate) { display: none !important; }
 .page-read { max-width: 68ch; }
 .page-read h1 { font-size: clamp(44px, 6vw, 80px); line-height: 1; margin: 12px 0 28px; }
 
-/* Film grain on the page surfaces only; photos sit on top and stay clean. */
+/* Film grain: sparse fine specks on the page surfaces only; photos sit on top and stay clean.
+   Lighter on phones, where the screen is held close. */
+:root { --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  .6 0 0 0 -.33'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+@media (max-width: 699px) { :root { --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  .45 0 0 0 -.27'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); } }
 body, .bar, .panel-grain, .insp, .series-card, .pager, .sheet, .jump-box, #gate, .iv-box, .iv-text {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  .9 0 0 0 -.4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  background-size: 180px 180px;
+  background-image: var(--grain);
+  background-size: 160px 160px;
 }
 
 /* Tablet confirm column: thumbnail beside the number so the QR fits on screen */
@@ -284,6 +287,8 @@ body, .bar, .panel-grain, .insp, .series-card, .pager, .sheet, .jump-box, #gate,
 .qr svg { width: 104px; max-width: none; height: auto; }
 .qr svg path { fill: var(--bone); opacity: .9; }
 .qr figcaption { text-align: left; color: var(--ash); font-size: 11px; line-height: 1.5; }
+/* No QR on phones: the visitor is already holding the page. */
+@media (max-width: 699px) { .qr { display: none; } }
 
 
 /* Wide screens: detail note sits at the side so it doesn't cover the lower part of the photo */

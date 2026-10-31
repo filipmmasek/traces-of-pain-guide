@@ -129,6 +129,7 @@
   // the code carries the key so visitors skip the password screen.
   function qrBlock(w) {
     if (typeof window.qrcode !== "function") return "";
+    try { if (sessionStorage.getItem("tp-from-qr")) return ""; } catch (e) {}
     var url = location.origin + location.pathname, key = null;
     try { key = localStorage.getItem("tp-key"); } catch (e) {}
     if (key) url += "?k=" + encodeURIComponent(key);
