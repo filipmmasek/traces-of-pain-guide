@@ -224,3 +224,14 @@ body.on-work main { padding-bottom: 120px; }
 .foot a { color: var(--ash); }
 .credits-list { list-style: none; padding: 0; display: grid; gap: 16px; max-width: 70ch; }
 .credits-list li { border-top: 1px solid var(--line); padding-top: 14px; }
+
+/* Password screen (gate.js) */
+html:not(.unlocked) body > :not(#gate) { display: none !important; }
+#gate { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 16px; background: var(--wall); }
+.gate-box { width: min(380px, 100%); display: grid; gap: 14px; }
+.gate-box h1 { font-size: clamp(44px, 9vw, 72px); line-height: .95; margin-bottom: 18px; }
+.gate-box h1 em { font-style: italic; color: var(--blood); }
+.gate-box label { font: 600 12px/1.2 var(--body); letter-spacing: .18em; text-transform: uppercase; color: var(--ash); }
+.gate-box input { background: var(--panel); border: 1px solid var(--line); color: var(--bone); font: 400 22px/1 var(--body); padding: 14px; width: 100%; }
+.gate-box button { min-height: 56px; background: var(--blood); border: 0; font: 600 14px/1 var(--body); letter-spacing: .14em; text-transform: uppercase; }
+.gate-box p { margin: 0; min-height: 1.4em; color: #e0806f; font-size: 14px; }
