@@ -383,3 +383,16 @@ a.collab .name::after { content: " \2197\FE0E"; font: 400 14px var(--body); colo
   .fs.has-hs .fs-nav.next { right: 376px; }
   .fs.has-hs:has(.sheet[hidden]) .fs-nav.next { right: 0; }
 }
+
+/* Top bar alignment: menu centred between wordmark and button; active underline sits on the bar's bottom line */
+.bar { align-items: stretch; }
+.wordmark, .jump-btn { align-self: center; }
+.menu { margin: 0 auto; align-items: stretch; }
+.menu a { display: flex; align-items: center; padding: 2px 0 0; margin-bottom: -1px; }
+@media (max-width: 560px) {
+  .bar { padding-top: 0; column-gap: 12px; }
+  .wordmark { padding: 14px 0; }
+  .jump-btn { height: 34px; padding: 0 14px; font-size: 12px; }
+  .menu { order: 3; width: 100%; margin: 0; justify-content: space-between; }
+  .menu a { padding: 11px 0 9px; }
+}
