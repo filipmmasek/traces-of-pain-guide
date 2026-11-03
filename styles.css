@@ -3,6 +3,20 @@
    DM Sans for reading, no colour accent. Layout idea: a dark gallery wall. Tablet-first: the visitor stands at the print, so the
    photo page shows a small confirming thumbnail and gives the space to reading.
    Single dark theme by choice. */
+/* Gabriel's fonts: Spalla Semibold (main titles), Athelas (smaller titles), DIN 2014 (texts).
+   Installed copies are used first; licensed web files go in fonts/ (see fonts/README.md). */
+@font-face { font-family: "Spalla"; font-weight: 600; font-display: swap;
+  src: local("Spalla SemiBold"), local("Spalla-SemiBold"), url("fonts/Spalla-SemiBold.woff2") format("woff2"); }
+@font-face { font-family: "Athelas"; font-weight: 400; font-display: swap;
+  src: local("Athelas"), local("Athelas-Regular"), url("fonts/Athelas-Regular.woff2") format("woff2"); }
+@font-face { font-family: "Athelas"; font-weight: 400; font-style: italic; font-display: swap;
+  src: local("Athelas Italic"), local("Athelas-Italic"), url("fonts/Athelas-Italic.woff2") format("woff2"); }
+@font-face { font-family: "DIN 2014"; font-weight: 300; font-display: swap;
+  src: local("DIN 2014 Light"), local("DIN2014-Light"), url("fonts/DIN2014-Light.woff2") format("woff2"); }
+@font-face { font-family: "DIN 2014"; font-weight: 400; font-display: swap;
+  src: local("DIN 2014"), local("DIN2014-Regular"), url("fonts/DIN2014-Regular.woff2") format("woff2"); }
+@font-face { font-family: "DIN 2014"; font-weight: 600; font-display: swap;
+  src: local("DIN 2014 Bold"), local("DIN2014-Bold"), url("fonts/DIN2014-Bold.woff2") format("woff2"); }
 :root {
   --wall: #0f0f0f;
   --panel: #191919;
@@ -10,8 +24,9 @@
   --bone: #ececec;
   --ash: #9b9b9b;
   --blood: #ececec; /* the accent is plain light grey, as in the printed texts */
-  --display: Athelas, "EB Garamond", Georgia, serif;
-  --body: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  --title: "Spalla", "Federo", Georgia, serif;
+  --display: "Athelas", "EB Garamond", Georgia, serif;
+  --body: "DIN 2014", "Barlow", "Helvetica Neue", Arial, sans-serif;
   --gutter: clamp(16px, 3.4vw, 40px);
   --bar-h: 64px;
   color-scheme: dark;
@@ -511,3 +526,7 @@ h1, h2, h3 { font-family: var(--display); font-weight: 400; }
 
 /* "Go to number" removed (Nov 2026): page counter in the pager is plain text */
 .pager-mid { display: inline-flex; align-items: center; border: 0; color: var(--ash); padding: 0 8px; }
+
+/* Main titles in Spalla Semibold; smaller titles stay Athelas small caps */
+h1, .ptile h2, .gate-box h1 { font-family: var(--title); font-weight: 600; font-variant-caps: normal; letter-spacing: .01em; }
+.read h1, .page-read h1, .project-head h1 { font-variant-caps: normal; }

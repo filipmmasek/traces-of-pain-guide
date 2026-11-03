@@ -3,7 +3,7 @@
   --wall: #0f0e0d; --panel: #1a1816; --field: #12110f; --line: #34302b;
   --bone: #ece6db; --ash: #a39b8f; --blood: #b2402f; --ok: #6fae7c;
   --display: Athelas, "EB Garamond", Georgia, serif;
-  --body: "DM Sans", "Helvetica Neue", Arial, sans-serif;
+  --body: "DIN 2014", "Barlow", "Helvetica Neue", Arial, sans-serif;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
