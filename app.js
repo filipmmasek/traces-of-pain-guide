@@ -128,7 +128,7 @@
       logo("logo-hero", "150 140 890 270") +
       '<p class="hero-meta">' + esc(e.dates || "") + (e.dates && e.venue ? " · " : "") + esc(e.venue) + "</p>" +
       (lead ? '<div class="hero-lead">' + paras(lead) + '<a class="text-link" href="#concept">' + esc(T.aboutExhibition) + "</a></div>" : "") +
-      '<button type="button" class="big-jump" data-jump>' + esc(T.goTo) + "<small>" + esc(T.goToHint) + "</small></button></section>";
+      "</section>";
     h += '<div class="section-head"><h2 class="sc">' + esc(T.projects) + '</h2><span class="label">' + G.projects.length + "</span></div>";
     h += '<div class="ptiles">' + G.projects.map(projectTile).join("") + "</div>";
     h += '<div class="section-head"><h2 class="sc">' + esc(T.allWorks) + '</h2><span class="label">' + G.works.length + "</span></div>";
@@ -178,7 +178,7 @@
     h += "</div></article>";
     h += '<nav class="pager">' +
       (prev ? '<a href="#work-' + prev.id + '"><img src="' + prev.thumb + '" alt=""><span><span class="label">' + esc(T.prev) + "</span>No. " + prev.number + "</span></a>" : "<span></span>") +
-      '<button type="button" class="pager-mid" data-jump>' + w.number + " / " + G.works.length + "</button>" +
+      '<span class="pager-mid">' + w.number + " / " + G.works.length + "</span>" +
       (next ? '<a class="next" href="#work-' + next.id + '"><span><span class="label">' + esc(T.next) + "</span>No. " + next.number + '</span><img src="' + next.thumb + '" alt=""></a>' : "<span></span>") +
       "</nav>";
     return h;
@@ -258,7 +258,6 @@
   window.addEventListener("hashchange", route);
 
   view.addEventListener("click", function (e) {
-    if (e.target.closest("[data-jump]")) { openJump(); return; }
     var mb = e.target.closest("[data-more]");
     if (mb) {
       var mt = mb.previousElementSibling, open = mt.hidden;
@@ -388,50 +387,17 @@
     sx = null;
   });
 
-  // ---------- Go to number (for wall labels) ----------
-  var jump = $("jump"), jin = $("jumpInput");
-  $("jumpTitle").textContent = T.goTo;
-  $("jumpHint").textContent = T.goToHint + " (1–" + G.works.length + ")";
-  $("keypad").innerHTML = [1, 2, 3, 4, 5, 6, 7, 8, 9, "C", 0, "go"].map(function (k) {
-    return '<button type="button" data-k="' + k + '"' + (k === "go" ? ' class="go"' : "") + ">" +
-      (k === "go" ? esc(T.go) : k === "C" ? "&#9003;" : k) + "</button>";
-  }).join("");
-  function openJump() {
-    closeFs(); jump.hidden = false; jin.value = ""; $("jumpErr").textContent = "";
-    if (!matchMedia("(pointer: coarse)").matches) jin.focus();
-  }
-  function closeJump() { jump.hidden = true; }
-  function doJump() {
-    var w = byNum[parseInt(jin.value, 10)];
-    if (!w) { $("jumpErr").textContent = T.notFound; return; }
-    closeJump(); location.hash = "work-" + w.id;
-  }
-  $("jumpBtn").addEventListener("click", openJump);
-  $("keypad").addEventListener("click", function (e) {
-    var k = e.target.closest("button"); if (!k) return;
-    k = k.getAttribute("data-k");
-    if (k === "go") doJump();
-    else if (k === "C") jin.value = jin.value.slice(0, -1);
-    else if (jin.value.length < 3) jin.value += k;
-    $("jumpErr").textContent = "";
-  });
-  $("jumpForm").addEventListener("submit", function (e) { e.preventDefault(); doJump(); });
-  jump.addEventListener("click", function (e) { if (e.target === jump) closeJump(); });
-
   document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape") { if (!jump.hidden) closeJump(); else if (!iv.hidden) closeInsp(); else if (!sheet.hidden) hideSheet(); else closeFs(); }
+    if (e.key === "Escape") { if (!iv.hidden) closeInsp(); else if (!sheet.hidden) hideSheet(); else closeFs(); }
     if (!fs.hidden && e.key === "ArrowRight") step(1);
     if (!fs.hidden && e.key === "ArrowLeft") step(-1);
   });
 
-  // Menu labels and keypad texts come from the editable texts, in the chosen language.
+  // Menu labels come from the editable texts, in the chosen language.
   function applyUi() {
     [].forEach.call(document.querySelectorAll(".menu a[data-ui]"), function (a) {
       var k = a.getAttribute("data-ui"); if (T[k]) a.textContent = T[k];
     });
-    $("jumpTitle").textContent = T.goTo;
-    $("jumpHint").textContent = T.goToHint + " (1–" + G.works.length + ")";
-    var go = $("keypad").querySelector(".go"); if (go) go.textContent = T.go;
     $("fsClose").setAttribute("aria-label", T.close);
     var ls = $("langs");
     if (ls) ls.innerHTML = (RAW.languages || []).map(function (l) {
