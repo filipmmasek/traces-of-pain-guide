@@ -1,23 +1,69 @@
 (function () {
   "use strict";
-  var G = window.GUIDE, T = G.ui;
+  // Texts in other languages live in GUIDE.translations.<lang>, laid over the English base.
+  // Anything not translated falls back to English. Arrays of items with an id are keyed by id.
+  var RAW = window.GUIDE, G, T, LANG;
+  function overlay(base, tr) {
+    if (tr == null || tr === "") return base;
+    if (typeof base === "string" || base == null) return typeof tr === "string" ? tr : base;
+    if (Array.isArray(base)) {
+      if (Array.isArray(tr)) return base.map(function (b, i) { return overlay(b, tr[i]); });
+      return base.map(function (b) { return b && b.id && tr[b.id] ? overlay(b, tr[b.id]) : b; });
+    }
+    if (typeof base === "object") {
+      var o = {};
+      Object.keys(base).forEach(function (k) { o[k] = overlay(base[k], tr[k]); });
+      Object.keys(tr).forEach(function (k) { if (!(k in base)) o[k] = tr[k]; });
+      return o;
+    }
+    return base;
+  }
   // Preview builds load preview.js, which draws grey layout blocks where supplied content will go.
   // The real site never loads it, so an empty field simply hides its section.
   var P = window.PREVIEW || null;
   var $ = function (id) { return document.getElementById(id); };
   var view = $("view");
-  var bySeries = {}, byId = {}, byNum = {};
-  G.series.forEach(function (s) { bySeries[s.id] = s; });
-  G.works.forEach(function (w) { byId[w.id] = w; byNum[w.number] = w; });
-  var worksIn = function (sid) { return G.works.filter(function (w) { return w.series === sid; }); };
+  var byProject, byId, byNum;
+  function setLang(l) {
+    var langs = (RAW.languages || []).map(function (x) { return x.code; });
+    LANG = langs.indexOf(l) > -1 ? l : "en";
+    G = LANG === "en" ? RAW : overlay(RAW, (RAW.translations || {})[LANG]);
+    T = G.ui;
+    byProject = {}; byId = {}; byNum = {};
+    G.projects.forEach(function (p) { byProject[p.id] = p; });
+    G.works.forEach(function (w) { byId[w.id] = w; byNum[w.number] = w; });
+    document.documentElement.lang = LANG;
+    try { localStorage.setItem("tp-lang", LANG); } catch (e) {}
+  }
+  var savedLang = null;
+  try { savedLang = localStorage.getItem("tp-lang"); } catch (e) {}
+  setLang(savedLang || "en");
+  var worksIn = function (pid) { return G.works.filter(function (w) { return w.project === pid; }); };
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
     });
   }
+  // Light markup from the admin: *italic*, **bold**, and a paragraph starting with "## " is a subheading.
+  function inline(s) {
+    return esc(s).replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>").replace(/\*(.+?)\*/g, "<em>$1</em>");
+  }
   function paras(s) {
-    return String(s).split(/\n\s*\n/).map(function (p) { return "<p>" + esc(p.trim()) + "</p>"; }).join("");
+    return String(s).split(/\n\s*\n/).filter(function (p) { return p.trim(); }).map(function (p) {
+      p = p.trim();
+      if (/^## /.test(p)) return "<h2>" + inline(p.slice(3)) + "</h2>";
+      return "<p>" + inline(p).replace(/\n/g, "<br>") + "</p>";
+    }).join("");
+  }
+  // Long texts: the first paragraph shows, the rest opens with "Read more".
+  function leadAndMore(s) {
+    var ps = String(s || "").split(/\n\s*\n/).filter(function (p) { return p.trim(); });
+    if (!ps.length) return "";
+    var first = paras(ps[0]), rest = ps.slice(1).join("\n\n");
+    if (!rest) return '<div class="body">' + first + "</div>";
+    return '<div class="body">' + first + '<div class="more-text" hidden>' + paras(rest) + "</div>" +
+      '<button type="button" class="read-more" data-more aria-expanded="false">' + esc(T.readFull) + "</button></div>";
   }
   function sk(widths) {
     return '<div class="sk" aria-hidden="true">' + widths.map(function (w) {
@@ -30,10 +76,10 @@
     return [];
   }
   function inspirationsOf(w) {
-    var s = bySeries[w.series];
-    return w.inspirations.length ? w.inspirations : s.inspirations;
+    var p = byProject[w.project];
+    return w.inspirations.length ? w.inspirations : p.inspirations;
   }
-  function workName(w) { return w.title || bySeries[w.series].name; }
+  function workName(w) { return w.title || byProject[w.project].name; }
 
   function tile(w) {
     return '<a class="tile" href="#work-' + w.id + '">' +
@@ -64,38 +110,51 @@
       esc(G.exhibition.venue) + '</span><a href="#credits">' + esc(T.credits) + "</a></footer>";
   }
 
+  function logo(cls, vb) {
+    return '<svg class="' + cls + '" viewBox="' + vb + '" role="img" aria-label="Stopy bolesti / Huellas del dolor, Gabriel Matula"><use href="#logo-art"/></svg>';
+  }
+  function projectTile(p) {
+    var ws = worksIn(p.id), c = ws[0];
+    return '<a class="ptile' + (c ? "" : " empty") + '" href="#project-' + p.id + '">' +
+      (c ? '<img loading="lazy" src="' + c.thumb + '" alt="">' : "") +
+      '<span class="cap"><span class="label">' + (ws.length ? ws.length + " " + esc(T.works) : esc(T.comingSoon)) + "</span>" +
+      "<h2>" + esc(p.name) + "</h2></span></a>";
+  }
   function home() {
-    var e = G.exhibition;
-    var h = '<section class="hero"><span class="label">' + esc(e.artist) + " · " + esc(e.venue) + "</span>" +
-      "<h1>Traces <em>of</em> Pain</h1>" +
-      '<button type="button" class="big-jump" data-jump>' + esc(T.goTo) + '<small>' + esc(T.goToHint) + "</small></button></section>";
-    h += '<div class="section-head"><span class="label">' + esc(T.series) + "</span></div>";
-    h += '<div class="series-list">' + G.series.map(function (s) {
-      var ws = worksIn(s.id), c = ws[0];
-      return '<a class="series-card" href="#series-' + s.id + '"><img src="' + c.thumb + '" alt="">' +
-        '<div class="cap"><span class="label">No. ' + ws[0].number + "–" + ws[ws.length - 1].number + " · " +
-        ws.length + " " + esc(T.works) + "</span><h2>" + esc(s.name) + "</h2></div></a>";
-    }).join("") + "</div>";
-    h += '<div class="section-head"><span class="label">' + esc(T.allWorks) + " · " + G.works.length + "</span></div>";
+    var e = G.exhibition, con = (G.pages || {}).concept || {};
+    var lead = String(con.text || "").split(/\n\s*\n/)[0] || "";
+    var h = '<section class="hero">' +
+      (LANG === "en" ? '<span class="label">' + esc(T.exhibitionLabel) + " · " + esc(e.title) + "</span>" : "") +
+      logo("logo-hero", "150 140 890 270") +
+      '<p class="hero-meta">' + esc(e.dates || "") + (e.dates && e.venue ? " · " : "") + esc(e.venue) + "</p>" +
+      (lead ? '<div class="hero-lead">' + paras(lead) + '<a class="text-link" href="#concept">' + esc(T.aboutExhibition) + "</a></div>" : "") +
+      '<button type="button" class="big-jump" data-jump>' + esc(T.goTo) + "<small>" + esc(T.goToHint) + "</small></button></section>";
+    h += '<div class="section-head"><h2 class="sc">' + esc(T.projects) + '</h2><span class="label">' + G.projects.length + "</span></div>";
+    h += '<div class="ptiles">' + G.projects.map(projectTile).join("") + "</div>";
+    h += '<div class="section-head"><h2 class="sc">' + esc(T.allWorks) + '</h2><span class="label">' + G.works.length + "</span></div>";
     h += '<div class="grid">' + G.works.map(tile).join("") + "</div>";
     return h + footer();
   }
 
-  function series(s) {
-    var ws = worksIn(s.id);
-    var insp = inspirationCards(s.inspirations);
+  function project(p) {
+    var ws = worksIn(p.id);
+    var insp = inspirationCards(p.inspirations);
+    var story = p.story && (G.pages || {})[p.story];
+    var range = ws.length ? "No. " + ws[0].number + "–" + ws[ws.length - 1].number + " · " + ws.length + " " + esc(T.works) : esc(T.comingSoon);
     return '<a class="back" href="#">' + esc(T.back) + "</a>" +
-      '<section class="series-head"><div><span class="label">No. ' + ws[0].number + "–" + ws[ws.length - 1].number +
-      " · " + ws.length + " " + esc(T.works) + "</span><h1>" + esc(s.name) + "</h1>" +
-      (s.text ? '<div class="intro">' + paras(s.text) + "</div>" : P ? sk([96, 88, 52]) : "") + "</div>" +
+      '<section class="project-head"><div class="project-read"><span class="label">' + range + "</span><h1 class=\"sc\">" + esc(p.name) + "</h1>" +
+      (p.subtitle ? '<p class="subtitle">' + inline(p.subtitle) + "</p>" : "") +
+      (p.quote ? '<blockquote class="epigraph"><p>' + inline(p.quote) + "</p>" + (p.quoteBy ? "<cite>" + esc(p.quoteBy) + "</cite>" : "") + "</blockquote>" : "") +
+      leadAndMore(p.text) +
+      (story ? '<a class="text-link" href="#' + esc(p.story) + '">' + esc(story.title) + "</a>" : "") + "</div>" +
       (insp ? '<div><span class="label">' + esc(T.inspiredBy) + "</span>" + insp + "</div>" : "") + "</section>" +
-      '<div class="grid">' + ws.map(tile).join("") + "</div>" + footer();
+      (ws.length ? '<div class="grid">' + ws.map(tile).join("") + "</div>" : '<p class="coming">' + esc(T.comingSoon) + "</p>") + footer();
   }
 
   // The tablet view: a visitor stands at the print. A small thumbnail confirms the photo;
   // the reading content gets the space.
   function work(w) {
-    var s = bySeries[w.series];
+    var s = byProject[w.project];
     var prev = byNum[w.number - 1], next = byNum[w.number + 1];
     var hs = hotspotsOf(w), insp = inspirationCards(inspirationsOf(w));
     var h = '<article class="work">';
@@ -104,7 +163,7 @@
       '<div class="confirm-meta"><span class="no">' + w.number + '</span><span class="label">' + esc(s.name) + "</span></div>" +
       '<button class="explore" type="button" data-open="' + w.id + '">' + esc(hs.length ? T.explore : T.fullscreen) + "</button>" +
       qrBlock(w) + "</aside>";
-    h += '<div class="read"><a class="back" href="#series-' + s.id + '">' + esc(s.name) + "</a>" +
+    h += '<div class="read"><a class="back" href="#project-' + s.id + '">' + esc(s.name) + "</a>" +
       "<h1>" + esc(workName(w)) + "</h1>";
     if (w.text) h += '<div class="body">' + paras(w.text) + "</div>";
     else if (P) h += '<div class="body">' + sk([100, 97, 92, 99, 64]) + sk([98, 94, 40]) + "</div>";
@@ -146,7 +205,7 @@
     var pg = (G.pages || {})[key] || {};
     var img = pg.image ? '<img class="page-img" src="' + esc(pg.image) + '" alt="">' : "";
     return '<a class="back" href="#">' + esc(T.back) + '</a><article class="page' + (img ? " has-img" : "") + '">' + img +
-      '<div class="page-read"><h1>' + esc(pg.title || "") + "</h1>" +
+      '<div class="page-read"><h1 class="sc">' + esc(pg.title || "") + "</h1>" +
       (pg.text ? '<div class="body">' + paras(pg.text) + "</div>" : P ? '<div class="body">' + sk([100, 96, 92, 98, 60]) + sk([97, 94, 88, 45]) + "</div>" : "") +
       "</div></article>" + footer();
   }
@@ -156,7 +215,7 @@
   }
   function collaborators() {
     var list = G.collaborators || [];
-    return '<a class="back" href="#">' + esc(T.back) + '</a><section class="page-read collab-head"><h1>' + esc(T.menuCollaborators || "Collaborators") + "</h1></section>" +
+    return '<a class="back" href="#">' + esc(T.back) + '</a><section class="page-read collab-head"><h1 class="sc">' + esc(T.menuCollaborators || "Collaborators") + "</h1></section>" +
       '<ul class="collab-grid">' + list.map(function (c) {
         var inner = '<span class="ph">' + (c.image ? '<img loading="lazy" src="' + esc(c.image) + '" alt="">' : '<span class="mono">' + esc(initials(c.name)) + "</span>") + "</span>" +
           '<span class="role">' + esc(c.role) + '</span><span class="name">' + esc(c.name) + "</span>";
@@ -166,9 +225,9 @@
 
   function credits() {
     var all = [];
-    G.series.forEach(function (s) { all = all.concat(s.inspirations); });
+    G.projects.forEach(function (p) { all = all.concat(p.inspirations); });
     G.works.forEach(function (w) { all = all.concat(w.inspirations); });
-    return '<a class="back" href="#">' + esc(T.back) + '</a><section class="series-head"><div><h1>' + esc(T.credits) +
+    return '<a class="back" href="#">' + esc(T.back) + '</a><section class="project-head"><div><h1 class="sc">' + esc(T.credits) +
       '</h1><p class="intro">' + esc(T.creditsIntro) + '</p></div></section><ul class="credits-list">' +
       all.map(function (i) { return "<li><strong>" + esc(i.title) + "</strong><br>" + esc(i.credit) + "</li>"; }).join("") +
       "<li>" + esc(T.copyright) + "</li></ul>" + footer();
@@ -178,25 +237,35 @@
   function route() {
     var h = location.hash.replace(/^#/, ""), m, html;
     INSP = []; closeInsp();
-    closeFs();
+    // Browsing from photo to photo while in full screen keeps full screen open.
+    var keepFs = !fs.hidden && /^work-/.test(h) && byId[h.slice(5)];
+    if (!keepFs) closeFs();
     document.body.classList.remove("on-work");
-    if ((m = h.match(/^series-(.+)$/)) && bySeries[m[1]]) html = series(bySeries[m[1]]);
+    if ((m = h.match(/^(?:project|series)-(.+)$/)) && byProject[m[1]]) html = project(byProject[m[1]]);
     else if ((m = h.match(/^work-(.+)$/)) && byId[m[1]]) { html = work(byId[m[1]]); document.body.classList.add("on-work"); }
     else if (h === "credits") html = credits();
-    else if (h === "concept" || h === "about") html = page(h);
+    else if ((G.pages || {})[h]) html = page(h);
     else if (h === "collaborators") html = collaborators();
     else html = home();
     view.innerHTML = html;
     [].forEach.call(document.querySelectorAll(".menu a"), function (a) {
-      var on = a.getAttribute("href") === "#" + h || (a.getAttribute("href") === "#" && (h === "" || /^(series|work)-/.test(h)));
+      var on = a.getAttribute("href") === "#" + h || (a.getAttribute("href") === "#" && (h === "" || /^(project|series|work)-/.test(h)));
       a.setAttribute("aria-current", on ? "page" : "false");
     });
+    if (keepFs && (!cur || cur.id !== keepFs.id)) openFs(keepFs, null);
     window.scrollTo(0, 0);
   }
   window.addEventListener("hashchange", route);
 
   view.addEventListener("click", function (e) {
     if (e.target.closest("[data-jump]")) { openJump(); return; }
+    var mb = e.target.closest("[data-more]");
+    if (mb) {
+      var mt = mb.previousElementSibling, open = mt.hidden;
+      mt.hidden = !open; mb.setAttribute("aria-expanded", open ? "true" : "false");
+      mb.textContent = open ? T.readLess : T.readFull;
+      return;
+    }
     var ib = e.target.closest("[data-insp]");
     if (ib) { openInsp(INSP[+ib.getAttribute("data-insp")]); return; }
     var b = e.target.closest("[data-open]");
@@ -294,7 +363,7 @@
     if (!cur) return;
     var n = byNum[cur.number + d];
     if (!n) return;
-    closeFs(); location.hash = "work-" + n.id; openFs(n, null);
+    openFs(n, null); location.hash = "work-" + n.id;
   }
   fsDots.addEventListener("click", function (e) {
     var d = e.target.closest(".dot");
@@ -355,10 +424,28 @@
     if (!fs.hidden && e.key === "ArrowLeft") step(-1);
   });
 
-  // Menu labels come from the editable texts.
-  [].forEach.call(document.querySelectorAll(".menu a[data-ui]"), function (a) {
-    var k = a.getAttribute("data-ui"); if (T[k]) a.textContent = T[k];
+  // Menu labels and keypad texts come from the editable texts, in the chosen language.
+  function applyUi() {
+    [].forEach.call(document.querySelectorAll(".menu a[data-ui]"), function (a) {
+      var k = a.getAttribute("data-ui"); if (T[k]) a.textContent = T[k];
+    });
+    $("jumpTitle").textContent = T.goTo;
+    $("jumpHint").textContent = T.goToHint + " (1–" + G.works.length + ")";
+    var go = $("keypad").querySelector(".go"); if (go) go.textContent = T.go;
+    $("fsClose").setAttribute("aria-label", T.close);
+    var ls = $("langs");
+    if (ls) ls.innerHTML = (RAW.languages || []).map(function (l) {
+      return '<button type="button" data-lang="' + l.code + '" aria-pressed="' + (l.code === LANG) + '" lang="' + l.code + '">' + esc(l.label) + "</button>";
+    }).join("");
+  }
+  if ($("langs")) $("langs").addEventListener("click", function (e) {
+    var b = e.target.closest("[data-lang]"); if (!b || b.getAttribute("data-lang") === LANG) return;
+    var y = window.scrollY;
+    setLang(b.getAttribute("data-lang")); applyUi();
+    var w = cur; route(); window.scrollTo(0, y);
+    if (w) openFs(byId[w.id], null);
   });
 
+  applyUi();
   route();
 })();

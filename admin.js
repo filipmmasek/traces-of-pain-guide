@@ -11,6 +11,9 @@
   var uploads = {};   // path -> base64, waiting for Save
   var previews = {};  // path -> data URL, so new images show before they are saved
   var selHs = null;
+  // Language being edited. English is the base; other languages are stored in data.translations.<lang>
+  // and anything left empty there shows the English text in the guide.
+  var lang = "en";
 
   function esc(s) {
     return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
@@ -55,6 +58,10 @@
     return gh(DATA_PATH + "?ref=" + BRANCH + "&t=" + Date.now()).then(function (f) {
       sha = f.sha; data = parseData(b64decode(f.content));
       setDirty(false); status("Up to date", "ok");
+      $("langSel").innerHTML = (data.languages || [{ code: "en", label: "EN" }]).map(function (l) {
+        return '<option value="' + esc(l.code) + '"' + (l.code === lang ? " selected" : "") + ">" + esc(l.label) + "</option>";
+      }).join("");
+      $("langSel").hidden = false;
       renderSide(); renderPane();
     });
   }
@@ -109,26 +116,28 @@
     token = null; setDirty(false); showLogin();
   });
   $("saveBtn").addEventListener("click", save);
+  $("langSel").addEventListener("change", function () { lang = this.value; selHs = null; renderPane(); });
 
   // ---------- Sidebar ----------
   function hasContent(w) { return !!(w.title || w.text || w.hotspots.length || w.inspirations.length); }
   function renderSide() {
     var h = '<h4>Exhibition</h4><button type="button" class="text-only" data-k="exhibition"><span>Exhibition details</span></button>';
-    data.pages = data.pages || { concept: { title: "The concept", text: "", image: "" }, about: { title: "", text: "", image: "" } };
-    h += "<h4>Pages</h4>" + [["concept", "The concept"], ["about", "The photographer"]].map(function (x) {
+    data.pages = data.pages || {};
+    PAGES.forEach(function (x) { if (!data.pages[x[0]]) data.pages[x[0]] = { title: "", text: "", image: "" }; });
+    h += "<h4>Pages</h4>" + PAGES.map(function (x) {
       var pg = data.pages[x[0]];
       return '<button type="button" class="text-only" data-k="page" data-id="' + x[0] + '"><span>' + x[1] + "</span>" +
         (pg.text ? '<span class="has" title="Has content"></span>' : "") + "</button>";
     }).join("");
     data.collaborators = data.collaborators || [];
     h += '<button type="button" class="text-only" data-k="collab"><span>Collaborators</span>' + (data.collaborators.length ? '<span class="has" title="Has content"></span>' : "") + "</button>";
-    h += "<h4>Series</h4>" + data.series.map(function (s) {
-      return '<button type="button" class="text-only" data-k="series" data-id="' + s.id + '"><span>' + esc(s.name) + "</span>" +
+    h += "<h4>Projects</h4>" + data.projects.map(function (s) {
+      return '<button type="button" class="text-only" data-k="project" data-id="' + s.id + '"><span>' + esc(s.name) + "</span>" +
         (s.text || s.inspirations.length ? '<span class="has" title="Has content"></span>' : "") + "</button>";
     }).join("");
     h += "<h4>Photos</h4>" + data.works.map(function (w) {
       return '<button type="button" data-k="work" data-id="' + w.id + '"><img src="' + esc(w.thumb) + '" alt=""><span><span class="n">' + w.number + "</span> · " +
-        esc(w.title || seriesName(w.series)) + "</span>" + (hasContent(w) ? '<span class="has" title="Has content"></span>' : "") + "</button>";
+        esc(w.title || projectName(w.project)) + "</span>" + (hasContent(w) ? '<span class="has" title="Has content"></span>' : "") + "</button>";
     }).join("");
     $("side").innerHTML = h;
     markCurrent();
@@ -144,12 +153,34 @@
     current = { kind: b.getAttribute("data-k"), id: b.getAttribute("data-id") };
     selHs = null; markCurrent(); renderPane(); window.scrollTo(0, 0);
   });
-  function seriesName(id) { var s = data.series.filter(function (x) { return x.id === id; })[0]; return s ? s.name : ""; }
+  function projectName(id) { var s = data.projects.filter(function (x) { return x.id === id; })[0]; return s ? s.name : ""; }
+  var PAGES = [["concept", "The exhibition"], ["about", "The photographer"], ["angels", "Angels story"]];
 
   // ---------- Field helpers ----------
   // Inputs carry data-path like "works.3.title"; every edit writes straight into `data`.
+  // In a translation, "works.3.title" is stored as "translations.cs.works.<work id>.title".
+  function trPath(path) {
+    var o = data, out = [];
+    path.split(".").forEach(function (k) {
+      out.push(Array.isArray(o) && o[k] && o[k].id ? o[k].id : k);
+      o = o == null ? undefined : o[k];
+    });
+    return "translations." + lang + "." + out.join(".");
+  }
+  function peek(path) {
+    return path.split(".").reduce(function (o, k) { return o == null ? undefined : o[k]; }, data);
+  }
   function field(label, path, value, opts) {
     opts = opts || {};
+    if (lang !== "en") {
+      var en = value || "";
+      if (opts.noTr) {
+        return '<div class="field"><label>' + esc(label) + '</label><p class="fixed">' + (en ? esc(en) : "<em>empty</em>") + "</p>" +
+          '<span class="hint">Same in every language. Change it in English.</span></div>';
+      }
+      path = trPath(path); value = peek(path) || "";
+      opts = Object.assign({}, opts, { hint: (en ? "English: " + (en.length > 160 ? en.slice(0, 160) + "…" : en) : "English is empty.") + (opts.hint ? " · " + opts.hint : "") });
+    }
     var id = "f-" + path.replace(/\./g, "-");
     var input = opts.multi
       ? '<textarea id="' + id + '" data-path="' + path + '" rows="' + (opts.rows || 6) + '">' + esc(value) + "</textarea>"
@@ -159,7 +190,10 @@
   }
   function setPath(path, value) {
     var parts = path.split("."), o = data;
-    for (var i = 0; i < parts.length - 1; i++) o = o[parts[i]];
+    for (var i = 0; i < parts.length - 1; i++) {
+      if (o[parts[i]] == null) o[parts[i]] = /^\d+$/.test(parts[i + 1]) ? [] : {};
+      o = o[parts[i]];
+    }
     o[parts[parts.length - 1]] = value;
   }
   $("pane").addEventListener("input", function (e) {
@@ -182,7 +216,7 @@
           (i.image ? '<button type="button" class="ghost small danger" data-clear-img="' + p + '">Remove image</button>' : "") + "</div><div>" +
           '<div class="card-head"><strong>Inspiration ' + (k + 1) + '</strong><span class="sp"><button type="button" class="ghost small danger" data-del="' + base + '" data-i="' + k + '">Delete</button></span></div>' +
           field("Title of the work", p + ".title", i.title) +
-          '<div class="row">' + field("Artist", p + ".artist", i.artist) + field("Date", p + ".date", i.date) + field("Where it is", p + ".where", i.where) + "</div>" +
+          '<div class="row">' + field("Artist", p + ".artist", i.artist, { noTr: true }) + field("Date", p + ".date", i.date) + field("Where it is", p + ".where", i.where) + "</div>" +
           field("Short text (on the card)", p + ".text", i.text, { multi: true, rows: 4, hint: "What the photograph takes from this work, in a sentence or two." }) +
           field("Longer explanation (in the large view)", p + ".more", i.more, { multi: true, rows: 6, hint: "Shown when visitors open the inspiration. Leave an empty line between paragraphs." }) +
           field("Image credit", p + ".credit", i.credit, { hint: "Title, Author, Source, Licence. Example: Fight with Cudgels, Francisco de Goya, via Wikimedia Commons, public domain." }) +
@@ -249,10 +283,12 @@
   // ---------- Panes ----------
   function renderPane() {
     var h = "";
+    var MARK = "Leave an empty line between paragraphs. *Italic*, **bold**, and a line starting with ## becomes a subheading.";
     if (current.kind === "exhibition") {
       var e = data.exhibition;
       h = "<h1>Exhibition details</h1><p class=\"sub\">Shown on the home page and in the footer.</p>" +
-        field("Artist", "exhibition.artist", e.artist) + field("Exhibition title", "exhibition.title", e.title) +
+        field("Artist", "exhibition.artist", e.artist, { noTr: true }) + field("Exhibition title", "exhibition.title", e.title) +
+        field("Dates", "exhibition.dates", e.dates, { noTr: true, hint: "For example: 10.11.2026 – 12.2.2027" }) +
         field("Venue", "exhibition.venue", e.venue);
     } else if (current.kind === "collab") {
       h = '<h1>Collaborators</h1><p class="sub">Everyone involved in the exhibition, shown as tiles on the Collaborators page in the menu. Use the arrows to change the order.</p><div class="cards">' +
@@ -266,27 +302,31 @@
             '<button type="button" class="ghost small" data-move="collaborators" data-i="' + k + '" data-d="-1" aria-label="Move up">&#8593;</button>' +
             '<button type="button" class="ghost small" data-move="collaborators" data-i="' + k + '" data-d="1" aria-label="Move down">&#8595;</button>' +
             '<button type="button" class="ghost small danger" data-del="collaborators" data-i="' + k + '">Delete</button></span></div>' +
-            field("Name", p + ".name", c.name) + field("Role", p + ".role", c.role, { hint: "For example: Styling, Makeup, Model, Videography." }) +
-            field("Link (optional)", p + ".link", c.link, { hint: "Website or Instagram, starting with https://" }) + "</div></div>";
+            field("Name", p + ".name", c.name, { noTr: true }) + field("Role", p + ".role", c.role, { hint: "For example: Styling, Makeup, Model, Videography." }) +
+            field("Link (optional)", p + ".link", c.link, { noTr: true, hint: "Website or Instagram, starting with https://" }) + "</div></div>";
         }).join("") + '</div><p><button type="button" class="primary" data-add-collab>Add person</button></p>';
     } else if (current.kind === "page") {
       var pk = current.id, pg = data.pages[pk], pb = "pages." + pk, pimg = pg.image ? (previews[pg.image] || pg.image) : "";
-      h = "<h1>" + (pk === "about" ? "The photographer" : "The concept") + '</h1><p class="sub">A page in the main menu of the guide.</p>' +
+      var pname = PAGES.filter(function (x) { return x[0] === pk; })[0];
+      h = "<h1>" + esc(pname ? pname[1] : pk) + '</h1><p class="sub">' + (pk === "angels" ? "A longer story, linked from the angel projects (Raphael II, Letiel Dei, Zadquiel Dei)." :
+        pk === "concept" ? "A page in the main menu. Its first paragraph is also shown on the home page." : "A page in the main menu of the guide.") + "</p>" +
         field("Page title", pb + ".title", pg.title) +
-        field("Text", pb + ".text", pg.text, { multi: true, rows: 14, hint: "Leave an empty line between paragraphs." }) +
+        field("Text", pb + ".text", pg.text, { multi: true, rows: 18, hint: MARK }) +
         '<div class="section"><h2>Image</h2><p class="help">Optional. Shown beside the text' + (pk === "about" ? ", for example a portrait of Gabriel." : ".") + '</p><div class="insp-img"><div class="ph">' +
         (pimg ? '<img src="' + esc(pimg) + '" alt="">' : "No image") + '</div><label class="ghost small" style="text-align:center">Choose image<input type="file" accept="image/*" data-upload="' + pb + '" hidden></label>' +
         (pg.image ? '<button type="button" class="ghost small danger" data-clear-img="' + pb + '">Remove image</button>' : "") + "</div></div>";
-    } else if (current.kind === "series") {
-      var si = indexOf(data.series, current.id), s = data.series[si];
-      h = "<h1>" + esc(s.name) + '</h1><p class="sub">Series page. Inspirations here also show on every photo in the series that has none of its own.</p>' +
-        field("Series name", "series." + si + ".name", s.name) +
-        field("Series text", "series." + si + ".text", s.text, { multi: true, hint: "Leave an empty line between paragraphs." }) +
-        '<div class="section"><h2>Inspired by</h2>' + inspEditor("series." + si + ".inspirations", s.inspirations) + "</div>";
+    } else if (current.kind === "project") {
+      var si = indexOf(data.projects, current.id), s = data.projects[si], pp = "projects." + si;
+      h = "<h1>" + esc(s.name) + '</h1><p class="sub">Project page. Inspirations here also show on every photo in the project that has none of its own.</p>' +
+        field("Project name", pp + ".name", s.name) +
+        field("Subtitle", pp + ".subtitle", s.subtitle, { hint: "Optional. For example: On Julio Cortázar's story “Letters from Mom”." }) +
+        '<div class="row">' + field("Quote", pp + ".quote", s.quote, { multi: true, rows: 3 }) + field("Quote by", pp + ".quoteBy", s.quoteBy, { noTr: true }) + "</div>" +
+        field("Project text", pp + ".text", s.text, { multi: true, rows: 12, hint: "Visitors see the first paragraph; the rest opens with Read more. " + MARK }) +
+        '<div class="section"><h2>Inspired by</h2>' + inspEditor(pp + ".inspirations", s.inspirations) + "</div>";
     } else {
       var wi = indexOf(data.works, current.id), w = data.works[wi], b = "works." + wi;
-      h = "<h1>No. " + w.number + " · " + esc(seriesName(w.series)) + '</h1><p class="sub">File: ' + esc(w.file) + "</p>" +
-        field("Title", b + ".title", w.title, { hint: "Optional. If empty, the series name is shown." }) +
+      h = "<h1>No. " + w.number + " · " + esc(projectName(w.project)) + '</h1><p class="sub">File: ' + esc(w.file) + "</p>" +
+        field("Title", b + ".title", w.title, { hint: "Optional. If empty, the project name is shown." }) +
         field("Text", b + ".text", w.text, { multi: true, rows: 8, hint: "Leave an empty line between paragraphs." }) +
         '<div class="section"><h2>Details in the photo</h2><p class="help">Tap or click the photo to add a dot where an object is. Drag a dot to move it. Each dot opens its title and text when visitors tap it in full screen.</p>' +
         '<div class="placer-wrap"><div class="placer" id="placer"><img src="' + esc(w.src) + '" alt="" draggable="false">' +
@@ -302,10 +342,15 @@
             '<button type="button" class="ghost small danger" data-del="' + b + '.hotspots" data-i="' + i + '">Delete</button></span></div>' +
             field("Title", hp + ".title", p.title) + field("Text", hp + ".text", p.text, { multi: true, rows: 4 }) + "</div>";
         }).join("") + "</div></div></div>" +
-        '<div class="section"><h2>Inspired by</h2><p class="help">Only for this photo. If empty, the series inspirations are shown.</p>' +
+        '<div class="section"><h2>Inspired by</h2><p class="help">Only for this photo. If empty, the project inspirations are shown.</p>' +
         inspEditor(b + ".inspirations", w.inspirations) + "</div>";
     }
+    if (lang !== "en") {
+      var ln = (data.languages || []).filter(function (x) { return x.code === lang; })[0];
+      h = '<p class="tr-note">You are editing the <b>' + esc(ln ? ln.label : lang) + "</b> version. Fields left empty show the English text. Photos, dots and images are shared by all languages: change them in EN.</p>" + h;
+    }
     $("pane").innerHTML = h;
+    $("pane").classList.toggle("tr-mode", lang !== "en");
     if (current.kind === "work") bindPlacer(data.works[indexOf(data.works, current.id)]);
   }
   function indexOf(arr, id) { for (var i = 0; i < arr.length; i++) if (arr[i].id === id) return i; return -1; }
@@ -319,6 +364,7 @@
         y: Math.max(0, Math.min(100, Math.round(((e.clientY - r.top) / r.height) * 1000) / 10))
       };
     }
+    if (lang !== "en") return;
     pl.addEventListener("pointerdown", function (e) {
       var d = e.target.closest(".pdot");
       if (d) { drag = +d.getAttribute("data-i"); moved = false; pl.setPointerCapture(e.pointerId); e.preventDefault(); }

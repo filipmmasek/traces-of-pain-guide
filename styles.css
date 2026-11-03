@@ -1,15 +1,17 @@
-/* Layout idea: a dark gallery wall. Tablet-first: the visitor stands at the print, so the
+/* Design follows Gabriel Matula's exhibition texts (Nov 2026): near-black page lit by a soft grey
+   spotlight from above, serif small-caps headings (Athelas; EB Garamond where Athelas is missing),
+   DM Sans for reading, no colour accent. Layout idea: a dark gallery wall. Tablet-first: the visitor stands at the print, so the
    photo page shows a small confirming thumbnail and gives the space to reading.
    Single dark theme by choice. */
 :root {
-  --wall: #050505;
-  --panel: #121110;
-  --line: #262321;
-  --bone: #ece6db;
-  --ash: #9d958a;
-  --blood: #b2402f;
-  --display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
-  --body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --wall: #0f0f0f;
+  --panel: #191919;
+  --line: #2e2e2e;
+  --bone: #ececec;
+  --ash: #9b9b9b;
+  --blood: #ececec; /* the accent is plain light grey, as in the printed texts */
+  --display: Athelas, "EB Garamond", Georgia, serif;
+  --body: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   --gutter: clamp(16px, 3.4vw, 40px);
   --bar-h: 64px;
   color-scheme: dark;
@@ -18,7 +20,7 @@
 html, body { margin: 0; height: 100%; }
 body {
   background: var(--wall); color: var(--bone);
-  font: 400 18px/1.6 var(--body);
+  font: 300 18px/1.6 var(--body);
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
 }
@@ -395,4 +397,114 @@ a.collab .name::after { content: " \2197\FE0E"; font: 400 14px var(--body); colo
   .jump-btn { height: 34px; padding: 0 14px; font-size: 12px; }
   .menu { order: 3; width: 100%; margin: 0; justify-content: space-between; }
   .menu a { padding: 11px 0 9px; }
+}
+
+
+/* ================= Gabriel's design (Nov 2026) ================= */
+body { background-color: var(--wall); }
+/* The grey spotlight from the top of the printed pages */
+body::before {
+  content: ""; position: fixed; left: 0; right: 0; top: 0; height: 75vh; z-index: -1; pointer-events: none;
+  background: radial-gradient(ellipse 60% 70% at 50% 0%, rgba(150,150,150,.30), rgba(90,90,90,.10) 45%, rgba(0,0,0,0) 75%);
+}
+strong, b { font-weight: 600; }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; }
+.sc, .read h1, .page-read h1, .sheet h3, .insp h3, .iv-text h2, .jump-box label, .collab .name {
+  font-variant-caps: small-caps; font-style: normal; letter-spacing: .02em;
+}
+.label { font: 400 11px/1.3 var(--body); letter-spacing: .2em; }
+:focus-visible { outline-color: var(--bone); }
+
+/* Top bar: the exhibition logo as the wordmark */
+.bar { background: rgba(15,15,15,.88); border-bottom-color: rgba(255,255,255,.08); }
+.wordmark { display: block; color: var(--bone); }
+.wordmark svg { display: block; height: 34px; width: auto; }
+.menu a { font: 400 11px/1 var(--body); letter-spacing: .2em; }
+.menu a[aria-current="page"] { border-bottom-color: var(--bone); }
+.jump-btn { font: 400 12px/1 var(--body); letter-spacing: .16em; border-color: #444; }
+.jump-btn::before { color: var(--ash); }
+.langs { display: flex; align-self: center; gap: 2px; }
+.langs button { background: none; border: 0; min-width: 34px; height: 40px; padding: 0 6px; font: 400 11px/1 var(--body); letter-spacing: .14em; color: var(--ash); }
+.langs button[aria-pressed="true"] { color: var(--bone); text-decoration: underline; text-underline-offset: 6px; }
+@media (max-width: 860px) { .wordmark svg { height: 28px; } }
+@media (max-width: 560px) {
+  .wordmark svg { height: 26px; }
+  .langs { margin-left: auto; }
+  .langs button { min-width: 30px; height: 34px; padding: 0 3px; }
+}
+
+/* Home */
+.hero { justify-items: center; text-align: center; padding: clamp(40px, 8vw, 96px) 0 clamp(24px, 4vw, 48px); gap: 20px; }
+.logo-hero { width: min(640px, 92%); height: auto; color: var(--bone); }
+.hero-meta { margin: 0; font: 400 13px/1.4 var(--body); letter-spacing: .2em; text-transform: uppercase; color: var(--ash); }
+.hero-lead { max-width: 56ch; font-size: 17px; line-height: 1.7; color: #d6d6d6; }
+.hero-lead p { margin: 6px 0 10px; }
+.text-link { display: inline-block; font: 400 12px/1 var(--body); letter-spacing: .18em; text-transform: uppercase; text-decoration: none;
+  border-bottom: 1px solid var(--ash); padding: 10px 0 6px; color: var(--bone); }
+.text-link::after { content: " \2192"; letter-spacing: 0; }
+.big-jump { background: none; border: 1px solid #555; color: var(--bone); text-align: center; justify-items: center; font: 400 13px/1.2 var(--body); letter-spacing: .18em; padding: 16px 30px; }
+.big-jump small { font: 300 13px/1.3 var(--body); color: var(--ash); }
+.section-head { border-top-color: var(--line); align-items: center; }
+.section-head h2 { font-size: clamp(26px, 3vw, 34px); }
+
+/* Project tiles (13) */
+.ptiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 12px; }
+@media (min-width: 900px) { .ptiles { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; } }
+.ptile { position: relative; display: block; aspect-ratio: 4/5; overflow: hidden; text-decoration: none; background: var(--panel); }
+.ptile img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .6s; }
+.ptile:hover img { transform: scale(1.03); }
+.ptile::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,.85), rgba(0,0,0,0) 55%); }
+.ptile.empty { background: radial-gradient(ellipse 90% 70% at 50% 0%, #3a3a3a, #1a1a1a 60%, #121212); border: 1px solid #262626; }
+.ptile.empty::after { display: none; }
+.ptile .cap { position: absolute; left: 14px; right: 14px; bottom: 14px; z-index: 1; display: grid; gap: 6px; }
+.ptile h2 { font-size: clamp(22px, 2.4vw, 28px); line-height: 1.05; font-variant-caps: small-caps; letter-spacing: .02em; }
+
+/* Project page */
+.project-head { display: grid; gap: 32px; padding: 16px 0 32px; }
+@media (min-width: 900px) { .project-head { grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); align-items: start; gap: 56px; } }
+.project-head h1 { font-size: clamp(44px, 6.4vw, 76px); line-height: 1; margin: 12px 0 10px; }
+.project-read { max-width: 64ch; }
+.subtitle { margin: 0 0 22px; color: var(--ash); font: italic 400 20px/1.4 var(--display); }
+.epigraph { margin: 0 0 26px; padding: 0 0 0 20px; border-left: 1px solid #555; font: italic 400 21px/1.45 var(--display); color: #dcdcdc; }
+.epigraph p { margin: 0; }
+.epigraph cite { display: block; margin-top: 10px; font: 400 11px/1.3 var(--body); letter-spacing: .2em; text-transform: uppercase; font-style: normal; color: var(--ash); }
+.project-read .body { font-size: 18px; }
+.read-more { background: none; border: 0; padding: 4px 0 6px; border-bottom: 1px solid var(--ash); font: 400 12px/1 var(--body); letter-spacing: .18em; text-transform: uppercase; margin: 2px 0 18px; }
+.more-text p:first-child { margin-top: 0; }
+.coming { color: var(--ash); border-top: 1px solid var(--line); padding-top: 18px; font-size: 15px; letter-spacing: .04em; }
+
+/* Reading text */
+.body { font-weight: 300; }
+.body h2 { font-size: clamp(26px, 3vw, 34px); font-variant-caps: small-caps; letter-spacing: .02em; margin: 1.4em 0 .5em; }
+.read h1 { font-size: clamp(38px, 5vw, 58px); }
+.page-read h1 { font-size: clamp(38px, 5.4vw, 64px); line-height: 1.05; }
+
+/* Photo page and tiles */
+.tile .num { background: rgba(15,15,15,.92); font: 400 15px/1 var(--body); }
+.tile .dots { background: rgba(255,255,255,.75); box-shadow: 0 0 0 3px rgba(255,255,255,.2); }
+.confirm-meta .no { font-family: var(--display); }
+.explore { border-color: #666; font: 400 12px/1.2 var(--body); letter-spacing: .18em; }
+.hs-list .n { border-color: var(--ash); font-weight: 400; }
+.insp { border-left: 1px solid #555; }
+.insp .more-link { border-bottom-color: var(--ash); font-weight: 400; }
+.pager { background: rgba(15,15,15,.96); }
+.pager a { font-weight: 400; }
+
+/* Full screen, sheets, dialogs: no red */
+.fs-toggle, .fs-close { font-weight: 400; }
+.fs-toggle[aria-pressed="true"] { background: rgba(255,255,255,.88); color: #111; }
+.sheet, .jump-box, .iv-box { border-top: 1px solid #444; }
+.keypad .go { background: var(--bone); border-color: var(--bone); color: #111; font-weight: 600; }
+.jump-err { color: #d0d0d0; }
+
+/* Password screen */
+.gate-logo { width: 100%; height: auto; color: var(--bone); margin-bottom: 18px; }
+.gate-box { width: min(420px, 100%); }
+.gate-box label { font-weight: 400; }
+.gate-box button { background: var(--bone); color: #111; }
+.gate-box p { color: #d0d0d0; }
+.tile img { height: auto; }
+@media (max-width: 560px) {
+  .menu { justify-content: flex-start; gap: 18px; overflow-x: auto; }
+  .menu a { white-space: nowrap; letter-spacing: .12em; }
 }

@@ -2,8 +2,8 @@
 :root {
   --wall: #0f0e0d; --panel: #1a1816; --field: #12110f; --line: #34302b;
   --bone: #ece6db; --ash: #a39b8f; --blood: #b2402f; --ok: #6fae7c;
-  --display: "Bodoni Moda", Georgia, serif;
-  --body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --display: Athelas, "EB Garamond", Georgia, serif;
+  --body: "DM Sans", "Helvetica Neue", Arial, sans-serif;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
@@ -85,3 +85,17 @@ textarea { min-height: 120px; resize: vertical; }
 .insp-img .ph img { width: 100%; height: 100%; object-fit: cover; }
 .insp-img input[type=file] { font-size: 13px; color: var(--ash); max-width: 140px; }
 @media (max-width: 600px) { .insp-card { grid-template-columns: 1fr; } }
+
+/* Gabriel's design: neutral greys, no red */
+:root { --wall: #0f0f0f; --panel: #1a1a1a; --field: #121212; --line: #333; --bone: #ececec; --ash: #a0a0a0; --blood: #ececec; }
+.primary { color: #111; }
+.danger { color: #e6a090 !important; }
+.lang-pick { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--ash); }
+.lang-pick select { background: var(--field); color: var(--bone); border: 1px solid var(--line); min-height: 38px; padding: 0 8px; font: inherit; font-size: 14px; }
+.tr-note { background: var(--panel); border-left: 2px solid var(--bone); padding: 12px 16px; margin: 0 0 18px; color: var(--ash); }
+.tr-note b { color: var(--bone); }
+.field .fixed { margin: 4px 0; color: var(--ash); }
+.tr-mode [data-add-insp], .tr-mode [data-add-collab], .tr-mode [data-del], .tr-mode [data-move], .tr-mode [data-clear-img],
+.tr-mode label:has(input[type="file"]) { display: none !important; }
+.tr-mode .placer { pointer-events: none; }
+.pdot { background: rgba(0,0,0,.55); color: var(--bone); }
