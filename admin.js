@@ -294,13 +294,11 @@
         field("Dates", "exhibition.dates", e.dates, { noTr: true, hint: "For example: 10.11.2026 – 12.2.2027" }) +
         field("Venue", "exhibition.venue", e.venue);
     } else if (current.kind === "collab") {
-      h = '<h1>Collaborators</h1><p class="sub">Everyone involved in the exhibition, shown as tiles on the Collaborators page in the menu. Use the arrows to change the order.</p><div class="cards">' +
+      h = '<h1>Collaborators</h1><p class="sub">Everyone involved in the exhibition, shown as a list on the Collaborators page in the menu. Use the arrows to change the order.</p><div class="cards">' +
         (data.collaborators.length ? "" : '<p class="empty">No collaborators yet.</p>') +
         data.collaborators.map(function (c, k) {
           var p = "collaborators." + k, img = c.image ? (previews[c.image] || c.image) : "";
-          return '<div class="card insp-card"><div class="insp-img"><div class="ph">' + (img ? '<img src="' + esc(img) + '" alt="">' : "No photo") + "</div>" +
-            '<label class="ghost small" style="text-align:center">Choose photo<input type="file" accept="image/*" data-upload="' + p + '" hidden></label>' +
-            (c.image ? '<button type="button" class="ghost small danger" data-clear-img="' + p + '">Remove photo</button>' : "") + "</div><div>" +
+          return '<div class="card"><div>' +
             '<div class="card-head"><strong>' + esc(c.name || "New person") + '</strong><span class="sp">' +
             '<button type="button" class="ghost small" data-move="collaborators" data-i="' + k + '" data-d="-1" aria-label="Move up">&#8593;</button>' +
             '<button type="button" class="ghost small" data-move="collaborators" data-i="' + k + '" data-d="1" aria-label="Move down">&#8595;</button>' +

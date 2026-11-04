@@ -199,10 +199,13 @@
     return '<figure class="qr">' + svg + "<figcaption>" + esc(T.openOnPhone || "Open on your phone") + "</figcaption></figure>";
   }
 
-  function page(key) {
+  // A story opened from a project page leads back to that project.
+  function page(key, from) {
     var pg = (G.pages || {})[key] || {};
     var img = pg.image ? '<img class="page-img" src="' + esc(pg.image) + '" alt="">' : "";
-    return '<a class="back" href="#">' + esc(T.back) + '</a><article class="page' + (img ? " has-img" : "") + '">' + img +
+    var fp = from && /^project-/.test(from) && byProject[from.slice(8)];
+    var back = fp ? '<a class="back" href="#' + from + '">' + esc(fp.name) + "</a>" : '<a class="back" href="#">' + esc(T.back) + "</a>";
+    return back + '<article class="page' + (img ? " has-img" : "") + '">' + img +
       '<div class="page-read"><h1 class="sc">' + esc(pg.title || "") + "</h1>" +
       (pg.text ? '<div class="body">' + paras(pg.text) + "</div>" : P ? '<div class="body">' + sk([100, 96, 92, 98, 60]) + sk([97, 94, 88, 45]) + "</div>" : "") +
       "</div></article>" + footer();
@@ -214,9 +217,8 @@
   function collaborators() {
     var list = G.collaborators || [];
     return '<a class="back" href="#">' + esc(T.back) + '</a><section class="page-read collab-head"><h1 class="sc">' + esc(T.menuCollaborators || "Collaborators") + "</h1></section>" +
-      '<ul class="collab-grid">' + list.map(function (c) {
-        var inner = '<span class="ph">' + (c.image ? '<img loading="lazy" src="' + esc(c.image) + '" alt="">' : '<span class="mono">' + esc(initials(c.name)) + "</span>") + "</span>" +
-          '<span class="role">' + esc(c.role) + '</span><span class="name">' + esc(c.name) + "</span>";
+      '<ul class="collab-list">' + list.map(function (c) {
+        var inner = '<span class="role">' + esc(c.role) + '</span><span class="name">' + esc(c.name) + "</span>";
         return "<li>" + (c.link ? '<a class="collab" href="' + esc(c.link) + '" target="_blank" rel="noopener">' + inner + "</a>" : '<div class="collab">' + inner + "</div>") + "</li>";
       }).join("") + "</ul>" + footer();
   }
@@ -233,7 +235,7 @@
 
   // ---------- Router (plain #name hashes) ----------
   function route() {
-    var h = location.hash.replace(/^#/, ""), m, html;
+    var h = location.hash.replace(/^#/, ""), m, html, from = lastHash;
     INSP = []; closeInsp();
     closeFs();
     document.body.classList.remove("on-work");
@@ -244,16 +246,18 @@
     if ((m = h.match(/^(?:project|series)-(.+)$/)) && OLD[m[1]]) { h = "project-" + OLD[m[1]]; history.replaceState(null, "", "#" + h); }
     if ((m = h.match(/^(?:project|series)-(.+)$/)) && byProject[m[1]]) { html = project(byProject[m[1]]); document.body.classList.add("on-work"); }
     else if (h === "credits") html = credits();
-    else if ((G.pages || {})[h]) html = page(h);
+    else if ((G.pages || {})[h]) html = page(h, h === lastHash ? lastFrom : from);
     else if (h === "collaborators") html = collaborators();
     else html = home();
     view.innerHTML = html;
+    if (h !== lastHash) { lastFrom = from; lastHash = h; }
     [].forEach.call(document.querySelectorAll(".menu a"), function (a) {
       var on = a.getAttribute("href") === "#" + h || (a.getAttribute("href") === "#" && (h === "" || /^(project|series|work)-/.test(h)));
       a.setAttribute("aria-current", on ? "page" : "false");
     });
     window.scrollTo(0, 0);
   }
+  var lastHash = null, lastFrom = null;
   window.addEventListener("hashchange", route);
 
   view.addEventListener("click", function (e) {
@@ -308,6 +312,7 @@
     fsImg.src = w.src; fsImg.alt = byProject[w.project].name;
     var ps = photosOf(byProject[w.project]);
     $("fsCount").textContent = (ps.indexOf(w) + 1) + " / " + ps.length;
+    $("fsPrev").hidden = $("fsNext").hidden = ps.length < 2;
     fsDots.innerHTML = curHs.map(function (p, i) {
       return '<button class="dot" type="button" data-i="' + i + '" style="left:' + p.x + "%;top:" + p.y +
         '%" aria-label="' + esc(p.title || String(i + 1)) + '"><span></span></button>';
@@ -361,8 +366,10 @@
   function step(d) {
     if (!cur) return;
     // Full screen stays open and moves through the photos of the same project.
-    var ps = photosOf(byProject[cur.project]), n = ps[ps.indexOf(cur) + d];
-    if (!n) return;
+    // After the last photo comes the first again (and the other way round).
+    var ps = photosOf(byProject[cur.project]);
+    if (ps.length < 2) return;
+    var n = ps[(ps.indexOf(cur) + d + ps.length) % ps.length];
     openFs(n, null);
   }
   fsDots.addEventListener("click", function (e) {
