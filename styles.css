@@ -3,7 +3,9 @@
    DM Sans for reading, no colour accent. Layout idea: a dark gallery wall. Tablet-first: the visitor stands at the print, so the
    photo page shows a small confirming thumbnail and gives the space to reading.
    Single dark theme by choice. */
-/* Gabriel's fonts: Spalla Semibold (main titles), Athelas (smaller titles), DIN 2014 (texts).
+/* Adobe Fonts web project: once a <link> to use.typekit.net is in index.html, the families
+   spalla / athelas / din-2014 load from there and take over.
+   Gabriel's fonts: Spalla Semibold (main titles), Athelas (smaller titles), DIN 2014 (texts).
    Installed copies are used first; licensed web files go in fonts/ (see fonts/README.md). */
 @font-face { font-family: "Spalla"; font-weight: 600; font-display: swap;
   src: local("Spalla SemiBold"), local("Spalla-SemiBold"), url("fonts/Spalla-SemiBold.woff2") format("woff2"); }
@@ -24,9 +26,9 @@
   --bone: #ececec;
   --ash: #9b9b9b;
   --blood: #ececec; /* the accent is plain light grey, as in the printed texts */
-  --title: "Spalla", "Italiana", "Didot", Georgia, serif;
-  --display: "Athelas", "EB Garamond", Georgia, serif;
-  --body: "DIN 2014", "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --title: "spalla", "Spalla", "Italiana", "Didot", Georgia, serif;
+  --display: "athelas", "Athelas", "EB Garamond", Georgia, serif;
+  --body: "din-2014", "DIN 2014", "Barlow", "Helvetica Neue", Arial, sans-serif;
   --gutter: clamp(16px, 3.4vw, 40px);
   --bar-h: 64px;
   color-scheme: dark;
