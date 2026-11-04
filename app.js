@@ -115,8 +115,11 @@
       esc(G.exhibition.venue) + '</span><a href="#credits">' + esc(T.credits) + "</a></footer>";
   }
 
-  function logo(cls, vb) {
-    return '<svg class="' + cls + '" viewBox="' + vb + '" role="img" aria-label="Stopy bolesti / Huellas del dolor, Gabriel Matula"><use href="#logo-art"/></svg>';
+  // Exhibition logo, one version per language (img/logo/logo-<lang>.png, mark-<lang>.png = first two lines).
+  var LOGO_ALT = { en: "Traces of Pain, Huellas del dolor. Gabriel Matula, photography", cs: "Stopy bolesti, Huellas del dolor. Gabriel Matula, fotografie", es: "Huellas del dolor, Stopy bolesti. Gabriel Matula, fotografía" };
+  function logoSrc(kind) { return "img/logo/" + kind + "-" + (LOGO_ALT[LANG] ? LANG : "en") + ".png"; }
+  function logo(cls) {
+    return '<img class="' + cls + '" src="' + logoSrc("logo") + '" alt="' + esc(LOGO_ALT[LANG] || LOGO_ALT.en) + '" width="1393" height="394">';
   }
   function projectTile(p) {
     var ws = worksIn(p.id), c = heroOf(p);
@@ -129,8 +132,7 @@
     var e = G.exhibition, con = (G.pages || {}).concept || {};
     var lead = String(con.text || "").split(/\n\s*\n/)[0] || "";
     var h = '<section class="hero">' +
-      (LANG === "en" ? '<span class="label">' + esc(T.exhibitionLabel) + " · " + esc(e.title) + "</span>" : "") +
-      logo("logo-hero", "150 140 890 270") +
+      logo("logo-hero") +
       '<p class="hero-meta">' + esc(e.dates || "") + (e.dates && e.venue ? " · " : "") + esc(e.venue) + "</p>" +
       (lead ? '<div class="hero-lead">' + paras(lead) + '<a class="text-link" href="#concept">' + esc(T.aboutExhibition) + "</a></div>" : "") +
       "</section>";
@@ -407,6 +409,7 @@
       var k = a.getAttribute("data-ui"); if (T[k]) a.textContent = T[k];
     });
     $("fsClose").setAttribute("aria-label", T.close);
+    var mk = $("mark"); if (mk) { mk.src = logoSrc("mark"); mk.alt = LOGO_ALT[LANG] || LOGO_ALT.en; }
     var ls = $("langs");
     if (ls) ls.innerHTML = (RAW.languages || []).map(function (l) {
       return '<button type="button" data-lang="' + l.code + '" aria-pressed="' + (l.code === LANG) + '" lang="' + l.code + '">' + esc(l.label) + "</button>";

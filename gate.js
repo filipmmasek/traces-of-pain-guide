@@ -34,7 +34,7 @@
     if (root.classList.contains("unlocked")) return;
     var g = document.createElement("form");
     g.id = "gate";
-    g.innerHTML = '<div class="gate-box"><svg class="gate-logo" viewBox="150 140 890 270" aria-label="Stopy bolesti / Huellas del dolor, Gabriel Matula"><use href="#logo-art"/></svg>' +
+    g.innerHTML = '<div class="gate-box"><img class="gate-logo" src="img/logo/logo-en.png" alt="Traces of Pain, Huellas del dolor. Gabriel Matula, photography" width="1393" height="394">' +
       '<label for="gatePw">Password</label><input id="gatePw" type="password" autocomplete="current-password">' +
       '<button type="submit">Enter</button><p id="gateErr" aria-live="polite"></p></div>';
     document.body.appendChild(g);
