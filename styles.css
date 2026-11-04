@@ -633,3 +633,4 @@ a, button { transition: color .25s var(--ease), background-color .25s var(--ease
 @media (max-width: 560px) { .wordmark img { height: 26px; } }
 .logo-hero { width: min(600px, 90%); height: auto; }
 .gate-logo { width: 100%; height: auto; }
+@media (min-width: 700px) { .page.has-img .page-img { position: sticky; top: calc(var(--bar-h) + 24px); } }

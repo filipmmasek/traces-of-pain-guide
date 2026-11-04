@@ -204,7 +204,7 @@
   // A story opened from a project page leads back to that project.
   function page(key, from) {
     var pg = (G.pages || {})[key] || {};
-    var img = pg.image ? '<img class="page-img" src="' + esc(pg.image) + '" alt="">' : "";
+    var img = pg.image ? '<img class="page-img" src="' + esc(pg.image) + '" alt="' + (key === "about" ? "Gabriel Matula, self-portrait" : "") + '">' : "";
     var fp = from && /^project-/.test(from) && byProject[from.slice(8)];
     var back = fp ? '<a class="back" href="#' + from + '">' + esc(fp.name) + "</a>" : '<a class="back" href="#">' + esc(T.back) + "</a>";
     return back + '<article class="page' + (img ? " has-img" : "") + '">' + img +
