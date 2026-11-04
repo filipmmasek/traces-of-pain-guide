@@ -11,4 +11,4 @@ The guide uses three commercial typefaces chosen by Gabriel. Put their web font 
 
 Devices that already have a font installed use it without these files (iPads and Macs have Athelas).
 Until a file is here, the guide falls back to free look-alikes from Google Fonts:
-Federo (titles), EB Garamond (smaller titles) and Barlow (texts).
+Italiana (titles), EB Garamond (smaller titles) and Barlow (texts).
