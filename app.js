@@ -306,11 +306,163 @@
     var w = Math.min(bw, bh * r), h = w / r;
     fsFrame.style.width = w + "px"; fsFrame.style.height = h + "px";
     fsImg.style.width = w + "px"; fsImg.style.height = h + "px";
+    clampZoom(); paint(false);
   }
   window.addEventListener("resize", fit);
 
+  // ---------- Zoom: pinch and drag on touch, wheel / buttons / double click on desktop ----------
+  // The frame (photo + dots) is moved with one transform: translate(tx, ty) scale(z), origin top left.
+  // Dots stay the same size on screen. Past ~1.3x the full resolution file (img/zoom/) is swapped in.
+  var Z_MAX = 6, z = 1, tx = 0, ty = 0, hiFor = null, inert = 0;
+  function bounds() {
+    var bw = fsStage.clientWidth, bh = fsStage.clientHeight, w = fsFrame.offsetWidth, h = fsFrame.offsetHeight;
+    var L = fsFrame.offsetLeft, T0 = fsFrame.offsetTop, W = w * z, H = h * z;
+    return {
+      x0: W <= bw ? (w - W) / 2 : bw - W - L, x1: W <= bw ? (w - W) / 2 : -L,
+      y0: H <= bh ? (h - H) / 2 : bh - H - T0, y1: H <= bh ? (h - H) / 2 : -T0
+    };
+  }
+  function clampZoom() {
+    z = Math.min(Z_MAX, Math.max(1, z));
+    var b = bounds();
+    tx = Math.min(b.x1, Math.max(b.x0, tx)); ty = Math.min(b.y1, Math.max(b.y0, ty));
+  }
+  function paint(anim) {
+    fsFrame.classList.toggle("anim", !!anim);
+    fsFrame.style.transform = z === 1 && !tx && !ty ? "" : "translate(" + tx + "px," + ty + "px) scale(" + z + ")";
+    fsFrame.style.setProperty("--iz", 1 / z);
+    fs.classList.toggle("zoomed", z > 1.01);
+    $("fsZoomOut").disabled = z <= 1.01; $("fsZoomIn").disabled = z >= Z_MAX - 0.01;
+    if (z > 1.3 && cur && hiFor !== cur) loadHi(cur);
+  }
+  function hiSrc(w) { return w.zoom || w.src.replace("img/full/", "img/zoom/"); }
+  function loadHi(w) {
+    hiFor = w;
+    var im = new Image();
+    im.onload = function () { if (cur === w) fsImg.src = im.src; };
+    im.src = hiSrc(w);
+  }
+  // Point on screen (relative to the stage) -> keep it fixed while zooming to nz.
+  function zoomAt(nz, sx, sy, anim) {
+    var r = fsStage.getBoundingClientRect(), L = fsFrame.offsetLeft, T0 = fsFrame.offsetTop;
+    var px = sx - r.left - L, py = sy - r.top - T0;
+    nz = Math.min(Z_MAX, Math.max(1, nz));
+    tx = px - (px - tx) * nz / z; ty = py - (py - ty) * nz / z; z = nz;
+    clampZoom(); paint(anim);
+  }
+  function zoomCenter(nz) {
+    var r = fsStage.getBoundingClientRect();
+    zoomAt(nz, r.left + r.width / 2, r.top + r.height / 2, true);
+  }
+  function resetZoom(anim) { cancelAnimationFrame(inert); z = 1; tx = ty = 0; paint(anim); }
+  $("fsZoomIn").addEventListener("click", function () { zoomCenter(z * 1.8); });
+  $("fsZoomOut").addEventListener("click", function () { zoomCenter(z / 1.8 < 1.15 ? 1 : z / 1.8); });
+
+  fsStage.addEventListener("wheel", function (e) {
+    if (!cur) return;
+    e.preventDefault();
+    var d = e.deltaY * (e.deltaMode === 1 ? 16 : e.deltaMode === 2 ? 400 : 1);
+    // Trackpad pinch arrives as ctrl+wheel with small steps; a mouse wheel notch is ~100.
+    var k = e.ctrlKey ? 0.012 : 0.0025;
+    cancelAnimationFrame(inert);
+    zoomAt(z * Math.exp(-Math.max(-150, Math.min(150, d)) * k), e.clientX, e.clientY, !e.ctrlKey && Math.abs(d) >= 40);
+  }, { passive: false });
+
+  // Pointer gestures. One finger: swipe to the next photo (only when not zoomed) or drag when zoomed.
+  // Two fingers: pinch. Double tap / double click: zoom in to that spot, or back out.
+  var pts = {}, nPts = 0, g = null, lastTap = null, eatClick = false;
+  function two() { var a = []; for (var k in pts) a.push(pts[k]); return a; }
+  function startPinch() {
+    var a = two(), r = fsStage.getBoundingClientRect();
+    var mx = (a[0].x + a[1].x) / 2 - r.left - fsFrame.offsetLeft, my = (a[0].y + a[1].y) / 2 - r.top - fsFrame.offsetTop;
+    g = { pinch: true, d0: Math.hypot(a[0].x - a[1].x, a[0].y - a[1].y) || 1, z0: z, qx: (mx - tx) / z, qy: (my - ty) / z, moved: true };
+  }
+  fsStage.addEventListener("pointerdown", function (e) {
+    if (!cur || (e.pointerType === "mouse" && e.button !== 0)) return;
+    pts[e.pointerId] = { x: e.clientX, y: e.clientY }; nPts++;
+    cancelAnimationFrame(inert);
+    if (nPts === 2) { startPinch(); for (var k in pts) grab(+k); }
+    else if (nPts === 1) g = { x0: e.clientX, y0: e.clientY, lx: e.clientX, ly: e.clientY, t: Date.now(), vx: 0, vy: 0, lt: Date.now(), moved: false, dot: !!e.target.closest(".dot"), type: e.pointerType };
+  });
+  // Capture only once a drag or pinch starts, so a plain tap still lands on a dot.
+  function grab(id) { try { fsStage.setPointerCapture(id); } catch (x) {} }
+  fsStage.addEventListener("pointermove", function (e) {
+    var p = pts[e.pointerId]; if (!p || !g) return;
+    p.x = e.clientX; p.y = e.clientY;
+    if (g.pinch && nPts >= 2) {
+      var a = two(), r = fsStage.getBoundingClientRect();
+      var d = Math.hypot(a[0].x - a[1].x, a[0].y - a[1].y);
+      var mx = (a[0].x + a[1].x) / 2 - r.left - fsFrame.offsetLeft, my = (a[0].y + a[1].y) / 2 - r.top - fsFrame.offsetTop;
+      var nz = g.z0 * d / g.d0;
+      if (nz < 1) nz = 1 - (1 - nz) * 0.35; else if (nz > Z_MAX) nz = Z_MAX + (nz - Z_MAX) * 0.2;  // soft edges
+      z = nz; tx = mx - g.qx * z; ty = my - g.qy * z;
+      paint(false); return;
+    }
+    if (g.pinch) return;
+    if (!g.moved && Math.hypot(e.clientX - g.x0, e.clientY - g.y0) > 8) { g.moved = true; grab(e.pointerId); }
+    if (z > 1 && g.moved) {
+      var now = Date.now(), dt = Math.max(1, now - g.lt), dx = e.clientX - g.lx, dy = e.clientY - g.ly;
+      g.vx = 0.8 * (dx / dt) + 0.2 * g.vx; g.vy = 0.8 * (dy / dt) + 0.2 * g.vy; g.lt = now;
+      tx += dx; ty += dy;
+      var b = bounds();  // drag past the edge resists
+      if (tx > b.x1) tx -= dx * 0.6; else if (tx < b.x0) tx -= dx * 0.6;
+      if (ty > b.y1) ty -= dy * 0.6; else if (ty < b.y0) ty -= dy * 0.6;
+      paint(false);
+    }
+    g.lx = e.clientX; g.ly = e.clientY;
+  });
+  function endPointer(e) {
+    if (!pts[e.pointerId]) return;
+    delete pts[e.pointerId]; nPts--;
+    if (!g) return;
+    if (g.pinch) {
+      if (nPts === 1) {  // one finger stays: carry on dragging from where it is
+        var a = two()[0];
+        g = { x0: a.x, y0: a.y, lx: a.x, ly: a.y, t: 0, vx: 0, vy: 0, lt: Date.now(), moved: true, pinched: true };
+      } else if (nPts === 0) { settle(); eatClick = true; g = null; }
+      return;
+    }
+    if (nPts > 0) return;
+    var dx = e.clientX - g.x0, dy = e.clientY - g.y0;
+    if (g.moved) {
+      eatClick = true;
+      if (z > 1.01 || g.pinched) glide(g.vx, g.vy);
+      else if (g.type !== "mouse" && Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) step(dx < 0 ? 1 : -1);
+    } else if (!g.dot && e.type === "pointerup") {
+      var now = Date.now();
+      if (lastTap && now - lastTap.t < 320 && Math.hypot(e.clientX - lastTap.x, e.clientY - lastTap.y) < 40) {
+        lastTap = null; eatClick = true;
+        if (z > 1.05) resetZoom(true); else zoomAt(2.5, e.clientX, e.clientY, true);
+      } else lastTap = { t: now, x: e.clientX, y: e.clientY };
+    }
+    g = null;
+  }
+  fsStage.addEventListener("pointerup", endPointer);
+  fsStage.addEventListener("pointercancel", endPointer);
+  // A drag, pinch or double tap is not a tap: it must not close the detail note.
+  fsStage.addEventListener("click", function (e) { if (eatClick) { eatClick = false; e.stopPropagation(); } }, true);
+  function settle() {
+    if (z < 1.03) { z = 1; tx = ty = 0; }
+    clampZoom(); paint(true);
+  }
+  function glide(vx, vy) {
+    var b0 = bounds();
+    if (tx > b0.x1 || tx < b0.x0 || ty > b0.y1 || ty < b0.y0 || Math.hypot(vx, vy) < 0.15) { settle(); return; }
+    var last = performance.now();
+    (function f(now) {
+      var dt = Math.min(32, now - last); last = now;
+      tx += vx * dt; ty += vy * dt; vx *= Math.pow(0.994, dt); vy *= Math.pow(0.994, dt);
+      var b = bounds(), hit = false;
+      if (tx > b.x1) { tx = b.x1; vx = 0; hit = true; } else if (tx < b.x0) { tx = b.x0; vx = 0; hit = true; }
+      if (ty > b.y1) { ty = b.y1; vy = 0; hit = true; } else if (ty < b.y0) { ty = b.y0; vy = 0; hit = true; }
+      paint(false);
+      if (Math.hypot(vx, vy) > 0.02) inert = requestAnimationFrame(f);
+    })(last);
+  }
+
   function openFs(w, hs) {
     cur = w; curHs = hotspotsOf(w); fs.hidden = false; document.body.style.overflow = "hidden";
+    z = 1; tx = ty = 0; hiFor = null; cancelAnimationFrame(inert);
     fsImg.src = w.src; fsImg.alt = byProject[w.project].name;
     var ps = photosOf(byProject[w.project]);
     $("fsCount").textContent = (ps.indexOf(w) + 1) + " / " + ps.length;
@@ -388,19 +540,13 @@
   $("fsPrev").addEventListener("click", function () { step(-1); });
   $("fsNext").addEventListener("click", function () { step(1); });
 
-  var sx = null, sy = null;
-  fsStage.addEventListener("touchstart", function (e) { sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, { passive: true });
-  fsStage.addEventListener("touchend", function (e) {
-    if (sx == null) return;
-    var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy;
-    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) step(dx < 0 ? 1 : -1);
-    sx = null;
-  });
-
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") { if (!iv.hidden) closeInsp(); else if (!sheet.hidden) hideSheet(); else closeFs(); }
     if (!fs.hidden && e.key === "ArrowRight") step(1);
     if (!fs.hidden && e.key === "ArrowLeft") step(-1);
+    if (!fs.hidden && (e.key === "+" || e.key === "=")) zoomCenter(z * 1.8);
+    if (!fs.hidden && e.key === "-") zoomCenter(z / 1.8 < 1.15 ? 1 : z / 1.8);
+    if (!fs.hidden && e.key === "0") resetZoom(true);
   });
 
   // Menu labels come from the editable texts, in the chosen language.
@@ -409,6 +555,8 @@
       var k = a.getAttribute("data-ui"); if (T[k]) a.textContent = T[k];
     });
     $("fsClose").setAttribute("aria-label", T.close);
+    $("fsZoomIn").setAttribute("aria-label", T.zoomIn || ({ cs: "Přiblížit", es: "Acercar" })[LANG] || "Zoom in");
+    $("fsZoomOut").setAttribute("aria-label", T.zoomOut || ({ cs: "Oddálit", es: "Alejar" })[LANG] || "Zoom out");
     var mk = $("mark"); if (mk) { mk.src = logoSrc("mark"); mk.alt = LOGO_ALT[LANG] || LOGO_ALT.en; }
     var ls = $("langs");
     if (ls) ls.innerHTML = (RAW.languages || []).map(function (l) {
