@@ -52,12 +52,14 @@ window.GUIDE = {
   "readLess": "Show less",
   "comingSoon": "Photos coming soon",
   "aboutExhibition": "About the exhibition",
-  "exhibitionLabel": "Exhibition"
+  "exhibitionLabel": "Exhibition",
+  "morePhotos": "More from this project"
  },
  "projects": [
   {
    "id": "raphael-ii",
    "name": "Raphael II",
+   "hero": "",
    "subtitle": "",
    "quote": "",
    "quoteBy": "",
@@ -78,6 +80,7 @@ window.GUIDE = {
   {
    "id": "the-duel",
    "name": "The Duel",
+   "hero": "",
    "subtitle": "",
    "quote": "",
    "quoteBy": "",
@@ -98,6 +101,7 @@ window.GUIDE = {
   {
    "id": "letiel-dei",
    "name": "Letiel Dei",
+   "hero": "",
    "subtitle": "",
    "quote": "",
    "quoteBy": "",
@@ -108,6 +112,7 @@ window.GUIDE = {
   {
    "id": "zadquiel-dei",
    "name": "Zadquiel Dei",
+   "hero": "",
    "subtitle": "",
    "quote": "",
    "quoteBy": "",
@@ -118,6 +123,7 @@ window.GUIDE = {
   {
    "id": "smoke-of-requited-love",
    "name": "Smoke of Requited Love",
+   "hero": "",
    "subtitle": "On Julio Cortázar's story “Letters from Mom”",
    "quote": "And unease, and a need to reply at once, like someone closing a door again.",
    "quoteBy": "Julio Cortázar",
@@ -128,6 +134,7 @@ window.GUIDE = {
   {
    "id": "bitter-honeymoon",
    "name": "Bitter Honeymoon",
+   "hero": "",
    "subtitle": "On Roberto Arlt's story “Terrible Night”",
    "quote": "At three in the afternoon, Julia, lying on the bed, her eyes swollen like peaches, a handkerchief soaked in vinegar and two slices of potato on her temples, will receive the consolations of her friends.",
    "quoteBy": "Roberto Arlt",
@@ -138,6 +145,7 @@ window.GUIDE = {
   {
    "id": "water-mirrors",
    "name": "Water Mirrors",
+   "hero": "",
    "subtitle": "On John Everett Millais's painting *Ophelia*",
    "quote": "The sinking of Ophelia works as the conceptual trigger of this exhibition: the exception that confirms the sorrow.",
    "quoteBy": "",
@@ -148,6 +156,7 @@ window.GUIDE = {
   {
    "id": "leaden-hours",
    "name": "Leaden Hours",
+   "hero": "",
    "subtitle": "On Goya's painting *Saturn Devouring His Son*",
    "quote": "",
    "quoteBy": "",
@@ -158,6 +167,7 @@ window.GUIDE = {
   {
    "id": "project-09",
    "name": "Project 9",
+   "hero": "",
    "subtitle": "",
    "quote": "",
    "quoteBy": "",
@@ -168,6 +178,7 @@ window.GUIDE = {
   {
    "id": "project-10",
    "name": "Project 10",
+   "hero": "",
    "subtitle": "",
    "quote": "",
    "quoteBy": "",
@@ -178,6 +189,7 @@ window.GUIDE = {
   {
    "id": "project-11",
    "name": "Project 11",
+   "hero": "",
    "subtitle": "",
    "quote": "",
    "quoteBy": "",
@@ -188,6 +200,7 @@ window.GUIDE = {
   {
    "id": "project-12",
    "name": "Project 12",
+   "hero": "",
    "subtitle": "",
    "quote": "",
    "quoteBy": "",
@@ -198,6 +211,7 @@ window.GUIDE = {
   {
    "id": "project-13",
    "name": "Project 13",
+   "hero": "",
    "subtitle": "",
    "quote": "",
    "quoteBy": "",
@@ -742,7 +756,8 @@ window.GUIDE = {
     "readLess": "Méně",
     "comingSoon": "Fotografie brzy",
     "aboutExhibition": "O výstavě",
-    "exhibitionLabel": "Výstava"
+    "exhibitionLabel": "Výstava",
+    "morePhotos": "Další fotografie z projektu"
    },
    "exhibition": {
     "title": "Stopy bolesti",
@@ -832,7 +847,8 @@ window.GUIDE = {
     "readLess": "Leer menos",
     "comingSoon": "Fotografías próximamente",
     "aboutExhibition": "Sobre la exposición",
-    "exhibitionLabel": "Exposición"
+    "exhibitionLabel": "Exposición",
+    "morePhotos": "Más fotografías del proyecto"
    },
    "exhibition": {
     "title": "Huellas del dolor",

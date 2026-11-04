@@ -99,3 +99,9 @@ textarea { min-height: 120px; resize: vertical; }
 .tr-mode label:has(input[type="file"]) { display: none !important; }
 .tr-mode .placer { pointer-events: none; }
 .pdot { background: rgba(0,0,0,.55); color: var(--bone); }
+
+.hero-pick { display: flex; flex-wrap: wrap; gap: 8px; }
+.hero-pick .hp { padding: 0; border: 2px solid transparent; background: none; width: 64px; }
+.hero-pick .hp img { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; opacity: .6; }
+.hero-pick .hp.on { border-color: var(--bone); }
+.hero-pick .hp.on img { opacity: 1; }

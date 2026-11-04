@@ -257,6 +257,9 @@
 
   $("pane").addEventListener("click", function (e) {
     var t = e.target.closest("button"); if (!t) return;
+    if (t.hasAttribute("data-hero")) {
+      getPath(t.getAttribute("data-hero")).hero = t.getAttribute("data-id"); setDirty(true); renderPane(); return;
+    }
     if (t.hasAttribute("data-add-collab")) {
       data.collaborators.push({ name: "", role: "", link: "", image: "" });
       setDirty(true); renderPane(); renderSide();
@@ -318,7 +321,7 @@
     } else if (current.kind === "project") {
       var si = indexOf(data.projects, current.id), s = data.projects[si], pp = "projects." + si;
       h = "<h1>" + esc(s.name) + '</h1><p class="sub">Project page. Inspirations here also show on every photo in the project that has none of its own.</p>' +
-        field("Project name", pp + ".name", s.name) +
+        field("Project name", pp + ".name", s.name) + heroPicker(s, pp) +
         field("Subtitle", pp + ".subtitle", s.subtitle, { hint: "Optional. For example: On Julio Cortázar's story “Letters from Mom”." }) +
         '<div class="row">' + field("Quote", pp + ".quote", s.quote, { multi: true, rows: 3 }) + field("Quote by", pp + ".quoteBy", s.quoteBy, { noTr: true }) + "</div>" +
         field("Project text", pp + ".text", s.text, { multi: true, rows: 12, hint: "Visitors see the first paragraph; the rest opens with Read more. " + MARK }) +
@@ -352,6 +355,16 @@
     $("pane").innerHTML = h;
     $("pane").classList.toggle("tr-mode", lang !== "en");
     if (current.kind === "work") bindPlacer(data.works[indexOf(data.works, current.id)]);
+  }
+  // The hero photo is the one printed large in the exhibition; its page is what visitors see first.
+  function heroPicker(s, pp) {
+    var ws = data.works.filter(function (w) { return w.project === s.id; });
+    if (!ws.length) return '<div class="field"><label>Hero photo</label><p class="fixed">No photos in this project yet.</p></div>';
+    if (lang !== "en") return "";
+    var cur = s.hero && ws.some(function (w) { return w.id === s.hero; }) ? s.hero : ws[0].id;
+    return '<div class="field"><label>Hero photo</label><div class="hero-pick">' + ws.map(function (w) {
+      return '<button type="button" class="hp' + (w.id === cur ? " on" : "") + '" data-hero="' + pp + '" data-id="' + w.id + '" title="No. ' + w.number + '"><img src="' + esc(w.thumb) + '" alt=""></button>';
+    }).join("") + '</div><span class="hint">The photo visitors see first on the project page; its dots are listed under "In this photo". The other photos appear below it.</span></div>';
   }
   function indexOf(arr, id) { for (var i = 0; i < arr.length; i++) if (arr[i].id === id) return i; return -1; }
 

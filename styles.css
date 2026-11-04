@@ -539,3 +539,27 @@ h1, .ptile h2, .gate-box h1 { text-transform: uppercase; letter-spacing: .02em; 
 .project-head h1 { font-size: clamp(40px, 5.6vw, 68px); }
 .read h1, .page-read h1 { font-size: clamp(34px, 4.4vw, 52px); }
 .ptile h2 { font-size: clamp(20px, 2.1vw, 25px); }
+
+/* ===== One page per project (Nov 2026): hero photo page, other photos below ===== */
+@media (min-width: 700px) {
+  .confirm { grid-template-columns: 1fr; }
+  .confirm .thumb { grid-column: 1 / -1; }
+}
+@media (max-width: 699px) {
+  .confirm { grid-template-columns: 1fr; }
+  .confirm .thumb { grid-row: auto; max-width: 240px; }
+  .confirm .explore { max-width: 240px; }
+}
+.confirm .thumb img { aspect-ratio: auto; height: auto; object-fit: contain; }
+.thumb.empty { aspect-ratio: 3/4; display: grid; place-items: center; text-align: center; padding: 16px;
+  background: radial-gradient(ellipse 90% 70% at 50% 0%, #3a3a3a, #1a1a1a 60%, #121212); border: 1px solid #262626; }
+.read > .label { display: block; margin-top: 10px; }
+.read h1 { margin-top: 10px; margin-bottom: 12px; }
+button.tile { background: none; border: 0; padding: 0; text-align: left; display: block; width: 100%; }
+.tile .ph { display: block; }
+.more-grid { margin-top: 10px; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 10px; }
+@media (min-width: 900px) { .more-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); } }
+.pager a .no-img { width: 46px; height: 60px; background: #222; display: block; flex: none; }
+.pager a { min-width: 0; }
+.pager a > span { overflow: hidden; text-overflow: ellipsis; }
+@media (max-width: 560px) { .pager a { font-size: 14px; } .pager a img, .pager a .no-img { display: none; } }

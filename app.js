@@ -81,12 +81,17 @@
   }
   function workName(w) { return w.title || byProject[w.project].name; }
 
+  // Each project has one hero photo (chosen in the admin, else the first photo); the rest follow it.
+  function heroOf(p) { var ws = worksIn(p.id); return byId[p.hero] && byId[p.hero].project === p.id ? byId[p.hero] : ws[0]; }
+  function photosOf(p) {
+    var h = heroOf(p); if (!h) return [];
+    return [h].concat(worksIn(p.id).filter(function (w) { return w !== h; }));
+  }
+  // Other photos open straight in full screen; there are no separate photo pages.
   function tile(w) {
-    return '<a class="tile" href="#work-' + w.id + '">' +
-      '<div class="ph"><img loading="lazy" src="' + w.thumb + '" alt="' + esc(workName(w)) + ", No. " + w.number + '" width="480" height="640">' +
-      '<span class="num">' + w.number + "</span>" +
-      (hotspotsOf(w).length ? '<span class="dots"></span>' : "") +
-      "</div>" + (w.title ? '<span class="t">' + esc(w.title) + "</span>" : "") + "</a>";
+    return '<button type="button" class="tile" data-open="' + w.id + '" aria-label="' + esc(T.fullscreen) + '">' +
+      '<span class="ph"><img loading="lazy" src="' + w.thumb + '" alt="" width="480" height="640">' +
+      (hotspotsOf(w).length ? '<span class="dots"></span>' : "") + "</span></button>";
   }
 
   var INSP = []; // inspirations on the current page, for the large view
@@ -114,7 +119,7 @@
     return '<svg class="' + cls + '" viewBox="' + vb + '" role="img" aria-label="Stopy bolesti / Huellas del dolor, Gabriel Matula"><use href="#logo-art"/></svg>';
   }
   function projectTile(p) {
-    var ws = worksIn(p.id), c = ws[0];
+    var ws = worksIn(p.id), c = heroOf(p);
     return '<a class="ptile' + (c ? "" : " empty") + '" href="#project-' + p.id + '">' +
       (c ? '<img loading="lazy" src="' + c.thumb + '" alt="">' : "") +
       '<span class="cap"><span class="label">' + (ws.length ? ws.length + " " + esc(T.works) : esc(T.comingSoon)) + "</span>" +
@@ -131,68 +136,61 @@
       "</section>";
     h += '<div class="section-head"><h2 class="sc">' + esc(T.projects) + '</h2><span class="label">' + G.projects.length + "</span></div>";
     h += '<div class="ptiles">' + G.projects.map(projectTile).join("") + "</div>";
-    h += '<div class="section-head"><h2 class="sc">' + esc(T.allWorks) + '</h2><span class="label">' + G.works.length + "</span></div>";
-    h += '<div class="grid">' + G.works.map(tile).join("") + "</div>";
     return h + footer();
   }
 
+  // The tablet view: a visitor stands at the print of the project's hero photo. The thumbnail confirms
+  // the photo, the reading column gets the space, and the project's other photos follow below.
   function project(p) {
-    var ws = worksIn(p.id);
-    var insp = inspirationCards(p.inspirations);
+    var ps = photosOf(p), w = ps[0], i = G.projects.indexOf(p);
+    var prev = G.projects[i - 1], next = G.projects[i + 1];
+    var hs = w ? hotspotsOf(w) : [];
+    var insp = inspirationCards(w && w.inspirations.length ? w.inspirations : p.inspirations);
     var story = p.story && (G.pages || {})[p.story];
-    var range = ws.length ? "No. " + ws[0].number + "–" + ws[ws.length - 1].number + " · " + ws.length + " " + esc(T.works) : esc(T.comingSoon);
-    return '<a class="back" href="#">' + esc(T.back) + "</a>" +
-      '<section class="project-head"><div class="project-read"><span class="label">' + range + "</span><h1 class=\"sc\">" + esc(p.name) + "</h1>" +
+    var h = '<article class="work">';
+    h += '<aside class="confirm">' + (w ?
+      '<button class="thumb" type="button" data-open="' + w.id + '" aria-label="' + esc(T.fullscreen) + '">' +
+      '<img src="' + w.thumb + '" alt="' + esc(p.name) + '"><span class="fs-ic" aria-hidden="true"></span></button>' +
+      '<button class="explore" type="button" data-open="' + w.id + '">' + esc(hs.length ? T.explore : T.fullscreen) + "</button>" +
+      qrBlock(p) : '<div class="thumb empty"><span class="label">' + esc(T.comingSoon) + "</span></div>") + "</aside>";
+    h += '<div class="read"><a class="back" href="#">' + esc(T.projects) + "</a>" +
+      '<span class="label">' + (ps.length ? ps.length + " " + esc(T.works) : esc(T.comingSoon)) + "</span>" +
+      "<h1>" + esc(p.name) + "</h1>" +
       (p.subtitle ? '<p class="subtitle">' + inline(p.subtitle) + "</p>" : "") +
       (p.quote ? '<blockquote class="epigraph"><p>' + inline(p.quote) + "</p>" + (p.quoteBy ? "<cite>" + esc(p.quoteBy) + "</cite>" : "") + "</blockquote>" : "") +
       leadAndMore(p.text) +
-      (story ? '<a class="text-link" href="#' + esc(p.story) + '">' + esc(story.title) + "</a>" : "") + "</div>" +
-      (insp ? '<div><span class="label">' + esc(T.inspiredBy) + "</span>" + insp + "</div>" : "") + "</section>" +
-      (ws.length ? '<div class="grid">' + ws.map(tile).join("") + "</div>" : '<p class="coming">' + esc(T.comingSoon) + "</p>") + footer();
-  }
-
-  // The tablet view: a visitor stands at the print. A small thumbnail confirms the photo;
-  // the reading content gets the space.
-  function work(w) {
-    var s = byProject[w.project];
-    var prev = byNum[w.number - 1], next = byNum[w.number + 1];
-    var hs = hotspotsOf(w), insp = inspirationCards(inspirationsOf(w));
-    var h = '<article class="work">';
-    h += '<aside class="confirm"><button class="thumb" type="button" data-open="' + w.id + '" aria-label="' + esc(T.fullscreen) + '">' +
-      '<img src="' + w.thumb + '" alt="' + esc(workName(w)) + '"><span class="fs-ic" aria-hidden="true"></span></button>' +
-      '<div class="confirm-meta"><span class="no">' + w.number + '</span><span class="label">' + esc(s.name) + "</span></div>" +
-      '<button class="explore" type="button" data-open="' + w.id + '">' + esc(hs.length ? T.explore : T.fullscreen) + "</button>" +
-      qrBlock(w) + "</aside>";
-    h += '<div class="read"><a class="back" href="#project-' + s.id + '">' + esc(s.name) + "</a>" +
-      "<h1>" + esc(workName(w)) + "</h1>";
-    if (w.text) h += '<div class="body">' + paras(w.text) + "</div>";
-    else if (P) h += '<div class="body">' + sk([100, 97, 92, 99, 64]) + sk([98, 94, 40]) + "</div>";
+      (story ? '<a class="text-link" href="#' + esc(p.story) + '">' + esc(story.title) + "</a>" : "");
     if (hs.length) {
       h += '<section class="block"><span class="label">' + esc(T.inThisPhoto) + '</span><ul class="hs-list">' +
-        hs.map(function (p, i) {
-          return '<li><button type="button" data-open="' + w.id + '" data-hs="' + i + '"><span class="n">' + (i + 1) + "</span>" +
-            (p.preview ? sk([40 + (i * 17) % 35]) : "<span>" + esc(p.title) + "</span>") + "</button></li>";
+        hs.map(function (d, k) {
+          return '<li><button type="button" data-open="' + w.id + '" data-hs="' + k + '"><span class="n">' + (k + 1) + "</span>" +
+            (d.preview ? sk([40 + (k * 17) % 35]) : "<span>" + esc(d.title) + "</span>") + "</button></li>";
         }).join("") + "</ul></section>";
     }
     if (insp) h += '<section class="block"><span class="label">' + esc(T.inspiredBy) + "</span>" + insp + "</section>";
+    if (ps.length > 1) h += '<section class="block"><span class="label">' + esc(T.morePhotos) + '</span><div class="grid more-grid">' +
+      ps.slice(1).map(tile).join("") + "</div></section>";
     h += "</div></article>";
-    h += '<nav class="pager">' +
-      (prev ? '<a href="#work-' + prev.id + '"><img src="' + prev.thumb + '" alt=""><span><span class="label">' + esc(T.prev) + "</span>No. " + prev.number + "</span></a>" : "<span></span>") +
-      '<span class="pager-mid">' + w.number + " / " + G.works.length + "</span>" +
-      (next ? '<a class="next" href="#work-' + next.id + '"><span><span class="label">' + esc(T.next) + "</span>No. " + next.number + '</span><img src="' + next.thumb + '" alt=""></a>' : "<span></span>") +
-      "</nav>";
+    h += '<nav class="pager">' + pagerLink(prev, "prev") +
+      '<span class="pager-mid">' + (i + 1) + " / " + G.projects.length + "</span>" + pagerLink(next, "next") + "</nav>";
     return h;
+  }
+  function pagerLink(p, dir) {
+    if (!p) return "<span></span>";
+    var c = heroOf(p), img = c ? '<img src="' + c.thumb + '" alt="">' : '<span class="no-img"></span>';
+    var txt = '<span><span class="label">' + esc(dir === "prev" ? T.prev : T.next) + "</span>" + esc(p.name) + "</span>";
+    return '<a' + (dir === "next" ? ' class="next"' : "") + ' href="#project-' + p.id + '">' + (dir === "prev" ? img + txt : txt + img) + "</a>";
   }
 
   // QR code that opens this exact photo page on a visitor's phone. While the preview password is on,
   // the code carries the key so visitors skip the password screen.
-  function qrBlock(w) {
+  function qrBlock(p) {
     if (typeof window.qrcode !== "function") return "";
     try { if (sessionStorage.getItem("tp-from-qr")) return ""; } catch (e) {}
     var url = location.origin + location.pathname, key = null;
     try { key = localStorage.getItem("tp-key"); } catch (e) {}
     if (key) url += "?k=" + encodeURIComponent(key);
-    url += "#work-" + w.id;
+    url += "#project-" + p.id;
     var q = window.qrcode(0, "M"); q.addData(url); q.make();
     // Light modules drawn on the dark page (an inverted code), so it sits quietly in the layout.
     var n = q.getModuleCount(), m = 2, d = "";
@@ -237,12 +235,11 @@
   function route() {
     var h = location.hash.replace(/^#/, ""), m, html;
     INSP = []; closeInsp();
-    // Browsing from photo to photo while in full screen keeps full screen open.
-    var keepFs = !fs.hidden && /^work-/.test(h) && byId[h.slice(5)];
-    if (!keepFs) closeFs();
+    closeFs();
     document.body.classList.remove("on-work");
-    if ((m = h.match(/^(?:project|series)-(.+)$/)) && byProject[m[1]]) html = project(byProject[m[1]]);
-    else if ((m = h.match(/^work-(.+)$/)) && byId[m[1]]) { html = work(byId[m[1]]); document.body.classList.add("on-work"); }
+    // Old photo links (and QR codes printed earlier) lead to their project page.
+    if ((m = h.match(/^work-(.+)$/)) && byId[m[1]]) { history.replaceState(null, "", "#project-" + byId[m[1]].project); h = "project-" + byId[m[1]].project; }
+    if ((m = h.match(/^(?:project|series)-(.+)$/)) && byProject[m[1]]) { html = project(byProject[m[1]]); document.body.classList.add("on-work"); }
     else if (h === "credits") html = credits();
     else if ((G.pages || {})[h]) html = page(h);
     else if (h === "collaborators") html = collaborators();
@@ -252,7 +249,6 @@
       var on = a.getAttribute("href") === "#" + h || (a.getAttribute("href") === "#" && (h === "" || /^(project|series|work)-/.test(h)));
       a.setAttribute("aria-current", on ? "page" : "false");
     });
-    if (keepFs && (!cur || cur.id !== keepFs.id)) openFs(keepFs, null);
     window.scrollTo(0, 0);
   }
   window.addEventListener("hashchange", route);
@@ -306,8 +302,9 @@
 
   function openFs(w, hs) {
     cur = w; curHs = hotspotsOf(w); fs.hidden = false; document.body.style.overflow = "hidden";
-    fsImg.src = w.src; fsImg.alt = workName(w);
-    $("fsCount").textContent = "No. " + w.number + " / " + G.works.length;
+    fsImg.src = w.src; fsImg.alt = byProject[w.project].name;
+    var ps = photosOf(byProject[w.project]);
+    $("fsCount").textContent = (ps.indexOf(w) + 1) + " / " + ps.length;
     fsDots.innerHTML = curHs.map(function (p, i) {
       return '<button class="dot" type="button" data-i="' + i + '" style="left:' + p.x + "%;top:" + p.y +
         '%" aria-label="' + esc(p.title || String(i + 1)) + '"><span></span></button>';
@@ -360,9 +357,10 @@
   }
   function step(d) {
     if (!cur) return;
-    var n = byNum[cur.number + d];
+    // Full screen stays open and moves through the photos of the same project.
+    var ps = photosOf(byProject[cur.project]), n = ps[ps.indexOf(cur) + d];
     if (!n) return;
-    openFs(n, null); location.hash = "work-" + n.id;
+    openFs(n, null);
   }
   fsDots.addEventListener("click", function (e) {
     var d = e.target.closest(".dot");
