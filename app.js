@@ -239,6 +239,9 @@
     document.body.classList.remove("on-work");
     // Old photo links (and QR codes printed earlier) lead to their project page.
     if ((m = h.match(/^work-(.+)$/)) && byId[m[1]]) { history.replaceState(null, "", "#project-" + byId[m[1]].project); h = "project-" + byId[m[1]].project; }
+    // Earlier project names.
+    var OLD = { "raphael-ii": "raphael-dei", "leaden-hours": "saturn", "smoke-of-requited-love": "letters-from-mom", "bitter-honeymoon": "terrible-night", "water-mirrors": "ophelia" };
+    if ((m = h.match(/^(?:project|series)-(.+)$/)) && OLD[m[1]]) { h = "project-" + OLD[m[1]]; history.replaceState(null, "", "#" + h); }
     if ((m = h.match(/^(?:project|series)-(.+)$/)) && byProject[m[1]]) { html = project(byProject[m[1]]); document.body.classList.add("on-work"); }
     else if (h === "credits") html = credits();
     else if ((G.pages || {})[h]) html = page(h);

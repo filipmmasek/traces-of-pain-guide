@@ -311,7 +311,7 @@
     } else if (current.kind === "page") {
       var pk = current.id, pg = data.pages[pk], pb = "pages." + pk, pimg = pg.image ? (previews[pg.image] || pg.image) : "";
       var pname = PAGES.filter(function (x) { return x[0] === pk; })[0];
-      h = "<h1>" + esc(pname ? pname[1] : pk) + '</h1><p class="sub">' + (pk === "angels" ? "A longer story, linked from the angel projects (Raphael II, Letiel Dei, Zadquiel Dei)." :
+      h = "<h1>" + esc(pname ? pname[1] : pk) + '</h1><p class="sub">' + (pk === "angels" ? "A longer story, linked from the angel projects (Raphael Dei, Letiel Dei, Zadquiel Dei)." :
         pk === "concept" ? "A page in the main menu. Its first paragraph is also shown on the home page." : "A page in the main menu of the guide.") + "</p>" +
         field("Page title", pb + ".title", pg.title) +
         field("Text", pb + ".text", pg.text, { multi: true, rows: 18, hint: MARK }) +

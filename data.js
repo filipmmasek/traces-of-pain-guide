@@ -57,10 +57,65 @@ window.GUIDE = {
  },
  "projects": [
   {
-   "id": "raphael-ii",
-   "name": "Raphael II",
+   "id": "saturn",
+   "name": "Saturn",
+   "hero": "",
+   "subtitle": "On Goya's painting *Saturn Devouring His Son*",
+   "quote": "",
+   "quoteBy": "",
+   "text": "This photographic series moves mythological cannibalism into the offices of contemporary impunity. Gabriel Matula dresses the monster in a suit and tie. In front of the lens, a subject of icy, martial elegance embodies the silent voracity of today's elites among overworked forks and still lifes. The provocation no longer needs any explicit mutilation; it lies in the chilling composure of a body that feeds on the vulnerability of others to prolong its hegemony.\n\nWhat in Goya was a cry of primitive horror becomes here the persistence of a system that embodies an absurd gesture: consuming the future to perpetuate the status quo. In other words, time devours the subject, but first, the subject erases the future.",
+   "story": "",
+   "inspirations": []
+  },
+  {
+   "id": "saturn-ii",
+   "name": "Saturn II",
    "hero": "",
    "subtitle": "",
+   "quote": "",
+   "quoteBy": "",
+   "text": "",
+   "story": "",
+   "inspirations": []
+  },
+  {
+   "id": "letters-from-mom",
+   "name": "Letters from Mom",
+   "hero": "",
+   "subtitle": "On Julio Cortázar's story “Letters from Mom”",
+   "quote": "And unease, and a need to reply at once, like someone closing a door again.",
+   "quoteBy": "Julio Cortázar",
+   "text": "In “Letters from Mom” (*Secret Weapons*, 1959), Julio Cortázar builds an exile made of omissions, where the past is a burden impossible to leave behind. Shortly after Nico's death, Luis and Laura settle in Paris, fleeing the family's condemnation; there they turn to cigarettes almost as a choreography for getting through their anxiety. The smoke measures the countdown, numbs the words that open the wound and creates a mask so they do not have to look each other in the face. The shared guilt travels in every letter that arrives from the other side: Nico's name, slipped in by the mother as if he were still alive, sets off a silent combustion that begins to permeate everything.\n\nDistance adds a new layer of strangeness to this atmosphere. Smoking indoors has become a proscribed act, an obsolete anomaly that the contemporary order tries to eradicate. This photographic series is set precisely in that temporal crack.\n\nIn front of the lens, the craving for control takes shape as rigidity: a last attempt to keep up appearances in the face of collapse. The mouth no longer speaks, it only exhales; it becomes the ruined channel of an invisible correspondence with the ghost.\n\nA fog of unspoken words invades the frame to remind us that what the mind censors, the body keeps breathing.",
+   "story": "",
+   "inspirations": []
+  },
+  {
+   "id": "terrible-night",
+   "name": "Terrible Night",
+   "hero": "",
+   "subtitle": "On Roberto Arlt's story “Terrible Night”",
+   "quote": "At three in the afternoon, Julia, lying on the bed, her eyes swollen like peaches, a handkerchief soaked in vinegar and two slices of potato on her temples, will receive the consolations of her friends.",
+   "quoteBy": "Roberto Arlt",
+   "text": "In Roberto Arlt's expressionist universe, the city is a monster that grinds down wills. Through sheer force of work and a unique narrative plasticity, his writing cut across the false antinomy between the social commitment of the Boedo group and the aesthetic avant-garde of the Florida group. Arlt does not denounce; he X-rays humiliation, isolation and betrayal among the marginalised themselves. In “Terrible Night” (*El jorobadito*, 1933), the imminence of marriage unleashes a sleepless, agonising wandering: the wedding stops being a horizon of expectations and becomes a civil trap that suffocates.\n\nThis photographic series carries that River Plate anguish into a Prague winter. A bed bursts onto the historic European cobblestones like a piece of luxurious household waste. An elegant bride is shipwrecked under the open sky; her exclusion no longer happens on the margins of explicit poverty, but in the brutal exposure of her lace dress.\n\nFrom this perspective, the veil becomes a shroud and the bouquet a funeral wreath. With its castles, trams and bridges, the city takes over as the stage of oppression. While in the story the urban fabric harasses the groom and keeps him on guard, the photograph paralyses its victim: the cold indifference of the architecture now frames the bride-to-be, in an abandonment that looks eternal.",
+   "story": "",
+   "inspirations": []
+  },
+  {
+   "id": "ophelia",
+   "name": "Ophelia",
+   "hero": "",
+   "subtitle": "On John Everett Millais's painting *Ophelia*",
+   "quote": "The sinking of Ophelia works as the conceptual trigger of this exhibition: the exception that confirms the sorrow.",
+   "quoteBy": "",
+   "text": "In John Everett Millais's celebrated Pre-Raphaelite canvas, the death of Shakespeare's character is presented as a lyrical surrender, an aesthetic dissolution of the body in the current. The photographic reinterpretation strips the scene of that romantic complacency to set off the mechanism of suspicion. The aerial perspective shuns the mechanical coldness of the drone and searches the memory of the craft for older, handmade ways of rising above the ground.\n\nThe water stops being a poetic refuge and becomes a prison. Rather than surrendering to madness, Ophelia lies suspended in an unbearable instant of lucidity. The soaked lace and floating hair lose their aura of tragic beauty and become the record of a drowning. By cancelling the distance, the frame forces the viewer to sink with her into a crossing of reflections, suspending time just before the end.",
+   "story": "",
+   "inspirations": []
+  },
+  {
+   "id": "raphael-dei",
+   "name": "Raphael Dei",
+   "hero": "",
+   "subtitle": "Ángeles Arcabuceros",
    "quote": "",
    "quoteBy": "",
    "text": "The archangel of medicine and guardian of travellers descends here stripped of mercy. The image concentrates on the tension of the robes and on the mouth that barely parts. Syncretism becomes a borderland eroticism, the friction of an identity born of successive layers of migration: a woman who refuses to be tamed by the map. Raphael no longer heals the pain of the road; he imitates the gesture of one who, to calm the torment, needs to inflame it.",
@@ -72,10 +127,32 @@ window.GUIDE = {
      "date": "first half of the 18th century",
      "where": "Church of Calamarca, Bolivia",
      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Master_of_Calamarca,_Angel_with_Wheat.jpg?width=900",
-     "text": "What the photographs take from it: the Andean Baroque angels of Calamarca, dressed in the clothes of Spanish nobility, with large feathered wings and a frontal, standing pose. In the same church other angels carry arquebuses, the source of the gun in Raphael II.",
+     "text": "What the photographs take from it: the Andean Baroque angels of Calamarca, dressed in the clothes of Spanish nobility, with large feathered wings and a frontal, standing pose. In the same church other angels carry arquebuses, the source of the gun in Raphael Dei.",
      "credit": "Angel with Wheat, Master of Calamarca, via Wikimedia Commons, Public Domain Mark 1.0."
     }
    ]
+  },
+  {
+   "id": "letiel-dei",
+   "name": "Letiel Dei",
+   "hero": "",
+   "subtitle": "Ángeles Arcabuceros",
+   "quote": "",
+   "quoteBy": "",
+   "text": "In the painting, Letiel embodies an oxymoron: he holds the arquebus with an unreal delicacy, as if in the middle of a creative act. In the photograph, that lightness becomes a suspended threat. The figure operates under the shadow of God. The provocation lies in that chiaroscuro and in the indifference of its gaze. It holds the weapon not like someone carrying out a divine mandate, but like someone taking possession of the possibility of firing. The feathers no longer imitate flight; they weigh on the shoulders like rusted armour.",
+   "story": "angels",
+   "inspirations": []
+  },
+  {
+   "id": "zadquiel-dei",
+   "name": "Zadquiel Dei",
+   "hero": "",
+   "subtitle": "Ángeles Arcabuceros",
+   "quote": "",
+   "quoteBy": "",
+   "text": "The angel Zadquiel moves across impossible ground between mercy and death. Its freedom translates into dissent. The figure embodies the archetype from a clear will to empowerment. In its stance there is no room for clemency; what drives it is the certainty that the contemporary order, like the old dogmas of the past, is beginning to crumble.",
+   "story": "angels",
+   "inspirations": []
   },
   {
    "id": "the-duel",
@@ -97,127 +174,6 @@ window.GUIDE = {
      "credit": "Fight with Cudgels, Francisco de Goya, via Wikimedia Commons, public domain."
     }
    ]
-  },
-  {
-   "id": "letiel-dei",
-   "name": "Letiel Dei",
-   "hero": "",
-   "subtitle": "",
-   "quote": "",
-   "quoteBy": "",
-   "text": "In the painting, Letiel embodies an oxymoron: he holds the arquebus with an unreal delicacy, as if in the middle of a creative act. In the photograph, that lightness becomes a suspended threat. The figure operates under the shadow of God. The provocation lies in that chiaroscuro and in the indifference of its gaze. It holds the weapon not like someone carrying out a divine mandate, but like someone taking possession of the possibility of firing. The feathers no longer imitate flight; they weigh on the shoulders like rusted armour.",
-   "story": "angels",
-   "inspirations": []
-  },
-  {
-   "id": "zadquiel-dei",
-   "name": "Zadquiel Dei",
-   "hero": "",
-   "subtitle": "",
-   "quote": "",
-   "quoteBy": "",
-   "text": "The angel Zadquiel moves across impossible ground between mercy and death. Its freedom translates into dissent. The figure embodies the archetype from a clear will to empowerment. In its stance there is no room for clemency; what drives it is the certainty that the contemporary order, like the old dogmas of the past, is beginning to crumble.",
-   "story": "angels",
-   "inspirations": []
-  },
-  {
-   "id": "smoke-of-requited-love",
-   "name": "Smoke of Requited Love",
-   "hero": "",
-   "subtitle": "On Julio Cortázar's story “Letters from Mom”",
-   "quote": "And unease, and a need to reply at once, like someone closing a door again.",
-   "quoteBy": "Julio Cortázar",
-   "text": "In “Letters from Mom” (*Secret Weapons*, 1959), Julio Cortázar builds an exile made of omissions, where the past is a burden impossible to leave behind. Shortly after Nico's death, Luis and Laura settle in Paris, fleeing the family's condemnation; there they turn to cigarettes almost as a choreography for getting through their anxiety. The smoke measures the countdown, numbs the words that open the wound and creates a mask so they do not have to look each other in the face. The shared guilt travels in every letter that arrives from the other side: Nico's name, slipped in by the mother as if he were still alive, sets off a silent combustion that begins to permeate everything.\n\nDistance adds a new layer of strangeness to this atmosphere. Smoking indoors has become a proscribed act, an obsolete anomaly that the contemporary order tries to eradicate. This photographic series is set precisely in that temporal crack.\n\nIn front of the lens, the craving for control takes shape as rigidity: a last attempt to keep up appearances in the face of collapse. The mouth no longer speaks, it only exhales; it becomes the ruined channel of an invisible correspondence with the ghost.\n\nA fog of unspoken words invades the frame to remind us that what the mind censors, the body keeps breathing.",
-   "story": "",
-   "inspirations": []
-  },
-  {
-   "id": "bitter-honeymoon",
-   "name": "Bitter Honeymoon",
-   "hero": "",
-   "subtitle": "On Roberto Arlt's story “Terrible Night”",
-   "quote": "At three in the afternoon, Julia, lying on the bed, her eyes swollen like peaches, a handkerchief soaked in vinegar and two slices of potato on her temples, will receive the consolations of her friends.",
-   "quoteBy": "Roberto Arlt",
-   "text": "In Roberto Arlt's expressionist universe, the city is a monster that grinds down wills. Through sheer force of work and a unique narrative plasticity, his writing cut across the false antinomy between the social commitment of the Boedo group and the aesthetic avant-garde of the Florida group. Arlt does not denounce; he X-rays humiliation, isolation and betrayal among the marginalised themselves. In “Terrible Night” (*El jorobadito*, 1933), the imminence of marriage unleashes a sleepless, agonising wandering: the wedding stops being a horizon of expectations and becomes a civil trap that suffocates.\n\nThis photographic series carries that River Plate anguish into a Prague winter. A bed bursts onto the historic European cobblestones like a piece of luxurious household waste. An elegant bride is shipwrecked under the open sky; her exclusion no longer happens on the margins of explicit poverty, but in the brutal exposure of her lace dress.\n\nFrom this perspective, the veil becomes a shroud and the bouquet a funeral wreath. With its castles, trams and bridges, the city takes over as the stage of oppression. While in the story the urban fabric harasses the groom and keeps him on guard, the photograph paralyses its victim: the cold indifference of the architecture now frames the bride-to-be, in an abandonment that looks eternal.",
-   "story": "",
-   "inspirations": []
-  },
-  {
-   "id": "water-mirrors",
-   "name": "Water Mirrors",
-   "hero": "",
-   "subtitle": "On John Everett Millais's painting *Ophelia*",
-   "quote": "The sinking of Ophelia works as the conceptual trigger of this exhibition: the exception that confirms the sorrow.",
-   "quoteBy": "",
-   "text": "In John Everett Millais's celebrated Pre-Raphaelite canvas, the death of Shakespeare's character is presented as a lyrical surrender, an aesthetic dissolution of the body in the current. The photographic reinterpretation strips the scene of that romantic complacency to set off the mechanism of suspicion. The aerial perspective shuns the mechanical coldness of the drone and searches the memory of the craft for older, handmade ways of rising above the ground.\n\nThe water stops being a poetic refuge and becomes a prison. Rather than surrendering to madness, Ophelia lies suspended in an unbearable instant of lucidity. The soaked lace and floating hair lose their aura of tragic beauty and become the record of a drowning. By cancelling the distance, the frame forces the viewer to sink with her into a crossing of reflections, suspending time just before the end.",
-   "story": "",
-   "inspirations": []
-  },
-  {
-   "id": "leaden-hours",
-   "name": "Leaden Hours",
-   "hero": "",
-   "subtitle": "On Goya's painting *Saturn Devouring His Son*",
-   "quote": "",
-   "quoteBy": "",
-   "text": "This photographic series moves mythological cannibalism into the offices of contemporary impunity. Gabriel Matula dresses the monster in a suit and tie. In front of the lens, a subject of icy, martial elegance embodies the silent voracity of today's elites among overworked forks and still lifes. The provocation no longer needs any explicit mutilation; it lies in the chilling composure of a body that feeds on the vulnerability of others to prolong its hegemony.\n\nWhat in Goya was a cry of primitive horror becomes here the persistence of a system that embodies an absurd gesture: consuming the future to perpetuate the status quo. In other words, time devours the subject, but first, the subject erases the future.",
-   "story": "",
-   "inspirations": []
-  },
-  {
-   "id": "project-09",
-   "name": "Project 9",
-   "hero": "",
-   "subtitle": "",
-   "quote": "",
-   "quoteBy": "",
-   "text": "",
-   "story": "",
-   "inspirations": []
-  },
-  {
-   "id": "project-10",
-   "name": "Project 10",
-   "hero": "",
-   "subtitle": "",
-   "quote": "",
-   "quoteBy": "",
-   "text": "",
-   "story": "",
-   "inspirations": []
-  },
-  {
-   "id": "project-11",
-   "name": "Project 11",
-   "hero": "",
-   "subtitle": "",
-   "quote": "",
-   "quoteBy": "",
-   "text": "",
-   "story": "",
-   "inspirations": []
-  },
-  {
-   "id": "project-12",
-   "name": "Project 12",
-   "hero": "",
-   "subtitle": "",
-   "quote": "",
-   "quoteBy": "",
-   "text": "",
-   "story": "",
-   "inspirations": []
-  },
-  {
-   "id": "project-13",
-   "name": "Project 13",
-   "hero": "",
-   "subtitle": "",
-   "quote": "",
-   "quoteBy": "",
-   "text": "",
-   "story": "",
-   "inspirations": []
   }
  ],
  "works": [
@@ -246,7 +202,7 @@ window.GUIDE = {
    ],
    "src": "img/full/raphael-ii-f0012.jpg",
    "thumb": "img/thumb/raphael-ii-f0012.jpg",
-   "project": "raphael-ii"
+   "project": "raphael-dei"
   },
   {
    "id": "raphael-ii-f0019",
@@ -260,7 +216,7 @@ window.GUIDE = {
    "hotspots": [],
    "src": "img/full/raphael-ii-f0019.jpg",
    "thumb": "img/thumb/raphael-ii-f0019.jpg",
-   "project": "raphael-ii"
+   "project": "raphael-dei"
   },
   {
    "id": "raphael-ii-f0021",
@@ -274,7 +230,7 @@ window.GUIDE = {
    "hotspots": [],
    "src": "img/full/raphael-ii-f0021.jpg",
    "thumb": "img/thumb/raphael-ii-f0021.jpg",
-   "project": "raphael-ii"
+   "project": "raphael-dei"
   },
   {
    "id": "raphael-ii-f0031",
@@ -288,7 +244,7 @@ window.GUIDE = {
    "hotspots": [],
    "src": "img/full/raphael-ii-f0031.jpg",
    "thumb": "img/thumb/raphael-ii-f0031.jpg",
-   "project": "raphael-ii"
+   "project": "raphael-dei"
   },
   {
    "id": "raphael-ii-f0034",
@@ -302,7 +258,7 @@ window.GUIDE = {
    "hotspots": [],
    "src": "img/full/raphael-ii-f0034.jpg",
    "thumb": "img/thumb/raphael-ii-f0034.jpg",
-   "project": "raphael-ii"
+   "project": "raphael-dei"
   },
   {
    "id": "raphael-ii-f0036",
@@ -316,7 +272,7 @@ window.GUIDE = {
    "hotspots": [],
    "src": "img/full/raphael-ii-f0036.jpg",
    "thumb": "img/thumb/raphael-ii-f0036.jpg",
-   "project": "raphael-ii"
+   "project": "raphael-dei"
   },
   {
    "id": "raphael-ii-0269",
@@ -330,7 +286,7 @@ window.GUIDE = {
    "hotspots": [],
    "src": "img/full/raphael-ii-0269.jpg",
    "thumb": "img/thumb/raphael-ii-0269.jpg",
-   "project": "raphael-ii"
+   "project": "raphael-dei"
   },
   {
    "id": "raphael-ii-0296",
@@ -363,7 +319,7 @@ window.GUIDE = {
    ],
    "src": "img/full/raphael-ii-0296.jpg",
    "thumb": "img/thumb/raphael-ii-0296.jpg",
-   "project": "raphael-ii"
+   "project": "raphael-dei"
   },
   {
    "id": "raphael-ii-0376",
@@ -377,7 +333,7 @@ window.GUIDE = {
    "hotspots": [],
    "src": "img/full/raphael-ii-0376.jpg",
    "thumb": "img/thumb/raphael-ii-0376.jpg",
-   "project": "raphael-ii"
+   "project": "raphael-dei"
   },
   {
    "id": "raphael-ii-0510",
@@ -391,7 +347,7 @@ window.GUIDE = {
    "hotspots": [],
    "src": "img/full/raphael-ii-0510.jpg",
    "thumb": "img/thumb/raphael-ii-0510.jpg",
-   "project": "raphael-ii"
+   "project": "raphael-dei"
   },
   {
    "id": "raphael-ii-0554",
@@ -405,7 +361,7 @@ window.GUIDE = {
    "hotspots": [],
    "src": "img/full/raphael-ii-0554.jpg",
    "thumb": "img/thumb/raphael-ii-0554.jpg",
-   "project": "raphael-ii"
+   "project": "raphael-dei"
   },
   {
    "id": "raphael-ii-0665",
@@ -419,7 +375,7 @@ window.GUIDE = {
    "hotspots": [],
    "src": "img/full/raphael-ii-0665.jpg",
    "thumb": "img/thumb/raphael-ii-0665.jpg",
-   "project": "raphael-ii"
+   "project": "raphael-dei"
   },
   {
    "id": "the-duel-0296",
@@ -778,7 +734,7 @@ window.GUIDE = {
     }
    },
    "projects": {
-    "raphael-ii": {
+    "raphael-dei": {
      "text": "Archanděl léčitel a ochránce poutníků se zjevuje bez jakéhokoli soucitu. Snímek se zaměřuje na napětí roucha a na téměř neznatelně pootevřená ústa. Synkretismus tu nabývá mezní podoby smyslnosti, vnitřního sváru identity zrozené z po sobě jdoucích kulturních vrstev: žena, která se odmítá nechat spoutat zeměpisnými souřadnicemi. Raphael už neléčí bolest poutí; napodobuje toho, kdo nejprve potřebuje trýzeň rozjitřit, aby ji poté utišil."
     },
     "letiel-dei": {
@@ -787,28 +743,24 @@ window.GUIDE = {
     "zadquiel-dei": {
      "text": "Anděl Zadquiel se zmítá mezi milosrdenstvím a smrtí. Jeho svoboda se přetavuje ve schizma. Je zosobněním archetypální postavy s jasnou vůlí k sebeurčení. V jeho postoji není místo pro laskavost; naopak, jeho pohání přesvědčení, že současný řád se začíná hroutit tak jako dávná dogmata časů minulých."
     },
-    "smoke-of-requited-love": {
-     "name": "Kouř opětované lásky",
+    "letters-from-mom": {
      "subtitle": "O povídce „Maminčiny dopisy“ Julia Cortázara",
      "quote": "A vnitřní neklid, potřeba bezodkladně napsat odpověď, jako když znovu zavřeme dveře.",
      "quoteBy": "Julio Cortázar",
      "text": "V povídce „Maminčiny dopisy“ (*Tajné zbraně*, 1959) Julio Cortázar buduje exil utkaný ze zapomnění, v němž se minulost stává břemenem, jež nelze tak snadno odhodit. Krátce po Nicově smrti se Luis a Laura usazují v Paříži, kam utíkají před výčitkami rodiny; tam se uchylují k cigaretě jako k jakési choreografii, aby unikli své úzkosti. Kouř odpočítává den za dnem, znecitlivuje slova, jež otevírají bolavé šrámy, a vytváří clonu, aby si aktéři nemuseli hledět do očí. Sdílená vina k nim však tamodtud putuje zas a znova s každým dalším dopisem: Nicovo jméno, které matka tu a tam zmíní, jako by jeho nositel byl stále naživu, zažehává tichý oheň, jenž začíná stravovat vše okolo.\n\nDálka přidává atmosféře další vrstvu, zdání podivnosti. Kouřit uvnitř se stává zapovězeným počinem, odvrženým výstřelkem, který se současný řád snaží vymýtit. Tato řada fotografií je situována právě do této časové mezery.\n\nPřed objektivem se touha po kontrole přetavuje do strnulosti: poslední pokus, jak uchovat zdání tváří v tvář zhroucení. Ústa už nepromlouvají, jen vypouštějí dým; proměňují se v chátrající potrubí neviditelné pošty s přízrakem.\n\nMlha nevyřčených slov zaplňuje záběr, aby nám připomněla, že tělo i nadále vyzařuje to, co se mysl snaží zatlačit do zapomnění."
     },
-    "bitter-honeymoon": {
-     "name": "Trpké líbánky",
+    "terrible-night": {
      "subtitle": "O povídce „Strašná noc“ Roberta Arlta",
      "quote": "Ve tři odpoledne se Julia, vleže na posteli, s očima jako angorák, kapesníkem vymáchaným v octě a se dvěma plátky brambor na spáncích, nechá utěšovat svými přítelkyněmi.",
      "quoteBy": "Roberto Arlt",
      "text": "V expresionistickém vesmíru Roberta Arlta město ztvárňuje monstrum, jež drtí lidskou vůli. Tvůrčím nasazením a jedinečnou výpravnou barvitostí překonalo jeho dílo falešný rozpor mezi společenskou angažovaností literární skupiny Boedo a estetizující avantgardou skupiny Florida. Arlt nepředkládá společenskou obžalobu; on pořizuje rentgenový snímek ponížení, odcizení a zrady mezi lidmi na okraji společnosti. V povídce „Strašná noc“ (*Hrbáček*, 1933) obavy z blížícího sňatku vyústí v noční trýznivou pouť po ulicích: svatba přestává být kýženým naplněním a mění se ve svazující občanskou past.\n\nTato série fotografií přenáší laplatskou úzkost do zimní Prahy. Na historické dlažbě uprostřed Evropy se náhle ocitá postel, jako by šlo o luxusní odpad vyhozený na ulici, a na ní elegantní nevěsta připomínající trosečníka pod širým nebem. Její společenské vydědění se již neuskutečňuje na periferii zřejmé chudoby, nýbrž v nelítostné bezvýchodnosti jejích krajkových šatů.\n\nTouto optikou se závoj stává rubášem a kytice pohřebním věncem. Město se svými hrady, tramvajemi a mosty přebírá štafetu dějiště útlaku. Zatímco v Arltově příběhu tkáň města pronásleduje a udržuje ženicha ve střehu, fotografie svou oběť paralyzuje: chladná architektonická lhostejnost nevěstu uvězňuje do rámu osamělosti, která se jeví jako věčná."
     },
-    "water-mirrors": {
-     "name": "Vodní zrcadla",
+    "ophelia": {
      "subtitle": "O obrazu *Ofélie* Johna E. Millaise",
      "quote": "Oféliino utonutí funguje jako konceptuální spouštěč této výstavy: výjimka, která potvrzuje bolest.",
      "text": "Na slavném prerafaelitském plátně Johna Everetta Millaise je smrt Shakespearovy postavy pojata jako lyrická kapitulace, estetické rozplynutí těla v proudu. Fotografická reinterpretace zbavuje scénu této romantické umírněnosti, aby vzbudila podezření. Pohled z ptačí perspektivy odmítá mechanickou nezúčastněnost dronu a zkoumá v paměti fotografického umění starší, řemeslné způsoby, jak dosáhnout odstupu. Voda už není poetickým útočištěm, stává se vězením. Ofélie se nepropadá do šílenství, spíš jako by natrvalo ustrnula v nesnesitelném okamžiku jasnozřivosti.\n\nVodou nasáklé krajky a vlasy vznášející se na hladině ztrácejí auru tragické krásy a proměňují se v pouhý záznam utonutí. Jakmile mizí odstup, záběr nutí diváka, aby se spolu s ní potopil v průsečíku odrazů a pozastavil čas těsně před koncem."
     },
-    "leaden-hours": {
-     "name": "Olověné hodiny",
+    "saturn": {
      "subtitle": "O Goyově obrazu *Saturn požírající svého syna*",
      "text": "Tato série fotografií přesouvá mytologický kanibalismus do kanceláří nynější beztrestnosti. Gabriel Matula obléká monstrum do obleku a kravaty. Hledáček objektivu míří na subjekt vyznačující se ledově chladnou, bojovnou elegancí, který zosobňuje tichou dravost dnešních elit uprostřed opotřebovaných vidliček a zátiší. K vyvolání provokativního dojmu už není třeba žádné další zjevné znetvoření; bohatě stačí děsivá úspornost těla, jež se živí zranitelností druhých, aby si zachovalo svou nadvládu.\n\nTo, co bylo u Goyi výkřikem primitivního děsu, zde dostává podobu platnosti systému, který se odhaluje v celé své absurditě: požírá budoucnost, aby uchoval status quo. Jinak řečeno, čas požírá subjekt, ale ještě předtím subjekt zcela vymazává budoucnost."
     }
@@ -869,7 +821,7 @@ window.GUIDE = {
     }
    },
    "projects": {
-    "raphael-ii": {
+    "raphael-dei": {
      "text": "El arcángel de la medicina y guardián de los viajeros desciende aquí desprovisto de piedad. La imagen se concentra en la tensión del ropaje y en la boca que apenas se entreabre. El sincretismo se vuelve un erotismo fronterizo, la fricción de una identidad nacida de sucesivas capas de migración: una mujer que se niega a ser domesticada por el mapa. Raphael ya no cura el dolor de los caminos; imita el gesto de quien, para calmar el tormento, necesita exacerbarlo."
     },
     "letiel-dei": {
@@ -878,28 +830,24 @@ window.GUIDE = {
     "zadquiel-dei": {
      "text": "El ángel Zadquiel se desplaza en un terreno imposible entre la misericordia y la muerte. Su libertad se traduce en disidencia. La figura encarna el arquetipo desde una clara voluntad de empoderamiento. En su postura no hay lugar para la clemencia; lo que la impulsa es la certeza de que el orden contemporáneo, al igual que los viejos dogmas del pasado, comienza a desmoronarse."
     },
-    "smoke-of-requited-love": {
-     "name": "Humo de amor correspondido",
+    "letters-from-mom": {
      "subtitle": "Sobre «Cartas de mamá» de Julio Cortázar",
      "quote": "Y desazón, y una necesidad de contestar enseguida, como quien vuelve a cerrar una puerta.",
      "quoteBy": "Julio Cortázar",
      "text": "En «Cartas de mamá» (*Las armas secretas*, 1959), Julio Cortázar construye un exilio hecho de omisiones, donde el pasado es una carga imposible de dejar atrás. Poco después de la muerte de Nico, Luis y Laura se instalan en París huyendo de la condena familiar; allí, recurren al cigarrillo casi como una coreografía para transitar la ansiedad. El humo mide la cuenta regresiva, anestesia las palabras que abren la llaga y crea una máscara para no tener que mirarse de frente. La culpa compartida viaja en cada carta que llega del lado de allá: el nombre de Nico, deslizado por la madre como si aún estuviera vivo, enciende una combustión silenciosa que empieza a impregnarlo todo.\n\nLa distancia añade a esa atmósfera una nueva capa de extrañeza. El acto de fumar en un interior se ha convertido en un hecho proscrito, una anomalía obsoleta que el orden contemporáneo intenta erradicar. Esta serie fotográfica se sitúa precisamente en esa grieta temporal.\n\nFrente a la lente, las ansias de control se encarnan en la rigidez: un último intento por sostener las apariencias frente al colapso. La boca ya no habla, solo exhala; se vuelve el canal en ruinas de una correspondencia invisible con el fantasma.\n\nUna niebla de palabras no dichas invade el encuadre para recordarnos que lo que la conciencia censura, el cuerpo lo sigue respirando."
     },
-    "bitter-honeymoon": {
-     "name": "Luna de hiel",
+    "terrible-night": {
      "subtitle": "Sobre «Noche terrible» de Roberto Arlt",
      "quote": "A las tres de la tarde, Julia, tendida en la cama; los ojos hinchados como duraznos, un pañuelo empapado de vinagre y dos rodajas de papa en las sienes, recibirá los consuelos de sus amigas.",
      "quoteBy": "Roberto Arlt",
      "text": "En el universo expresionista de Roberto Arlt, la ciudad es un monstruo que tritura voluntades. A fuerza de prepotencia de trabajo y una plasticidad narrativa única, su obra cruzó de forma transversal la falsa antinomia entre el compromiso social de Boedo y la vanguardia estética de Florida. Arlt no denuncia; radiografía la humillación, el aislamiento y la traición entre los propios marginales. En «Noche terrible» (*El jorobadito*, 1933), la inminencia del matrimonio desata un insomne deambular agónico: la boda deja de ser un horizonte de expectativas para convertirse en una trampa civil que asfixia.\n\nEsta serie fotográfica traslada esa angustia rioplatense al invierno de Praga. Una cama irrumpe en el histórico empedrado europeo como un desecho doméstico de lujo. Una novia elegante naufraga a cielo abierto; su exclusión ya no ocurre en los márgenes de la miseria explícita, sino en la brutal intemperie de su vestido de encaje.\n\nBajo esta perspectiva, el velo se convierte en sudario y el ramo en corona mortuoria. Con sus castillos, tranvías y puentes, la ciudad toma el relevo como escenario de opresión. Mientras que en el relato el tejido urbano acosa y mantiene en guardia al prometido, la fotografía paraliza a su víctima: la fría indiferencia arquitectónica enmarca ahora a la pretendiente, en un abandono que se perfila eterno."
     },
-    "water-mirrors": {
-     "name": "Espejos de agua",
+    "ophelia": {
      "subtitle": "Sobre la pintura *Ofelia*, de Millais",
      "quote": "El hundimiento de Ofelia funciona como el detonante conceptual de esta muestra: la excepción que confirma la pena.",
      "text": "En el célebre lienzo prerrafaelista de John Everett Millais, la muerte del personaje de Shakespeare se presenta como una capitulación lírica, una disolución estética del cuerpo en la corriente. La reinterpretación fotográfica despoja a la escena de esa complacencia romántica para activar el dispositivo de la sospecha. La perspectiva aérea rehúye la frialdad maquinal del dron y explora en la memoria del oficio métodos más antiguos y artesanales para tomar distancia del suelo.\n\nEl agua deja de ser un refugio poético y se convierte en una cárcel. Más que abandonarse a la locura, Ofelia yace suspendida en un instante intolerable de lucidez. Los encajes empapados y el cabello flotante pierden su aura de belleza trágica para transformarse en el registro de una asfixia. Al anular la distancia, el encuadre obliga al espectador a hundirse con ella en un cruce de reflejos, suspendiendo el tiempo justo antes del fin."
     },
-    "leaden-hours": {
-     "name": "Horas de plomo",
+    "saturn": {
      "subtitle": "Sobre la pintura *Saturno devorando a su hijo*, de Goya",
      "text": "Esta serie fotográfica traslada la antropofagia mitológica a los despachos de la impunidad contemporánea. Gabriel Matula viste al monstruo de traje y corbata. Frente a la lente, un sujeto de elegancia gélida y marcial encarna la voracidad silenciosa de las élites actuales entre tenedores sobreexigidos y naturalezas muertas. La provocación ya no necesita de ninguna mutilación explícita; reside en la escalofriante parsimonia de un cuerpo que se alimenta de la vulnerabilidad ajena para prolongar su hegemonía.\n\nLo que en Goya era un grito de horror primitivo, aquí se transforma en la vigencia de un sistema que encarna un gesto absurdo: consumir el porvenir para perpetuar el statu quo. En otras palabras, el tiempo devora al sujeto, pero antes, el sujeto erradica el futuro."
     }
