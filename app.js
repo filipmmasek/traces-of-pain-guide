@@ -35,8 +35,9 @@
     document.documentElement.lang = LANG;
     try { localStorage.setItem("tp-lang", LANG); } catch (e) {}
   }
+  var KIOSK = document.documentElement.classList.contains("kiosk");
   var savedLang = null;
-  try { savedLang = localStorage.getItem("tp-lang"); } catch (e) {}
+  try { savedLang = localStorage.getItem(KIOSK ? "tp-kiosk-lang" : "tp-lang") || localStorage.getItem("tp-lang"); } catch (e) {}
   setLang(savedLang || "en");
   var worksIn = function (pid) { return G.works.filter(function (w) { return w.project === pid; }); };
 
@@ -188,7 +189,7 @@
   // the code carries the key so visitors skip the password screen.
   function qrBlock(p) {
     if (typeof window.qrcode !== "function") return "";
-    try { if (sessionStorage.getItem("tp-from-qr")) return ""; } catch (e) {}
+    if (!KIOSK) try { if (sessionStorage.getItem("tp-from-qr")) return ""; } catch (e) {}
     var url = location.origin + location.pathname, key = null;
     try { key = localStorage.getItem("tp-key"); } catch (e) {}
     if (key) url += "?k=" + encodeURIComponent(key);
@@ -221,7 +222,7 @@
     return '<a class="back" href="#">' + esc(T.back) + '</a><section class="page-read collab-head"><h1 class="sc">' + esc(T.menuCollaborators || "Collaborators") + "</h1></section>" +
       '<ul class="collab-list">' + list.map(function (c) {
         var inner = '<span class="role">' + esc(c.role) + '</span><span class="name">' + esc(c.name) + "</span>";
-        return "<li>" + (c.link ? '<a class="collab" href="' + esc(c.link) + '" target="_blank" rel="noopener">' + inner + "</a>" : '<div class="collab">' + inner + "</div>") + "</li>";
+        return "<li>" + (c.link && !KIOSK ? '<a class="collab" href="' + esc(c.link) + '" target="_blank" rel="noopener">' + inner + "</a>" : '<div class="collab">' + inner + "</div>") + "</li>";
       }).join("") + "</ul>" + footer();
   }
 
@@ -577,6 +578,36 @@
     var w = cur; route(); window.scrollTo(0, y);
     if (w) openFs(byId[w.id], null);
   });
+
+  // ---------- Kiosk (venue tablets) ----------
+  // No links that leave the site, and after a while without touches the tablet goes back to
+  // the page it was set up on, in its starting language, ready for the next visitor.
+  if (KIOSK) {
+    var IDLE_MS = 90 * 1000, idleT = null;
+    var kHome = "#", kLang = "en";
+    try { kHome = localStorage.getItem("tp-kiosk-home") || "#"; kLang = localStorage.getItem("tp-kiosk-lang") || "en"; } catch (e) {}
+    var resetIdle = function () { clearTimeout(idleT); idleT = setTimeout(goHome, IDLE_MS); };
+    var goHome = function () {
+      closeInsp(); closeFs();
+      if (LANG !== kLang) { setLang(kLang); applyUi(); }
+      if ((location.hash || "#") !== kHome) location.hash = kHome; else route();
+      window.scrollTo(0, 0);
+    };
+    ["pointerdown", "touchstart", "keydown", "wheel", "scroll"].forEach(function (ev) {
+      window.addEventListener(ev, resetIdle, { passive: true, capture: true });
+    });
+    // Block any link that would open another site, a new tab or a phone/mail app.
+    document.addEventListener("click", function (e) {
+      var a = e.target.closest && e.target.closest("a[href]");
+      if (!a) return;
+      var href = a.getAttribute("href");
+      if (href.charAt(0) === "#") return;
+      var u; try { u = new URL(href, location.href); } catch (er) { e.preventDefault(); return; }
+      if (u.origin !== location.origin || a.target === "_blank") e.preventDefault();
+    }, true);
+    document.addEventListener("contextmenu", function (e) { e.preventDefault(); });
+    resetIdle();
+  }
 
   applyUi();
   route();

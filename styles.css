@@ -656,3 +656,7 @@ a, button { transition: color .25s var(--ease), background-color .25s var(--ease
 /* Italic lines: Spalla has no italic, so they use the text font until Athelas is in the Adobe Fonts project */
 .subtitle, .epigraph { font-family: "athelas", "Athelas", var(--body); }
 .epigraph cite { font-family: var(--body); }
+
+/* Kiosk mode on the venue tablets: no text selection or long-press menus. */
+.kiosk body { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
+.kiosk input { -webkit-user-select: text; user-select: text; }
