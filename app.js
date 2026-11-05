@@ -463,7 +463,13 @@
   function openFs(w, hs) {
     cur = w; curHs = hotspotsOf(w); fs.hidden = false; document.body.style.overflow = "hidden";
     z = 1; tx = ty = 0; hiFor = null; cancelAnimationFrame(inert);
-    fsImg.src = w.src; fsImg.alt = byProject[w.project].name;
+    // Never show the previous photo: start from the (usually cached) thumbnail, swap in the full size when loaded.
+    fsImg.alt = byProject[w.project].name;
+    fsImg.removeAttribute("src");
+    if (w.thumb) fsImg.src = w.thumb;
+    var full = new Image();
+    full.onload = function () { if (cur === w && hiFor !== w) fsImg.src = full.src; };
+    full.src = w.src;
     var ps = photosOf(byProject[w.project]);
     $("fsCount").textContent = (ps.indexOf(w) + 1) + " / " + ps.length;
     $("fsPrev").hidden = $("fsNext").hidden = ps.length < 2;
@@ -482,6 +488,7 @@
   function closeFs() {
     if (fs.hidden) return;
     fs.hidden = true; document.body.style.overflow = ""; cur = null;
+    fsImg.removeAttribute("src");
   }
   function setDots(on) {
     dotsOn = on;

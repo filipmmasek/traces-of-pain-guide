@@ -1,5 +1,5 @@
 /* Design follows Gabriel Matula's exhibition texts (Nov 2026): near-black page lit by a soft grey
-   spotlight from above, serif small-caps headings (Athelas; EB Garamond where Athelas is missing),
+   spotlight from above, serif small-caps headings (Athelas; Spalla where Athelas is missing),
    DM Sans for reading, no colour accent. Layout idea: a dark gallery wall. Tablet-first: the visitor stands at the print, so the
    photo page shows a small confirming thumbnail and gives the space to reading.
    Single dark theme by choice. */
@@ -27,7 +27,7 @@
   --ash: #9b9b9b;
   --blood: #ececec; /* the accent is plain light grey, as in the printed texts */
   --title: "spalla", "Spalla", "Italiana", "Didot", Georgia, serif;
-  --display: "athelas", "Athelas", "EB Garamond", Georgia, serif;
+  --display: "athelas", "Athelas", "spalla", Georgia, serif; /* Spalla stands in until Athelas is in the Adobe Fonts project */
   --body: "din-2014", "DIN 2014", "Barlow", "Helvetica Neue", Arial, sans-serif;
   --gutter: clamp(16px, 3.4vw, 40px);
   --bar-h: 64px;
@@ -652,3 +652,7 @@ a, button { transition: color .25s var(--ease), background-color .25s var(--ease
 @media (hover: hover) { .fs-zoom button:not(:disabled):hover { background: rgba(255,255,255,.2); } }
 @media (max-width: 560px) and (pointer: coarse) { .fs-zoom { display: none; } }
 @media (prefers-reduced-motion: reduce) { .fs-frame.anim, .fs-frame.anim .dot { transition: none; } }
+
+/* Italic lines: Spalla has no italic, so they use the text font until Athelas is in the Adobe Fonts project */
+.subtitle, .epigraph { font-family: "athelas", "Athelas", var(--body); }
+.epigraph cite { font-family: var(--body); }
