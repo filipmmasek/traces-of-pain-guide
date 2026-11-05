@@ -1743,68 +1743,98 @@ window.GUIDE = {
  },
  "collaborators": [
   {
-   "name": "Lorem Ipsum",
-   "role": "Creative direction",
+   "name": "Gabriel Matula, Nicole Lypinska",
+   "role": "Creative Direction",
    "link": "",
    "image": ""
   },
   {
-   "name": "Dolor Amet",
-   "role": "Styling",
+   "name": "Nicole Lypinska",
+   "role": "Art Director & Stylist",
    "link": "",
    "image": ""
   },
   {
-   "name": "Consectetur Elit",
-   "role": "Makeup",
+   "name": "Nicole Lypinska",
+   "role": "Production Design",
    "link": "",
    "image": ""
   },
   {
-   "name": "Sed Tempor",
-   "role": "Hair",
+   "name": "Kristýna Jedličková",
+   "role": "Second Stylist",
    "link": "",
    "image": ""
   },
   {
-   "name": "Magna Aliqua",
-   "role": "Model",
+   "name": "Tommy Hemr, Linda Chudomelová, Asya metujov",
+   "role": "Make Up Artist",
    "link": "",
    "image": ""
   },
   {
-   "name": "Ut Enim",
-   "role": "Model",
+   "name": "Paveleski Salon",
+   "role": "Hairdresser",
    "link": "",
    "image": ""
   },
   {
-   "name": "Minim Veniam",
-   "role": "Model agency",
+   "name": "Crush models, Scouteen Model Management, Pure Model Management, Unseen Models",
+   "role": "Model Agencies",
    "link": "",
    "image": ""
   },
   {
-   "name": "Quis Nostrud",
-   "role": "Videography",
+   "name": "Jonas Hrdý, David Bohata, Denis Rodionov",
+   "role": "Videographers",
    "link": "",
    "image": ""
   },
   {
-   "name": "Ullamco Laboris",
-   "role": "Graphic design",
+   "name": "Raquel Barroso",
+   "role": "Graphic Design",
    "link": "",
    "image": ""
   },
   {
-   "name": "Nisi Aliquip",
+   "name": "Tadeáš Stupínsky",
    "role": "Props",
    "link": "",
    "image": ""
   },
   {
-   "name": "Commodo Consequat",
-   "role": "Architecture and interior design",
+   "name": "Sergej Alexejevic",
+   "role": "Architect & Interior Designer",
+   "link": "",
+   "image": ""
+  },
+  {
+   "name": "Jan Licek",
+   "role": "Sound Engineer",
+   "link": "",
+   "image": ""
+  },
+  {
+   "name": "Filip Mašek",
+   "role": "Software Engineer",
+   "link": "",
+   "image": ""
+  },
+  {
+   "name": "Lola Kelm",
+   "role": "Invited Stylist / The Duel",
+   "link": "",
+   "image": ""
+  },
+  {
+   "name": "Elen Taf",
+   "role": "Invited Art Director / The Duel",
+   "link": "",
+   "image": ""
+  },
+  {
+   "name": "Capture One Pro",
+   "role": "Software Partners",
    "link": "",
    "image": ""
   }
@@ -1978,7 +2008,57 @@ window.GUIDE = {
       }
      ]
     }
-   }
+   },
+   "collaborators": [
+    {
+     "role": "Kreativní vedení"
+    },
+    {
+     "role": "Umělecké vedení a styling"
+    },
+    {
+     "role": "Výprava"
+    },
+    {
+     "role": "Spolupráce na stylingu"
+    },
+    {
+     "role": "Make-up"
+    },
+    {
+     "role": "Vlasy"
+    },
+    {
+     "role": "Modelingové agentury"
+    },
+    {
+     "role": "Video"
+    },
+    {
+     "role": "Grafický design"
+    },
+    {
+     "role": "Rekvizity"
+    },
+    {
+     "role": "Architektura a interiérový design"
+    },
+    {
+     "role": "Zvuk"
+    },
+    {
+     "role": "Vývoj softwaru"
+    },
+    {
+     "role": "Hostující styling / The Duel"
+    },
+    {
+     "role": "Hostující umělecké vedení / The Duel"
+    },
+    {
+     "role": "Softwaroví partneři"
+    }
+   ]
   },
   "es": {
    "ui": {
@@ -2148,7 +2228,57 @@ window.GUIDE = {
       }
      ]
     }
-   }
+   },
+   "collaborators": [
+    {
+     "role": "Dirección creativa"
+    },
+    {
+     "role": "Dirección de arte y estilismo"
+    },
+    {
+     "role": "Diseño de producción"
+    },
+    {
+     "role": "Estilismo adicional"
+    },
+    {
+     "role": "Maquillaje"
+    },
+    {
+     "role": "Peluquería"
+    },
+    {
+     "role": "Agencias de modelos"
+    },
+    {
+     "role": "Vídeo"
+    },
+    {
+     "role": "Diseño gráfico"
+    },
+    {
+     "role": "Atrezo"
+    },
+    {
+     "role": "Arquitectura e interiorismo"
+    },
+    {
+     "role": "Sonido"
+    },
+    {
+     "role": "Desarrollo de software"
+    },
+    {
+     "role": "Estilismo invitado / The Duel"
+    },
+    {
+     "role": "Dirección de arte invitada / The Duel"
+    },
+    {
+     "role": "Socios de software"
+    }
+   ]
   }
  }
 };
