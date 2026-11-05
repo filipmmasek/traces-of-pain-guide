@@ -92,9 +92,9 @@ window.GUIDE = {
      "artist": "Cusco School and the Master of Calamarca",
      "date": "second half of the 17th century",
      "where": "Viceroyalty of Peru; most complete series in the church of Calamarca, Bolivia",
-     "image": "",
+     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/An%C3%B3nimo_-_Asiel_Timor_Dei._Arc%C3%A1ngel_arcabucero%2C_c._1680.jpg?width=900",
      "text": "Angels painted with an arquebus, an early firearm, instead of a sword, and dressed like Spanish and Andean nobles. The type arose in the Viceroyalty of Peru, mostly in the Cusco School and its largely indigenous workshops. The most complete surviving series hangs in the church of Calamarca, about 60 km from La Paz.",
-     "credit": "Source: Wikipedia, “Ángel arcabucero” (English) and “Ángeles arcabuceros” (Spanish)."
+     "credit": "Image: Asiel Timor Dei, circle of the Master of Calamarca, c. 1680, Museo Nacional de Arte, La Paz, via Wikimedia Commons, public domain. Text source: Wikipedia, “Ángel arcabucero” (English) and “Ángeles arcabuceros” (Spanish)."
     }
    ]
   },
@@ -113,18 +113,18 @@ window.GUIDE = {
      "artist": "Old Testament (deuterocanonical)",
      "date": "",
      "where": "The archangel Raphael guides the young Tobias on his journey and heals his father's blindness",
-     "image": "",
+     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tobias_and_the_Angel_-_Filippino_Lippi.jpg?width=900",
      "text": "",
-     "credit": ""
+     "credit": "Image: Tobias and the Angel, Filippino Lippi, c. 1475–1480, National Gallery of Art, Washington, via Wikimedia Commons, public domain."
     },
     {
      "title": "Ángeles arcabuceros (arquebusier angels)",
      "artist": "Cusco School and the Master of Calamarca",
      "date": "second half of the 17th century",
      "where": "Viceroyalty of Peru; most complete series in the church of Calamarca, Bolivia",
-     "image": "",
+     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Anonymous_Cusco_School_-_Archangel_Eliel_with_Harquebus_-_Google_Art_Project.jpg?width=900",
      "text": "Angels painted with an arquebus, an early firearm, instead of a sword, and dressed like Spanish and Andean nobles. The type arose in the Viceroyalty of Peru, mostly in the Cusco School and its largely indigenous workshops. The most complete surviving series hangs in the church of Calamarca, about 60 km from La Paz.",
-     "credit": "Source: Wikipedia, “Ángel arcabucero” (English) and “Ángeles arcabuceros” (Spanish)."
+     "credit": "Image: Archangel Eliel with Harquebus, Cusco School, c. 1690–1720, MALI Museo de Arte de Lima, via Wikimedia Commons (Google Art Project), public domain. Text source: Wikipedia, “Ángel arcabucero” (English) and “Ángeles arcabuceros” (Spanish)."
     }
    ]
   },
@@ -143,18 +143,18 @@ window.GUIDE = {
      "artist": "Master of Calamarca",
      "date": "17th century",
      "where": "Church of Calamarca, Bolivia",
-     "image": "",
+     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Angel_letiel.jpg?width=900",
      "text": "",
-     "credit": ""
+     "credit": "Image: Ángel Letiel Dei, after the Master of Calamarca (original in the church of Calamarca, Bolivia; copy in Toledo, Spain), via Wikimedia Commons, public domain."
     },
     {
      "title": "Ángeles arcabuceros (arquebusier angels)",
      "artist": "Cusco School and the Master of Calamarca",
      "date": "second half of the 17th century",
      "where": "Viceroyalty of Peru; most complete series in the church of Calamarca, Bolivia",
-     "image": "",
+     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/PMa_BOL_085_Maestro_de_Calamarca%2C_Calamarca%2C_igl_p.jpg?width=900",
      "text": "Angels painted with an arquebus, an early firearm, instead of a sword, and dressed like Spanish and Andean nobles. The type arose in the Viceroyalty of Peru, mostly in the Cusco School and its largely indigenous workshops. The most complete surviving series hangs in the church of Calamarca, about 60 km from La Paz.",
-     "credit": "Source: Wikipedia, “Ángel arcabucero” (English) and “Ángeles arcabuceros” (Spanish)."
+     "credit": "Image: armed angel by the Master of Calamarca, c. 1680, parish church of Calamarca, Bolivia. Photo © Paul M.R. Maeyaert, via Wikimedia Commons, CC BY-SA 4.0. Text source: Wikipedia, “Ángel arcabucero” (English) and “Ángeles arcabuceros” (Spanish)."
     }
    ]
   },
@@ -182,9 +182,9 @@ window.GUIDE = {
      "artist": "William Shakespeare",
      "date": "c. 1600",
      "where": "Act 4, scene 7: Queen Gertrude tells of Ophelia's drowning",
-     "image": "",
+     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Hamlet_Q2b_TP_1605.jpg?width=900",
      "text": "",
-     "credit": ""
+     "credit": "Title page of Hamlet (1605 quarto), via Wikimedia Commons, public domain."
     }
    ]
   },
@@ -204,7 +204,7 @@ window.GUIDE = {
      "date": "1820–1823",
      "where": "Museo del Prado, Madrid",
      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Francisco_de_Goya,_Saturno_devorando_a_su_hijo_(1819-1823).jpg?width=900",
-     "text": "",
+     "text": "One of the fourteen Black Paintings that Goya painted directly onto the walls of his house outside Madrid, the Quinta del Sordo, late in his life. They were later transferred to canvas and are now in the Museo del Prado.",
      "credit": "Saturn Devouring His Son, Francisco de Goya, Museo del Prado, via Wikimedia Commons, public domain."
     }
    ]
@@ -225,7 +225,7 @@ window.GUIDE = {
      "date": "1820–1823",
      "where": "Museo del Prado, Madrid",
      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Duelo_a_garrotazos,_por_Goya.jpg?width=900",
-     "text": "",
+     "text": "One of the fourteen Black Paintings that Goya painted directly onto the walls of his house outside Madrid, the Quinta del Sordo, late in his life. They were later transferred to canvas and are now in the Museo del Prado.",
      "credit": "Fight with Cudgels, Francisco de Goya, Museo del Prado, via Wikimedia Commons, public domain."
     }
    ]
@@ -245,9 +245,9 @@ window.GUIDE = {
      "artist": "Roberto Arlt",
      "date": "1933",
      "where": "El jorobadito (short stories)",
-     "image": "",
+     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portada_de_El_Jorobadito_-_Roberto_Arlt_-_1933.jpg?width=900",
      "text": "",
-     "credit": ""
+     "credit": "Cover of the first edition of El jorobadito (1933), unknown designer, via Wikimedia Commons (from the Biblioteca Virtual Miguel de Cervantes), public domain."
     }
    ]
   }
@@ -1871,7 +1871,8 @@ window.GUIDE = {
       {
        "title": "Kniha Tobiáš",
        "artist": "Starý zákon (deuterokanonická kniha)",
-       "where": "Archanděl Rafael provází mladého Tobiáše na cestě a uzdraví slepotu jeho otce"
+       "where": "Archanděl Rafael provází mladého Tobiáše na cestě a uzdraví slepotu jeho otce",
+       "credit": "Obraz: Tobiáš a anděl, Filippino Lippi, kolem 1475–1480, National Gallery of Art, Washington, přes Wikimedia Commons, volné dílo."
       },
       {
        "title": "Ángeles arcabuceros (andělé s arkebuzou)",
@@ -1879,7 +1880,7 @@ window.GUIDE = {
        "date": "2. polovina 17. století",
        "where": "Místokrálovství Peru; nejúplnější série v kostele v Calamarce, Bolívie",
        "text": "Andělé malovaní s arkebuzou, ranou palnou zbraní, místo meče, a oblečení jako španělští a andští šlechtici. Tento typ vznikl v Místokrálovství Peru, hlavně v Cuzcké škole a jejích převážně domorodých dílnách. Nejúplnější dochovaná série visí v kostele v Calamarce, asi 60 km od La Paz.",
-       "credit": "Zdroj: Wikipedie, „Ángel arcabucero“ (anglicky) a „Ángeles arcabuceros“ (španělsky)."
+       "credit": "Obraz: Archanděl Eliel s arkebuzou, Cuzcká škola, kolem 1690–1720, MALI Museo de Arte de Lima, přes Wikimedia Commons (Google Art Project), volné dílo. Zdroj textu: Wikipedie, „Ángel arcabucero“ (anglicky) a „Ángeles arcabuceros“ (španělsky)."
       }
      ]
     },
@@ -1889,7 +1890,8 @@ window.GUIDE = {
       {
        "where": "Kostel v Calamarce, Bolívie",
        "date": "17. století",
-       "artist": "Mistr z Calamarky"
+       "artist": "Mistr z Calamarky",
+       "credit": "Obraz: Ángel Letiel Dei, podle Mistra z Calamarky (originál v kostele v Calamarce, Bolívie; kopie v Toledu, Španělsko), přes Wikimedia Commons, volné dílo."
       },
       {
        "title": "Ángeles arcabuceros (andělé s arkebuzou)",
@@ -1897,7 +1899,7 @@ window.GUIDE = {
        "date": "2. polovina 17. století",
        "where": "Místokrálovství Peru; nejúplnější série v kostele v Calamarce, Bolívie",
        "text": "Andělé malovaní s arkebuzou, ranou palnou zbraní, místo meče, a oblečení jako španělští a andští šlechtici. Tento typ vznikl v Místokrálovství Peru, hlavně v Cuzcké škole a jejích převážně domorodých dílnách. Nejúplnější dochovaná série visí v kostele v Calamarce, asi 60 km od La Paz.",
-       "credit": "Zdroj: Wikipedie, „Ángel arcabucero“ (anglicky) a „Ángeles arcabuceros“ (španělsky)."
+       "credit": "Obraz: ozbrojený anděl, Mistr z Calamarky, kolem 1680, farní kostel v Calamarce, Bolívie. Foto © Paul M.R. Maeyaert, přes Wikimedia Commons, CC BY-SA 4.0. Zdroj textu: Wikipedie, „Ángel arcabucero“ (anglicky) a „Ángeles arcabuceros“ (španělsky)."
       }
      ]
     },
@@ -1910,7 +1912,7 @@ window.GUIDE = {
        "date": "2. polovina 17. století",
        "where": "Místokrálovství Peru; nejúplnější série v kostele v Calamarce, Bolívie",
        "text": "Andělé malovaní s arkebuzou, ranou palnou zbraní, místo meče, a oblečení jako španělští a andští šlechtici. Tento typ vznikl v Místokrálovství Peru, hlavně v Cuzcké škole a jejích převážně domorodých dílnách. Nejúplnější dochovaná série visí v kostele v Calamarce, asi 60 km od La Paz.",
-       "credit": "Zdroj: Wikipedie, „Ángel arcabucero“ (anglicky) a „Ángeles arcabuceros“ (španělsky)."
+       "credit": "Obraz: Asiel Timor Dei, okruh Mistra z Calamarky, kolem 1680, Museo Nacional de Arte, La Paz, přes Wikimedia Commons, volné dílo. Zdroj textu: Wikipedie, „Ángel arcabucero“ (anglicky) a „Ángeles arcabuceros“ (španělsky)."
       }
      ]
     },
@@ -1934,7 +1936,8 @@ window.GUIDE = {
      "inspirations": [
       {
        "title": "Strašná noc",
-       "where": "El jorobadito (povídky)"
+       "where": "El jorobadito (povídky)",
+       "credit": "Obálka prvního vydání El jorobadito (1933), neznámý autor, přes Wikimedia Commons (z Biblioteca Virtual Miguel de Cervantes), volné dílo."
       }
      ]
     },
@@ -1949,7 +1952,8 @@ window.GUIDE = {
        "credit": "Ofélie, John Everett Millais, Tate Britain, přes Wikimedia Commons (Google Art Project), volné dílo."
       },
       {
-       "where": "4. jednání, 7. scéna: královna Gertruda líčí, jak se Ofélie utopila"
+       "where": "4. jednání, 7. scéna: královna Gertruda líčí, jak se Ofélie utopila",
+       "credit": "Titulní strana Hamleta (vydání in quarto, 1605), přes Wikimedia Commons, volné dílo."
       }
      ]
     },
@@ -1960,7 +1964,8 @@ window.GUIDE = {
       {
        "title": "Saturn požírající svého syna",
        "where": "Museo del Prado, Madrid",
-       "credit": "Saturn požírající svého syna, Francisco de Goya, Museo del Prado, přes Wikimedia Commons, volné dílo."
+       "credit": "Saturn požírající svého syna, Francisco de Goya, Museo del Prado, přes Wikimedia Commons, volné dílo.",
+       "text": "Jedna ze čtrnácti Černých maleb, které Goya na sklonku života maloval přímo na zdi svého domu u Madridu, Quinta del Sordo. Později byly přeneseny na plátno a dnes jsou v Museo del Prado."
       }
      ]
     },
@@ -1968,7 +1973,8 @@ window.GUIDE = {
      "inspirations": [
       {
        "title": "Souboj s klacky (Duelo a garrotazos)",
-       "credit": "Duelo a garrotazos, Francisco de Goya, Museo del Prado, přes Wikimedia Commons, volné dílo."
+       "credit": "Duelo a garrotazos, Francisco de Goya, Museo del Prado, přes Wikimedia Commons, volné dílo.",
+       "text": "Jedna ze čtrnácti Černých maleb, které Goya na sklonku života maloval přímo na zdi svého domu u Madridu, Quinta del Sordo. Později byly přeneseny na plátno a dnes jsou v Museo del Prado."
       }
      ]
     }
@@ -2035,7 +2041,8 @@ window.GUIDE = {
       {
        "title": "Libro de Tobías",
        "artist": "Antiguo Testamento (deuterocanónico)",
-       "where": "El arcángel Rafael guía al joven Tobías en su viaje y cura la ceguera de su padre"
+       "where": "El arcángel Rafael guía al joven Tobías en su viaje y cura la ceguera de su padre",
+       "credit": "Imagen: Tobías y el ángel, Filippino Lippi, h. 1475–1480, National Gallery of Art, Washington, vía Wikimedia Commons, dominio público."
       },
       {
        "title": "Ángeles arcabuceros",
@@ -2043,7 +2050,7 @@ window.GUIDE = {
        "date": "segunda mitad del siglo XVII",
        "where": "Virreinato del Perú; la serie más completa, en la iglesia de Calamarca, Bolivia",
        "text": "Ángeles pintados con un arcabuz, una de las primeras armas de fuego, en lugar de una espada, y vestidos como nobles españoles y andinos. El tipo surgió en el Virreinato del Perú, sobre todo en la escuela cuzqueña y sus talleres, en su mayoría indígenas. La serie más completa que se conserva está en la iglesia de Calamarca, a unos 60 km de La Paz.",
-       "credit": "Fuente: Wikipedia, «Ángel arcabucero» (inglés) y «Ángeles arcabuceros» (español)."
+       "credit": "Imagen: Arcángel Eliel con arcabuz, escuela cuzqueña, h. 1690–1720, MALI Museo de Arte de Lima, vía Wikimedia Commons (Google Art Project), dominio público. Fuente del texto: Wikipedia, «Ángel arcabucero» (inglés) y «Ángeles arcabuceros» (español)."
       }
      ]
     },
@@ -2053,7 +2060,8 @@ window.GUIDE = {
       {
        "where": "Iglesia de Calamarca, Bolivia",
        "date": "siglo XVII",
-       "artist": "Maestro de Calamarca"
+       "artist": "Maestro de Calamarca",
+       "credit": "Imagen: Ángel Letiel Dei, según el Maestro de Calamarca (original en la iglesia de Calamarca, Bolivia; copia en Toledo, España), vía Wikimedia Commons, dominio público."
       },
       {
        "title": "Ángeles arcabuceros",
@@ -2061,7 +2069,7 @@ window.GUIDE = {
        "date": "segunda mitad del siglo XVII",
        "where": "Virreinato del Perú; la serie más completa, en la iglesia de Calamarca, Bolivia",
        "text": "Ángeles pintados con un arcabuz, una de las primeras armas de fuego, en lugar de una espada, y vestidos como nobles españoles y andinos. El tipo surgió en el Virreinato del Perú, sobre todo en la escuela cuzqueña y sus talleres, en su mayoría indígenas. La serie más completa que se conserva está en la iglesia de Calamarca, a unos 60 km de La Paz.",
-       "credit": "Fuente: Wikipedia, «Ángel arcabucero» (inglés) y «Ángeles arcabuceros» (español)."
+       "credit": "Imagen: ángel armado del Maestro de Calamarca, h. 1680, iglesia parroquial de Calamarca, Bolivia. Foto © Paul M.R. Maeyaert, vía Wikimedia Commons, CC BY-SA 4.0. Fuente del texto: Wikipedia, «Ángel arcabucero» (inglés) y «Ángeles arcabuceros» (español)."
       }
      ]
     },
@@ -2074,7 +2082,7 @@ window.GUIDE = {
        "date": "segunda mitad del siglo XVII",
        "where": "Virreinato del Perú; la serie más completa, en la iglesia de Calamarca, Bolivia",
        "text": "Ángeles pintados con un arcabuz, una de las primeras armas de fuego, en lugar de una espada, y vestidos como nobles españoles y andinos. El tipo surgió en el Virreinato del Perú, sobre todo en la escuela cuzqueña y sus talleres, en su mayoría indígenas. La serie más completa que se conserva está en la iglesia de Calamarca, a unos 60 km de La Paz.",
-       "credit": "Fuente: Wikipedia, «Ángel arcabucero» (inglés) y «Ángeles arcabuceros» (español)."
+       "credit": "Imagen: Asiel Timor Dei, círculo del Maestro de Calamarca, h. 1680, Museo Nacional de Arte, La Paz, vía Wikimedia Commons, dominio público. Fuente del texto: Wikipedia, «Ángel arcabucero» (inglés) y «Ángeles arcabuceros» (español)."
       }
      ]
     },
@@ -2098,7 +2106,8 @@ window.GUIDE = {
      "inspirations": [
       {
        "title": "Noche terrible",
-       "where": "El jorobadito (cuentos)"
+       "where": "El jorobadito (cuentos)",
+       "credit": "Portada de la primera edición de El jorobadito (1933), autor desconocido, vía Wikimedia Commons (de la Biblioteca Virtual Miguel de Cervantes), dominio público."
       }
      ]
     },
@@ -2113,7 +2122,8 @@ window.GUIDE = {
        "credit": "Ofelia, John Everett Millais, Tate Britain, vía Wikimedia Commons (Google Art Project), dominio público."
       },
       {
-       "where": "Acto 4, escena 7: la reina Gertrudis cuenta cómo se ahogó Ofelia"
+       "where": "Acto 4, escena 7: la reina Gertrudis cuenta cómo se ahogó Ofelia",
+       "credit": "Portada de Hamlet (edición en cuarto, 1605), vía Wikimedia Commons, dominio público."
       }
      ]
     },
@@ -2124,7 +2134,8 @@ window.GUIDE = {
       {
        "title": "Saturno devorando a su hijo",
        "where": "Museo del Prado, Madrid",
-       "credit": "Saturno devorando a su hijo, Francisco de Goya, Museo del Prado, vía Wikimedia Commons, dominio público."
+       "credit": "Saturno devorando a su hijo, Francisco de Goya, Museo del Prado, vía Wikimedia Commons, dominio público.",
+       "text": "Una de las catorce Pinturas negras que Goya pintó directamente sobre los muros de su casa a las afueras de Madrid, la Quinta del Sordo, en sus últimos años. Más tarde se pasaron a lienzo y hoy están en el Museo del Prado."
       }
      ]
     },
@@ -2132,7 +2143,8 @@ window.GUIDE = {
      "inspirations": [
       {
        "title": "Duelo a garrotazos",
-       "credit": "Duelo a garrotazos, Francisco de Goya, Museo del Prado, vía Wikimedia Commons, dominio público."
+       "credit": "Duelo a garrotazos, Francisco de Goya, Museo del Prado, vía Wikimedia Commons, dominio público.",
+       "text": "Una de las catorce Pinturas negras que Goya pintó directamente sobre los muros de su casa a las afueras de Madrid, la Quinta del Sordo, en sus últimos años. Más tarde se pasaron a lienzo y hoy están en el Museo del Prado."
       }
      ]
     }
