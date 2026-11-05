@@ -100,11 +100,11 @@
     if (list.length) {
       return list.map(function (i) {
         var k = INSP.push(i) - 1;
-        return '<button type="button" class="insp" data-insp="' + k + '">' + (i.image ? '<img src="' + esc(i.image) + '" alt="">' : "") +
+        return '<button type="button" class="insp' + (i.image ? "" : " noimg") + '" data-insp="' + k + '">' + (i.image ? '<img src="' + esc(i.image) + '" alt="">' : "") +
           '<span class="cap"><h3>' + esc(i.title) + '</h3><span class="meta">' +
           esc([i.artist, i.date, i.where].filter(Boolean).join(", ")) + "</span>" +
           (i.text ? '<span class="note">' + paras(i.text) + "</span>" : "") +
-          '<span class="more-link">' + esc(T.readMore || "View larger") + " &#8599;&#65038;</span></span></button>";
+          (i.image || i.text || i.more ? '<span class="more-link">' + esc(T.readMore || "View larger") + " &#8599;&#65038;</span>" : "") + "</span></button>";
       }).join("");
     }
     if (P) return '<figure class="insp"><div class="slot"></div><figcaption>' + sk([70, 45]) + sk([100, 92, 60]) + "</figcaption></figure>";

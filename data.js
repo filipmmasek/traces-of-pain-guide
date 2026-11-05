@@ -86,7 +86,17 @@ window.GUIDE = {
    "quoteBy": "",
    "text": "The angel Zadquiel moves across impossible ground between mercy and death. Its freedom translates into dissent. The figure embodies the archetype from a clear will to empowerment. In its stance there is no room for clemency; what drives it is the certainty that the contemporary order, like the old dogmas of the past, is beginning to crumble.",
    "story": "angels",
-   "inspirations": []
+   "inspirations": [
+    {
+     "title": "Ángeles arcabuceros (arquebusier angels)",
+     "artist": "Cusco School and the Master of Calamarca",
+     "date": "second half of the 17th century",
+     "where": "Viceroyalty of Peru; most complete series in the church of Calamarca, Bolivia",
+     "image": "",
+     "text": "Angels painted with an arquebus, an early firearm, instead of a sword, and dressed like Spanish and Andean nobles. The type arose in the Viceroyalty of Peru, mostly in the Cusco School and its largely indigenous workshops. The most complete surviving series hangs in the church of Calamarca, about 60 km from La Paz.",
+     "credit": "Source: Wikipedia, “Ángel arcabucero” (English) and “Ángeles arcabuceros” (Spanish)."
+    }
+   ]
   },
   {
    "id": "raphael-dei",
@@ -97,7 +107,26 @@ window.GUIDE = {
    "quoteBy": "",
    "text": "The archangel of medicine and guardian of travellers descends here stripped of mercy. The image concentrates on the tension of the robes and on the mouth that barely parts. Syncretism becomes a borderland eroticism, the friction of an identity born of successive layers of migration: a woman who refuses to be tamed by the map. Raphael no longer heals the pain of the road; he imitates the gesture of one who, to calm the torment, needs to inflame it.",
    "story": "angels",
-   "inspirations": []
+   "inspirations": [
+    {
+     "title": "Book of Tobit",
+     "artist": "Old Testament (deuterocanonical)",
+     "date": "",
+     "where": "The archangel Raphael guides the young Tobias on his journey and heals his father's blindness",
+     "image": "",
+     "text": "",
+     "credit": ""
+    },
+    {
+     "title": "Ángeles arcabuceros (arquebusier angels)",
+     "artist": "Cusco School and the Master of Calamarca",
+     "date": "second half of the 17th century",
+     "where": "Viceroyalty of Peru; most complete series in the church of Calamarca, Bolivia",
+     "image": "",
+     "text": "Angels painted with an arquebus, an early firearm, instead of a sword, and dressed like Spanish and Andean nobles. The type arose in the Viceroyalty of Peru, mostly in the Cusco School and its largely indigenous workshops. The most complete surviving series hangs in the church of Calamarca, about 60 km from La Paz.",
+     "credit": "Source: Wikipedia, “Ángel arcabucero” (English) and “Ángeles arcabuceros” (Spanish)."
+    }
+   ]
   },
   {
    "id": "letiel-dei",
@@ -108,7 +137,26 @@ window.GUIDE = {
    "quoteBy": "",
    "text": "In the painting, Letiel embodies an oxymoron: he holds the arquebus with an unreal delicacy, as if in the middle of a creative act. In the photograph, that lightness becomes a suspended threat. The figure operates under the shadow of God. The provocation lies in that chiaroscuro and in the indifference of its gaze. It holds the weapon not like someone carrying out a divine mandate, but like someone taking possession of the possibility of firing. The feathers no longer imitate flight; they weigh on the shoulders like rusted armour.",
    "story": "angels",
-   "inspirations": []
+   "inspirations": [
+    {
+     "title": "Letiel Dei",
+     "artist": "Master of Calamarca",
+     "date": "17th century",
+     "where": "Church of Calamarca, Bolivia",
+     "image": "",
+     "text": "",
+     "credit": ""
+    },
+    {
+     "title": "Ángeles arcabuceros (arquebusier angels)",
+     "artist": "Cusco School and the Master of Calamarca",
+     "date": "second half of the 17th century",
+     "where": "Viceroyalty of Peru; most complete series in the church of Calamarca, Bolivia",
+     "image": "",
+     "text": "Angels painted with an arquebus, an early firearm, instead of a sword, and dressed like Spanish and Andean nobles. The type arose in the Viceroyalty of Peru, mostly in the Cusco School and its largely indigenous workshops. The most complete surviving series hangs in the church of Calamarca, about 60 km from La Paz.",
+     "credit": "Source: Wikipedia, “Ángel arcabucero” (English) and “Ángeles arcabuceros” (Spanish)."
+    }
+   ]
   },
   {
    "id": "ophelia",
@@ -128,6 +176,15 @@ window.GUIDE = {
      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg?width=900",
      "text": "",
      "credit": "Ophelia, John Everett Millais, Tate Britain, via Wikimedia Commons (Google Art Project), public domain."
+    },
+    {
+     "title": "Hamlet",
+     "artist": "William Shakespeare",
+     "date": "c. 1600",
+     "where": "Act 4, scene 7: Queen Gertrude tells of Ophelia's drowning",
+     "image": "",
+     "text": "",
+     "credit": ""
     }
    ]
   },
@@ -161,7 +218,17 @@ window.GUIDE = {
    "quoteBy": "",
    "text": "",
    "story": "",
-   "inspirations": []
+   "inspirations": [
+    {
+     "title": "Fight with Cudgels",
+     "artist": "Francisco de Goya",
+     "date": "1820–1823",
+     "where": "Museo del Prado, Madrid",
+     "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Duelo_a_garrotazos,_por_Goya.jpg?width=900",
+     "text": "",
+     "credit": "Fight with Cudgels, Francisco de Goya, Museo del Prado, via Wikimedia Commons, public domain."
+    }
+   ]
   },
   {
    "id": "terrible-night",
@@ -1799,13 +1866,53 @@ window.GUIDE = {
    },
    "projects": {
     "raphael-dei": {
-     "text": "Archanděl léčitel a ochránce poutníků se zjevuje bez jakéhokoli soucitu. Snímek se zaměřuje na napětí roucha a na téměř neznatelně pootevřená ústa. Synkretismus tu nabývá mezní podoby smyslnosti, vnitřního sváru identity zrozené z po sobě jdoucích kulturních vrstev: žena, která se odmítá nechat spoutat zeměpisnými souřadnicemi. Raphael už neléčí bolest poutí; napodobuje toho, kdo nejprve potřebuje trýzeň rozjitřit, aby ji poté utišil."
+     "text": "Archanděl léčitel a ochránce poutníků se zjevuje bez jakéhokoli soucitu. Snímek se zaměřuje na napětí roucha a na téměř neznatelně pootevřená ústa. Synkretismus tu nabývá mezní podoby smyslnosti, vnitřního sváru identity zrozené z po sobě jdoucích kulturních vrstev: žena, která se odmítá nechat spoutat zeměpisnými souřadnicemi. Raphael už neléčí bolest poutí; napodobuje toho, kdo nejprve potřebuje trýzeň rozjitřit, aby ji poté utišil.",
+     "inspirations": [
+      {
+       "title": "Kniha Tobiáš",
+       "artist": "Starý zákon (deuterokanonická kniha)",
+       "where": "Archanděl Rafael provází mladého Tobiáše na cestě a uzdraví slepotu jeho otce"
+      },
+      {
+       "title": "Ángeles arcabuceros (andělé s arkebuzou)",
+       "artist": "Cuzcká škola a Mistr z Calamarky",
+       "date": "2. polovina 17. století",
+       "where": "Místokrálovství Peru; nejúplnější série v kostele v Calamarce, Bolívie",
+       "text": "Andělé malovaní s arkebuzou, ranou palnou zbraní, místo meče, a oblečení jako španělští a andští šlechtici. Tento typ vznikl v Místokrálovství Peru, hlavně v Cuzcké škole a jejích převážně domorodých dílnách. Nejúplnější dochovaná série visí v kostele v Calamarce, asi 60 km od La Paz.",
+       "credit": "Zdroj: Wikipedie, „Ángel arcabucero“ (anglicky) a „Ángeles arcabuceros“ (španělsky)."
+      }
+     ]
     },
     "letiel-dei": {
-     "text": "Letiel na plátně zosobňuje oxymóron: svírá arkebuzu s tak nadpozemskou jemností, jako by se nacházel uprostřed tvůrčího aktu. Na fotografii však tato lehkost působí spíše jako skrytá hrozba. Postava jedná ve jménu Božím. Avšak hra světla a stínu a její lhostejný pohled působí provokativně. Nedrží zbraň jako vykonavatel Božího příkazu, nýbrž jako ten, kdo si osobuje právo o výstřelu rozhodnout. Křídla už neevokují let, ale těžce visí z ramen jako zrezivělé brnění."
+     "text": "Letiel na plátně zosobňuje oxymóron: svírá arkebuzu s tak nadpozemskou jemností, jako by se nacházel uprostřed tvůrčího aktu. Na fotografii však tato lehkost působí spíše jako skrytá hrozba. Postava jedná ve jménu Božím. Avšak hra světla a stínu a její lhostejný pohled působí provokativně. Nedrží zbraň jako vykonavatel Božího příkazu, nýbrž jako ten, kdo si osobuje právo o výstřelu rozhodnout. Křídla už neevokují let, ale těžce visí z ramen jako zrezivělé brnění.",
+     "inspirations": [
+      {
+       "where": "Kostel v Calamarce, Bolívie",
+       "date": "17. století",
+       "artist": "Mistr z Calamarky"
+      },
+      {
+       "title": "Ángeles arcabuceros (andělé s arkebuzou)",
+       "artist": "Cuzcká škola a Mistr z Calamarky",
+       "date": "2. polovina 17. století",
+       "where": "Místokrálovství Peru; nejúplnější série v kostele v Calamarce, Bolívie",
+       "text": "Andělé malovaní s arkebuzou, ranou palnou zbraní, místo meče, a oblečení jako španělští a andští šlechtici. Tento typ vznikl v Místokrálovství Peru, hlavně v Cuzcké škole a jejích převážně domorodých dílnách. Nejúplnější dochovaná série visí v kostele v Calamarce, asi 60 km od La Paz.",
+       "credit": "Zdroj: Wikipedie, „Ángel arcabucero“ (anglicky) a „Ángeles arcabuceros“ (španělsky)."
+      }
+     ]
     },
     "zadquiel-dei": {
-     "text": "Anděl Zadquiel se zmítá mezi milosrdenstvím a smrtí. Jeho svoboda se přetavuje ve schizma. Je zosobněním archetypální postavy s jasnou vůlí k sebeurčení. V jeho postoji není místo pro laskavost; naopak, jeho pohání přesvědčení, že současný řád se začíná hroutit tak jako dávná dogmata časů minulých."
+     "text": "Anděl Zadquiel se zmítá mezi milosrdenstvím a smrtí. Jeho svoboda se přetavuje ve schizma. Je zosobněním archetypální postavy s jasnou vůlí k sebeurčení. V jeho postoji není místo pro laskavost; naopak, jeho pohání přesvědčení, že současný řád se začíná hroutit tak jako dávná dogmata časů minulých.",
+     "inspirations": [
+      {
+       "title": "Ángeles arcabuceros (andělé s arkebuzou)",
+       "artist": "Cuzcká škola a Mistr z Calamarky",
+       "date": "2. polovina 17. století",
+       "where": "Místokrálovství Peru; nejúplnější série v kostele v Calamarce, Bolívie",
+       "text": "Andělé malovaní s arkebuzou, ranou palnou zbraní, místo meče, a oblečení jako španělští a andští šlechtici. Tento typ vznikl v Místokrálovství Peru, hlavně v Cuzcké škole a jejích převážně domorodých dílnách. Nejúplnější dochovaná série visí v kostele v Calamarce, asi 60 km od La Paz.",
+       "credit": "Zdroj: Wikipedie, „Ángel arcabucero“ (anglicky) a „Ángeles arcabuceros“ (španělsky)."
+      }
+     ]
     },
     "letters-from-mom": {
      "subtitle": "O povídce „Maminčiny dopisy“ Julia Cortázara",
@@ -1840,6 +1947,9 @@ window.GUIDE = {
        "title": "Ofélie",
        "where": "Tate Britain, Londýn",
        "credit": "Ofélie, John Everett Millais, Tate Britain, přes Wikimedia Commons (Google Art Project), volné dílo."
+      },
+      {
+       "where": "4. jednání, 7. scéna: královna Gertruda líčí, jak se Ofélie utopila"
       }
      ]
     },
@@ -1851,6 +1961,14 @@ window.GUIDE = {
        "title": "Saturn požírající svého syna",
        "where": "Museo del Prado, Madrid",
        "credit": "Saturn požírající svého syna, Francisco de Goya, Museo del Prado, přes Wikimedia Commons, volné dílo."
+      }
+     ]
+    },
+    "the-duel": {
+     "inspirations": [
+      {
+       "title": "Souboj s klacky (Duelo a garrotazos)",
+       "credit": "Duelo a garrotazos, Francisco de Goya, Museo del Prado, přes Wikimedia Commons, volné dílo."
       }
      ]
     }
@@ -1912,13 +2030,53 @@ window.GUIDE = {
    },
    "projects": {
     "raphael-dei": {
-     "text": "El arcángel de la medicina y guardián de los viajeros desciende aquí desprovisto de piedad. La imagen se concentra en la tensión del ropaje y en la boca que apenas se entreabre. El sincretismo se vuelve un erotismo fronterizo, la fricción de una identidad nacida de sucesivas capas de migración: una mujer que se niega a ser domesticada por el mapa. Raphael ya no cura el dolor de los caminos; imita el gesto de quien, para calmar el tormento, necesita exacerbarlo."
+     "text": "El arcángel de la medicina y guardián de los viajeros desciende aquí desprovisto de piedad. La imagen se concentra en la tensión del ropaje y en la boca que apenas se entreabre. El sincretismo se vuelve un erotismo fronterizo, la fricción de una identidad nacida de sucesivas capas de migración: una mujer que se niega a ser domesticada por el mapa. Raphael ya no cura el dolor de los caminos; imita el gesto de quien, para calmar el tormento, necesita exacerbarlo.",
+     "inspirations": [
+      {
+       "title": "Libro de Tobías",
+       "artist": "Antiguo Testamento (deuterocanónico)",
+       "where": "El arcángel Rafael guía al joven Tobías en su viaje y cura la ceguera de su padre"
+      },
+      {
+       "title": "Ángeles arcabuceros",
+       "artist": "Escuela cuzqueña y Maestro de Calamarca",
+       "date": "segunda mitad del siglo XVII",
+       "where": "Virreinato del Perú; la serie más completa, en la iglesia de Calamarca, Bolivia",
+       "text": "Ángeles pintados con un arcabuz, una de las primeras armas de fuego, en lugar de una espada, y vestidos como nobles españoles y andinos. El tipo surgió en el Virreinato del Perú, sobre todo en la escuela cuzqueña y sus talleres, en su mayoría indígenas. La serie más completa que se conserva está en la iglesia de Calamarca, a unos 60 km de La Paz.",
+       "credit": "Fuente: Wikipedia, «Ángel arcabucero» (inglés) y «Ángeles arcabuceros» (español)."
+      }
+     ]
     },
     "letiel-dei": {
-     "text": "En la pintura, Letiel encarna un oxímoron: sostiene el arcabuz con una delicadeza irreal, como si se hallara en pleno acto creativo.\n\nEn la foto, esa ligereza se vuelve una amenaza suspendida. La figura opera bajo la sombra de Dios. La provocación reside en ese claroscuro y en la indiferencia de su mirada. Sostiene el arma no como quien cumple un mandato divino, sino como quien se adueña de la posibilidad del disparo. Las plumas ya no imitan el vuelo, pesan sobre los hombros como una armadura oxidada."
+     "text": "En la pintura, Letiel encarna un oxímoron: sostiene el arcabuz con una delicadeza irreal, como si se hallara en pleno acto creativo.\n\nEn la foto, esa ligereza se vuelve una amenaza suspendida. La figura opera bajo la sombra de Dios. La provocación reside en ese claroscuro y en la indiferencia de su mirada. Sostiene el arma no como quien cumple un mandato divino, sino como quien se adueña de la posibilidad del disparo. Las plumas ya no imitan el vuelo, pesan sobre los hombros como una armadura oxidada.",
+     "inspirations": [
+      {
+       "where": "Iglesia de Calamarca, Bolivia",
+       "date": "siglo XVII",
+       "artist": "Maestro de Calamarca"
+      },
+      {
+       "title": "Ángeles arcabuceros",
+       "artist": "Escuela cuzqueña y Maestro de Calamarca",
+       "date": "segunda mitad del siglo XVII",
+       "where": "Virreinato del Perú; la serie más completa, en la iglesia de Calamarca, Bolivia",
+       "text": "Ángeles pintados con un arcabuz, una de las primeras armas de fuego, en lugar de una espada, y vestidos como nobles españoles y andinos. El tipo surgió en el Virreinato del Perú, sobre todo en la escuela cuzqueña y sus talleres, en su mayoría indígenas. La serie más completa que se conserva está en la iglesia de Calamarca, a unos 60 km de La Paz.",
+       "credit": "Fuente: Wikipedia, «Ángel arcabucero» (inglés) y «Ángeles arcabuceros» (español)."
+      }
+     ]
     },
     "zadquiel-dei": {
-     "text": "El ángel Zadquiel se desplaza en un terreno imposible entre la misericordia y la muerte. Su libertad se traduce en disidencia. La figura encarna el arquetipo desde una clara voluntad de empoderamiento. En su postura no hay lugar para la clemencia; lo que la impulsa es la certeza de que el orden contemporáneo, al igual que los viejos dogmas del pasado, comienza a desmoronarse."
+     "text": "El ángel Zadquiel se desplaza en un terreno imposible entre la misericordia y la muerte. Su libertad se traduce en disidencia. La figura encarna el arquetipo desde una clara voluntad de empoderamiento. En su postura no hay lugar para la clemencia; lo que la impulsa es la certeza de que el orden contemporáneo, al igual que los viejos dogmas del pasado, comienza a desmoronarse.",
+     "inspirations": [
+      {
+       "title": "Ángeles arcabuceros",
+       "artist": "Escuela cuzqueña y Maestro de Calamarca",
+       "date": "segunda mitad del siglo XVII",
+       "where": "Virreinato del Perú; la serie más completa, en la iglesia de Calamarca, Bolivia",
+       "text": "Ángeles pintados con un arcabuz, una de las primeras armas de fuego, en lugar de una espada, y vestidos como nobles españoles y andinos. El tipo surgió en el Virreinato del Perú, sobre todo en la escuela cuzqueña y sus talleres, en su mayoría indígenas. La serie más completa que se conserva está en la iglesia de Calamarca, a unos 60 km de La Paz.",
+       "credit": "Fuente: Wikipedia, «Ángel arcabucero» (inglés) y «Ángeles arcabuceros» (español)."
+      }
+     ]
     },
     "letters-from-mom": {
      "subtitle": "Sobre «Cartas de mamá» de Julio Cortázar",
@@ -1953,6 +2111,9 @@ window.GUIDE = {
        "title": "Ofelia",
        "where": "Tate Britain, Londres",
        "credit": "Ofelia, John Everett Millais, Tate Britain, vía Wikimedia Commons (Google Art Project), dominio público."
+      },
+      {
+       "where": "Acto 4, escena 7: la reina Gertrudis cuenta cómo se ahogó Ofelia"
       }
      ]
     },
@@ -1964,6 +2125,14 @@ window.GUIDE = {
        "title": "Saturno devorando a su hijo",
        "where": "Museo del Prado, Madrid",
        "credit": "Saturno devorando a su hijo, Francisco de Goya, Museo del Prado, vía Wikimedia Commons, dominio público."
+      }
+     ]
+    },
+    "the-duel": {
+     "inspirations": [
+      {
+       "title": "Duelo a garrotazos",
+       "credit": "Duelo a garrotazos, Francisco de Goya, Museo del Prado, vía Wikimedia Commons, dominio público."
       }
      ]
     }
