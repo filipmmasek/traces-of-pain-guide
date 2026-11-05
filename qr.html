@@ -25,6 +25,9 @@
   .card svg { width: 100mm; height: 100mm; display: block; }
   .card p { margin: 0; font-family: "spalla", Georgia, serif; font-weight: 700; font-size: 14.5pt; letter-spacing: .04em;
             text-transform: uppercase; white-space: nowrap; }
+  /* Czech words: look-alike open font for any Czech letter Spalla lacks (same as the guide, styles.css) */
+  @font-face { font-family: "tp-cz-title"; src: url(fonts/cz/forum-400.woff2) format("woff2"); font-weight: 400; unicode-range: U+C1,U+C9,U+CD,U+D3,U+DA,U+DD,U+E1,U+E9,U+ED,U+F3,U+FA,U+FD,U+10C-10F,U+11A-11B,U+147-148,U+158-159,U+160-161,U+164-165,U+16E-16F,U+17D-17E; }
+  .card p :lang(cs) { font-family: "spalla", "tp-cz-title", Georgia, serif; }
   @media print {
     body { background: none; }
     .bar { display: none; }
@@ -44,7 +47,7 @@
 <div class="sheet">
   <div class="card dark" id="card">
     <div id="qr"></div>
-    <p>More info / Více informací / Más información</p>
+    <p>More info / <span lang="cs">Více informací</span> / <span lang="es">Más información</span></p>
   </div>
 </div>
 <script>
