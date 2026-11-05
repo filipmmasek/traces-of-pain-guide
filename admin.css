@@ -2,8 +2,8 @@
 :root {
   --wall: #0f0e0d; --panel: #1a1816; --field: #12110f; --line: #34302b;
   --bone: #ece6db; --ash: #a39b8f; --blood: #b2402f; --ok: #6fae7c;
-  --display: "athelas", Athelas, "EB Garamond", Georgia, serif;
-  --body: "din-2014", "DIN 2014", "Barlow", "Helvetica Neue", Arial, sans-serif;
+  --display: "athelas", Georgia, serif;
+  --body: "din-2014", "Helvetica Neue", Arial, sans-serif;
   color-scheme: dark;
 }
 * { box-sizing: border-box; }
