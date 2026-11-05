@@ -11,17 +11,18 @@ The guide's fonts come from an Adobe Fonts web project, linked in index.html and
 
 To change fonts, edit the web project on fonts.adobe.com; the site picks the change up without code changes.
 
-## Czech letters
+## Czech
 
-Not every font in the Adobe project has all Czech letters (ě š č ř ž ů ť ď ň ...). On Czech pages only
-(`html:lang(cs)`, end of styles.css), each family has an open-licensed look-alike next in the stack, and the browser
-takes a letter from it only where the Adobe font lacks that letter:
+Not every font in the Adobe project has all Czech letters (ě š č ř ž ů ť ď ň ...), and mixing in single letters
+from another font looked wrong, so Czech pages (`html:lang(cs)`, end of styles.css) set all texts in open-licensed
+look-alikes instead. EN and ES keep the Adobe fonts.
 
-| Adobe family | Fallback for missing Czech letters | File(s) |
+| Adobe family | Czech pages use | Files |
 |---|---|---|
-| `spalla` | Forum | `cz/forum-400.woff2` |
+| `spalla` | Forum | `cz/forum-*.woff2` |
 | `athelas` | Crimson Pro | `cz/crimson-*.woff2` |
 | `din-2014` | Barlow | `cz/barlow-*.woff2` |
 
-The files are Google Fonts (SIL Open Font License 1.1) cut down to the Czech accented letters only. The Adobe font
-files are not modified. qr.html uses the Forum file for its Czech words too.
+The files are Google Fonts (SIL Open Font License 1.1), latin + latin-ext subsets, self-hosted so the venue tablets
+need no extra service. The Adobe font files are not modified. The QR card (qr.html) stays in Spalla: its Czech words
+have no letters outside the Western set.

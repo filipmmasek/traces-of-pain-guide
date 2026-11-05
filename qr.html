@@ -16,8 +16,6 @@
   .bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: center; padding: 16px; }
   .bar button { font: inherit; color: inherit; background: none; border: 1px solid #ececec; padding: 8px 14px; cursor: pointer; }
   .bar button[aria-pressed="true"] { background: #ececec; color: #111; }
-  .bar label { display: flex; gap: 8px; align-items: center; }
-  .bar input { font: inherit; color: #111; background: #ececec; border: 0; padding: 8px 10px; max-width: 80vw; }
   .bar small { flex-basis: 100%; text-align: center; opacity: .7; }
   .sheet { display: flex; justify-content: center; padding: 0 16px 32px; }
   .card { width: 148mm; height: 210mm; flex: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14mm;
@@ -27,9 +25,6 @@
   .card svg { width: 100mm; height: 100mm; display: block; }
   .card p { margin: 0; font-family: "spalla", Georgia, serif; font-weight: 700; font-size: 14.5pt; letter-spacing: .04em;
             text-transform: uppercase; white-space: nowrap; }
-  /* Czech words: look-alike open font for any Czech letter Spalla lacks (same as the guide, styles.css) */
-  @font-face { font-family: "tp-cz-title"; src: url(fonts/cz/forum-400.woff2) format("woff2"); font-weight: 400; unicode-range: U+C1,U+C9,U+CD,U+D3,U+DA,U+DD,U+E1,U+E9,U+ED,U+F3,U+FA,U+FD,U+10C-10F,U+11A-11B,U+147-148,U+158-159,U+160-161,U+164-165,U+16E-16F,U+17D-17E; }
-  .card p :lang(cs) { font-family: "spalla", "tp-cz-title", Georgia, serif; }
   @media print {
     body { background: none; }
     .bar { display: none; }
@@ -44,17 +39,12 @@
   <button type="button" data-mode="plain" aria-pressed="false">Plain (white)</button>
   <button type="button" id="print">Print / Save as PDF</button>
   <button type="button" id="svg">Download QR (SVG)</button>
-  <label>Text <input id="text" type="text" value="More info / Více informací / Más información" size="44"></label>
-  <span>Text colour</span>
-  <button type="button" data-ink="auto" aria-pressed="true">Auto</button>
-  <button type="button" data-ink="#111111" aria-pressed="false">Black</button>
-  <button type="button" data-ink="#ececec" aria-pressed="false">White</button>
   <small>Print settings: paper A5, margins none, background graphics on.</small>
 </div>
 <div class="sheet">
   <div class="card dark" id="card">
     <div id="qr"></div>
-    <p>More info / <span lang="cs">Více informací</span> / <span lang="es">Más información</span></p>
+    <p>More info / Více informací / Más información</p>
   </div>
 </div>
 <script>
@@ -83,15 +73,6 @@
     a.href = URL.createObjectURL(new Blob([svg(c[0], c[1])], { type: "image/svg+xml" }));
     a.download = "traces-of-pain-qr-" + mode + ".svg"; a.click();
   });
-  var ink = "auto", cap = card.querySelector("p"), input = document.getElementById("text");
-  document.querySelectorAll("[data-ink]").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      ink = btn.getAttribute("data-ink");
-      document.querySelectorAll("[data-ink]").forEach(function (o) { o.setAttribute("aria-pressed", String(o === btn)); });
-      cap.style.color = ink === "auto" ? "" : ink;
-    });
-  });
-  input.addEventListener("input", function () { cap.textContent = input.value; cap.hidden = !input.value.trim(); fit(); });
   draw();
   // Fit the caption to the card width once Spalla has loaded.
   function fit() {
