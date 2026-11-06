@@ -8,8 +8,8 @@
 <link rel="stylesheet" href="https://use.typekit.net/bin2juv.css">
 <script src="vendor/qrcode.js"></script>
 <style>
-  /* Printable QR card for the exhibition: open qr.html on the site the QR should lead to
-     (https://tracesofpain.com/qr.html or https://filipmmasek.github.io/traces-of-pain-guide/qr.html), pick a version and use Print > Save as PDF (A5, margins none, background graphics on). */
+  /* Printable QR card for the exhibition: open https://tracesofpain.com/qr.html,
+     pick a version and use Print > Save as PDF (A5, margins none, background graphics on). */
   @page { size: 148mm 210mm; margin: 0; }
   html, body { margin: 0; padding: 0; }
   body { background: #2a2a2a; font: 14px/1.4 system-ui, sans-serif; color: #ececec; }
@@ -39,7 +39,6 @@
   <button type="button" data-mode="plain" aria-pressed="false">Plain (white)</button>
   <button type="button" id="print">Print / Save as PDF</button>
   <button type="button" id="svg">Download QR (SVG)</button>
-  <small>QR leads to <b id="addr"></b> (the site this page is open on).</small>
   <small>Print settings: paper A5, margins none, background graphics on.</small>
 </div>
 <div class="sheet">
@@ -50,11 +49,7 @@
 </div>
 <script>
 (function () {
-  // The QR leads to the site this page is opened on, so the same page makes a code for
-  // tracesofpain.com and for the GitHub Pages copy (filipmmasek.github.io/traces-of-pain-guide/).
-  var URL_ = /^https?:$/.test(location.protocol) ? location.origin + location.pathname.replace(/[^\/]*$/, "") : "https://tracesofpain.com/";
-  if (URL_ === "https://tracesofpain.com/") URL_ = "https://tracesofpain.com";
-  document.getElementById("addr").textContent = URL_.replace(/^https:\/\//, "");
+  var URL_ = "https://tracesofpain.com";
   var q = qrcode(0, "Q"); q.addData(URL_); q.make();
   var n = q.getModuleCount(), b = 4, s = n + 2 * b, d = "";
   for (var r = 0; r < n; r++) for (var c = 0; c < n; c++) if (q.isDark(r, c)) d += "M" + (c + b) + " " + (r + b) + "h1v1h-1z";
@@ -76,7 +71,7 @@
   document.getElementById("svg").addEventListener("click", function () {
     var c = colours(), a = document.createElement("a");
     a.href = URL.createObjectURL(new Blob([svg(c[0], c[1])], { type: "image/svg+xml" }));
-    a.download = "traces-of-pain-qr-" + (location.hostname.indexOf("github.io") > -1 ? "github-" : "") + mode + ".svg"; a.click();
+    a.download = "traces-of-pain-qr-" + mode + ".svg"; a.click();
   });
   draw();
   // Fit the caption to the card width once Spalla has loaded.
