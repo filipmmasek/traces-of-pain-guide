@@ -701,3 +701,8 @@ html:lang(cs) {
 .fs-list.open li.active .t { text-decoration: underline; text-underline-offset: 4px; }
 .fs-list.open li.active .note p { color: inherit; }
 .fs.has-hs .sheet.listing { overflow-y: auto; }
+
+/* No markers on the photos: the details are a text list beside (tablet) or over (phone) the photo */
+.fs-dots { display: none; }
+.tile .dots, .dots { display: none; }
+.hs-list .n { display: none; }

@@ -264,8 +264,8 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 35,
-     "y": 22.5,
+     "x": 50,
+     "y": 50,
      "title": "The cigarette",
      "text": "In interviews Julio Cortázar was almost always smoking: first you saw a cloud of smoke, then his face. Gabriel gave the same habit to the story's characters. Laura and Luis wait anxiously for every new letter from Buenos Aires, and smoking is how they kill the anxiety."
     }
@@ -297,7 +297,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The cigarette",
+     "text": "In interviews Julio Cortázar was almost always smoking: first you saw a cloud of smoke, then his face. Gabriel gave the same habit to the story's characters. Laura and Luis wait anxiously for every new letter from Buenos Aires, and smoking is how they kill the anxiety."
+    }
+   ],
    "src": "img/full/letters-from-mom-2.jpg",
    "thumb": "img/thumb/letters-from-mom-2.jpg",
    "project": "letters-from-mom"
@@ -339,7 +346,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The letter",
+     "text": "In the story every letter from the mother in Buenos Aires brings unease: she writes about Nico, who has died, as if he were still alive."
+    }
+   ],
    "src": "img/full/letters-from-mom-8.jpg",
    "thumb": "img/thumb/letters-from-mom-8.jpg",
    "project": "letters-from-mom"
@@ -356,7 +370,7 @@ window.GUIDE = {
    "hotspots": [
     {
      "x": 50,
-     "y": 66,
+     "y": 50,
      "title": "The letter",
      "text": "In the story every letter from the mother in Buenos Aires brings unease: she writes about Nico, who has died, as if he were still alive."
     }
@@ -390,8 +404,8 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 26,
-     "y": 22,
+     "x": 50,
+     "y": 50,
      "title": "Light and movement",
      "text": "Sharp spots of light on the face, and a lot of blur and movement around it, to create a dreamlike atmosphere. Zadquiel is the angel of death, so unlike the other, colourful angels, this one is kept dark."
     }
@@ -409,7 +423,20 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Light and movement",
+     "text": "Sharp spots of light on the face, and a lot of blur and movement around it, to create a dreamlike atmosphere. Zadquiel is the angel of death, so unlike the other, colourful angels, this one is kept dark."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
    "src": "img/full/zadquiel-1.jpg",
    "thumb": "img/thumb/zadquiel-1.jpg",
    "project": "zadquiel-dei"
@@ -423,7 +450,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
    "src": "img/full/zadquiel-2.jpg",
    "thumb": "img/thumb/zadquiel-2.jpg",
    "project": "zadquiel-dei"
@@ -437,7 +471,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
    "src": "img/full/zadquiel-3.jpg",
    "thumb": "img/thumb/zadquiel-3.jpg",
    "project": "zadquiel-dei"
@@ -453,10 +494,16 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 72,
-     "y": 49,
+     "x": 50,
+     "y": 50,
      "title": "The tear",
      "text": "Some of the photos, mostly the ones on the wall, show a tear. In Gabriel's reading this angel has to take human lives by God's will, even when it does not want to. The tear shows that inner conflict."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Light and movement",
+     "text": "Sharp spots of light on the face, and a lot of blur and movement around it, to create a dreamlike atmosphere. Zadquiel is the angel of death, so unlike the other, colourful angels, this one is kept dark."
     }
    ],
    "src": "img/full/zadquiel-4.jpg",
@@ -472,7 +519,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
    "src": "img/full/zadquiel-6.jpg",
    "thumb": "img/thumb/zadquiel-6.jpg",
    "project": "zadquiel-dei"
@@ -486,7 +540,20 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Light and movement",
+     "text": "Sharp spots of light on the face, and a lot of blur and movement around it, to create a dreamlike atmosphere. Zadquiel is the angel of death, so unlike the other, colourful angels, this one is kept dark."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
    "src": "img/full/zadquiel-9.jpg",
    "thumb": "img/thumb/zadquiel-9.jpg",
    "project": "zadquiel-dei"
@@ -502,8 +569,20 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 40,
-     "y": 68,
+     "x": 50,
+     "y": 50,
+     "title": "The tear",
+     "text": "Some of the photos, mostly the ones on the wall, show a tear. In Gabriel's reading this angel has to take human lives by God's will, even when it does not want to. The tear shows that inner conflict."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Light and movement",
+     "text": "Sharp spots of light on the face, and a lot of blur and movement around it, to create a dreamlike atmosphere. Zadquiel is the angel of death, so unlike the other, colourful angels, this one is kept dark."
+    },
+    {
+     "x": 50,
+     "y": 50,
      "title": "The arquebus",
      "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
     }
@@ -523,14 +602,14 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 17,
-     "y": 55,
+     "x": 50,
+     "y": 50,
      "title": "The arquebus",
      "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
     },
     {
-     "x": 60,
-     "y": 75,
+     "x": 50,
+     "y": 50,
      "title": "Earth colours",
      "text": "Raphael is the angel of travellers, so Gabriel dressed him in earth colours, light browns and desaturated tones, as if ready for an excursion."
     }
@@ -548,7 +627,14 @@ window.GUIDE = {
    "title": "Lorem ipsum veniam",
    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nCurabitur pretium tincidunt lacus, nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
    "src": "img/full/raphael-1.jpg",
    "thumb": "img/thumb/raphael-1.jpg",
    "project": "raphael-dei"
@@ -562,7 +648,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
    "src": "img/full/raphael-2.jpg",
    "thumb": "img/thumb/raphael-2.jpg",
    "project": "raphael-dei"
@@ -576,7 +669,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
    "src": "img/full/raphael-3.jpg",
    "thumb": "img/thumb/raphael-3.jpg",
    "project": "raphael-dei"
@@ -592,10 +692,28 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 60,
-     "y": 82,
+     "x": 50,
+     "y": 50,
+     "title": "The fish",
+     "text": "In the Book of Tobit a fish leaps out of the river Tigris to attack young Tobias. Raphael tells him to catch it and keep its gall, which later cures the blindness of Tobias's father. That is why Raphael is so often painted with a fish in his hand."
+    },
+    {
+     "x": 50,
+     "y": 50,
      "title": "Protector of the sick",
      "text": "Because of the healing in the Book of Tobit, Raphael is also the protector of the sick. Hospitals and clinics are still named after him today."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Earth colours",
+     "text": "Raphael is the angel of travellers, so Gabriel dressed him in earth colours, light browns and desaturated tones, as if ready for an excursion."
     }
    ],
    "src": "img/full/raphael-5.jpg",
@@ -627,10 +745,28 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 77,
+     "x": 50,
      "y": 50,
      "title": "The fish",
      "text": "In the Book of Tobit a fish leaps out of the river Tigris to attack young Tobias. Raphael tells him to catch it and keep its gall, which later cures the blindness of Tobias's father. That is why Raphael is so often painted with a fish in his hand."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Protector of the sick",
+     "text": "Because of the healing in the Book of Tobit, Raphael is also the protector of the sick. Hospitals and clinics are still named after him today."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Earth colours",
+     "text": "Raphael is the angel of travellers, so Gabriel dressed him in earth colours, light browns and desaturated tones, as if ready for an excursion."
     }
    ],
    "src": "img/full/raphael-8.jpg",
@@ -646,7 +782,14 @@ window.GUIDE = {
    "title": "Lorem ipsum amet",
    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Earth colours",
+     "text": "Raphael is the angel of travellers, so Gabriel dressed him in earth colours, light browns and desaturated tones, as if ready for an excursion."
+    }
+   ],
    "src": "img/full/raphael-9.jpg",
    "thumb": "img/thumb/raphael-9.jpg",
    "project": "raphael-dei"
@@ -662,14 +805,14 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 13,
+     "x": 50,
      "y": 50,
      "title": "The wings",
      "text": "In the original painting Letiel's wings are very colourful. Gabriel linked them to the birds of the region, parrots with bright feathers, and used a super colourful palette for this angel."
     },
     {
-     "x": 80,
-     "y": 15,
+     "x": 50,
+     "y": 50,
      "title": "Light and shade",
      "text": "Letiel is one of the most colourful arquebusier angels, yet Gabriel played with strong contrast between light and shade to make him as dark as possible."
     }
@@ -701,7 +844,26 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The wings",
+     "text": "In the original painting Letiel's wings are very colourful. Gabriel linked them to the birds of the region, parrots with bright feathers, and used a super colourful palette for this angel."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Light and shade",
+     "text": "Letiel is one of the most colourful arquebusier angels, yet Gabriel played with strong contrast between light and shade to make him as dark as possible."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
    "src": "img/full/letiel-5.jpg",
    "thumb": "img/thumb/letiel-5.jpg",
    "project": "letiel-dei"
@@ -717,8 +879,14 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 77,
-     "y": 42,
+     "x": 50,
+     "y": 50,
+     "title": "The wings",
+     "text": "In the original painting Letiel's wings are very colourful. Gabriel linked them to the birds of the region, parrots with bright feathers, and used a super colourful palette for this angel."
+    },
+    {
+     "x": 50,
+     "y": 50,
      "title": "The arquebus",
      "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
     }
@@ -736,7 +904,20 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The wings",
+     "text": "In the original painting Letiel's wings are very colourful. Gabriel linked them to the birds of the region, parrots with bright feathers, and used a super colourful palette for this angel."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
    "src": "img/full/letiel-8.jpg",
    "thumb": "img/thumb/letiel-8.jpg",
    "project": "letiel-dei"
@@ -750,7 +931,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The wings",
+     "text": "In the original painting Letiel's wings are very colourful. Gabriel linked them to the birds of the region, parrots with bright feathers, and used a super colourful palette for this angel."
+    }
+   ],
    "src": "img/full/letiel-dei11944-1.jpg",
    "thumb": "img/thumb/letiel-dei11944-1.jpg",
    "project": "letiel-dei"
@@ -764,7 +952,26 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The wings",
+     "text": "In the original painting Letiel's wings are very colourful. Gabriel linked them to the birds of the region, parrots with bright feathers, and used a super colourful palette for this angel."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Light and shade",
+     "text": "Letiel is one of the most colourful arquebusier angels, yet Gabriel played with strong contrast between light and shade to make him as dark as possible."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
    "src": "img/full/letiel-dei12289-1.jpg",
    "thumb": "img/thumb/letiel-dei12289-1.jpg",
    "project": "letiel-dei"
@@ -778,7 +985,20 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The wings",
+     "text": "In the original painting Letiel's wings are very colourful. Gabriel linked them to the birds of the region, parrots with bright feathers, and used a super colourful palette for this angel."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
    "src": "img/full/letiel-dei-outdoor-337-1.jpg",
    "thumb": "img/thumb/letiel-dei-outdoor-337-1.jpg",
    "project": "letiel-dei"
@@ -794,8 +1014,8 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 30,
-     "y": 20,
+     "x": 50,
+     "y": 50,
      "title": "Shot on film",
      "text": "Most of the photos were taken on 35 mm film with a Yashica FX-3, a camera Gabriel's mother bought on a trip to Spain in 1983. He has used it since his youth and knows exactly what to expect from it."
     }
@@ -843,8 +1063,8 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 49,
-     "y": 55,
+     "x": 50,
+     "y": 50,
      "title": "The upside-down horizon",
      "text": "In many of the photos the horizon is upside down. It puts you under the water, sharing Ophelia's point of view and her pain."
     }
@@ -862,7 +1082,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The upside-down horizon",
+     "text": "In many of the photos the horizon is upside down. It puts you under the water, sharing Ophelia's point of view and her pain."
+    }
+   ],
    "src": "img/full/ophelia-5.jpg",
    "thumb": "img/thumb/ophelia-5.jpg",
    "project": "ophelia"
@@ -904,7 +1131,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The upside-down horizon",
+     "text": "In many of the photos the horizon is upside down. It puts you under the water, sharing Ophelia's point of view and her pain."
+    }
+   ],
    "src": "img/full/ophelia-30-08-2024-2024-833.jpg",
    "thumb": "img/thumb/ophelia-30-08-2024-2024-833.jpg",
    "project": "ophelia"
@@ -921,7 +1155,7 @@ window.GUIDE = {
    "hotspots": [
     {
      "x": 50,
-     "y": 42,
+     "y": 50,
      "title": "The fork",
      "text": "A high-contrast fork on a red background. For Gabriel it sums up the whole story: you do not need to see blood or anything raw, it leaves room for imagination."
     }
@@ -939,7 +1173,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The fork",
+     "text": "A high-contrast fork on a red background. For Gabriel it sums up the whole story: you do not need to see blood or anything raw, it leaves room for imagination."
+    }
+   ],
    "src": "img/full/saturn-1.jpg",
    "thumb": "img/thumb/saturn-1.jpg",
    "project": "saturn"
@@ -953,7 +1194,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Suit, dirty hands",
+     "text": "The man wears a suit, but his hands and face are dirty: powerful people may be very dirty inside. Gabriel links Goya's painting to today's elites, who will do anything to stay in power."
+    }
+   ],
    "src": "img/full/saturn-2.jpg",
    "thumb": "img/thumb/saturn-2.jpg",
    "project": "saturn"
@@ -981,7 +1229,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The first shoot",
+     "text": "One of the very first shoots, recreating the body language of Goya's painting. The project later moved towards something more abstract and subtle, but this shoot was too good to leave out."
+    }
+   ],
    "src": "img/full/saturn-4.jpg",
    "thumb": "img/thumb/saturn-4.jpg",
    "project": "saturn"
@@ -997,8 +1252,8 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 45,
-     "y": 40,
+     "x": 50,
+     "y": 50,
      "title": "The first shoot",
      "text": "One of the very first shoots, recreating the body language of Goya's painting. The project later moved towards something more abstract and subtle, but this shoot was too good to leave out."
     }
@@ -1016,7 +1271,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The first shoot",
+     "text": "One of the very first shoots, recreating the body language of Goya's painting. The project later moved towards something more abstract and subtle, but this shoot was too good to leave out."
+    }
+   ],
    "src": "img/full/saturn-7.jpg",
    "thumb": "img/thumb/saturn-7.jpg",
    "project": "saturn"
@@ -1032,8 +1294,8 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 60,
-     "y": 40,
+     "x": 50,
+     "y": 50,
      "title": "Suit, dirty hands",
      "text": "The man wears a suit, but his hands and face are dirty: powerful people may be very dirty inside. Gabriel links Goya's painting to today's elites, who will do anything to stay in power."
     }
@@ -1053,8 +1315,8 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 40,
-     "y": 35,
+     "x": 50,
+     "y": 50,
      "title": "After the duel",
      "text": "Instead of two fighters in action, Gabriel shows what happens after the duel: people beaten, with wounds. It is not one fight between two men, but the duels we all have with friends, family and the people around us."
     }
@@ -1074,10 +1336,16 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 73,
-     "y": 30,
+     "x": 50,
+     "y": 50,
      "title": "The white flag",
      "text": "The flag is not in Goya's painting. One of the fighters surrenders and asks for peace: the duel has stopped, and here, unlike in Goya, they survive."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "After the duel",
+     "text": "Instead of two fighters in action, Gabriel shows what happens after the duel: people beaten, with wounds. It is not one fight between two men, but the duels we all have with friends, family and the people around us."
     }
    ],
    "src": "img/full/duel-1.jpg",
@@ -1093,7 +1361,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "After the duel",
+     "text": "Instead of two fighters in action, Gabriel shows what happens after the duel: people beaten, with wounds. It is not one fight between two men, but the duels we all have with friends, family and the people around us."
+    }
+   ],
    "src": "img/full/duel-2.jpg",
    "thumb": "img/thumb/duel-2.jpg",
    "project": "the-duel"
@@ -1107,7 +1382,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The white flag",
+     "text": "The flag is not in Goya's painting. One of the fighters surrenders and asks for peace: the duel has stopped, and here, unlike in Goya, they survive."
+    }
+   ],
    "src": "img/full/duel-3.jpg",
    "thumb": "img/thumb/duel-3.jpg",
    "project": "the-duel"
@@ -1149,7 +1431,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "After the duel",
+     "text": "Instead of two fighters in action, Gabriel shows what happens after the duel: people beaten, with wounds. It is not one fight between two men, but the duels we all have with friends, family and the people around us."
+    }
+   ],
    "src": "img/full/duel-06.jpg",
    "thumb": "img/thumb/duel-06.jpg",
    "project": "the-duel"
@@ -1177,7 +1466,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The white flag",
+     "text": "The flag is not in Goya's painting. One of the fighters surrenders and asks for peace: the duel has stopped, and here, unlike in Goya, they survive."
+    }
+   ],
    "src": "img/full/duel-7.jpg",
    "thumb": "img/thumb/duel-7.jpg",
    "project": "the-duel"
@@ -1191,7 +1487,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The white flag",
+     "text": "The flag is not in Goya's painting. One of the fighters surrenders and asks for peace: the duel has stopped, and here, unlike in Goya, they survive."
+    }
+   ],
    "src": "img/full/duel-8.jpg",
    "thumb": "img/thumb/duel-8.jpg",
    "project": "the-duel"
@@ -1205,7 +1508,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The white flag",
+     "text": "The flag is not in Goya's painting. One of the fighters surrenders and asks for peace: the duel has stopped, and here, unlike in Goya, they survive."
+    }
+   ],
    "src": "img/full/duel-9.jpg",
    "thumb": "img/thumb/duel-9.jpg",
    "project": "the-duel"
@@ -1275,7 +1585,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "After the duel",
+     "text": "Instead of two fighters in action, Gabriel shows what happens after the duel: people beaten, with wounds. It is not one fight between two men, but the duels we all have with friends, family and the people around us."
+    }
+   ],
    "src": "img/full/duel-13.jpg",
    "thumb": "img/thumb/duel-13.jpg",
    "project": "the-duel"
@@ -1317,7 +1634,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "After the duel",
+     "text": "Instead of two fighters in action, Gabriel shows what happens after the duel: people beaten, with wounds. It is not one fight between two men, but the duels we all have with friends, family and the people around us."
+    }
+   ],
    "src": "img/full/duel-16.jpg",
    "thumb": "img/thumb/duel-16.jpg",
    "project": "the-duel"
@@ -1345,7 +1669,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "After the duel",
+     "text": "Instead of two fighters in action, Gabriel shows what happens after the duel: people beaten, with wounds. It is not one fight between two men, but the duels we all have with friends, family and the people around us."
+    }
+   ],
    "src": "img/full/duel-18.jpg",
    "thumb": "img/thumb/duel-18.jpg",
    "project": "the-duel"
@@ -1359,7 +1690,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "After the duel",
+     "text": "Instead of two fighters in action, Gabriel shows what happens after the duel: people beaten, with wounds. It is not one fight between two men, but the duels we all have with friends, family and the people around us."
+    }
+   ],
    "src": "img/full/duel-19.jpg",
    "thumb": "img/thumb/duel-19.jpg",
    "project": "the-duel"
@@ -1373,7 +1711,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "After the duel",
+     "text": "Instead of two fighters in action, Gabriel shows what happens after the duel: people beaten, with wounds. It is not one fight between two men, but the duels we all have with friends, family and the people around us."
+    }
+   ],
    "src": "img/full/duel-20.jpg",
    "thumb": "img/thumb/duel-20.jpg",
    "project": "the-duel"
@@ -1387,7 +1732,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "After the duel",
+     "text": "Instead of two fighters in action, Gabriel shows what happens after the duel: people beaten, with wounds. It is not one fight between two men, but the duels we all have with friends, family and the people around us."
+    }
+   ],
    "src": "img/full/duel-21.jpg",
    "thumb": "img/thumb/duel-21.jpg",
    "project": "the-duel"
@@ -1415,7 +1767,20 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Prague cobblestones",
+     "text": "Gabriel imagined the bride left behind on her wedding day, lying in the street: abandoned, desperate and vulnerable."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The leftovers",
+     "text": "The wedding dress, the gift and the flowers are all that is left of the wedding."
+    }
+   ],
    "src": "img/full/noche-terrible-1.jpg",
    "thumb": "img/thumb/noche-terrible-1.jpg",
    "project": "terrible-night"
@@ -1431,8 +1796,8 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 52,
-     "y": 92,
+     "x": 50,
+     "y": 50,
      "title": "Prague cobblestones",
      "text": "Gabriel imagined the bride left behind on her wedding day, lying in the street: abandoned, desperate and vulnerable."
     }
@@ -1466,10 +1831,16 @@ window.GUIDE = {
    "inspirations": [],
    "hotspots": [
     {
-     "x": 53,
-     "y": 80,
+     "x": 50,
+     "y": 50,
      "title": "The leftovers",
      "text": "The wedding dress, the gift and the flowers are all that is left of the wedding."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Prague cobblestones",
+     "text": "Gabriel imagined the bride left behind on her wedding day, lying in the street: abandoned, desperate and vulnerable."
     }
    ],
    "src": "img/full/noche-terrible-4.jpg",
@@ -1506,7 +1877,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Blur and movement",
+     "text": "The studio photos are deliberately not sharp, full of movement and blur, as if they were images from the 1930s, when the story was written."
+    }
+   ],
    "src": "img/full/noche-terrible-end3.jpg",
    "thumb": "img/thumb/noche-terrible-end3.jpg",
    "project": "terrible-night"
@@ -1520,7 +1898,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Blur and movement",
+     "text": "The studio photos are deliberately not sharp, full of movement and blur, as if they were images from the 1930s, when the story was written."
+    }
+   ],
    "src": "img/full/noche-terrible-end4.jpg",
    "thumb": "img/thumb/noche-terrible-end4.jpg",
    "project": "terrible-night"
@@ -1895,11 +2280,23 @@ window.GUIDE = {
       {
        "title": "Slza",
        "text": "Na některých fotografiích, hlavně na těch na zdi, je vidět slza. Podle Gabriela musí tento anděl z Boží vůle brát lidské životy, i když nechce. Slza ukazuje tento vnitřní konflikt."
+      },
+      {
+       "title": "Světlo a pohyb",
+       "text": "Ostrá světla na tváři a kolem ní spousta rozmazání a pohybu vytvářejí snovou atmosféru. Zadquiel je anděl smrti, a tak je na rozdíl od ostatních, barevných andělů pojatý temně."
       }
      ]
     },
     "zadquiel-11": {
      "hotspots": [
+      {
+       "title": "Slza",
+       "text": "Na některých fotografiích, hlavně na těch na zdi, je vidět slza. Podle Gabriela musí tento anděl z Boží vůle brát lidské životy, i když nechce. Slza ukazuje tento vnitřní konflikt."
+      },
+      {
+       "title": "Světlo a pohyb",
+       "text": "Ostrá světla na tváři a kolem ní spousta rozmazání a pohybu vytvářejí snovou atmosféru. Zadquiel je anděl smrti, a tak je na rozdíl od ostatních, barevných andělů pojatý temně."
+      },
       {
        "title": "Arkebuza",
        "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
@@ -1923,14 +2320,38 @@ window.GUIDE = {
       {
        "title": "Ryba",
        "text": "V Knize Tobiáš vyskočí z řeky Tigris ryba a napadne mladého Tobiáše. Rafael mu poradí, aby ji chytil a schoval si její žluč, která pak vyléčí slepotu jeho otce. Proto bývá Rafael tak často malován s rybou v ruce."
+      },
+      {
+       "title": "Ochránce nemocných",
+       "text": "Kvůli uzdravení v Knize Tobiáš je Rafael také ochráncem nemocných. Dodnes po něm bývají pojmenované nemocnice a kliniky."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      },
+      {
+       "title": "Zemité barvy",
+       "text": "Rafael je anděl poutníků, a tak ho Gabriel oblékl do zemitých barev, světle hnědé a tlumených tónů, jako by se chystal na výlet."
       }
      ]
     },
     "raphael-5": {
      "hotspots": [
       {
+       "title": "Ryba",
+       "text": "V Knize Tobiáš vyskočí z řeky Tigris ryba a napadne mladého Tobiáše. Rafael mu poradí, aby ji chytil a schoval si její žluč, která pak vyléčí slepotu jeho otce. Proto bývá Rafael tak často malován s rybou v ruce."
+      },
+      {
        "title": "Ochránce nemocných",
        "text": "Kvůli uzdravení v Knize Tobiáš je Rafael také ochráncem nemocných. Dodnes po něm bývají pojmenované nemocnice a kliniky."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      },
+      {
+       "title": "Zemité barvy",
+       "text": "Rafael je anděl poutníků, a tak ho Gabriel oblékl do zemitých barev, světle hnědé a tlumených tónů, jako by se chystal na výlet."
       }
      ]
     },
@@ -1948,6 +2369,10 @@ window.GUIDE = {
     },
     "letiel-7": {
      "hotspots": [
+      {
+       "title": "Křídla",
+       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil hodně barevnou paletu."
+      },
       {
        "title": "Arkebuza",
        "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
@@ -2007,6 +2432,10 @@ window.GUIDE = {
       {
        "title": "Bílá vlajka",
        "text": "Vlajka na Goyově obraze není. Jeden z bojovníků se vzdává a žádá o mír: souboj skončil a na rozdíl od Goyi tu oba přežijí."
+      },
+      {
+       "title": "Po souboji",
+       "text": "Místo dvou bojovníků v akci ukazuje Gabriel, co přijde po souboji: zbité lidi s ranami. Nejde o jeden boj dvou mužů, ale o souboje, které všichni vedeme s přáteli, rodinou a lidmi kolem sebe."
       }
      ]
     },
@@ -2023,10 +2452,346 @@ window.GUIDE = {
       {
        "title": "Co zbylo",
        "text": "Svatební šaty, dárek a květiny jsou vše, co ze svatby zbylo."
+      },
+      {
+       "title": "Pražská dlažba",
+       "text": "Gabriel si představil nevěstu opuštěnou v den svatby, jak leží na ulici: opuštěná, zoufalá a zranitelná."
       }
      ]
     },
     "noche-terrible-end1": {
+     "hotspots": [
+      {
+       "title": "Rozmazání a pohyb",
+       "text": "Fotografie z ateliéru záměrně nejsou ostré, jsou plné pohybu a rozmazání, jako by šlo o snímky ze 30. let, kdy povídka vznikla."
+      }
+     ]
+    },
+    "letters-from-mom-2": {
+     "hotspots": [
+      {
+       "title": "Cigareta",
+       "text": "Julio Cortázar v rozhovorech skoro vždy kouřil: nejdřív byl vidět oblak kouře, teprve potom jeho tvář. Gabriel dal stejný zvyk postavám povídky. Laura a Luis úzkostně čekají na každý další dopis z Buenos Aires a kouřením tu úzkost zabíjejí."
+      }
+     ]
+    },
+    "letters-from-mom-8": {
+     "hotspots": [
+      {
+       "title": "Dopis",
+       "text": "V povídce přináší každý dopis od matky z Buenos Aires neklid: píše v něm o Nicovi, který zemřel, jako by byl stále naživu."
+      }
+     ]
+    },
+    "zadquiel-1": {
+     "hotspots": [
+      {
+       "title": "Světlo a pohyb",
+       "text": "Ostrá světla na tváři a kolem ní spousta rozmazání a pohybu vytvářejí snovou atmosféru. Zadquiel je anděl smrti, a tak je na rozdíl od ostatních, barevných andělů pojatý temně."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "zadquiel-2": {
+     "hotspots": [
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "zadquiel-3": {
+     "hotspots": [
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "zadquiel-6": {
+     "hotspots": [
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "zadquiel-9": {
+     "hotspots": [
+      {
+       "title": "Světlo a pohyb",
+       "text": "Ostrá světla na tváři a kolem ní spousta rozmazání a pohybu vytvářejí snovou atmosféru. Zadquiel je anděl smrti, a tak je na rozdíl od ostatních, barevných andělů pojatý temně."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "raphael-1": {
+     "hotspots": [
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "raphael-2": {
+     "hotspots": [
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "raphael-3": {
+     "hotspots": [
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "raphael-9": {
+     "hotspots": [
+      {
+       "title": "Zemité barvy",
+       "text": "Rafael je anděl poutníků, a tak ho Gabriel oblékl do zemitých barev, světle hnědé a tlumených tónů, jako by se chystal na výlet."
+      }
+     ]
+    },
+    "letiel-5": {
+     "hotspots": [
+      {
+       "title": "Křídla",
+       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil hodně barevnou paletu."
+      },
+      {
+       "title": "Světlo a stín",
+       "text": "Letiel patří k nejbarevnějším andělům s arkebuzou, Gabriel si přesto pohrál se silným kontrastem světla a stínu, aby byl co nejtemnější."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "letiel-8": {
+     "hotspots": [
+      {
+       "title": "Křídla",
+       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil hodně barevnou paletu."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "letiel-dei11944-1": {
+     "hotspots": [
+      {
+       "title": "Křídla",
+       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil hodně barevnou paletu."
+      }
+     ]
+    },
+    "letiel-dei12289-1": {
+     "hotspots": [
+      {
+       "title": "Křídla",
+       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil hodně barevnou paletu."
+      },
+      {
+       "title": "Světlo a stín",
+       "text": "Letiel patří k nejbarevnějším andělům s arkebuzou, Gabriel si přesto pohrál se silným kontrastem světla a stínu, aby byl co nejtemnější."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "letiel-dei-outdoor-337-1": {
+     "hotspots": [
+      {
+       "title": "Křídla",
+       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil hodně barevnou paletu."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "ophelia-5": {
+     "hotspots": [
+      {
+       "title": "Obrácený horizont",
+       "text": "Na mnoha fotografiích je horizont vzhůru nohama. Divák se tak ocitá pod vodou, sdílí Oféliin pohled i její bolest."
+      }
+     ]
+    },
+    "ophelia-30-08-2024-2024-833": {
+     "hotspots": [
+      {
+       "title": "Obrácený horizont",
+       "text": "Na mnoha fotografiích je horizont vzhůru nohama. Divák se tak ocitá pod vodou, sdílí Oféliin pohled i její bolest."
+      }
+     ]
+    },
+    "saturn-1": {
+     "hotspots": [
+      {
+       "title": "Vidlička",
+       "text": "Kontrastní vidlička na červeném pozadí. Pro Gabriela shrnuje celý příběh: není třeba vidět krev ani nic syrového, nechává prostor představivosti."
+      }
+     ]
+    },
+    "saturn-2": {
+     "hotspots": [
+      {
+       "title": "Oblek a špinavé ruce",
+       "text": "Muž má oblek, ale ruce a tvář špinavé: mocní lidé mohou být uvnitř velmi špinaví. Gabriel spojuje Goyův obraz s dnešními elitami, které udělají cokoli, aby si udržely moc."
+      }
+     ]
+    },
+    "saturn-4": {
+     "hotspots": [
+      {
+       "title": "První focení",
+       "text": "Jedno z úplně prvních focení, které napodobuje řeč těla z Goyova obrazu. Projekt se pak vydal abstraktnějším a jemnějším směrem, ale toto focení bylo tak dobré, že ho Gabriel do výstavy zařadil."
+      }
+     ]
+    },
+    "saturn-7": {
+     "hotspots": [
+      {
+       "title": "První focení",
+       "text": "Jedno z úplně prvních focení, které napodobuje řeč těla z Goyova obrazu. Projekt se pak vydal abstraktnějším a jemnějším směrem, ale toto focení bylo tak dobré, že ho Gabriel do výstavy zařadil."
+      }
+     ]
+    },
+    "duel-3": {
+     "hotspots": [
+      {
+       "title": "Bílá vlajka",
+       "text": "Vlajka na Goyově obraze není. Jeden z bojovníků se vzdává a žádá o mír: souboj skončil a na rozdíl od Goyi tu oba přežijí."
+      }
+     ]
+    },
+    "duel-7": {
+     "hotspots": [
+      {
+       "title": "Bílá vlajka",
+       "text": "Vlajka na Goyově obraze není. Jeden z bojovníků se vzdává a žádá o mír: souboj skončil a na rozdíl od Goyi tu oba přežijí."
+      }
+     ]
+    },
+    "duel-8": {
+     "hotspots": [
+      {
+       "title": "Bílá vlajka",
+       "text": "Vlajka na Goyově obraze není. Jeden z bojovníků se vzdává a žádá o mír: souboj skončil a na rozdíl od Goyi tu oba přežijí."
+      }
+     ]
+    },
+    "duel-9": {
+     "hotspots": [
+      {
+       "title": "Bílá vlajka",
+       "text": "Vlajka na Goyově obraze není. Jeden z bojovníků se vzdává a žádá o mír: souboj skončil a na rozdíl od Goyi tu oba přežijí."
+      }
+     ]
+    },
+    "duel-2": {
+     "hotspots": [
+      {
+       "title": "Po souboji",
+       "text": "Místo dvou bojovníků v akci ukazuje Gabriel, co přijde po souboji: zbité lidi s ranami. Nejde o jeden boj dvou mužů, ale o souboje, které všichni vedeme s přáteli, rodinou a lidmi kolem sebe."
+      }
+     ]
+    },
+    "duel-06": {
+     "hotspots": [
+      {
+       "title": "Po souboji",
+       "text": "Místo dvou bojovníků v akci ukazuje Gabriel, co přijde po souboji: zbité lidi s ranami. Nejde o jeden boj dvou mužů, ale o souboje, které všichni vedeme s přáteli, rodinou a lidmi kolem sebe."
+      }
+     ]
+    },
+    "duel-13": {
+     "hotspots": [
+      {
+       "title": "Po souboji",
+       "text": "Místo dvou bojovníků v akci ukazuje Gabriel, co přijde po souboji: zbité lidi s ranami. Nejde o jeden boj dvou mužů, ale o souboje, které všichni vedeme s přáteli, rodinou a lidmi kolem sebe."
+      }
+     ]
+    },
+    "duel-16": {
+     "hotspots": [
+      {
+       "title": "Po souboji",
+       "text": "Místo dvou bojovníků v akci ukazuje Gabriel, co přijde po souboji: zbité lidi s ranami. Nejde o jeden boj dvou mužů, ale o souboje, které všichni vedeme s přáteli, rodinou a lidmi kolem sebe."
+      }
+     ]
+    },
+    "duel-18": {
+     "hotspots": [
+      {
+       "title": "Po souboji",
+       "text": "Místo dvou bojovníků v akci ukazuje Gabriel, co přijde po souboji: zbité lidi s ranami. Nejde o jeden boj dvou mužů, ale o souboje, které všichni vedeme s přáteli, rodinou a lidmi kolem sebe."
+      }
+     ]
+    },
+    "duel-19": {
+     "hotspots": [
+      {
+       "title": "Po souboji",
+       "text": "Místo dvou bojovníků v akci ukazuje Gabriel, co přijde po souboji: zbité lidi s ranami. Nejde o jeden boj dvou mužů, ale o souboje, které všichni vedeme s přáteli, rodinou a lidmi kolem sebe."
+      }
+     ]
+    },
+    "duel-20": {
+     "hotspots": [
+      {
+       "title": "Po souboji",
+       "text": "Místo dvou bojovníků v akci ukazuje Gabriel, co přijde po souboji: zbité lidi s ranami. Nejde o jeden boj dvou mužů, ale o souboje, které všichni vedeme s přáteli, rodinou a lidmi kolem sebe."
+      }
+     ]
+    },
+    "duel-21": {
+     "hotspots": [
+      {
+       "title": "Po souboji",
+       "text": "Místo dvou bojovníků v akci ukazuje Gabriel, co přijde po souboji: zbité lidi s ranami. Nejde o jeden boj dvou mužů, ale o souboje, které všichni vedeme s přáteli, rodinou a lidmi kolem sebe."
+      }
+     ]
+    },
+    "noche-terrible-1": {
+     "hotspots": [
+      {
+       "title": "Pražská dlažba",
+       "text": "Gabriel si představil nevěstu opuštěnou v den svatby, jak leží na ulici: opuštěná, zoufalá a zranitelná."
+      },
+      {
+       "title": "Co zbylo",
+       "text": "Svatební šaty, dárek a květiny jsou vše, co ze svatby zbylo."
+      }
+     ]
+    },
+    "noche-terrible-end3": {
+     "hotspots": [
+      {
+       "title": "Rozmazání a pohyb",
+       "text": "Fotografie z ateliéru záměrně nejsou ostré, jsou plné pohybu a rozmazání, jako by šlo o snímky ze 30. let, kdy povídka vznikla."
+      }
+     ]
+    },
+    "noche-terrible-end4": {
      "hotspots": [
       {
        "title": "Rozmazání a pohyb",
@@ -2289,11 +3054,23 @@ window.GUIDE = {
       {
        "title": "La lágrima",
        "text": "En algunas fotos, sobre todo las de la pared, aparece una lágrima. Según la lectura de Gabriel, este ángel tiene que quitar vidas humanas por voluntad de Dios, aunque no quiera. La lágrima muestra ese conflicto interior."
+      },
+      {
+       "title": "Luz y movimiento",
+       "text": "Puntos de luz nítidos en el rostro y mucho desenfoque y movimiento alrededor, para crear una atmósfera onírica. Zadquiel es el ángel de la muerte, por eso, a diferencia de los otros ángeles, tan coloridos, este es oscuro."
       }
      ]
     },
     "zadquiel-11": {
      "hotspots": [
+      {
+       "title": "La lágrima",
+       "text": "En algunas fotos, sobre todo las de la pared, aparece una lágrima. Según la lectura de Gabriel, este ángel tiene que quitar vidas humanas por voluntad de Dios, aunque no quiera. La lágrima muestra ese conflicto interior."
+      },
+      {
+       "title": "Luz y movimiento",
+       "text": "Puntos de luz nítidos en el rostro y mucho desenfoque y movimiento alrededor, para crear una atmósfera onírica. Zadquiel es el ángel de la muerte, por eso, a diferencia de los otros ángeles, tan coloridos, este es oscuro."
+      },
       {
        "title": "El arcabuz",
        "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
@@ -2317,14 +3094,38 @@ window.GUIDE = {
       {
        "title": "El pez",
        "text": "En el Libro de Tobías un pez salta del río Tigris para atacar al joven Tobías. Rafael le dice que lo atrape y guarde su hiel, que más tarde cura la ceguera de su padre. Por eso Rafael aparece tan a menudo pintado con un pez en la mano."
+      },
+      {
+       "title": "Protector de los enfermos",
+       "text": "Por la curación del Libro de Tobías, Rafael es también el protector de los enfermos. Todavía hoy hay hospitales y clínicas que llevan su nombre."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      },
+      {
+       "title": "Colores tierra",
+       "text": "Rafael es el ángel de los viajeros, por eso Gabriel lo vistió con colores tierra, marrones claros y tonos desaturados, como si fuera de excursión."
       }
      ]
     },
     "raphael-5": {
      "hotspots": [
       {
+       "title": "El pez",
+       "text": "En el Libro de Tobías un pez salta del río Tigris para atacar al joven Tobías. Rafael le dice que lo atrape y guarde su hiel, que más tarde cura la ceguera de su padre. Por eso Rafael aparece tan a menudo pintado con un pez en la mano."
+      },
+      {
        "title": "Protector de los enfermos",
        "text": "Por la curación del Libro de Tobías, Rafael es también el protector de los enfermos. Todavía hoy hay hospitales y clínicas que llevan su nombre."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      },
+      {
+       "title": "Colores tierra",
+       "text": "Rafael es el ángel de los viajeros, por eso Gabriel lo vistió con colores tierra, marrones claros y tonos desaturados, como si fuera de excursión."
       }
      ]
     },
@@ -2342,6 +3143,10 @@ window.GUIDE = {
     },
     "letiel-7": {
      "hotspots": [
+      {
+       "title": "Las alas",
+       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
+      },
       {
        "title": "El arcabuz",
        "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
@@ -2401,6 +3206,10 @@ window.GUIDE = {
       {
        "title": "La bandera blanca",
        "text": "La bandera no está en el cuadro de Goya. Uno de los luchadores se rinde y pide la paz: el duelo se ha detenido y aquí, a diferencia de Goya, sobreviven."
+      },
+      {
+       "title": "Después del duelo",
+       "text": "En lugar de dos luchadores en acción, Gabriel muestra lo que pasa después del duelo: gente golpeada, con heridas. No es una pelea entre dos hombres, sino los duelos que todos tenemos con amigos, familia y la gente que nos rodea."
       }
      ]
     },
@@ -2417,10 +3226,346 @@ window.GUIDE = {
       {
        "title": "Lo que queda",
        "text": "El vestido de novia, el regalo y las flores son todo lo que queda de la boda."
+      },
+      {
+       "title": "Adoquines de Praga",
+       "text": "Gabriel imaginó a la novia abandonada el día de su boda, tirada en la calle: abandonada, desesperada y vulnerable."
       }
      ]
     },
     "noche-terrible-end1": {
+     "hotspots": [
+      {
+       "title": "Desenfoque y movimiento",
+       "text": "Las fotos de estudio no son nítidas a propósito, llenas de movimiento y desenfoque, como si fueran imágenes de los años treinta, cuando se escribió el cuento."
+      }
+     ]
+    },
+    "letters-from-mom-2": {
+     "hotspots": [
+      {
+       "title": "El cigarrillo",
+       "text": "En las entrevistas Julio Cortázar casi siempre fumaba: primero se veía una nube de humo y después su cara. Gabriel dio esa misma costumbre a los personajes del cuento. Laura y Luis esperan con ansiedad cada nueva carta de Buenos Aires, y fumar es su manera de matar la ansiedad."
+      }
+     ]
+    },
+    "letters-from-mom-8": {
+     "hotspots": [
+      {
+       "title": "La carta",
+       "text": "En el cuento cada carta de la madre desde Buenos Aires trae inquietud: habla de Nico, que ha muerto, como si siguiera vivo."
+      }
+     ]
+    },
+    "zadquiel-1": {
+     "hotspots": [
+      {
+       "title": "Luz y movimiento",
+       "text": "Puntos de luz nítidos en el rostro y mucho desenfoque y movimiento alrededor, para crear una atmósfera onírica. Zadquiel es el ángel de la muerte, por eso, a diferencia de los otros ángeles, tan coloridos, este es oscuro."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "zadquiel-2": {
+     "hotspots": [
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "zadquiel-3": {
+     "hotspots": [
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "zadquiel-6": {
+     "hotspots": [
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "zadquiel-9": {
+     "hotspots": [
+      {
+       "title": "Luz y movimiento",
+       "text": "Puntos de luz nítidos en el rostro y mucho desenfoque y movimiento alrededor, para crear una atmósfera onírica. Zadquiel es el ángel de la muerte, por eso, a diferencia de los otros ángeles, tan coloridos, este es oscuro."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "raphael-1": {
+     "hotspots": [
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "raphael-2": {
+     "hotspots": [
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "raphael-3": {
+     "hotspots": [
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "raphael-9": {
+     "hotspots": [
+      {
+       "title": "Colores tierra",
+       "text": "Rafael es el ángel de los viajeros, por eso Gabriel lo vistió con colores tierra, marrones claros y tonos desaturados, como si fuera de excursión."
+      }
+     ]
+    },
+    "letiel-5": {
+     "hotspots": [
+      {
+       "title": "Las alas",
+       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
+      },
+      {
+       "title": "Luz y sombra",
+       "text": "Letiel es uno de los ángeles arcabuceros más coloridos, pero Gabriel jugó con un fuerte contraste de luz y sombra para hacerlo lo más oscuro posible."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "letiel-8": {
+     "hotspots": [
+      {
+       "title": "Las alas",
+       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "letiel-dei11944-1": {
+     "hotspots": [
+      {
+       "title": "Las alas",
+       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
+      }
+     ]
+    },
+    "letiel-dei12289-1": {
+     "hotspots": [
+      {
+       "title": "Las alas",
+       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
+      },
+      {
+       "title": "Luz y sombra",
+       "text": "Letiel es uno de los ángeles arcabuceros más coloridos, pero Gabriel jugó con un fuerte contraste de luz y sombra para hacerlo lo más oscuro posible."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "letiel-dei-outdoor-337-1": {
+     "hotspots": [
+      {
+       "title": "Las alas",
+       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "ophelia-5": {
+     "hotspots": [
+      {
+       "title": "El horizonte invertido",
+       "text": "En muchas de las fotos el horizonte está al revés. Te sitúa bajo el agua, compartiendo el punto de vista de Ofelia y su dolor."
+      }
+     ]
+    },
+    "ophelia-30-08-2024-2024-833": {
+     "hotspots": [
+      {
+       "title": "El horizonte invertido",
+       "text": "En muchas de las fotos el horizonte está al revés. Te sitúa bajo el agua, compartiendo el punto de vista de Ofelia y su dolor."
+      }
+     ]
+    },
+    "saturn-1": {
+     "hotspots": [
+      {
+       "title": "El tenedor",
+       "text": "Un tenedor de alto contraste sobre fondo rojo. Para Gabriel resume toda la historia: no hace falta ver sangre ni nada crudo, deja espacio a la imaginación."
+      }
+     ]
+    },
+    "saturn-2": {
+     "hotspots": [
+      {
+       "title": "Traje y manos sucias",
+       "text": "El hombre lleva traje, pero tiene las manos y la cara sucias: la gente poderosa puede estar muy sucia por dentro. Gabriel relaciona el cuadro de Goya con las élites actuales, que harán lo que sea por mantenerse en el poder."
+      }
+     ]
+    },
+    "saturn-4": {
+     "hotspots": [
+      {
+       "title": "La primera sesión",
+       "text": "Una de las primeras sesiones, que recrea el lenguaje corporal del cuadro de Goya. Después el proyecto fue hacia algo más abstracto y sutil, pero esta sesión era demasiado buena para dejarla fuera."
+      }
+     ]
+    },
+    "saturn-7": {
+     "hotspots": [
+      {
+       "title": "La primera sesión",
+       "text": "Una de las primeras sesiones, que recrea el lenguaje corporal del cuadro de Goya. Después el proyecto fue hacia algo más abstracto y sutil, pero esta sesión era demasiado buena para dejarla fuera."
+      }
+     ]
+    },
+    "duel-3": {
+     "hotspots": [
+      {
+       "title": "La bandera blanca",
+       "text": "La bandera no está en el cuadro de Goya. Uno de los luchadores se rinde y pide la paz: el duelo se ha detenido y aquí, a diferencia de Goya, sobreviven."
+      }
+     ]
+    },
+    "duel-7": {
+     "hotspots": [
+      {
+       "title": "La bandera blanca",
+       "text": "La bandera no está en el cuadro de Goya. Uno de los luchadores se rinde y pide la paz: el duelo se ha detenido y aquí, a diferencia de Goya, sobreviven."
+      }
+     ]
+    },
+    "duel-8": {
+     "hotspots": [
+      {
+       "title": "La bandera blanca",
+       "text": "La bandera no está en el cuadro de Goya. Uno de los luchadores se rinde y pide la paz: el duelo se ha detenido y aquí, a diferencia de Goya, sobreviven."
+      }
+     ]
+    },
+    "duel-9": {
+     "hotspots": [
+      {
+       "title": "La bandera blanca",
+       "text": "La bandera no está en el cuadro de Goya. Uno de los luchadores se rinde y pide la paz: el duelo se ha detenido y aquí, a diferencia de Goya, sobreviven."
+      }
+     ]
+    },
+    "duel-2": {
+     "hotspots": [
+      {
+       "title": "Después del duelo",
+       "text": "En lugar de dos luchadores en acción, Gabriel muestra lo que pasa después del duelo: gente golpeada, con heridas. No es una pelea entre dos hombres, sino los duelos que todos tenemos con amigos, familia y la gente que nos rodea."
+      }
+     ]
+    },
+    "duel-06": {
+     "hotspots": [
+      {
+       "title": "Después del duelo",
+       "text": "En lugar de dos luchadores en acción, Gabriel muestra lo que pasa después del duelo: gente golpeada, con heridas. No es una pelea entre dos hombres, sino los duelos que todos tenemos con amigos, familia y la gente que nos rodea."
+      }
+     ]
+    },
+    "duel-13": {
+     "hotspots": [
+      {
+       "title": "Después del duelo",
+       "text": "En lugar de dos luchadores en acción, Gabriel muestra lo que pasa después del duelo: gente golpeada, con heridas. No es una pelea entre dos hombres, sino los duelos que todos tenemos con amigos, familia y la gente que nos rodea."
+      }
+     ]
+    },
+    "duel-16": {
+     "hotspots": [
+      {
+       "title": "Después del duelo",
+       "text": "En lugar de dos luchadores en acción, Gabriel muestra lo que pasa después del duelo: gente golpeada, con heridas. No es una pelea entre dos hombres, sino los duelos que todos tenemos con amigos, familia y la gente que nos rodea."
+      }
+     ]
+    },
+    "duel-18": {
+     "hotspots": [
+      {
+       "title": "Después del duelo",
+       "text": "En lugar de dos luchadores en acción, Gabriel muestra lo que pasa después del duelo: gente golpeada, con heridas. No es una pelea entre dos hombres, sino los duelos que todos tenemos con amigos, familia y la gente que nos rodea."
+      }
+     ]
+    },
+    "duel-19": {
+     "hotspots": [
+      {
+       "title": "Después del duelo",
+       "text": "En lugar de dos luchadores en acción, Gabriel muestra lo que pasa después del duelo: gente golpeada, con heridas. No es una pelea entre dos hombres, sino los duelos que todos tenemos con amigos, familia y la gente que nos rodea."
+      }
+     ]
+    },
+    "duel-20": {
+     "hotspots": [
+      {
+       "title": "Después del duelo",
+       "text": "En lugar de dos luchadores en acción, Gabriel muestra lo que pasa después del duelo: gente golpeada, con heridas. No es una pelea entre dos hombres, sino los duelos que todos tenemos con amigos, familia y la gente que nos rodea."
+      }
+     ]
+    },
+    "duel-21": {
+     "hotspots": [
+      {
+       "title": "Después del duelo",
+       "text": "En lugar de dos luchadores en acción, Gabriel muestra lo que pasa después del duelo: gente golpeada, con heridas. No es una pelea entre dos hombres, sino los duelos que todos tenemos con amigos, familia y la gente que nos rodea."
+      }
+     ]
+    },
+    "noche-terrible-1": {
+     "hotspots": [
+      {
+       "title": "Adoquines de Praga",
+       "text": "Gabriel imaginó a la novia abandonada el día de su boda, tirada en la calle: abandonada, desesperada y vulnerable."
+      },
+      {
+       "title": "Lo que queda",
+       "text": "El vestido de novia, el regalo y las flores son todo lo que queda de la boda."
+      }
+     ]
+    },
+    "noche-terrible-end3": {
+     "hotspots": [
+      {
+       "title": "Desenfoque y movimiento",
+       "text": "Las fotos de estudio no son nítidas a propósito, llenas de movimiento y desenfoque, como si fueran imágenes de los años treinta, cuando se escribió el cuento."
+      }
+     ]
+    },
+    "noche-terrible-end4": {
      "hotspots": [
       {
        "title": "Desenfoque y movimiento",

@@ -299,7 +299,7 @@
 
   // ---------- Fullscreen viewer with hotspots ----------
   var fs = $("fs"), fsImg = $("fsImg"), fsFrame = $("fsFrame"), fsDots = $("fsDots"), fsStage = $("fsStage");
-  var sheet = $("sheet"), cur = null, curHs = [], dotsOn = true;
+  var sheet = $("sheet"), cur = null, curHs = [], dotsOn = true, detailsPref = null;
 
   function fit() {
     if (!cur) return;
@@ -481,14 +481,17 @@
     var has = curHs.length > 0;
     fs.classList.toggle("has-hs", has);
     $("fsToggle").hidden = !has;
-    $("fsHint").textContent = has ? T.tapHint : "";
-    setDots(true); hideSheet(); fit();
+    $("fsHint").textContent = "";
+    // Details are open by default on landscape tablets; on phones they open with "Show details".
+    // The choice is kept while stepping through the photos.
+    if (detailsPref === null) detailsPref = sideMq.matches;
+    setDots(hs != null ? true : detailsPref); hideSheet(); fit();
     if (hs != null) showSheet(hs);
     $("fsClose").focus({ preventScroll: true });
   }
   function closeFs() {
     if (fs.hidden) return;
-    fs.hidden = true; document.body.style.overflow = ""; cur = null;
+    fs.hidden = true; document.body.style.overflow = ""; cur = null; detailsPref = null;
     fsImg.removeAttribute("src");
   }
   function setDots(on) {
@@ -501,7 +504,7 @@
   // Landscape tablets: the note lives in a side panel next to the photo; with nothing
   // selected the panel lists the details. Elsewhere it is an overlay that hides when closed.
   var sideMq = matchMedia("(min-width: 900px) and (orientation: landscape)");
-  function sideMode() { return sideMq.matches && curHs.length > 0; }
+  function sideMode() { return curHs.length > 0; }
   // On the side panel every detail is shown open: its title and its text. A tap on a dot
   // (or on an item) marks that item and scrolls it into view.
   function showList(active) {
@@ -545,8 +548,8 @@
     var d = e.target.closest(".dot");
     if (d) { e.stopPropagation(); showSheet(+d.getAttribute("data-i")); }
   });
-  fsStage.addEventListener("click", function (e) { if (!e.target.closest(".dot")) hideSheet(); });
-  $("fsToggle").addEventListener("click", function () { setDots(!dotsOn); });
+  
+  $("fsToggle").addEventListener("click", function () { detailsPref = !dotsOn; setDots(!dotsOn); });
   $("fsClose").addEventListener("click", closeFs);
   $("sheetClose").addEventListener("click", hideSheet);
   sheet.addEventListener("click", function (e) {
