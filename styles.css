@@ -706,3 +706,26 @@ html:lang(cs) {
 .fs-dots { display: none; }
 .tile .dots, .dots { display: none; }
 .hs-list .n { display: none; }
+.hs-list button { grid-template-columns: 1fr; }
+
+/* Alignment fixes (Nov 8): menu items never break inside, arrow spaced from its link text */
+.menu a { white-space: nowrap; }
+@media (min-width: 561px) and (max-width: 900px) { .menu { gap: 18px; } .menu a { letter-spacing: .1em; } }
+.text-link::after { content: "\2192"; margin-left: .55em; }
+@media (max-width: 699px) {
+  .pager a { align-items: flex-start; }
+  .pager a img, .pager a .no-img { align-self: center; }
+  .insp { padding: 14px; gap: 14px; }
+}
+/* Full screen top bar: counter and "Show details" stay on one line */
+.fs-count, .fs-toggle { white-space: nowrap; }
+.fs-count { flex: none; }
+@media (max-width: 420px) {
+  .fs-top { gap: 8px; padding-left: 14px; }
+  .fs-toggle { padding-left: 14px; padding-right: 14px; font-size: 11px; letter-spacing: .06em; }
+}
+@media (max-width: 420px) {
+  .fs-zoom { gap: 4px; }
+  .fs-zoom button { width: 40px; height: 40px; }
+  .fs-close { padding: 0 14px; }
+}

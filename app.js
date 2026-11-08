@@ -288,6 +288,13 @@
       var on = a.getAttribute("href") === "#" + h || (a.getAttribute("href") === "#" && (h === "" || /^(project|series|work)-/.test(h)));
       a.setAttribute("aria-current", on ? "page" : "false");
     });
+    // Phones: the menu scrolls sideways; keep the current item fully in view.
+    var menu = document.querySelector(".menu"), cur = menu && menu.querySelector('[aria-current="page"]');
+    if (menu && cur && menu.scrollWidth > menu.clientWidth) {
+      var mr = menu.getBoundingClientRect(), cr = cur.getBoundingClientRect();
+      if (cr.right > mr.right) menu.scrollLeft += cr.right - mr.right + 16;
+      else if (cr.left < mr.left) menu.scrollLeft -= mr.left - cr.left + 16;
+    }
     window.scrollTo(0, 0);
   }
   var lastHash = null, lastFrom = null;
