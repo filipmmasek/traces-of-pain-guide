@@ -968,8 +968,50 @@ window.GUIDE = {
    "project": "letiel-dei"
   },
   {
-   "id": "ophelia-hero",
+   "id": "letiel-dei11944-1",
    "number": 52,
+   "file": "Letiel Dei11944 1.jpg",
+   "w": 1125,
+   "h": 1500,
+   "title": "",
+   "text": "",
+   "inspirations": [],
+   "hotspots": [],
+   "src": "img/full/letiel-dei11944-1.jpg",
+   "thumb": "img/thumb/letiel-dei11944-1.jpg",
+   "project": "letiel-dei"
+  },
+  {
+   "id": "letiel-dei12289-1",
+   "number": 53,
+   "file": "Letiel Dei12289 1.jpg",
+   "w": 1125,
+   "h": 1500,
+   "title": "",
+   "text": "",
+   "inspirations": [],
+   "hotspots": [],
+   "src": "img/full/letiel-dei12289-1.jpg",
+   "thumb": "img/thumb/letiel-dei12289-1.jpg",
+   "project": "letiel-dei"
+  },
+  {
+   "id": "letiel-dei-outdoor-337-1",
+   "number": 54,
+   "file": "Letiel-Dei-Outdoor-337 1.jpg",
+   "w": 1125,
+   "h": 1500,
+   "title": "",
+   "text": "",
+   "inspirations": [],
+   "hotspots": [],
+   "src": "img/full/letiel-dei-outdoor-337-1.jpg",
+   "thumb": "img/thumb/letiel-dei-outdoor-337-1.jpg",
+   "project": "letiel-dei"
+  },
+  {
+   "id": "ophelia-hero",
+   "number": 55,
    "file": "Ophelia-hero.jpg",
    "w": 1200,
    "h": 1800,
@@ -983,7 +1025,7 @@ window.GUIDE = {
   },
   {
    "id": "ophelia-1",
-   "number": 53,
+   "number": 56,
    "file": "Ophelia-1.jpg",
    "w": 1200,
    "h": 1800,
@@ -997,7 +1039,7 @@ window.GUIDE = {
   },
   {
    "id": "ophelia-2",
-   "number": 54,
+   "number": 57,
    "file": "Ophelia-2.jpg",
    "w": 1200,
    "h": 1800,
@@ -1011,7 +1053,7 @@ window.GUIDE = {
   },
   {
    "id": "ophelia-3",
-   "number": 55,
+   "number": 58,
    "file": "Ophelia-3.jpg",
    "w": 1200,
    "h": 1800,
@@ -1025,7 +1067,7 @@ window.GUIDE = {
   },
   {
    "id": "ophelia-4",
-   "number": 56,
+   "number": 59,
    "file": "Ophelia-4.jpg",
    "w": 1200,
    "h": 1800,
@@ -1039,7 +1081,7 @@ window.GUIDE = {
   },
   {
    "id": "ophelia-5",
-   "number": 57,
+   "number": 60,
    "file": "Ophelia-5.jpg",
    "w": 1208,
    "h": 1800,
@@ -1053,7 +1095,7 @@ window.GUIDE = {
   },
   {
    "id": "ophelia-6",
-   "number": 58,
+   "number": 61,
    "file": "Ophelia-6.jpg",
    "w": 1208,
    "h": 1800,
@@ -1067,7 +1109,7 @@ window.GUIDE = {
   },
   {
    "id": "ophelia-7",
-   "number": 59,
+   "number": 62,
    "file": "Ophelia-7.jpg",
    "w": 1208,
    "h": 1800,
@@ -1081,7 +1123,7 @@ window.GUIDE = {
   },
   {
    "id": "ophelia-8",
-   "number": 60,
+   "number": 63,
    "file": "Ophelia-8.jpg",
    "w": 1350,
    "h": 1800,
@@ -1094,8 +1136,22 @@ window.GUIDE = {
    "project": "ophelia"
   },
   {
+   "id": "ophelia-30-08-2024-2024-833",
+   "number": 64,
+   "file": "Ophelia 30-08-2024 2024-833.jpg",
+   "w": 1006,
+   "h": 1500,
+   "title": "",
+   "text": "",
+   "inspirations": [],
+   "hotspots": [],
+   "src": "img/full/ophelia-30-08-2024-2024-833.jpg",
+   "thumb": "img/thumb/ophelia-30-08-2024-2024-833.jpg",
+   "project": "ophelia"
+  },
+  {
    "id": "saturn-hero",
-   "number": 61,
+   "number": 65,
    "file": "Saturn-hero.jpg",
    "w": 1350,
    "h": 1800,
@@ -1109,7 +1165,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-1",
-   "number": 62,
+   "number": 66,
    "file": "Saturn-1.jpg",
    "w": 1350,
    "h": 1800,
@@ -1123,7 +1179,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-2",
-   "number": 63,
+   "number": 67,
    "file": "Saturn-2.jpg",
    "w": 1200,
    "h": 1800,
@@ -1137,7 +1193,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-3",
-   "number": 64,
+   "number": 68,
    "file": "Saturn-3.jpg",
    "w": 1200,
    "h": 1800,
@@ -1151,7 +1207,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-4",
-   "number": 65,
+   "number": 69,
    "file": "Saturn-4.jpg",
    "w": 1350,
    "h": 1800,
@@ -1165,7 +1221,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-5",
-   "number": 66,
+   "number": 70,
    "file": "Saturn-5.jpg",
    "w": 1350,
    "h": 1800,
@@ -1179,7 +1235,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-6",
-   "number": 67,
+   "number": 71,
    "file": "Saturn-6.jpg",
    "w": 1350,
    "h": 1800,
@@ -1193,7 +1249,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-7",
-   "number": 68,
+   "number": 72,
    "file": "Saturn-7.jpg",
    "w": 1350,
    "h": 1800,
@@ -1207,7 +1263,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-8",
-   "number": 69,
+   "number": 73,
    "file": "Saturn-8.jpg",
    "w": 1350,
    "h": 1800,
@@ -1221,7 +1277,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-9",
-   "number": 70,
+   "number": 74,
    "file": "Saturn-9.jpg",
    "w": 1350,
    "h": 1800,
@@ -1235,7 +1291,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-10",
-   "number": 71,
+   "number": 75,
    "file": "Saturn-10.jpg",
    "w": 1350,
    "h": 1800,
@@ -1249,7 +1305,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-11",
-   "number": 72,
+   "number": 76,
    "file": "Saturn-11.jpg",
    "w": 1350,
    "h": 1800,
@@ -1263,7 +1319,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-12",
-   "number": 73,
+   "number": 77,
    "file": "Saturn-12.jpg",
    "w": 1350,
    "h": 1800,
@@ -1277,7 +1333,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-13",
-   "number": 74,
+   "number": 78,
    "file": "Saturn-13.jpg",
    "w": 1350,
    "h": 1800,
@@ -1291,7 +1347,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-hero",
-   "number": 75,
+   "number": 79,
    "file": "Duel-hero.jpg",
    "w": 1350,
    "h": 1800,
@@ -1305,7 +1361,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-1",
-   "number": 76,
+   "number": 80,
    "file": "Duel-1.jpg",
    "w": 1350,
    "h": 1800,
@@ -1319,7 +1375,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-2",
-   "number": 77,
+   "number": 81,
    "file": "Duel-2.jpg",
    "w": 1350,
    "h": 1800,
@@ -1333,7 +1389,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-3",
-   "number": 78,
+   "number": 82,
    "file": "Duel-3.jpg",
    "w": 1350,
    "h": 1800,
@@ -1347,7 +1403,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-4",
-   "number": 79,
+   "number": 83,
    "file": "Duel-4.jpg",
    "w": 1350,
    "h": 1800,
@@ -1361,7 +1417,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-5",
-   "number": 80,
+   "number": 84,
    "file": "Duel-5.jpg",
    "w": 1350,
    "h": 1800,
@@ -1374,8 +1430,22 @@ window.GUIDE = {
    "project": "the-duel"
   },
   {
+   "id": "duel-06",
+   "number": 85,
+   "file": "Duel-06.jpg",
+   "w": 1125,
+   "h": 1500,
+   "title": "",
+   "text": "",
+   "inspirations": [],
+   "hotspots": [],
+   "src": "img/full/duel-06.jpg",
+   "thumb": "img/thumb/duel-06.jpg",
+   "project": "the-duel"
+  },
+  {
    "id": "duel-6",
-   "number": 81,
+   "number": 86,
    "file": "Duel-6.jpg",
    "w": 1350,
    "h": 1800,
@@ -1389,7 +1459,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-7",
-   "number": 82,
+   "number": 87,
    "file": "Duel-7.jpg",
    "w": 1350,
    "h": 1800,
@@ -1403,7 +1473,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-8",
-   "number": 83,
+   "number": 88,
    "file": "Duel-8.jpg",
    "w": 1350,
    "h": 1800,
@@ -1417,7 +1487,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-9",
-   "number": 84,
+   "number": 89,
    "file": "Duel-9.jpg",
    "w": 1350,
    "h": 1800,
@@ -1431,7 +1501,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-10",
-   "number": 85,
+   "number": 90,
    "file": "Duel-10.jpg",
    "w": 1350,
    "h": 1800,
@@ -1445,7 +1515,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-11",
-   "number": 86,
+   "number": 91,
    "file": "Duel-11.jpg",
    "w": 1350,
    "h": 1800,
@@ -1458,8 +1528,22 @@ window.GUIDE = {
    "project": "the-duel"
   },
   {
+   "id": "duel-012",
+   "number": 92,
+   "file": "Duel-012.jpg",
+   "w": 1125,
+   "h": 1500,
+   "title": "",
+   "text": "",
+   "inspirations": [],
+   "hotspots": [],
+   "src": "img/full/duel-012.jpg",
+   "thumb": "img/thumb/duel-012.jpg",
+   "project": "the-duel"
+  },
+  {
    "id": "duel-12",
-   "number": 87,
+   "number": 93,
    "file": "Duel-12.jpg",
    "w": 1350,
    "h": 1800,
@@ -1473,7 +1557,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-13",
-   "number": 88,
+   "number": 94,
    "file": "Duel-13.jpg",
    "w": 1350,
    "h": 1800,
@@ -1487,7 +1571,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-14",
-   "number": 89,
+   "number": 95,
    "file": "Duel-14.jpg",
    "w": 1350,
    "h": 1800,
@@ -1501,7 +1585,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-15",
-   "number": 90,
+   "number": 96,
    "file": "Duel-15.jpg",
    "w": 1350,
    "h": 1800,
@@ -1515,7 +1599,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-16",
-   "number": 91,
+   "number": 97,
    "file": "Duel-16.jpg",
    "w": 1350,
    "h": 1800,
@@ -1529,7 +1613,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-17",
-   "number": 92,
+   "number": 98,
    "file": "Duel-17.jpg",
    "w": 1350,
    "h": 1800,
@@ -1543,7 +1627,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-18",
-   "number": 93,
+   "number": 99,
    "file": "Duel-18.jpg",
    "w": 1350,
    "h": 1800,
@@ -1557,7 +1641,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-19",
-   "number": 94,
+   "number": 100,
    "file": "Duel-19.jpg",
    "w": 1350,
    "h": 1800,
@@ -1571,7 +1655,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-20",
-   "number": 95,
+   "number": 101,
    "file": "Duel-20.jpg",
    "w": 1350,
    "h": 1800,
@@ -1584,8 +1668,22 @@ window.GUIDE = {
    "project": "the-duel"
   },
   {
+   "id": "duel-21",
+   "number": 102,
+   "file": "Duel-21.jpg",
+   "w": 1125,
+   "h": 1500,
+   "title": "",
+   "text": "",
+   "inspirations": [],
+   "hotspots": [],
+   "src": "img/full/duel-21.jpg",
+   "thumb": "img/thumb/duel-21.jpg",
+   "project": "the-duel"
+  },
+  {
    "id": "noche-terrible-hero",
-   "number": 96,
+   "number": 103,
    "file": "Noche-Terrible-hero.jpg",
    "w": 1350,
    "h": 1800,
@@ -1599,7 +1697,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-1",
-   "number": 97,
+   "number": 104,
    "file": "Noche-Terrible-1.jpg",
    "w": 1286,
    "h": 1800,
@@ -1613,7 +1711,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-2",
-   "number": 98,
+   "number": 105,
    "file": "Noche-Terrible-2.jpg",
    "w": 1286,
    "h": 1800,
@@ -1627,7 +1725,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-3",
-   "number": 99,
+   "number": 106,
    "file": "Noche-Terrible-3.jpg",
    "w": 1350,
    "h": 1800,
@@ -1641,7 +1739,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-4",
-   "number": 100,
+   "number": 107,
    "file": "Noche-Terrible-4.jpg",
    "w": 1350,
    "h": 1800,
@@ -1655,7 +1753,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-9",
-   "number": 101,
+   "number": 108,
    "file": "Noche-Terrible-9.jpg",
    "w": 1350,
    "h": 1800,
@@ -1669,7 +1767,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-end1",
-   "number": 102,
+   "number": 109,
    "file": "Noche-Terrible-end1.jpg",
    "w": 1350,
    "h": 1800,
@@ -1683,7 +1781,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-end2",
-   "number": 103,
+   "number": 110,
    "file": "Noche-Terrible-end2.jpg",
    "w": 1350,
    "h": 1800,
@@ -1697,7 +1795,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-end3",
-   "number": 104,
+   "number": 111,
    "file": "Noche-Terrible-end3.jpg",
    "w": 1350,
    "h": 1800,
@@ -1711,7 +1809,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-end4",
-   "number": 105,
+   "number": 112,
    "file": "Noche-Terrible-end4.jpg",
    "w": 1350,
    "h": 1800,
@@ -1767,7 +1865,7 @@ window.GUIDE = {
    "image": ""
   },
   {
-   "name": "Tommy Hemr, Linda Chudomelová, Asya metujov",
+   "name": "Tommy Hemr, Linda Chudomelová, Karolína Semmlerová, Asya metujov",
    "role": "Make Up Artist",
    "link": "",
    "image": ""
