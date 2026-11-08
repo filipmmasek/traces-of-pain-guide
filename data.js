@@ -275,23 +275,23 @@ window.GUIDE = {
    "project": "letters-from-mom"
   },
   {
-   "id": "letters-from-mom-1",
+   "id": "letters-from-mom-01",
    "number": 2,
-   "file": "Letters-From-Mom-1.jpg",
+   "file": "Letters-From-Mom-01.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
    "text": "",
    "inspirations": [],
    "hotspots": [],
-   "src": "img/full/letters-from-mom-1.jpg",
-   "thumb": "img/thumb/letters-from-mom-1.jpg",
+   "src": "img/full/letters-from-mom-01.jpg",
+   "thumb": "img/thumb/letters-from-mom-01.jpg",
    "project": "letters-from-mom"
   },
   {
-   "id": "letters-from-mom-2",
+   "id": "letters-from-mom-02",
    "number": 3,
-   "file": "Letters-From-Mom-2.jpg",
+   "file": "Letters-From-Mom-02.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -305,42 +305,42 @@ window.GUIDE = {
      "text": "In interviews Julio Cortázar was almost always smoking: first you saw a cloud of smoke, then his face. Gabriel gave the same habit to the story's characters. Laura and Luis wait anxiously for every new letter from Buenos Aires, and smoking is how they kill the anxiety."
     }
    ],
-   "src": "img/full/letters-from-mom-2.jpg",
-   "thumb": "img/thumb/letters-from-mom-2.jpg",
+   "src": "img/full/letters-from-mom-02.jpg",
+   "thumb": "img/thumb/letters-from-mom-02.jpg",
    "project": "letters-from-mom"
   },
   {
-   "id": "letters-from-mom-3",
+   "id": "letters-from-mom-03",
    "number": 4,
-   "file": "Letters-From-Mom-3.jpg",
+   "file": "Letters-From-Mom-03.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
    "text": "",
    "inspirations": [],
    "hotspots": [],
-   "src": "img/full/letters-from-mom-3.jpg",
-   "thumb": "img/thumb/letters-from-mom-3.jpg",
+   "src": "img/full/letters-from-mom-03.jpg",
+   "thumb": "img/thumb/letters-from-mom-03.jpg",
    "project": "letters-from-mom"
   },
   {
-   "id": "letters-from-mom-5",
+   "id": "letters-from-mom-04",
    "number": 5,
-   "file": "Letters-From-Mom-5.jpg",
+   "file": "Letters-From-Mom-04.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
    "text": "",
    "inspirations": [],
    "hotspots": [],
-   "src": "img/full/letters-from-mom-5.jpg",
-   "thumb": "img/thumb/letters-from-mom-5.jpg",
+   "src": "img/full/letters-from-mom-04.jpg",
+   "thumb": "img/thumb/letters-from-mom-04.jpg",
    "project": "letters-from-mom"
   },
   {
-   "id": "letters-from-mom-8",
+   "id": "letters-from-mom-05",
    "number": 6,
-   "file": "Letters-From-Mom-8.jpg",
+   "file": "Letters-From-Mom-05.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -354,14 +354,14 @@ window.GUIDE = {
      "text": "In the story every letter from the mother in Buenos Aires brings unease: she writes about Nico, who has died, as if he were still alive."
     }
    ],
-   "src": "img/full/letters-from-mom-8.jpg",
-   "thumb": "img/thumb/letters-from-mom-8.jpg",
+   "src": "img/full/letters-from-mom-05.jpg",
+   "thumb": "img/thumb/letters-from-mom-05.jpg",
    "project": "letters-from-mom"
   },
   {
-   "id": "letters-from-mom-10",
+   "id": "letters-from-mom-06",
    "number": 7,
-   "file": "Letters-From-Mom-10.jpg",
+   "file": "Letters-From-Mom-06.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -375,22 +375,22 @@ window.GUIDE = {
      "text": "In the story every letter from the mother in Buenos Aires brings unease: she writes about Nico, who has died, as if he were still alive."
     }
    ],
-   "src": "img/full/letters-from-mom-10.jpg",
-   "thumb": "img/thumb/letters-from-mom-10.jpg",
+   "src": "img/full/letters-from-mom-06.jpg",
+   "thumb": "img/thumb/letters-from-mom-06.jpg",
    "project": "letters-from-mom"
   },
   {
-   "id": "letters-from-mom-13",
+   "id": "letters-from-mom-07",
    "number": 8,
-   "file": "Letters-From-Mom-13.jpg",
+   "file": "Letters-From-Mom-07.jpg",
    "w": 1517,
    "h": 1800,
    "title": "",
    "text": "",
    "inspirations": [],
    "hotspots": [],
-   "src": "img/full/letters-from-mom-13.jpg",
-   "thumb": "img/thumb/letters-from-mom-13.jpg",
+   "src": "img/full/letters-from-mom-07.jpg",
+   "thumb": "img/thumb/letters-from-mom-07.jpg",
    "project": "letters-from-mom"
   },
   {
@@ -415,9 +415,9 @@ window.GUIDE = {
    "project": "zadquiel-dei"
   },
   {
-   "id": "zadquiel-1",
+   "id": "zadquiel-dei-01",
    "number": 10,
-   "file": "Zadquiel-1.jpg",
+   "file": "Zadquiel-Dei-01.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -437,14 +437,14 @@ window.GUIDE = {
      "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
     }
    ],
-   "src": "img/full/zadquiel-1.jpg",
-   "thumb": "img/thumb/zadquiel-1.jpg",
+   "src": "img/full/zadquiel-dei-01.jpg",
+   "thumb": "img/thumb/zadquiel-dei-01.jpg",
    "project": "zadquiel-dei"
   },
   {
-   "id": "zadquiel-2",
+   "id": "zadquiel-dei-02",
    "number": 11,
-   "file": "Zadquiel-2.jpg",
+   "file": "Zadquiel-Dei-02.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -458,14 +458,14 @@ window.GUIDE = {
      "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
     }
    ],
-   "src": "img/full/zadquiel-2.jpg",
-   "thumb": "img/thumb/zadquiel-2.jpg",
+   "src": "img/full/zadquiel-dei-02.jpg",
+   "thumb": "img/thumb/zadquiel-dei-02.jpg",
    "project": "zadquiel-dei"
   },
   {
-   "id": "zadquiel-3",
+   "id": "zadquiel-dei-03",
    "number": 12,
-   "file": "Zadquiel-3.jpg",
+   "file": "Zadquiel-Dei-03.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -479,14 +479,14 @@ window.GUIDE = {
      "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
     }
    ],
-   "src": "img/full/zadquiel-3.jpg",
-   "thumb": "img/thumb/zadquiel-3.jpg",
+   "src": "img/full/zadquiel-dei-03.jpg",
+   "thumb": "img/thumb/zadquiel-dei-03.jpg",
    "project": "zadquiel-dei"
   },
   {
-   "id": "zadquiel-4",
+   "id": "zadquiel-dei-04",
    "number": 13,
-   "file": "Zadquiel-4.jpg",
+   "file": "Zadquiel-Dei-04.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -506,14 +506,14 @@ window.GUIDE = {
      "text": "Sharp spots of light on the face, and a lot of blur and movement around it, to create a dreamlike atmosphere. Zadquiel is the angel of death, so unlike the other, colourful angels, this one is kept dark."
     }
    ],
-   "src": "img/full/zadquiel-4.jpg",
-   "thumb": "img/thumb/zadquiel-4.jpg",
+   "src": "img/full/zadquiel-dei-04.jpg",
+   "thumb": "img/thumb/zadquiel-dei-04.jpg",
    "project": "zadquiel-dei"
   },
   {
-   "id": "zadquiel-6",
+   "id": "zadquiel-dei-05",
    "number": 14,
-   "file": "Zadquiel-6.jpg",
+   "file": "Zadquiel-Dei-05.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -527,41 +527,14 @@ window.GUIDE = {
      "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
     }
    ],
-   "src": "img/full/zadquiel-6.jpg",
-   "thumb": "img/thumb/zadquiel-6.jpg",
+   "src": "img/full/zadquiel-dei-05.jpg",
+   "thumb": "img/thumb/zadquiel-dei-05.jpg",
    "project": "zadquiel-dei"
   },
   {
-   "id": "zadquiel-9",
+   "id": "zadquiel-dei-06",
    "number": 15,
-   "file": "Zadquiel-9.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [
-    {
-     "x": 50,
-     "y": 50,
-     "title": "Light and movement",
-     "text": "Sharp spots of light on the face, and a lot of blur and movement around it, to create a dreamlike atmosphere. Zadquiel is the angel of death, so unlike the other, colourful angels, this one is kept dark."
-    },
-    {
-     "x": 50,
-     "y": 50,
-     "title": "The arquebus",
-     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
-    }
-   ],
-   "src": "img/full/zadquiel-9.jpg",
-   "thumb": "img/thumb/zadquiel-9.jpg",
-   "project": "zadquiel-dei"
-  },
-  {
-   "id": "zadquiel-11",
-   "number": 16,
-   "file": "Zadquiel-11.jpg",
+   "file": "Zadquiel-Dei-06.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -587,8 +560,35 @@ window.GUIDE = {
      "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
     }
    ],
-   "src": "img/full/zadquiel-11.jpg",
-   "thumb": "img/thumb/zadquiel-11.jpg",
+   "src": "img/full/zadquiel-dei-06.jpg",
+   "thumb": "img/thumb/zadquiel-dei-06.jpg",
+   "project": "zadquiel-dei"
+  },
+  {
+   "id": "zadquiel-dei-07",
+   "number": 16,
+   "file": "Zadquiel-Dei-07.jpg",
+   "w": 1350,
+   "h": 1800,
+   "title": "",
+   "text": "",
+   "inspirations": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Light and movement",
+     "text": "Sharp spots of light on the face, and a lot of blur and movement around it, to create a dreamlike atmosphere. Zadquiel is the angel of death, so unlike the other, colourful angels, this one is kept dark."
+    },
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
+   "src": "img/full/zadquiel-dei-07.jpg",
+   "thumb": "img/thumb/zadquiel-dei-07.jpg",
    "project": "zadquiel-dei"
   },
   {
@@ -640,29 +640,8 @@ window.GUIDE = {
    "project": "raphael-dei"
   },
   {
-   "id": "raphael-2",
-   "number": 19,
-   "file": "Raphael-2.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [
-    {
-     "x": 50,
-     "y": 50,
-     "title": "The arquebus",
-     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
-    }
-   ],
-   "src": "img/full/raphael-2.jpg",
-   "thumb": "img/thumb/raphael-2.jpg",
-   "project": "raphael-dei"
-  },
-  {
    "id": "raphael-3",
-   "number": 20,
+   "number": 19,
    "file": "Raphael-3.jpg",
    "w": 1350,
    "h": 1800,
@@ -683,7 +662,7 @@ window.GUIDE = {
   },
   {
    "id": "raphael-5",
-   "number": 21,
+   "number": 20,
    "file": "Raphael-5.jpg",
    "w": 1350,
    "h": 1800,
@@ -722,7 +701,7 @@ window.GUIDE = {
   },
   {
    "id": "raphael-6",
-   "number": 22,
+   "number": 21,
    "file": "Raphael-6.jpg",
    "w": 1350,
    "h": 1800,
@@ -736,7 +715,7 @@ window.GUIDE = {
   },
   {
    "id": "raphael-8",
-   "number": 23,
+   "number": 22,
    "file": "Raphael-8.jpg",
    "w": 1350,
    "h": 1800,
@@ -775,7 +754,7 @@ window.GUIDE = {
   },
   {
    "id": "raphael-9",
-   "number": 24,
+   "number": 23,
    "file": "Raphael-9.jpg",
    "w": 1350,
    "h": 1800,
@@ -792,6 +771,27 @@ window.GUIDE = {
    ],
    "src": "img/full/raphael-9.jpg",
    "thumb": "img/thumb/raphael-9.jpg",
+   "project": "raphael-dei"
+  },
+  {
+   "id": "raphael-32",
+   "number": 24,
+   "file": "Raphael-32.jpg",
+   "w": 1350,
+   "h": 1800,
+   "title": "",
+   "text": "",
+   "inspirations": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
+   "src": "img/full/raphael-32.jpg",
+   "thumb": "img/thumb/raphael-32.jpg",
    "project": "raphael-dei"
   },
   {
@@ -822,23 +822,23 @@ window.GUIDE = {
    "project": "letiel-dei"
   },
   {
-   "id": "letiel-1",
+   "id": "letiel-dei-01",
    "number": 26,
-   "file": "Letiel-1.jpg",
+   "file": "Letiel-Dei-01.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
    "text": "",
    "inspirations": [],
    "hotspots": [],
-   "src": "img/full/letiel-1.jpg",
-   "thumb": "img/thumb/letiel-1.jpg",
+   "src": "img/full/letiel-dei-01.jpg",
+   "thumb": "img/thumb/letiel-dei-01.jpg",
    "project": "letiel-dei"
   },
   {
-   "id": "letiel-5",
+   "id": "letiel-dei-02",
    "number": 27,
-   "file": "Letiel-5.jpg",
+   "file": "Letiel-Dei-02.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -854,24 +854,18 @@ window.GUIDE = {
     {
      "x": 50,
      "y": 50,
-     "title": "Light and shade",
-     "text": "Letiel is one of the most colourful arquebusier angels, yet Gabriel played with strong contrast between light and shade to make him as dark as possible."
-    },
-    {
-     "x": 50,
-     "y": 50,
      "title": "The arquebus",
      "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
     }
    ],
-   "src": "img/full/letiel-5.jpg",
-   "thumb": "img/thumb/letiel-5.jpg",
+   "src": "img/full/letiel-dei-02.jpg",
+   "thumb": "img/thumb/letiel-dei-02.jpg",
    "project": "letiel-dei"
   },
   {
-   "id": "letiel-7",
+   "id": "letiel-dei-03",
    "number": 28,
-   "file": "Letiel-7.jpg",
+   "file": "Letiel-Dei-03.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -891,16 +885,16 @@ window.GUIDE = {
      "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
     }
    ],
-   "src": "img/full/letiel-7.jpg",
-   "thumb": "img/thumb/letiel-7.jpg",
+   "src": "img/full/letiel-dei-03.jpg",
+   "thumb": "img/thumb/letiel-dei-03.jpg",
    "project": "letiel-dei"
   },
   {
-   "id": "letiel-8",
+   "id": "letiel-dei-04",
    "number": 29,
-   "file": "Letiel-8.jpg",
-   "w": 1350,
-   "h": 1800,
+   "file": "Letiel-Dei-04.jpg",
+   "w": 1125,
+   "h": 1500,
    "title": "",
    "text": "",
    "inspirations": [],
@@ -918,14 +912,14 @@ window.GUIDE = {
      "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
     }
    ],
-   "src": "img/full/letiel-8.jpg",
-   "thumb": "img/thumb/letiel-8.jpg",
+   "src": "img/full/letiel-dei-04.jpg",
+   "thumb": "img/thumb/letiel-dei-04.jpg",
    "project": "letiel-dei"
   },
   {
-   "id": "letiel-dei11944-1",
+   "id": "letiel-dei-05",
    "number": 30,
-   "file": "Letiel Dei11944 1.jpg",
+   "file": "Letiel-Dei-05.jpg",
    "w": 1125,
    "h": 1500,
    "title": "",
@@ -939,14 +933,14 @@ window.GUIDE = {
      "text": "In the original painting Letiel's wings are very colourful. Gabriel linked them to the birds of the region, parrots with bright feathers, and used a super colourful palette for this angel."
     }
    ],
-   "src": "img/full/letiel-dei11944-1.jpg",
-   "thumb": "img/thumb/letiel-dei11944-1.jpg",
+   "src": "img/full/letiel-dei-05.jpg",
+   "thumb": "img/thumb/letiel-dei-05.jpg",
    "project": "letiel-dei"
   },
   {
-   "id": "letiel-dei12289-1",
+   "id": "letiel-dei-06",
    "number": 31,
-   "file": "Letiel Dei12289 1.jpg",
+   "file": "Letiel-Dei-06.jpg",
    "w": 1125,
    "h": 1500,
    "title": "",
@@ -972,16 +966,16 @@ window.GUIDE = {
      "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
     }
    ],
-   "src": "img/full/letiel-dei12289-1.jpg",
-   "thumb": "img/thumb/letiel-dei12289-1.jpg",
+   "src": "img/full/letiel-dei-06.jpg",
+   "thumb": "img/thumb/letiel-dei-06.jpg",
    "project": "letiel-dei"
   },
   {
-   "id": "letiel-dei-outdoor-337-1",
+   "id": "letiel-dei-07",
    "number": 32,
-   "file": "Letiel-Dei-Outdoor-337 1.jpg",
-   "w": 1125,
-   "h": 1500,
+   "file": "Letiel-Dei-07.jpg",
+   "w": 1350,
+   "h": 1800,
    "title": "",
    "text": "",
    "inspirations": [],
@@ -995,12 +989,18 @@ window.GUIDE = {
     {
      "x": 50,
      "y": 50,
+     "title": "Light and shade",
+     "text": "Letiel is one of the most colourful arquebusier angels, yet Gabriel played with strong contrast between light and shade to make him as dark as possible."
+    },
+    {
+     "x": 50,
+     "y": 50,
      "title": "The arquebus",
      "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
     }
    ],
-   "src": "img/full/letiel-dei-outdoor-337-1.jpg",
-   "thumb": "img/thumb/letiel-dei-outdoor-337-1.jpg",
+   "src": "img/full/letiel-dei-07.jpg",
+   "thumb": "img/thumb/letiel-dei-07.jpg",
    "project": "letiel-dei"
   },
   {
@@ -1025,127 +1025,57 @@ window.GUIDE = {
    "project": "ophelia"
   },
   {
-   "id": "ophelia-1",
+   "id": "ophelia-01",
    "number": 34,
-   "file": "Ophelia-1.jpg",
+   "file": "Ophelia-01.jpg",
    "w": 1200,
    "h": 1800,
    "title": "",
    "text": "",
    "inspirations": [],
    "hotspots": [],
-   "src": "img/full/ophelia-1.jpg",
-   "thumb": "img/thumb/ophelia-1.jpg",
+   "src": "img/full/ophelia-01.jpg",
+   "thumb": "img/thumb/ophelia-01.jpg",
    "project": "ophelia"
   },
   {
-   "id": "ophelia-2",
+   "id": "ophelia-02",
    "number": 35,
-   "file": "Ophelia-2.jpg",
-   "w": 1200,
+   "file": "Ophelia-02.jpg",
+   "w": 1208,
    "h": 1800,
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/ophelia-2.jpg",
-   "thumb": "img/thumb/ophelia-2.jpg",
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "The upside-down horizon",
+     "text": "In many of the photos the horizon is upside down. It puts you under the water, sharing Ophelia's point of view and her pain."
+    }
+   ],
+   "src": "img/full/ophelia-02.jpg",
+   "thumb": "img/thumb/ophelia-02.jpg",
    "project": "ophelia"
   },
   {
-   "id": "ophelia-4",
+   "id": "ophelia-03",
    "number": 36,
-   "file": "Ophelia-4.jpg",
-   "w": 1200,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [
-    {
-     "x": 50,
-     "y": 50,
-     "title": "The upside-down horizon",
-     "text": "In many of the photos the horizon is upside down. It puts you under the water, sharing Ophelia's point of view and her pain."
-    }
-   ],
-   "src": "img/full/ophelia-4.jpg",
-   "thumb": "img/thumb/ophelia-4.jpg",
-   "project": "ophelia"
-  },
-  {
-   "id": "ophelia-5",
-   "number": 37,
-   "file": "Ophelia-5.jpg",
-   "w": 1208,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [
-    {
-     "x": 50,
-     "y": 50,
-     "title": "The upside-down horizon",
-     "text": "In many of the photos the horizon is upside down. It puts you under the water, sharing Ophelia's point of view and her pain."
-    }
-   ],
-   "src": "img/full/ophelia-5.jpg",
-   "thumb": "img/thumb/ophelia-5.jpg",
-   "project": "ophelia"
-  },
-  {
-   "id": "ophelia-6",
-   "number": 38,
-   "file": "Ophelia-6.jpg",
+   "file": "Ophelia-03.jpg",
    "w": 1208,
    "h": 1800,
    "title": "",
    "text": "",
    "inspirations": [],
    "hotspots": [],
-   "src": "img/full/ophelia-6.jpg",
-   "thumb": "img/thumb/ophelia-6.jpg",
-   "project": "ophelia"
-  },
-  {
-   "id": "ophelia-8",
-   "number": 39,
-   "file": "Ophelia-8.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/ophelia-8.jpg",
-   "thumb": "img/thumb/ophelia-8.jpg",
-   "project": "ophelia"
-  },
-  {
-   "id": "ophelia-30-08-2024-2024-833",
-   "number": 40,
-   "file": "Ophelia 30-08-2024 2024-833.jpg",
-   "w": 1006,
-   "h": 1500,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [
-    {
-     "x": 50,
-     "y": 50,
-     "title": "The upside-down horizon",
-     "text": "In many of the photos the horizon is upside down. It puts you under the water, sharing Ophelia's point of view and her pain."
-    }
-   ],
-   "src": "img/full/ophelia-30-08-2024-2024-833.jpg",
-   "thumb": "img/thumb/ophelia-30-08-2024-2024-833.jpg",
+   "src": "img/full/ophelia-03.jpg",
+   "thumb": "img/thumb/ophelia-03.jpg",
    "project": "ophelia"
   },
   {
    "id": "saturn-hero",
-   "number": 41,
+   "number": 37,
    "file": "Saturn-hero.jpg",
    "w": 1350,
    "h": 1800,
@@ -1165,9 +1095,9 @@ window.GUIDE = {
    "project": "saturn"
   },
   {
-   "id": "saturn-1",
-   "number": 42,
-   "file": "Saturn-1.jpg",
+   "id": "saturn-01",
+   "number": 38,
+   "file": "Saturn-01.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -1181,14 +1111,14 @@ window.GUIDE = {
      "text": "A high-contrast fork on a red background. For Gabriel it sums up the whole story: you do not need to see blood or anything raw, it leaves room for imagination."
     }
    ],
-   "src": "img/full/saturn-1.jpg",
-   "thumb": "img/thumb/saturn-1.jpg",
+   "src": "img/full/saturn-01.jpg",
+   "thumb": "img/thumb/saturn-01.jpg",
    "project": "saturn"
   },
   {
-   "id": "saturn-2",
-   "number": 43,
-   "file": "Saturn-2.jpg",
+   "id": "saturn-02",
+   "number": 39,
+   "file": "Saturn-02.jpg",
    "w": 1200,
    "h": 1800,
    "title": "",
@@ -1202,28 +1132,28 @@ window.GUIDE = {
      "text": "The man wears a suit, but his hands and face are dirty: powerful people may be very dirty inside. Gabriel links Goya's painting to today's elites, who will do anything to stay in power."
     }
    ],
-   "src": "img/full/saturn-2.jpg",
-   "thumb": "img/thumb/saturn-2.jpg",
+   "src": "img/full/saturn-02.jpg",
+   "thumb": "img/thumb/saturn-02.jpg",
    "project": "saturn"
   },
   {
-   "id": "saturn-3",
-   "number": 44,
-   "file": "Saturn-3.jpg",
+   "id": "saturn-03",
+   "number": 40,
+   "file": "Saturn-03.jpg",
    "w": 1200,
    "h": 1800,
    "title": "",
    "text": "",
    "inspirations": [],
    "hotspots": [],
-   "src": "img/full/saturn-3.jpg",
-   "thumb": "img/thumb/saturn-3.jpg",
+   "src": "img/full/saturn-03.jpg",
+   "thumb": "img/thumb/saturn-03.jpg",
    "project": "saturn"
   },
   {
-   "id": "saturn-4",
-   "number": 45,
-   "file": "Saturn-4.jpg",
+   "id": "saturn-04",
+   "number": 41,
+   "file": "Saturn-04.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -1237,14 +1167,14 @@ window.GUIDE = {
      "text": "One of the very first shoots, recreating the body language of Goya's painting. The project later moved towards something more abstract and subtle, but this shoot was too good to leave out."
     }
    ],
-   "src": "img/full/saturn-4.jpg",
-   "thumb": "img/thumb/saturn-4.jpg",
+   "src": "img/full/saturn-04.jpg",
+   "thumb": "img/thumb/saturn-04.jpg",
    "project": "saturn"
   },
   {
-   "id": "saturn-5",
-   "number": 46,
-   "file": "Saturn-5.jpg",
+   "id": "saturn-05",
+   "number": 42,
+   "file": "Saturn-05.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -1258,14 +1188,14 @@ window.GUIDE = {
      "text": "One of the very first shoots, recreating the body language of Goya's painting. The project later moved towards something more abstract and subtle, but this shoot was too good to leave out."
     }
    ],
-   "src": "img/full/saturn-5.jpg",
-   "thumb": "img/thumb/saturn-5.jpg",
+   "src": "img/full/saturn-05.jpg",
+   "thumb": "img/thumb/saturn-05.jpg",
    "project": "saturn"
   },
   {
-   "id": "saturn-7",
-   "number": 47,
-   "file": "Saturn-7.jpg",
+   "id": "saturn-06",
+   "number": 43,
+   "file": "Saturn-06.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -1279,14 +1209,14 @@ window.GUIDE = {
      "text": "One of the very first shoots, recreating the body language of Goya's painting. The project later moved towards something more abstract and subtle, but this shoot was too good to leave out."
     }
    ],
-   "src": "img/full/saturn-7.jpg",
-   "thumb": "img/thumb/saturn-7.jpg",
+   "src": "img/full/saturn-06.jpg",
+   "thumb": "img/thumb/saturn-06.jpg",
    "project": "saturn"
   },
   {
-   "id": "saturn-12",
-   "number": 48,
-   "file": "Saturn-12.jpg",
+   "id": "saturn-07",
+   "number": 44,
+   "file": "Saturn-07.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -1300,13 +1230,13 @@ window.GUIDE = {
      "text": "The man wears a suit, but his hands and face are dirty: powerful people may be very dirty inside. Gabriel links Goya's painting to today's elites, who will do anything to stay in power."
     }
    ],
-   "src": "img/full/saturn-12.jpg",
-   "thumb": "img/thumb/saturn-12.jpg",
+   "src": "img/full/saturn-07.jpg",
+   "thumb": "img/thumb/saturn-07.jpg",
    "project": "saturn"
   },
   {
    "id": "duel-hero",
-   "number": 49,
+   "number": 45,
    "file": "Duel-hero.jpg",
    "w": 1350,
    "h": 1800,
@@ -1327,7 +1257,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-1",
-   "number": 50,
+   "number": 46,
    "file": "Duel-1.jpg",
    "w": 1350,
    "h": 1800,
@@ -1354,7 +1284,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-2",
-   "number": 51,
+   "number": 47,
    "file": "Duel-2.jpg",
    "w": 1350,
    "h": 1800,
@@ -1375,7 +1305,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-3",
-   "number": 52,
+   "number": 48,
    "file": "Duel-3.jpg",
    "w": 1350,
    "h": 1800,
@@ -1396,7 +1326,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-4",
-   "number": 53,
+   "number": 49,
    "file": "Duel-4.jpg",
    "w": 1350,
    "h": 1800,
@@ -1410,7 +1340,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-5",
-   "number": 54,
+   "number": 50,
    "file": "Duel-5.jpg",
    "w": 1350,
    "h": 1800,
@@ -1424,7 +1354,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-06",
-   "number": 55,
+   "number": 51,
    "file": "Duel-06.jpg",
    "w": 1125,
    "h": 1500,
@@ -1445,7 +1375,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-6",
-   "number": 56,
+   "number": 52,
    "file": "Duel-6.jpg",
    "w": 1350,
    "h": 1800,
@@ -1459,7 +1389,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-7",
-   "number": 57,
+   "number": 53,
    "file": "Duel-7.jpg",
    "w": 1350,
    "h": 1800,
@@ -1480,7 +1410,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-8",
-   "number": 58,
+   "number": 54,
    "file": "Duel-8.jpg",
    "w": 1350,
    "h": 1800,
@@ -1501,7 +1431,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-9",
-   "number": 59,
+   "number": 55,
    "file": "Duel-9.jpg",
    "w": 1350,
    "h": 1800,
@@ -1522,7 +1452,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-10",
-   "number": 60,
+   "number": 56,
    "file": "Duel-10.jpg",
    "w": 1350,
    "h": 1800,
@@ -1536,7 +1466,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-11",
-   "number": 61,
+   "number": 57,
    "file": "Duel-11.jpg",
    "w": 1350,
    "h": 1800,
@@ -1550,7 +1480,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-012",
-   "number": 62,
+   "number": 58,
    "file": "Duel-012.jpg",
    "w": 1125,
    "h": 1500,
@@ -1564,7 +1494,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-12",
-   "number": 63,
+   "number": 59,
    "file": "Duel-12.jpg",
    "w": 1350,
    "h": 1800,
@@ -1578,7 +1508,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-13",
-   "number": 64,
+   "number": 60,
    "file": "Duel-13.jpg",
    "w": 1350,
    "h": 1800,
@@ -1599,7 +1529,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-14",
-   "number": 65,
+   "number": 61,
    "file": "Duel-14.jpg",
    "w": 1350,
    "h": 1800,
@@ -1613,7 +1543,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-15",
-   "number": 66,
+   "number": 62,
    "file": "Duel-15.jpg",
    "w": 1350,
    "h": 1800,
@@ -1627,7 +1557,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-16",
-   "number": 67,
+   "number": 63,
    "file": "Duel-16.jpg",
    "w": 1350,
    "h": 1800,
@@ -1648,7 +1578,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-17",
-   "number": 68,
+   "number": 64,
    "file": "Duel-17.jpg",
    "w": 1350,
    "h": 1800,
@@ -1662,7 +1592,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-18",
-   "number": 69,
+   "number": 65,
    "file": "Duel-18.jpg",
    "w": 1350,
    "h": 1800,
@@ -1683,7 +1613,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-19",
-   "number": 70,
+   "number": 66,
    "file": "Duel-19.jpg",
    "w": 1350,
    "h": 1800,
@@ -1704,7 +1634,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-20",
-   "number": 71,
+   "number": 67,
    "file": "Duel-20.jpg",
    "w": 1350,
    "h": 1800,
@@ -1725,7 +1655,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-21",
-   "number": 72,
+   "number": 68,
    "file": "Duel-21.jpg",
    "w": 1125,
    "h": 1500,
@@ -1746,7 +1676,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-hero",
-   "number": 73,
+   "number": 69,
    "file": "Noche-Terrible-hero.jpg",
    "w": 1350,
    "h": 1800,
@@ -1759,9 +1689,9 @@ window.GUIDE = {
    "project": "terrible-night"
   },
   {
-   "id": "noche-terrible-1",
-   "number": 74,
-   "file": "Noche-Terrible-1.jpg",
+   "id": "noche-terrible-01",
+   "number": 70,
+   "file": "Noche-Terrible-01.jpg",
    "w": 1286,
    "h": 1800,
    "title": "",
@@ -1781,14 +1711,14 @@ window.GUIDE = {
      "text": "The wedding dress, the gift and the flowers are all that is left of the wedding."
     }
    ],
-   "src": "img/full/noche-terrible-1.jpg",
-   "thumb": "img/thumb/noche-terrible-1.jpg",
+   "src": "img/full/noche-terrible-01.jpg",
+   "thumb": "img/thumb/noche-terrible-01.jpg",
    "project": "terrible-night"
   },
   {
-   "id": "noche-terrible-2",
-   "number": 75,
-   "file": "Noche-Terrible-2.jpg",
+   "id": "noche-terrible-02",
+   "number": 71,
+   "file": "Noche-Terrible-02.jpg",
    "w": 1286,
    "h": 1800,
    "title": "",
@@ -1802,28 +1732,28 @@ window.GUIDE = {
      "text": "Gabriel imagined the bride left behind on her wedding day, lying in the street: abandoned, desperate and vulnerable."
     }
    ],
-   "src": "img/full/noche-terrible-2.jpg",
-   "thumb": "img/thumb/noche-terrible-2.jpg",
+   "src": "img/full/noche-terrible-02.jpg",
+   "thumb": "img/thumb/noche-terrible-02.jpg",
    "project": "terrible-night"
   },
   {
-   "id": "noche-terrible-3",
-   "number": 76,
-   "file": "Noche-Terrible-3.jpg",
+   "id": "noche-terrible-03",
+   "number": 72,
+   "file": "Noche-Terrible-03.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
    "text": "",
    "inspirations": [],
    "hotspots": [],
-   "src": "img/full/noche-terrible-3.jpg",
-   "thumb": "img/thumb/noche-terrible-3.jpg",
+   "src": "img/full/noche-terrible-03.jpg",
+   "thumb": "img/thumb/noche-terrible-03.jpg",
    "project": "terrible-night"
   },
   {
-   "id": "noche-terrible-4",
-   "number": 77,
-   "file": "Noche-Terrible-4.jpg",
+   "id": "noche-terrible-04",
+   "number": 73,
+   "file": "Noche-Terrible-04.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -1843,14 +1773,14 @@ window.GUIDE = {
      "text": "Gabriel imagined the bride left behind on her wedding day, lying in the street: abandoned, desperate and vulnerable."
     }
    ],
-   "src": "img/full/noche-terrible-4.jpg",
-   "thumb": "img/thumb/noche-terrible-4.jpg",
+   "src": "img/full/noche-terrible-04.jpg",
+   "thumb": "img/thumb/noche-terrible-04.jpg",
    "project": "terrible-night"
   },
   {
-   "id": "noche-terrible-end1",
-   "number": 78,
-   "file": "Noche-Terrible-end1.jpg",
+   "id": "noche-terrible-05",
+   "number": 74,
+   "file": "Noche-Terrible-05.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -1864,14 +1794,14 @@ window.GUIDE = {
      "text": "The studio photos are deliberately not sharp, full of movement and blur, as if they were images from the 1930s, when the story was written."
     }
    ],
-   "src": "img/full/noche-terrible-end1.jpg",
-   "thumb": "img/thumb/noche-terrible-end1.jpg",
+   "src": "img/full/noche-terrible-05.jpg",
+   "thumb": "img/thumb/noche-terrible-05.jpg",
    "project": "terrible-night"
   },
   {
-   "id": "noche-terrible-end3",
-   "number": 79,
-   "file": "Noche-Terrible-end3.jpg",
+   "id": "noche-terrible-06",
+   "number": 75,
+   "file": "Noche-Terrible-06.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -1885,14 +1815,14 @@ window.GUIDE = {
      "text": "The studio photos are deliberately not sharp, full of movement and blur, as if they were images from the 1930s, when the story was written."
     }
    ],
-   "src": "img/full/noche-terrible-end3.jpg",
-   "thumb": "img/thumb/noche-terrible-end3.jpg",
+   "src": "img/full/noche-terrible-06.jpg",
+   "thumb": "img/thumb/noche-terrible-06.jpg",
    "project": "terrible-night"
   },
   {
-   "id": "noche-terrible-end4",
-   "number": 80,
-   "file": "Noche-Terrible-end4.jpg",
+   "id": "noche-terrible-07",
+   "number": 76,
+   "file": "Noche-Terrible-07.jpg",
    "w": 1350,
    "h": 1800,
    "title": "",
@@ -1906,8 +1836,8 @@ window.GUIDE = {
      "text": "The studio photos are deliberately not sharp, full of movement and blur, as if they were images from the 1930s, when the story was written."
     }
    ],
-   "src": "img/full/noche-terrible-end4.jpg",
-   "thumb": "img/thumb/noche-terrible-end4.jpg",
+   "src": "img/full/noche-terrible-07.jpg",
+   "thumb": "img/thumb/noche-terrible-07.jpg",
    "project": "terrible-night"
   }
  ],
