@@ -29,11 +29,41 @@
     LANG = langs.indexOf(l) > -1 ? l : "en";
     G = LANG === "en" ? RAW : overlay(RAW, (RAW.translations || {})[LANG]);
     T = G.ui;
+    if (LANG !== "en") shareHotspots();
     byProject = {}; byId = {}; byNum = {};
     G.projects.forEach(function (p) { byProject[p.id] = p; });
     G.works.forEach(function (w) { byId[w.id] = w; byNum[w.number] = w; });
     document.documentElement.lang = LANG;
     try { localStorage.setItem("tp-lang", LANG); } catch (e) {}
+  }
+  // The same photo detail often appears on several photos. If one photo's copy has no translation
+  // yet, reuse the translation of the same detail (same English title) from another photo.
+  function shareHotspots() {
+    var en = {}, tr = {};
+    RAW.works.forEach(function (w) { en[w.id] = w.hotspots || []; });
+    G.works.forEach(function (w) {
+      (w.hotspots || []).forEach(function (h, i) {
+        var e = en[w.id][i];
+        if (e && h.title !== e.title && !tr[e.title]) tr[e.title] = h;
+      });
+    });
+    G.works = G.works.map(function (w) {
+      var changed = false, hs = (w.hotspots || []).map(function (h, i) {
+        var e = en[w.id][i], t = e && h.title === e.title && tr[e.title];
+        if (!t) return h;
+        changed = true;
+        return Object.assign({}, h, { title: t.title, text: t.text });
+      });
+      return changed ? Object.assign({}, w, { hotspots: hs }) : w;
+    });
+  }
+  // "photos" after a number: Czech has a separate form for 2 to 4.
+  function count(n) {
+    if (LANG === "cs" && n >= 2 && n <= 4) return n + " fotografie";
+    if (LANG === "cs" && n === 1) return "1 fotografie";
+    if (LANG === "es" && n === 1) return "1 fotografía";
+    if (LANG === "en" && n === 1) return "1 photo";
+    return n + " " + T.works;
   }
   var KIOSK = document.documentElement.classList.contains("kiosk");
   var savedLang = null;
@@ -126,7 +156,7 @@
     var ws = worksIn(p.id), c = heroOf(p);
     return '<a class="ptile' + (c ? "" : " empty") + '" href="#project-' + p.id + '">' +
       (c ? '<img loading="lazy" src="' + c.thumb + '" alt="">' : "") +
-      '<span class="cap"><span class="label">' + (ws.length ? ws.length + " " + esc(T.works) : esc(T.comingSoon)) + "</span>" +
+      '<span class="cap"><span class="label">' + (ws.length ? esc(count(ws.length)) : esc(T.comingSoon)) + "</span>" +
       "<h2>" + esc(p.name) + "</h2></span></a>";
   }
   function home() {
@@ -157,7 +187,7 @@
       '<button class="explore" type="button" data-open="' + w.id + '">' + esc(hs.length ? T.explore : T.fullscreen) + "</button>" +
       qrBlock(p) : '<div class="thumb empty"><span class="label">' + esc(T.comingSoon) + "</span></div>") + "</aside>";
     h += '<div class="read"><a class="back" href="#">' + esc(T.projects) + "</a>" +
-      '<span class="label">' + (ps.length ? ps.length + " " + esc(T.works) : esc(T.comingSoon)) + "</span>" +
+      '<span class="label">' + (ps.length ? esc(count(ps.length)) : esc(T.comingSoon)) + "</span>" +
       "<h1>" + esc(p.name) + "</h1>" +
       (p.subtitle ? '<p class="subtitle">' + inline(p.subtitle) + "</p>" : "") +
       (p.quote ? '<blockquote class="epigraph"><p>' + inline(p.quote) + "</p>" + (p.quoteBy ? "<cite>" + esc(p.quoteBy) + "</cite>" : "") + "</blockquote>" : "") +
@@ -205,7 +235,7 @@
   // A story opened from a project page leads back to that project.
   function page(key, from) {
     var pg = (G.pages || {})[key] || {};
-    var img = pg.image ? '<img class="page-img" src="' + esc(pg.image) + '" alt="' + (key === "about" ? "Gabriel Matula, self-portrait" : "") + '">' : "";
+    var img = pg.image ? '<img class="page-img" src="' + esc(pg.image) + '" alt="' + (key === "about" ? ({ cs: "Gabriel Matula, autoportrét", es: "Gabriel Matula, autorretrato" })[LANG] || "Gabriel Matula, self-portrait" : "") + '">' : "";
     var fp = from && /^project-/.test(from) && byProject[from.slice(8)];
     var back = fp ? '<a class="back" href="#' + from + '">' + esc(fp.name) + "</a>" : '<a class="back" href="#">' + esc(T.back) + "</a>";
     return back + '<article class="page' + (img ? " has-img" : "") + '">' + img +
@@ -572,7 +602,12 @@
     [].forEach.call(document.querySelectorAll(".menu a[data-ui]"), function (a) {
       var k = a.getAttribute("data-ui"); if (T[k]) a.textContent = T[k];
     });
-    $("fsClose").setAttribute("aria-label", T.close);
+    ["fsClose", "sheetClose", "ivClose"].forEach(function (id) { if ($(id)) $(id).setAttribute("aria-label", T.close); });
+    $("fsPrev").setAttribute("aria-label", T.prev);
+    $("fsNext").setAttribute("aria-label", T.next);
+    var nav = document.querySelector(".menu"); if (nav) nav.setAttribute("aria-label", ({ cs: "Hlavní nabídka", es: "Menú principal" })[LANG] || "Main");
+    if ($("langs")) $("langs").setAttribute("aria-label", ({ cs: "Jazyk", es: "Idioma" })[LANG] || "Language");
+    if ($("inspView")) $("inspView").setAttribute("aria-label", T.inspiredBy);
     $("fsZoomIn").setAttribute("aria-label", T.zoomIn || ({ cs: "Přiblížit", es: "Acercar" })[LANG] || "Zoom in");
     $("fsZoomOut").setAttribute("aria-label", T.zoomOut || ({ cs: "Oddálit", es: "Alejar" })[LANG] || "Zoom out");
     var mk = $("mark"); if (mk) { mk.src = logoSrc("mark"); mk.alt = LOGO_ALT[LANG] || LOGO_ALT.en; }
