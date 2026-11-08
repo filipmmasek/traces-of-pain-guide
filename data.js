@@ -72,7 +72,7 @@ window.GUIDE = {
      "date": "1959",
      "where": "Secret Weapons (short stories)",
      "image": "",
-     "text": "",
+     "text": "Julio Cortázar (1914–1984) was an Argentine writer who lived in Paris from 1951. In the story Luis and Laura have settled in Paris and live waiting for the next letter from Buenos Aires.",
      "credit": ""
     }
    ]
@@ -114,7 +114,7 @@ window.GUIDE = {
      "date": "",
      "where": "The archangel Raphael guides the young Tobias on his journey and heals his father's blindness",
      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Tobias_and_the_Angel_-_Filippino_Lippi.jpg?width=900",
-     "text": "",
+     "text": "Raphael travels with the young Tobias, saves him from a fish in the river Tigris and tells him to keep its gall, which cures his father's blindness. Raphael is the patron of travellers and of the sick.",
      "credit": "Image: Tobias and the Angel, Filippino Lippi, c. 1475–1480, National Gallery of Art, Washington, via Wikimedia Commons, public domain."
     },
     {
@@ -174,7 +174,7 @@ window.GUIDE = {
      "date": "1851–1852",
      "where": "Tate Britain, London",
      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/John_Everett_Millais_-_Ophelia_-_Google_Art_Project.jpg?width=900",
-     "text": "",
+     "text": "A key work of the Pre-Raphaelite Brotherhood, and an image recreated by many photographers. Gabriel's version turns the point of view upside down.",
      "credit": "Ophelia, John Everett Millais, Tate Britain, via Wikimedia Commons (Google Art Project), public domain."
     },
     {
@@ -204,7 +204,7 @@ window.GUIDE = {
      "date": "1820–1823",
      "where": "Museo del Prado, Madrid",
      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Francisco_de_Goya,_Saturno_devorando_a_su_hijo_(1819-1823).jpg?width=900",
-     "text": "One of the fourteen Black Paintings that Goya painted directly onto the walls of his house outside Madrid, the Quinta del Sordo, late in his life. They were later transferred to canvas and are now in the Museo del Prado.",
+     "text": "One of the fourteen Black Paintings that Goya painted directly onto the walls of his house outside Madrid, the Quinta del Sordo, late in his life. They were later transferred to canvas and are now in the Museo del Prado. Goya never explained it. It is often read through the myth of Cronus (Saturn), who devoured his children: time consuming everything. Another reading sees Spain devouring its own people in the turmoil of Goya's time.",
      "credit": "Saturn Devouring His Son, Francisco de Goya, Museo del Prado, via Wikimedia Commons, public domain."
     }
    ]
@@ -246,7 +246,7 @@ window.GUIDE = {
      "date": "1933",
      "where": "El jorobadito (short stories)",
      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Portada_de_El_Jorobadito_-_Roberto_Arlt_-_1933.jpg?width=900",
-     "text": "",
+     "text": "Roberto Arlt (1900–1942) was an Argentine writer. In the story the groom, Ricardo Stepens, spends the night before his wedding torn over whether to run away.",
      "credit": "Cover of the first edition of El jorobadito (1933), unknown designer, via Wikimedia Commons (from the Biblioteca Virtual Miguel de Cervantes), public domain."
     }
    ]
@@ -262,7 +262,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 35,
+     "y": 22.5,
+     "title": "The cigarette",
+     "text": "In interviews Julio Cortázar was almost always smoking: first you saw a cloud of smoke, then his face. Gabriel gave the same habit to the story's characters. Laura and Luis wait anxiously for every new letter from Buenos Aires, and smoking is how they kill the anxiety."
+    }
+   ],
    "src": "img/full/letters-from-mom-hero.jpg",
    "thumb": "img/thumb/letters-from-mom-hero.jpg",
    "project": "letters-from-mom"
@@ -346,7 +353,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 66,
+     "title": "The letter",
+     "text": "In the story every letter from the mother in Buenos Aires brings unease: she writes about Nico, who has died, as if he were still alive."
+    }
+   ],
    "src": "img/full/letters-from-mom-10.jpg",
    "thumb": "img/thumb/letters-from-mom-10.jpg",
    "project": "letters-from-mom"
@@ -374,7 +388,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 26,
+     "y": 22,
+     "title": "Light and movement",
+     "text": "Sharp spots of light on the face, and a lot of blur and movement around it, to create a dreamlike atmosphere. Zadquiel is the angel of death, so unlike the other, colourful angels, this one is kept dark."
+    }
+   ],
    "src": "img/full/zadquiel-hero.jpg",
    "thumb": "img/thumb/zadquiel-hero.jpg",
    "project": "zadquiel-dei"
@@ -430,7 +451,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 72,
+     "y": 49,
+     "title": "The tear",
+     "text": "Some of the photos, mostly the ones on the wall, show a tear. In Gabriel's reading this angel has to take human lives by God's will, even when it does not want to. The tear shows that inner conflict."
+    }
+   ],
    "src": "img/full/zadquiel-4.jpg",
    "thumb": "img/thumb/zadquiel-4.jpg",
    "project": "zadquiel-dei"
@@ -472,7 +500,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 40,
+     "y": 68,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
    "src": "img/full/zadquiel-11.jpg",
    "thumb": "img/thumb/zadquiel-11.jpg",
    "project": "zadquiel-dei"
@@ -486,7 +521,20 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 17,
+     "y": 55,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    },
+    {
+     "x": 60,
+     "y": 75,
+     "title": "Earth colours",
+     "text": "Raphael is the angel of travellers, so Gabriel dressed him in earth colours, light browns and desaturated tones, as if ready for an excursion."
+    }
+   ],
    "src": "img/full/raphael-hero.jpg",
    "thumb": "img/thumb/raphael-hero.jpg",
    "project": "raphael-dei"
@@ -542,7 +590,14 @@ window.GUIDE = {
    "title": "Lorem ipsum amet",
    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nCurabitur pretium tincidunt lacus, nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 60,
+     "y": 82,
+     "title": "Protector of the sick",
+     "text": "Because of the healing in the Book of Tobit, Raphael is also the protector of the sick. Hospitals and clinics are still named after him today."
+    }
+   ],
    "src": "img/full/raphael-5.jpg",
    "thumb": "img/thumb/raphael-5.jpg",
    "project": "raphael-dei"
@@ -570,7 +625,14 @@ window.GUIDE = {
    "title": "Lorem ipsum dolor",
    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\n\nCurabitur pretium tincidunt lacus, nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris.",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 77,
+     "y": 50,
+     "title": "The fish",
+     "text": "In the Book of Tobit a fish leaps out of the river Tigris to attack young Tobias. Raphael tells him to catch it and keep its gall, which later cures the blindness of Tobias's father. That is why Raphael is so often painted with a fish in his hand."
+    }
+   ],
    "src": "img/full/raphael-8.jpg",
    "thumb": "img/thumb/raphael-8.jpg",
    "project": "raphael-dei"
@@ -598,7 +660,20 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 13,
+     "y": 50,
+     "title": "The wings",
+     "text": "In the original painting Letiel's wings are very colourful. Gabriel linked them to the birds of the region, parrots with bright feathers, and used a super colourful palette for this angel."
+    },
+    {
+     "x": 80,
+     "y": 15,
+     "title": "Light and shade",
+     "text": "Letiel is one of the most colourful arquebusier angels, yet Gabriel played with strong contrast between light and shade to make him as dark as possible."
+    }
+   ],
    "src": "img/full/letiel-hero.jpg",
    "thumb": "img/thumb/letiel-hero.jpg",
    "project": "letiel-dei"
@@ -640,7 +715,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 77,
+     "y": 42,
+     "title": "The arquebus",
+     "text": "Like the arquebusier angels painted in colonial Peru and Bolivia, Gabriel's angels carry an arquebus, an early firearm, instead of a sword."
+    }
+   ],
    "src": "img/full/letiel-7.jpg",
    "thumb": "img/thumb/letiel-7.jpg",
    "project": "letiel-dei"
@@ -710,7 +792,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 30,
+     "y": 20,
+     "title": "Shot on film",
+     "text": "Most of the photos were taken on 35 mm film with a Yashica FX-3, a camera Gabriel's mother bought on a trip to Spain in 1983. He has used it since his youth and knows exactly what to expect from it."
+    }
+   ],
    "src": "img/full/ophelia-hero.jpg",
    "thumb": "img/thumb/ophelia-hero.jpg",
    "project": "ophelia"
@@ -752,7 +841,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 49,
+     "y": 55,
+     "title": "The upside-down horizon",
+     "text": "In many of the photos the horizon is upside down. It puts you under the water, sharing Ophelia's point of view and her pain."
+    }
+   ],
    "src": "img/full/ophelia-4.jpg",
    "thumb": "img/thumb/ophelia-4.jpg",
    "project": "ophelia"
@@ -822,7 +918,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 42,
+     "title": "The fork",
+     "text": "A high-contrast fork on a red background. For Gabriel it sums up the whole story: you do not need to see blood or anything raw, it leaves room for imagination."
+    }
+   ],
    "src": "img/full/saturn-hero.jpg",
    "thumb": "img/thumb/saturn-hero.jpg",
    "project": "saturn"
@@ -892,7 +995,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 45,
+     "y": 40,
+     "title": "The first shoot",
+     "text": "One of the very first shoots, recreating the body language of Goya's painting. The project later moved towards something more abstract and subtle, but this shoot was too good to leave out."
+    }
+   ],
    "src": "img/full/saturn-5.jpg",
    "thumb": "img/thumb/saturn-5.jpg",
    "project": "saturn"
@@ -920,7 +1030,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 60,
+     "y": 40,
+     "title": "Suit, dirty hands",
+     "text": "The man wears a suit, but his hands and face are dirty: powerful people may be very dirty inside. Gabriel links Goya's painting to today's elites, who will do anything to stay in power."
+    }
+   ],
    "src": "img/full/saturn-12.jpg",
    "thumb": "img/thumb/saturn-12.jpg",
    "project": "saturn"
@@ -934,7 +1051,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 40,
+     "y": 35,
+     "title": "After the duel",
+     "text": "Instead of two fighters in action, Gabriel shows what happens after the duel: people beaten, with wounds. It is not one fight between two men, but the duels we all have with friends, family and the people around us."
+    }
+   ],
    "src": "img/full/duel-hero.jpg",
    "thumb": "img/thumb/duel-hero.jpg",
    "project": "the-duel"
@@ -948,7 +1072,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 73,
+     "y": 30,
+     "title": "The white flag",
+     "text": "The flag is not in Goya's painting. One of the fighters surrenders and asks for peace: the duel has stopped, and here, unlike in Goya, they survive."
+    }
+   ],
    "src": "img/full/duel-1.jpg",
    "thumb": "img/thumb/duel-1.jpg",
    "project": "the-duel"
@@ -1298,7 +1429,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 52,
+     "y": 92,
+     "title": "Prague cobblestones",
+     "text": "Gabriel imagined the bride left behind on her wedding day, lying in the street: abandoned, desperate and vulnerable."
+    }
+   ],
    "src": "img/full/noche-terrible-2.jpg",
    "thumb": "img/thumb/noche-terrible-2.jpg",
    "project": "terrible-night"
@@ -1326,7 +1464,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 53,
+     "y": 80,
+     "title": "The leftovers",
+     "text": "The wedding dress, the gift and the flowers are all that is left of the wedding."
+    }
+   ],
    "src": "img/full/noche-terrible-4.jpg",
    "thumb": "img/thumb/noche-terrible-4.jpg",
    "project": "terrible-night"
@@ -1340,7 +1485,14 @@ window.GUIDE = {
    "title": "",
    "text": "",
    "inspirations": [],
-   "hotspots": [],
+   "hotspots": [
+    {
+     "x": 50,
+     "y": 50,
+     "title": "Blur and movement",
+     "text": "The studio photos are deliberately not sharp, full of movement and blur, as if they were images from the 1930s, when the story was written."
+    }
+   ],
    "src": "img/full/noche-terrible-end1.jpg",
    "thumb": "img/thumb/noche-terrible-end1.jpg",
    "project": "terrible-night"
@@ -1552,7 +1704,8 @@ window.GUIDE = {
        "title": "Kniha Tobiáš",
        "artist": "Starý zákon (deuterokanonická kniha)",
        "where": "Archanděl Rafael provází mladého Tobiáše na cestě a uzdraví slepotu jeho otce",
-       "credit": "Obraz: Tobiáš a anděl, Filippino Lippi, kolem 1475–1480, National Gallery of Art, Washington, přes Wikimedia Commons, volné dílo."
+       "credit": "Obraz: Tobiáš a anděl, Filippino Lippi, kolem 1475–1480, National Gallery of Art, Washington, přes Wikimedia Commons, volné dílo.",
+       "text": "Rafael doprovází mladého Tobiáše na cestě, zachrání ho před rybou v řece Tigris a poradí mu schovat si její žluč, která vyléčí slepotu jeho otce. Rafael je patronem poutníků a nemocných."
       },
       {
        "title": "Ángeles arcabuceros (andělé s arkebuzou)",
@@ -1604,7 +1757,8 @@ window.GUIDE = {
      "inspirations": [
       {
        "title": "Maminčiny dopisy",
-       "where": "Tajné zbraně (povídky)"
+       "where": "Tajné zbraně (povídky)",
+       "text": "Julio Cortázar (1914–1984) byl argentinský spisovatel, od roku 1951 žil v Paříži. V povídce se Luis a Laura usadí v Paříži a žijí v čekání na další dopis z Buenos Aires."
       }
      ]
     },
@@ -1617,7 +1771,8 @@ window.GUIDE = {
       {
        "title": "Strašná noc",
        "where": "El jorobadito (povídky)",
-       "credit": "Obálka prvního vydání El jorobadito (1933), neznámý autor, přes Wikimedia Commons (z Biblioteca Virtual Miguel de Cervantes), volné dílo."
+       "credit": "Obálka prvního vydání El jorobadito (1933), neznámý autor, přes Wikimedia Commons (z Biblioteca Virtual Miguel de Cervantes), volné dílo.",
+       "text": "Roberto Arlt (1900–1942) byl argentinský spisovatel. V povídce ženich Ricardo Stepens stráví noc před svatbou rozpolceně nad tím, jestli neutéct."
       }
      ]
     },
@@ -1629,7 +1784,8 @@ window.GUIDE = {
       {
        "title": "Ofélie",
        "where": "Tate Britain, Londýn",
-       "credit": "Ofélie, John Everett Millais, Tate Britain, přes Wikimedia Commons (Google Art Project), volné dílo."
+       "credit": "Ofélie, John Everett Millais, Tate Britain, přes Wikimedia Commons (Google Art Project), volné dílo.",
+       "text": "Klíčové dílo prerafaelitského bratrstva a obraz, který napodobila řada fotografů. Gabrielova verze obrací úhel pohledu vzhůru nohama."
       },
       {
        "where": "4. jednání, 7. scéna: královna Gertruda líčí, jak se Ofélie utopila",
@@ -1645,7 +1801,7 @@ window.GUIDE = {
        "title": "Saturn požírající svého syna",
        "where": "Museo del Prado, Madrid",
        "credit": "Saturn požírající svého syna, Francisco de Goya, Museo del Prado, přes Wikimedia Commons, volné dílo.",
-       "text": "Jedna ze čtrnácti Černých maleb, které Goya na sklonku života maloval přímo na zdi svého domu u Madridu, Quinta del Sordo. Později byly přeneseny na plátno a dnes jsou v Museo del Prado."
+       "text": "Jedna ze čtrnácti Černých maleb, které Goya na sklonku života maloval přímo na zdi svého domu u Madridu, Quinta del Sordo. Později byly přeneseny na plátno a dnes jsou v Museo del Prado. Goya ho nikdy nevysvětlil. Často se čte skrze mýtus o Kronovi (Saturnovi), který pojídal své děti: čas, který pohltí všechno. Jiný výklad v něm vidí Španělsko požírající vlastní lid v bouřlivé době Goyova života."
       }
      ]
     },
@@ -1708,7 +1864,177 @@ window.GUIDE = {
     {
      "role": "Softwaroví partneři"
     }
-   ]
+   ],
+   "works": {
+    "letters-from-mom-hero": {
+     "hotspots": [
+      {
+       "title": "Cigareta",
+       "text": "Julio Cortázar v rozhovorech skoro vždy kouřil: nejdřív byl vidět oblak kouře, teprve potom jeho tvář. Gabriel dal stejný zvyk postavám povídky. Laura a Luis úzkostně čekají na každý další dopis z Buenos Aires a kouřením tu úzkost zabíjejí."
+      }
+     ]
+    },
+    "letters-from-mom-10": {
+     "hotspots": [
+      {
+       "title": "Dopis",
+       "text": "V povídce přináší každý dopis od matky z Buenos Aires neklid: píše v něm o Nicovi, který zemřel, jako by byl stále naživu."
+      }
+     ]
+    },
+    "zadquiel-hero": {
+     "hotspots": [
+      {
+       "title": "Světlo a pohyb",
+       "text": "Ostrá světla na tváři a kolem ní spousta rozmazání a pohybu vytvářejí snovou atmosféru. Zadquiel je anděl smrti, a tak je na rozdíl od ostatních, barevných andělů pojatý temně."
+      }
+     ]
+    },
+    "zadquiel-4": {
+     "hotspots": [
+      {
+       "title": "Slza",
+       "text": "Na některých fotografiích, hlavně na těch na zdi, je vidět slza. Podle Gabriela musí tento anděl z Boží vůle brát lidské životy, i když nechce. Slza ukazuje tento vnitřní konflikt."
+      }
+     ]
+    },
+    "zadquiel-11": {
+     "hotspots": [
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "raphael-hero": {
+     "hotspots": [
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      },
+      {
+       "title": "Zemité barvy",
+       "text": "Rafael je anděl poutníků, a tak ho Gabriel oblékl do zemitých barev, světle hnědé a tlumených tónů, jako by se chystal na výlet."
+      }
+     ]
+    },
+    "raphael-8": {
+     "hotspots": [
+      {
+       "title": "Ryba",
+       "text": "V Knize Tobiáš vyskočí z řeky Tigris ryba a napadne mladého Tobiáše. Rafael mu poradí, aby ji chytil a schoval si její žluč, která pak vyléčí slepotu jeho otce. Proto bývá Rafael tak často malován s rybou v ruce."
+      }
+     ]
+    },
+    "raphael-5": {
+     "hotspots": [
+      {
+       "title": "Ochránce nemocných",
+       "text": "Kvůli uzdravení v Knize Tobiáš je Rafael také ochráncem nemocných. Dodnes po něm bývají pojmenované nemocnice a kliniky."
+      }
+     ]
+    },
+    "letiel-hero": {
+     "hotspots": [
+      {
+       "title": "Křídla",
+       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil hodně barevnou paletu."
+      },
+      {
+       "title": "Světlo a stín",
+       "text": "Letiel patří k nejbarevnějším andělům s arkebuzou, Gabriel si přesto pohrál se silným kontrastem světla a stínu, aby byl co nejtemnější."
+      }
+     ]
+    },
+    "letiel-7": {
+     "hotspots": [
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "ophelia-hero": {
+     "hotspots": [
+      {
+       "title": "Na film",
+       "text": "Většina fotografií vznikla na 35mm film fotoaparátem Yashica FX-3, který Gabrielova matka koupila v roce 1983 na cestě po Španělsku. Gabriel s ním fotí od mládí a přesně ví, co od něj čekat."
+      }
+     ]
+    },
+    "ophelia-4": {
+     "hotspots": [
+      {
+       "title": "Obrácený horizont",
+       "text": "Na mnoha fotografiích je horizont vzhůru nohama. Divák se tak ocitá pod vodou, sdílí Oféliin pohled i její bolest."
+      }
+     ]
+    },
+    "saturn-hero": {
+     "hotspots": [
+      {
+       "title": "Vidlička",
+       "text": "Kontrastní vidlička na červeném pozadí. Pro Gabriela shrnuje celý příběh: není třeba vidět krev ani nic syrového, nechává prostor představivosti."
+      }
+     ]
+    },
+    "saturn-12": {
+     "hotspots": [
+      {
+       "title": "Oblek a špinavé ruce",
+       "text": "Muž má oblek, ale ruce a tvář špinavé: mocní lidé mohou být uvnitř velmi špinaví. Gabriel spojuje Goyův obraz s dnešními elitami, které udělají cokoli, aby si udržely moc."
+      }
+     ]
+    },
+    "saturn-5": {
+     "hotspots": [
+      {
+       "title": "První focení",
+       "text": "Jedno z úplně prvních focení, které napodobuje řeč těla z Goyova obrazu. Projekt se pak vydal abstraktnějším a jemnějším směrem, ale toto focení bylo tak dobré, že ho Gabriel do výstavy zařadil."
+      }
+     ]
+    },
+    "duel-hero": {
+     "hotspots": [
+      {
+       "title": "Po souboji",
+       "text": "Místo dvou bojovníků v akci ukazuje Gabriel, co přijde po souboji: zbité lidi s ranami. Nejde o jeden boj dvou mužů, ale o souboje, které všichni vedeme s přáteli, rodinou a lidmi kolem sebe."
+      }
+     ]
+    },
+    "duel-1": {
+     "hotspots": [
+      {
+       "title": "Bílá vlajka",
+       "text": "Vlajka na Goyově obraze není. Jeden z bojovníků se vzdává a žádá o mír: souboj skončil a na rozdíl od Goyi tu oba přežijí."
+      }
+     ]
+    },
+    "noche-terrible-2": {
+     "hotspots": [
+      {
+       "title": "Pražská dlažba",
+       "text": "Gabriel si představil nevěstu opuštěnou v den svatby, jak leží na ulici: opuštěná, zoufalá a zranitelná."
+      }
+     ]
+    },
+    "noche-terrible-4": {
+     "hotspots": [
+      {
+       "title": "Co zbylo",
+       "text": "Svatební šaty, dárek a květiny jsou vše, co ze svatby zbylo."
+      }
+     ]
+    },
+    "noche-terrible-end1": {
+     "hotspots": [
+      {
+       "title": "Rozmazání a pohyb",
+       "text": "Fotografie z ateliéru záměrně nejsou ostré, jsou plné pohybu a rozmazání, jako by šlo o snímky ze 30. let, kdy povídka vznikla."
+      }
+     ]
+    }
+   }
   },
   "es": {
    "ui": {
@@ -1772,7 +2098,8 @@ window.GUIDE = {
        "title": "Libro de Tobías",
        "artist": "Antiguo Testamento (deuterocanónico)",
        "where": "El arcángel Rafael guía al joven Tobías en su viaje y cura la ceguera de su padre",
-       "credit": "Imagen: Tobías y el ángel, Filippino Lippi, h. 1475–1480, National Gallery of Art, Washington, vía Wikimedia Commons, dominio público."
+       "credit": "Imagen: Tobías y el ángel, Filippino Lippi, h. 1475–1480, National Gallery of Art, Washington, vía Wikimedia Commons, dominio público.",
+       "text": "Rafael acompaña al joven Tobías en su viaje, lo salva de un pez en el río Tigris y le dice que guarde su hiel, que cura la ceguera de su padre. Rafael es el patrón de los viajeros y de los enfermos."
       },
       {
        "title": "Ángeles arcabuceros",
@@ -1824,7 +2151,8 @@ window.GUIDE = {
      "inspirations": [
       {
        "title": "Cartas de mamá",
-       "where": "Las armas secretas (cuentos)"
+       "where": "Las armas secretas (cuentos)",
+       "text": "Julio Cortázar (1914–1984) fue un escritor argentino que vivió en París desde 1951. En el cuento Luis y Laura se han instalado en París y viven esperando la próxima carta de Buenos Aires."
       }
      ]
     },
@@ -1837,7 +2165,8 @@ window.GUIDE = {
       {
        "title": "Noche terrible",
        "where": "El jorobadito (cuentos)",
-       "credit": "Portada de la primera edición de El jorobadito (1933), autor desconocido, vía Wikimedia Commons (de la Biblioteca Virtual Miguel de Cervantes), dominio público."
+       "credit": "Portada de la primera edición de El jorobadito (1933), autor desconocido, vía Wikimedia Commons (de la Biblioteca Virtual Miguel de Cervantes), dominio público.",
+       "text": "Roberto Arlt (1900–1942) fue un escritor argentino. En el cuento el novio, Ricardo Stepens, pasa la noche anterior a su boda debatiéndose entre casarse o huir."
       }
      ]
     },
@@ -1849,7 +2178,8 @@ window.GUIDE = {
       {
        "title": "Ofelia",
        "where": "Tate Britain, Londres",
-       "credit": "Ofelia, John Everett Millais, Tate Britain, vía Wikimedia Commons (Google Art Project), dominio público."
+       "credit": "Ofelia, John Everett Millais, Tate Britain, vía Wikimedia Commons (Google Art Project), dominio público.",
+       "text": "Una obra clave de la Hermandad Prerrafaelita y una imagen recreada por muchos fotógrafos. La versión de Gabriel pone el punto de vista al revés."
       },
       {
        "where": "Acto 4, escena 7: la reina Gertrudis cuenta cómo se ahogó Ofelia",
@@ -1865,7 +2195,7 @@ window.GUIDE = {
        "title": "Saturno devorando a su hijo",
        "where": "Museo del Prado, Madrid",
        "credit": "Saturno devorando a su hijo, Francisco de Goya, Museo del Prado, vía Wikimedia Commons, dominio público.",
-       "text": "Una de las catorce Pinturas negras que Goya pintó directamente sobre los muros de su casa a las afueras de Madrid, la Quinta del Sordo, en sus últimos años. Más tarde se pasaron a lienzo y hoy están en el Museo del Prado."
+       "text": "Una de las catorce Pinturas negras que Goya pintó directamente sobre los muros de su casa a las afueras de Madrid, la Quinta del Sordo, en sus últimos años. Más tarde se pasaron a lienzo y hoy están en el Museo del Prado. Goya nunca lo explicó. Se suele leer a través del mito de Crono (Saturno), que devoraba a sus hijos: el tiempo que todo lo consume. Otra lectura ve en él a España devorando a su propio pueblo en la convulsa época de Goya."
       }
      ]
     },
@@ -1928,7 +2258,177 @@ window.GUIDE = {
     {
      "role": "Socios de software"
     }
-   ]
+   ],
+   "works": {
+    "letters-from-mom-hero": {
+     "hotspots": [
+      {
+       "title": "El cigarrillo",
+       "text": "En las entrevistas Julio Cortázar casi siempre fumaba: primero se veía una nube de humo y después su cara. Gabriel dio esa misma costumbre a los personajes del cuento. Laura y Luis esperan con ansiedad cada nueva carta de Buenos Aires, y fumar es su manera de matar la ansiedad."
+      }
+     ]
+    },
+    "letters-from-mom-10": {
+     "hotspots": [
+      {
+       "title": "La carta",
+       "text": "En el cuento cada carta de la madre desde Buenos Aires trae inquietud: habla de Nico, que ha muerto, como si siguiera vivo."
+      }
+     ]
+    },
+    "zadquiel-hero": {
+     "hotspots": [
+      {
+       "title": "Luz y movimiento",
+       "text": "Puntos de luz nítidos en el rostro y mucho desenfoque y movimiento alrededor, para crear una atmósfera onírica. Zadquiel es el ángel de la muerte, por eso, a diferencia de los otros ángeles, tan coloridos, este es oscuro."
+      }
+     ]
+    },
+    "zadquiel-4": {
+     "hotspots": [
+      {
+       "title": "La lágrima",
+       "text": "En algunas fotos, sobre todo las de la pared, aparece una lágrima. Según la lectura de Gabriel, este ángel tiene que quitar vidas humanas por voluntad de Dios, aunque no quiera. La lágrima muestra ese conflicto interior."
+      }
+     ]
+    },
+    "zadquiel-11": {
+     "hotspots": [
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "raphael-hero": {
+     "hotspots": [
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      },
+      {
+       "title": "Colores tierra",
+       "text": "Rafael es el ángel de los viajeros, por eso Gabriel lo vistió con colores tierra, marrones claros y tonos desaturados, como si fuera de excursión."
+      }
+     ]
+    },
+    "raphael-8": {
+     "hotspots": [
+      {
+       "title": "El pez",
+       "text": "En el Libro de Tobías un pez salta del río Tigris para atacar al joven Tobías. Rafael le dice que lo atrape y guarde su hiel, que más tarde cura la ceguera de su padre. Por eso Rafael aparece tan a menudo pintado con un pez en la mano."
+      }
+     ]
+    },
+    "raphael-5": {
+     "hotspots": [
+      {
+       "title": "Protector de los enfermos",
+       "text": "Por la curación del Libro de Tobías, Rafael es también el protector de los enfermos. Todavía hoy hay hospitales y clínicas que llevan su nombre."
+      }
+     ]
+    },
+    "letiel-hero": {
+     "hotspots": [
+      {
+       "title": "Las alas",
+       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
+      },
+      {
+       "title": "Luz y sombra",
+       "text": "Letiel es uno de los ángeles arcabuceros más coloridos, pero Gabriel jugó con un fuerte contraste de luz y sombra para hacerlo lo más oscuro posible."
+      }
+     ]
+    },
+    "letiel-7": {
+     "hotspots": [
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "ophelia-hero": {
+     "hotspots": [
+      {
+       "title": "En película",
+       "text": "La mayoría de las fotos se tomaron en película de 35 mm con una Yashica FX-3, una cámara que la madre de Gabriel compró en un viaje a España en 1983. La usa desde su juventud y sabe exactamente qué esperar de ella."
+      }
+     ]
+    },
+    "ophelia-4": {
+     "hotspots": [
+      {
+       "title": "El horizonte invertido",
+       "text": "En muchas de las fotos el horizonte está al revés. Te sitúa bajo el agua, compartiendo el punto de vista de Ofelia y su dolor."
+      }
+     ]
+    },
+    "saturn-hero": {
+     "hotspots": [
+      {
+       "title": "El tenedor",
+       "text": "Un tenedor de alto contraste sobre fondo rojo. Para Gabriel resume toda la historia: no hace falta ver sangre ni nada crudo, deja espacio a la imaginación."
+      }
+     ]
+    },
+    "saturn-12": {
+     "hotspots": [
+      {
+       "title": "Traje y manos sucias",
+       "text": "El hombre lleva traje, pero tiene las manos y la cara sucias: la gente poderosa puede estar muy sucia por dentro. Gabriel relaciona el cuadro de Goya con las élites actuales, que harán lo que sea por mantenerse en el poder."
+      }
+     ]
+    },
+    "saturn-5": {
+     "hotspots": [
+      {
+       "title": "La primera sesión",
+       "text": "Una de las primeras sesiones, que recrea el lenguaje corporal del cuadro de Goya. Después el proyecto fue hacia algo más abstracto y sutil, pero esta sesión era demasiado buena para dejarla fuera."
+      }
+     ]
+    },
+    "duel-hero": {
+     "hotspots": [
+      {
+       "title": "Después del duelo",
+       "text": "En lugar de dos luchadores en acción, Gabriel muestra lo que pasa después del duelo: gente golpeada, con heridas. No es una pelea entre dos hombres, sino los duelos que todos tenemos con amigos, familia y la gente que nos rodea."
+      }
+     ]
+    },
+    "duel-1": {
+     "hotspots": [
+      {
+       "title": "La bandera blanca",
+       "text": "La bandera no está en el cuadro de Goya. Uno de los luchadores se rinde y pide la paz: el duelo se ha detenido y aquí, a diferencia de Goya, sobreviven."
+      }
+     ]
+    },
+    "noche-terrible-2": {
+     "hotspots": [
+      {
+       "title": "Adoquines de Praga",
+       "text": "Gabriel imaginó a la novia abandonada el día de su boda, tirada en la calle: abandonada, desesperada y vulnerable."
+      }
+     ]
+    },
+    "noche-terrible-4": {
+     "hotspots": [
+      {
+       "title": "Lo que queda",
+       "text": "El vestido de novia, el regalo y las flores son todo lo que queda de la boda."
+      }
+     ]
+    },
+    "noche-terrible-end1": {
+     "hotspots": [
+      {
+       "title": "Desenfoque y movimiento",
+       "text": "Las fotos de estudio no son nítidas a propósito, llenas de movimiento y desenfoque, como si fueran imágenes de los años treinta, cuando se escribió el cuento."
+      }
+     ]
+    }
+   }
   }
  }
 };
