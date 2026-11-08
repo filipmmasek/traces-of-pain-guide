@@ -172,7 +172,7 @@
     }
     if (insp) h += '<section class="block"><span class="label">' + esc(T.inspiredBy) + "</span>" + insp + "</section>";
     if (ps.length > 1) h += '<section class="block"><span class="label">' + esc(T.morePhotos) + '</span><div class="grid more-grid">' +
-      ps.slice(1).map(tile).join("") + "</div></section>";
+      ps.map(tile).join("") + "</div></section>";
     h += "</div></article>";
     h += '<nav class="pager">' + pagerLink(prev, "prev") +
       '<span class="pager-mid">' + (i + 1) + " / " + G.projects.length + "</span>" + pagerLink(next, "next") + "</nav>";

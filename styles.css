@@ -543,8 +543,9 @@ h1, .ptile h2, .gate-box h1 { text-transform: uppercase; letter-spacing: .02em; 
 .read h1 { margin-top: 10px; margin-bottom: 12px; }
 button.tile { background: none; border: 0; padding: 0; text-align: left; display: block; width: 100%; }
 .tile .ph { display: block; }
-.more-grid { margin-top: 10px; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr)); gap: 10px; }
-@media (min-width: 900px) { .more-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); } }
+/* Hero included, so 8 (or 24) photos always fill whole rows of 4. */
+.more-grid { margin-top: 10px; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+@media (min-width: 900px) { .more-grid { gap: 12px; } }
 .pager a .no-img { width: 46px; height: 60px; background: #222; display: block; flex: none; }
 .pager a { min-width: 0; }
 .pager a > span { overflow: hidden; text-overflow: ellipsis; }
