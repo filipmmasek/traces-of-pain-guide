@@ -310,22 +310,8 @@ window.GUIDE = {
    "project": "letters-from-mom"
   },
   {
-   "id": "letters-from-mom-4",
-   "number": 5,
-   "file": "Letters-From-Mom-4.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/letters-from-mom-4.jpg",
-   "thumb": "img/thumb/letters-from-mom-4.jpg",
-   "project": "letters-from-mom"
-  },
-  {
    "id": "letters-from-mom-5",
-   "number": 6,
+   "number": 5,
    "file": "Letters-From-Mom-5.jpg",
    "w": 1350,
    "h": 1800,
@@ -338,36 +324,8 @@ window.GUIDE = {
    "project": "letters-from-mom"
   },
   {
-   "id": "letters-from-mom-6",
-   "number": 7,
-   "file": "Letters-From-Mom-6.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/letters-from-mom-6.jpg",
-   "thumb": "img/thumb/letters-from-mom-6.jpg",
-   "project": "letters-from-mom"
-  },
-  {
-   "id": "letters-from-mom-7",
-   "number": 8,
-   "file": "Letters-From-Mom-7.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/letters-from-mom-7.jpg",
-   "thumb": "img/thumb/letters-from-mom-7.jpg",
-   "project": "letters-from-mom"
-  },
-  {
    "id": "letters-from-mom-8",
-   "number": 9,
+   "number": 6,
    "file": "Letters-From-Mom-8.jpg",
    "w": 1350,
    "h": 1800,
@@ -380,22 +338,8 @@ window.GUIDE = {
    "project": "letters-from-mom"
   },
   {
-   "id": "letters-from-mom-9",
-   "number": 10,
-   "file": "Letters-From-Mom-9.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/letters-from-mom-9.jpg",
-   "thumb": "img/thumb/letters-from-mom-9.jpg",
-   "project": "letters-from-mom"
-  },
-  {
    "id": "letters-from-mom-10",
-   "number": 11,
+   "number": 7,
    "file": "Letters-From-Mom-10.jpg",
    "w": 1350,
    "h": 1800,
@@ -408,36 +352,8 @@ window.GUIDE = {
    "project": "letters-from-mom"
   },
   {
-   "id": "letters-from-mom-11",
-   "number": 12,
-   "file": "Letters-From-Mom-11.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/letters-from-mom-11.jpg",
-   "thumb": "img/thumb/letters-from-mom-11.jpg",
-   "project": "letters-from-mom"
-  },
-  {
-   "id": "letters-from-mom-12",
-   "number": 13,
-   "file": "Letters-From-Mom-12.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/letters-from-mom-12.jpg",
-   "thumb": "img/thumb/letters-from-mom-12.jpg",
-   "project": "letters-from-mom"
-  },
-  {
    "id": "letters-from-mom-13",
-   "number": 14,
+   "number": 8,
    "file": "Letters-From-Mom-13.jpg",
    "w": 1517,
    "h": 1800,
@@ -451,7 +367,7 @@ window.GUIDE = {
   },
   {
    "id": "zadquiel-hero",
-   "number": 15,
+   "number": 9,
    "file": "Zadquiel-hero.jpg",
    "w": 1350,
    "h": 1800,
@@ -465,7 +381,7 @@ window.GUIDE = {
   },
   {
    "id": "zadquiel-1",
-   "number": 16,
+   "number": 10,
    "file": "Zadquiel-1.jpg",
    "w": 1350,
    "h": 1800,
@@ -479,7 +395,7 @@ window.GUIDE = {
   },
   {
    "id": "zadquiel-2",
-   "number": 17,
+   "number": 11,
    "file": "Zadquiel-2.jpg",
    "w": 1350,
    "h": 1800,
@@ -493,7 +409,7 @@ window.GUIDE = {
   },
   {
    "id": "zadquiel-3",
-   "number": 18,
+   "number": 12,
    "file": "Zadquiel-3.jpg",
    "w": 1350,
    "h": 1800,
@@ -507,7 +423,7 @@ window.GUIDE = {
   },
   {
    "id": "zadquiel-4",
-   "number": 19,
+   "number": 13,
    "file": "Zadquiel-4.jpg",
    "w": 1350,
    "h": 1800,
@@ -520,22 +436,8 @@ window.GUIDE = {
    "project": "zadquiel-dei"
   },
   {
-   "id": "zadquiel-5",
-   "number": 20,
-   "file": "Zadquiel-5.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/zadquiel-5.jpg",
-   "thumb": "img/thumb/zadquiel-5.jpg",
-   "project": "zadquiel-dei"
-  },
-  {
    "id": "zadquiel-6",
-   "number": 21,
+   "number": 14,
    "file": "Zadquiel-6.jpg",
    "w": 1350,
    "h": 1800,
@@ -548,36 +450,8 @@ window.GUIDE = {
    "project": "zadquiel-dei"
   },
   {
-   "id": "zadquiel-7",
-   "number": 22,
-   "file": "Zadquiel-7.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/zadquiel-7.jpg",
-   "thumb": "img/thumb/zadquiel-7.jpg",
-   "project": "zadquiel-dei"
-  },
-  {
-   "id": "zadquiel-8",
-   "number": 23,
-   "file": "Zadquiel-8.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/zadquiel-8.jpg",
-   "thumb": "img/thumb/zadquiel-8.jpg",
-   "project": "zadquiel-dei"
-  },
-  {
    "id": "zadquiel-9",
-   "number": 24,
+   "number": 15,
    "file": "Zadquiel-9.jpg",
    "w": 1350,
    "h": 1800,
@@ -590,22 +464,8 @@ window.GUIDE = {
    "project": "zadquiel-dei"
   },
   {
-   "id": "zadquiel-10",
-   "number": 25,
-   "file": "Zadquiel-10.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/zadquiel-10.jpg",
-   "thumb": "img/thumb/zadquiel-10.jpg",
-   "project": "zadquiel-dei"
-  },
-  {
    "id": "zadquiel-11",
-   "number": 26,
+   "number": 16,
    "file": "Zadquiel-11.jpg",
    "w": 1350,
    "h": 1800,
@@ -618,36 +478,8 @@ window.GUIDE = {
    "project": "zadquiel-dei"
   },
   {
-   "id": "zadquiel-12",
-   "number": 27,
-   "file": "Zadquiel-12.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/zadquiel-12.jpg",
-   "thumb": "img/thumb/zadquiel-12.jpg",
-   "project": "zadquiel-dei"
-  },
-  {
-   "id": "zadquiel-13",
-   "number": 28,
-   "file": "Zadquiel-13.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/zadquiel-13.jpg",
-   "thumb": "img/thumb/zadquiel-13.jpg",
-   "project": "zadquiel-dei"
-  },
-  {
    "id": "raphael-hero",
-   "number": 29,
+   "number": 17,
    "file": "Raphael-hero.jpg",
    "w": 1350,
    "h": 1800,
@@ -661,7 +493,7 @@ window.GUIDE = {
   },
   {
    "id": "raphael-1",
-   "number": 30,
+   "number": 18,
    "file": "Raphael-1.jpg",
    "w": 1208,
    "h": 1800,
@@ -675,7 +507,7 @@ window.GUIDE = {
   },
   {
    "id": "raphael-2",
-   "number": 31,
+   "number": 19,
    "file": "Raphael-2.jpg",
    "w": 1350,
    "h": 1800,
@@ -689,7 +521,7 @@ window.GUIDE = {
   },
   {
    "id": "raphael-3",
-   "number": 32,
+   "number": 20,
    "file": "Raphael-3.jpg",
    "w": 1350,
    "h": 1800,
@@ -703,7 +535,7 @@ window.GUIDE = {
   },
   {
    "id": "raphael-5",
-   "number": 33,
+   "number": 21,
    "file": "Raphael-5.jpg",
    "w": 1350,
    "h": 1800,
@@ -717,7 +549,7 @@ window.GUIDE = {
   },
   {
    "id": "raphael-6",
-   "number": 34,
+   "number": 22,
    "file": "Raphael-6.jpg",
    "w": 1350,
    "h": 1800,
@@ -730,22 +562,8 @@ window.GUIDE = {
    "project": "raphael-dei"
   },
   {
-   "id": "raphael-7",
-   "number": 35,
-   "file": "Raphael-7.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/raphael-7.jpg",
-   "thumb": "img/thumb/raphael-7.jpg",
-   "project": "raphael-dei"
-  },
-  {
    "id": "raphael-8",
-   "number": 36,
+   "number": 23,
    "file": "Raphael-8.jpg",
    "w": 1350,
    "h": 1800,
@@ -759,7 +577,7 @@ window.GUIDE = {
   },
   {
    "id": "raphael-9",
-   "number": 37,
+   "number": 24,
    "file": "Raphael-9.jpg",
    "w": 1350,
    "h": 1800,
@@ -772,64 +590,8 @@ window.GUIDE = {
    "project": "raphael-dei"
   },
   {
-   "id": "raphael-10",
-   "number": 38,
-   "file": "Raphael-10.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/raphael-10.jpg",
-   "thumb": "img/thumb/raphael-10.jpg",
-   "project": "raphael-dei"
-  },
-  {
-   "id": "raphael-11",
-   "number": 39,
-   "file": "Raphael-11.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/raphael-11.jpg",
-   "thumb": "img/thumb/raphael-11.jpg",
-   "project": "raphael-dei"
-  },
-  {
-   "id": "raphael-12",
-   "number": 40,
-   "file": "Raphael-12.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/raphael-12.jpg",
-   "thumb": "img/thumb/raphael-12.jpg",
-   "project": "raphael-dei"
-  },
-  {
-   "id": "raphael-13",
-   "number": 41,
-   "file": "Raphael-13.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/raphael-13.jpg",
-   "thumb": "img/thumb/raphael-13.jpg",
-   "project": "raphael-dei"
-  },
-  {
    "id": "letiel-hero",
-   "number": 42,
+   "number": 25,
    "file": "Letiel-hero.jpg",
    "w": 1350,
    "h": 1800,
@@ -843,7 +605,7 @@ window.GUIDE = {
   },
   {
    "id": "letiel-1",
-   "number": 43,
+   "number": 26,
    "file": "Letiel-1.jpg",
    "w": 1350,
    "h": 1800,
@@ -856,50 +618,8 @@ window.GUIDE = {
    "project": "letiel-dei"
   },
   {
-   "id": "letiel-2",
-   "number": 44,
-   "file": "Letiel-2.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/letiel-2.jpg",
-   "thumb": "img/thumb/letiel-2.jpg",
-   "project": "letiel-dei"
-  },
-  {
-   "id": "letiel-3",
-   "number": 45,
-   "file": "Letiel-3.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/letiel-3.jpg",
-   "thumb": "img/thumb/letiel-3.jpg",
-   "project": "letiel-dei"
-  },
-  {
-   "id": "letiel-4",
-   "number": 46,
-   "file": "Letiel-4.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/letiel-4.jpg",
-   "thumb": "img/thumb/letiel-4.jpg",
-   "project": "letiel-dei"
-  },
-  {
    "id": "letiel-5",
-   "number": 47,
+   "number": 27,
    "file": "Letiel-5.jpg",
    "w": 1350,
    "h": 1800,
@@ -912,22 +632,8 @@ window.GUIDE = {
    "project": "letiel-dei"
   },
   {
-   "id": "letiel-6",
-   "number": 48,
-   "file": "Letiel-6.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/letiel-6.jpg",
-   "thumb": "img/thumb/letiel-6.jpg",
-   "project": "letiel-dei"
-  },
-  {
    "id": "letiel-7",
-   "number": 49,
+   "number": 28,
    "file": "Letiel-7.jpg",
    "w": 1350,
    "h": 1800,
@@ -941,7 +647,7 @@ window.GUIDE = {
   },
   {
    "id": "letiel-8",
-   "number": 50,
+   "number": 29,
    "file": "Letiel-8.jpg",
    "w": 1350,
    "h": 1800,
@@ -954,22 +660,8 @@ window.GUIDE = {
    "project": "letiel-dei"
   },
   {
-   "id": "letiel-9",
-   "number": 51,
-   "file": "Letiel-9.jpg",
-   "w": 1012,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/letiel-9.jpg",
-   "thumb": "img/thumb/letiel-9.jpg",
-   "project": "letiel-dei"
-  },
-  {
    "id": "letiel-dei11944-1",
-   "number": 52,
+   "number": 30,
    "file": "Letiel Dei11944 1.jpg",
    "w": 1125,
    "h": 1500,
@@ -983,7 +675,7 @@ window.GUIDE = {
   },
   {
    "id": "letiel-dei12289-1",
-   "number": 53,
+   "number": 31,
    "file": "Letiel Dei12289 1.jpg",
    "w": 1125,
    "h": 1500,
@@ -997,7 +689,7 @@ window.GUIDE = {
   },
   {
    "id": "letiel-dei-outdoor-337-1",
-   "number": 54,
+   "number": 32,
    "file": "Letiel-Dei-Outdoor-337 1.jpg",
    "w": 1125,
    "h": 1500,
@@ -1011,7 +703,7 @@ window.GUIDE = {
   },
   {
    "id": "ophelia-hero",
-   "number": 55,
+   "number": 33,
    "file": "Ophelia-hero.jpg",
    "w": 1200,
    "h": 1800,
@@ -1025,7 +717,7 @@ window.GUIDE = {
   },
   {
    "id": "ophelia-1",
-   "number": 56,
+   "number": 34,
    "file": "Ophelia-1.jpg",
    "w": 1200,
    "h": 1800,
@@ -1039,7 +731,7 @@ window.GUIDE = {
   },
   {
    "id": "ophelia-2",
-   "number": 57,
+   "number": 35,
    "file": "Ophelia-2.jpg",
    "w": 1200,
    "h": 1800,
@@ -1052,22 +744,8 @@ window.GUIDE = {
    "project": "ophelia"
   },
   {
-   "id": "ophelia-3",
-   "number": 58,
-   "file": "Ophelia-3.jpg",
-   "w": 1200,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/ophelia-3.jpg",
-   "thumb": "img/thumb/ophelia-3.jpg",
-   "project": "ophelia"
-  },
-  {
    "id": "ophelia-4",
-   "number": 59,
+   "number": 36,
    "file": "Ophelia-4.jpg",
    "w": 1200,
    "h": 1800,
@@ -1081,7 +759,7 @@ window.GUIDE = {
   },
   {
    "id": "ophelia-5",
-   "number": 60,
+   "number": 37,
    "file": "Ophelia-5.jpg",
    "w": 1208,
    "h": 1800,
@@ -1095,7 +773,7 @@ window.GUIDE = {
   },
   {
    "id": "ophelia-6",
-   "number": 61,
+   "number": 38,
    "file": "Ophelia-6.jpg",
    "w": 1208,
    "h": 1800,
@@ -1108,22 +786,8 @@ window.GUIDE = {
    "project": "ophelia"
   },
   {
-   "id": "ophelia-7",
-   "number": 62,
-   "file": "Ophelia-7.jpg",
-   "w": 1208,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/ophelia-7.jpg",
-   "thumb": "img/thumb/ophelia-7.jpg",
-   "project": "ophelia"
-  },
-  {
    "id": "ophelia-8",
-   "number": 63,
+   "number": 39,
    "file": "Ophelia-8.jpg",
    "w": 1350,
    "h": 1800,
@@ -1137,7 +801,7 @@ window.GUIDE = {
   },
   {
    "id": "ophelia-30-08-2024-2024-833",
-   "number": 64,
+   "number": 40,
    "file": "Ophelia 30-08-2024 2024-833.jpg",
    "w": 1006,
    "h": 1500,
@@ -1151,7 +815,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-hero",
-   "number": 65,
+   "number": 41,
    "file": "Saturn-hero.jpg",
    "w": 1350,
    "h": 1800,
@@ -1165,7 +829,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-1",
-   "number": 66,
+   "number": 42,
    "file": "Saturn-1.jpg",
    "w": 1350,
    "h": 1800,
@@ -1179,7 +843,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-2",
-   "number": 67,
+   "number": 43,
    "file": "Saturn-2.jpg",
    "w": 1200,
    "h": 1800,
@@ -1193,7 +857,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-3",
-   "number": 68,
+   "number": 44,
    "file": "Saturn-3.jpg",
    "w": 1200,
    "h": 1800,
@@ -1207,7 +871,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-4",
-   "number": 69,
+   "number": 45,
    "file": "Saturn-4.jpg",
    "w": 1350,
    "h": 1800,
@@ -1221,7 +885,7 @@ window.GUIDE = {
   },
   {
    "id": "saturn-5",
-   "number": 70,
+   "number": 46,
    "file": "Saturn-5.jpg",
    "w": 1350,
    "h": 1800,
@@ -1234,22 +898,8 @@ window.GUIDE = {
    "project": "saturn"
   },
   {
-   "id": "saturn-6",
-   "number": 71,
-   "file": "Saturn-6.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/saturn-6.jpg",
-   "thumb": "img/thumb/saturn-6.jpg",
-   "project": "saturn"
-  },
-  {
    "id": "saturn-7",
-   "number": 72,
+   "number": 47,
    "file": "Saturn-7.jpg",
    "w": 1350,
    "h": 1800,
@@ -1262,64 +912,8 @@ window.GUIDE = {
    "project": "saturn"
   },
   {
-   "id": "saturn-8",
-   "number": 73,
-   "file": "Saturn-8.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/saturn-8.jpg",
-   "thumb": "img/thumb/saturn-8.jpg",
-   "project": "saturn"
-  },
-  {
-   "id": "saturn-9",
-   "number": 74,
-   "file": "Saturn-9.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/saturn-9.jpg",
-   "thumb": "img/thumb/saturn-9.jpg",
-   "project": "saturn"
-  },
-  {
-   "id": "saturn-10",
-   "number": 75,
-   "file": "Saturn-10.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/saturn-10.jpg",
-   "thumb": "img/thumb/saturn-10.jpg",
-   "project": "saturn"
-  },
-  {
-   "id": "saturn-11",
-   "number": 76,
-   "file": "Saturn-11.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/saturn-11.jpg",
-   "thumb": "img/thumb/saturn-11.jpg",
-   "project": "saturn"
-  },
-  {
    "id": "saturn-12",
-   "number": 77,
+   "number": 48,
    "file": "Saturn-12.jpg",
    "w": 1350,
    "h": 1800,
@@ -1332,22 +926,8 @@ window.GUIDE = {
    "project": "saturn"
   },
   {
-   "id": "saturn-13",
-   "number": 78,
-   "file": "Saturn-13.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/saturn-13.jpg",
-   "thumb": "img/thumb/saturn-13.jpg",
-   "project": "saturn"
-  },
-  {
    "id": "duel-hero",
-   "number": 79,
+   "number": 49,
    "file": "Duel-hero.jpg",
    "w": 1350,
    "h": 1800,
@@ -1361,7 +941,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-1",
-   "number": 80,
+   "number": 50,
    "file": "Duel-1.jpg",
    "w": 1350,
    "h": 1800,
@@ -1375,7 +955,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-2",
-   "number": 81,
+   "number": 51,
    "file": "Duel-2.jpg",
    "w": 1350,
    "h": 1800,
@@ -1389,7 +969,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-3",
-   "number": 82,
+   "number": 52,
    "file": "Duel-3.jpg",
    "w": 1350,
    "h": 1800,
@@ -1403,7 +983,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-4",
-   "number": 83,
+   "number": 53,
    "file": "Duel-4.jpg",
    "w": 1350,
    "h": 1800,
@@ -1417,7 +997,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-5",
-   "number": 84,
+   "number": 54,
    "file": "Duel-5.jpg",
    "w": 1350,
    "h": 1800,
@@ -1431,7 +1011,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-06",
-   "number": 85,
+   "number": 55,
    "file": "Duel-06.jpg",
    "w": 1125,
    "h": 1500,
@@ -1445,7 +1025,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-6",
-   "number": 86,
+   "number": 56,
    "file": "Duel-6.jpg",
    "w": 1350,
    "h": 1800,
@@ -1459,7 +1039,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-7",
-   "number": 87,
+   "number": 57,
    "file": "Duel-7.jpg",
    "w": 1350,
    "h": 1800,
@@ -1473,7 +1053,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-8",
-   "number": 88,
+   "number": 58,
    "file": "Duel-8.jpg",
    "w": 1350,
    "h": 1800,
@@ -1487,7 +1067,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-9",
-   "number": 89,
+   "number": 59,
    "file": "Duel-9.jpg",
    "w": 1350,
    "h": 1800,
@@ -1501,7 +1081,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-10",
-   "number": 90,
+   "number": 60,
    "file": "Duel-10.jpg",
    "w": 1350,
    "h": 1800,
@@ -1515,7 +1095,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-11",
-   "number": 91,
+   "number": 61,
    "file": "Duel-11.jpg",
    "w": 1350,
    "h": 1800,
@@ -1529,7 +1109,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-012",
-   "number": 92,
+   "number": 62,
    "file": "Duel-012.jpg",
    "w": 1125,
    "h": 1500,
@@ -1543,7 +1123,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-12",
-   "number": 93,
+   "number": 63,
    "file": "Duel-12.jpg",
    "w": 1350,
    "h": 1800,
@@ -1557,7 +1137,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-13",
-   "number": 94,
+   "number": 64,
    "file": "Duel-13.jpg",
    "w": 1350,
    "h": 1800,
@@ -1571,7 +1151,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-14",
-   "number": 95,
+   "number": 65,
    "file": "Duel-14.jpg",
    "w": 1350,
    "h": 1800,
@@ -1585,7 +1165,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-15",
-   "number": 96,
+   "number": 66,
    "file": "Duel-15.jpg",
    "w": 1350,
    "h": 1800,
@@ -1599,7 +1179,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-16",
-   "number": 97,
+   "number": 67,
    "file": "Duel-16.jpg",
    "w": 1350,
    "h": 1800,
@@ -1613,7 +1193,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-17",
-   "number": 98,
+   "number": 68,
    "file": "Duel-17.jpg",
    "w": 1350,
    "h": 1800,
@@ -1627,7 +1207,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-18",
-   "number": 99,
+   "number": 69,
    "file": "Duel-18.jpg",
    "w": 1350,
    "h": 1800,
@@ -1641,7 +1221,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-19",
-   "number": 100,
+   "number": 70,
    "file": "Duel-19.jpg",
    "w": 1350,
    "h": 1800,
@@ -1655,7 +1235,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-20",
-   "number": 101,
+   "number": 71,
    "file": "Duel-20.jpg",
    "w": 1350,
    "h": 1800,
@@ -1669,7 +1249,7 @@ window.GUIDE = {
   },
   {
    "id": "duel-21",
-   "number": 102,
+   "number": 72,
    "file": "Duel-21.jpg",
    "w": 1125,
    "h": 1500,
@@ -1683,7 +1263,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-hero",
-   "number": 103,
+   "number": 73,
    "file": "Noche-Terrible-hero.jpg",
    "w": 1350,
    "h": 1800,
@@ -1697,7 +1277,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-1",
-   "number": 104,
+   "number": 74,
    "file": "Noche-Terrible-1.jpg",
    "w": 1286,
    "h": 1800,
@@ -1711,7 +1291,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-2",
-   "number": 105,
+   "number": 75,
    "file": "Noche-Terrible-2.jpg",
    "w": 1286,
    "h": 1800,
@@ -1725,7 +1305,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-3",
-   "number": 106,
+   "number": 76,
    "file": "Noche-Terrible-3.jpg",
    "w": 1350,
    "h": 1800,
@@ -1739,7 +1319,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-4",
-   "number": 107,
+   "number": 77,
    "file": "Noche-Terrible-4.jpg",
    "w": 1350,
    "h": 1800,
@@ -1752,22 +1332,8 @@ window.GUIDE = {
    "project": "terrible-night"
   },
   {
-   "id": "noche-terrible-9",
-   "number": 108,
-   "file": "Noche-Terrible-9.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/noche-terrible-9.jpg",
-   "thumb": "img/thumb/noche-terrible-9.jpg",
-   "project": "terrible-night"
-  },
-  {
    "id": "noche-terrible-end1",
-   "number": 109,
+   "number": 78,
    "file": "Noche-Terrible-end1.jpg",
    "w": 1350,
    "h": 1800,
@@ -1780,22 +1346,8 @@ window.GUIDE = {
    "project": "terrible-night"
   },
   {
-   "id": "noche-terrible-end2",
-   "number": 110,
-   "file": "Noche-Terrible-end2.jpg",
-   "w": 1350,
-   "h": 1800,
-   "title": "",
-   "text": "",
-   "inspirations": [],
-   "hotspots": [],
-   "src": "img/full/noche-terrible-end2.jpg",
-   "thumb": "img/thumb/noche-terrible-end2.jpg",
-   "project": "terrible-night"
-  },
-  {
    "id": "noche-terrible-end3",
-   "number": 111,
+   "number": 79,
    "file": "Noche-Terrible-end3.jpg",
    "w": 1350,
    "h": 1800,
@@ -1809,7 +1361,7 @@ window.GUIDE = {
   },
   {
    "id": "noche-terrible-end4",
-   "number": 112,
+   "number": 80,
    "file": "Noche-Terrible-end4.jpg",
    "w": 1350,
    "h": 1800,
