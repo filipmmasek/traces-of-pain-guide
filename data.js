@@ -81,14 +81,14 @@ window.GUIDE = {
    "id": "zadquiel-dei",
    "name": "Angeles - Zadquiel Dei",
    "hero": "zadquiel-hero",
-   "subtitle": "Ángeles Arcabuceros",
+   "subtitle": "Arquebusier Angels",
    "quote": "",
    "quoteBy": "",
    "text": "The angel Zadquiel moves across impossible ground between mercy and death. Its freedom translates into dissent. The figure embodies the archetype from a clear will to empowerment. In its stance there is no room for clemency; what drives it is the certainty that the contemporary order, like the old dogmas of the past, is beginning to crumble.",
    "story": "angels",
    "inspirations": [
     {
-     "title": "Ángeles arcabuceros (arquebusier angels)",
+     "title": "Arquebusier angels (ángeles arcabuceros)",
      "artist": "Cusco School and the Master of Calamarca",
      "date": "second half of the 17th century",
      "where": "Viceroyalty of Peru; most complete series in the church of Calamarca, Bolivia",
@@ -102,7 +102,7 @@ window.GUIDE = {
    "id": "raphael-dei",
    "name": "Angeles - Raphael Dei",
    "hero": "raphael-hero",
-   "subtitle": "Ángeles Arcabuceros",
+   "subtitle": "Arquebusier Angels",
    "quote": "",
    "quoteBy": "",
    "text": "The archangel of medicine and guardian of travellers descends here stripped of mercy. The image concentrates on the tension of the robes and on the mouth that barely parts. Syncretism becomes a borderland eroticism, the friction of an identity born of successive layers of migration: a woman who refuses to be tamed by the map. Raphael no longer heals the pain of the road; he imitates the gesture of one who, to calm the torment, needs to inflame it.",
@@ -118,7 +118,7 @@ window.GUIDE = {
      "credit": "Image: Tobias and the Angel, Filippino Lippi, c. 1475–1480, National Gallery of Art, Washington, via Wikimedia Commons, public domain."
     },
     {
-     "title": "Ángeles arcabuceros (arquebusier angels)",
+     "title": "Arquebusier angels (ángeles arcabuceros)",
      "artist": "Cusco School and the Master of Calamarca",
      "date": "second half of the 17th century",
      "where": "Viceroyalty of Peru; most complete series in the church of Calamarca, Bolivia",
@@ -132,7 +132,7 @@ window.GUIDE = {
    "id": "letiel-dei",
    "name": "Angeles - Letiel Dei",
    "hero": "letiel-hero",
-   "subtitle": "Ángeles Arcabuceros",
+   "subtitle": "Arquebusier Angels",
    "quote": "",
    "quoteBy": "",
    "text": "In the painting, Letiel embodies an oxymoron: he holds the arquebus with an unreal delicacy, as if in the middle of a creative act. In the photograph, that lightness becomes a suspended threat. The figure operates under the shadow of God. The provocation lies in that chiaroscuro and in the indifference of its gaze. It holds the weapon not like someone carrying out a divine mandate, but like someone taking possession of the possibility of firing. The feathers no longer imitate flight; they weigh on the shoulders like rusted armour.",
@@ -148,7 +148,7 @@ window.GUIDE = {
      "credit": "Image: Ángel Letiel Dei, after the Master of Calamarca (original in the church of Calamarca, Bolivia; copy in Toledo, Spain), via Wikimedia Commons, public domain."
     },
     {
-     "title": "Ángeles arcabuceros (arquebusier angels)",
+     "title": "Arquebusier angels (ángeles arcabuceros)",
      "artist": "Cusco School and the Master of Calamarca",
      "date": "second half of the 17th century",
      "where": "Viceroyalty of Peru; most complete series in the church of Calamarca, Bolivia",
@@ -1988,7 +1988,7 @@ window.GUIDE = {
     "readMore": "Zobrazit větší",
     "readFull": "Číst dál",
     "readLess": "Méně",
-    "comingSoon": "Fotografie brzy",
+    "comingSoon": "Fotografie již brzy",
     "aboutExhibition": "O výstavě",
     "exhibitionLabel": "Výstava",
     "morePhotos": "Další fotografie z projektu"
@@ -2000,7 +2000,7 @@ window.GUIDE = {
    "pages": {
     "concept": {
      "title": "Bolest lapená v čase",
-     "text": "Bolest nemá zeměpisné hranice, ale zato má kořeny. Bolest se nevměstná do map, a přesto zabírá území. Tato výstava představuje pouť napříč jizvami dějin a umění.\n\nFotografie Gabriela Matuly se ani v nejmenším nepokoušejí cosi osvětlit, spíše kladou otázky, zkoumají a zhmotňují řadu mistrovských děl hispanoamerické literatury a výtvarného umění. Výstava Stopy bolesti (Huellas del dolor) si vyhrazuje jednu jedinou, příznačnou tvůrčí licenci: Oféliino utonutí jako velkolepý spouštěcí mechanismus. Jde o multidisciplinárně pojatý „obraz v obraze“ (*myse en abyme*), který prostřednictvím fotografie evokuje slavné plátno Johna Everetta Millaise a současně princip divadla na divadle v *Hamletovi*. Rozmanité perspektivy a estetické přístupy se točí kolem jediné osy: univerzálnost lidského utrpení.\n\nOd mytologických muk a duševní trýzně přes koloniální synkretismus křídla a zbraně až po osiřelost a existenciální tíhu společenských příkazů. Každý snímek se snaží zadržet plynutí času. A uprostřed této vědomé popravy vyvstává otázka stejně pádná jako znepokojivá: **do jaké míry naši nejnaléhavější bolest podmiňují ony dávné trýzně?**"
+     "text": "Bolest nemá zeměpisné hranice, ale zato má kořeny. Bolest se nevměstná do map, a přesto zabírá území. Tato výstava představuje pouť napříč jizvami dějin a umění.\n\nFotografie Gabriela Matuly se ani v nejmenším nepokoušejí cosi osvětlit, spíše kladou otázky, zkoumají a zhmotňují řadu mistrovských děl hispanoamerické literatury a výtvarného umění. Výstava Stopy bolesti (Huellas del dolor) si vyhrazuje jednu jedinou, příznačnou tvůrčí licenci: Oféliino utonutí jako velkolepý spouštěcí mechanismus. Jde o multidisciplinárně pojatý „obraz v obraze“ (*mise en abyme*), který prostřednictvím fotografie evokuje slavné plátno Johna Everetta Millaise a současně princip divadla na divadle v *Hamletovi*. Rozmanité perspektivy a estetické přístupy se točí kolem jediné osy: univerzálnost lidského utrpení.\n\nOd mytologických muk a duševní trýzně přes koloniální synkretismus křídla a zbraně až po osiřelost a existenciální tíhu společenských příkazů. Každý snímek se snaží zadržet plynutí času. A uprostřed této vědomé popravy vyvstává otázka stejně pádná jako znepokojivá: **do jaké míry naši nejnaléhavější bolest podmiňují ony dávné trýzně?**"
     },
     "about": {
      "title": "Gabriel Matula: Fotografie špičkou tužky",
@@ -2023,14 +2023,15 @@ window.GUIDE = {
        "text": "Rafael doprovází mladého Tobiáše na cestě, zachrání ho před rybou v řece Tigris a poradí mu schovat si její žluč, která vyléčí slepotu jeho otce. Rafael je patronem poutníků a nemocných."
       },
       {
-       "title": "Ángeles arcabuceros (andělé s arkebuzou)",
-       "artist": "Cuzcká škola a Mistr z Calamarky",
+       "title": "Andělé s arkebuzami (Ángeles arcabuceros)",
+       "artist": "Škola z Cuzca a Mistr z Calamarky",
        "date": "2. polovina 17. století",
        "where": "Místokrálovství Peru; nejúplnější série v kostele v Calamarce, Bolívie",
-       "text": "Andělé malovaní s arkebuzou, ranou palnou zbraní, místo meče, a oblečení jako španělští a andští šlechtici. Tento typ vznikl v Místokrálovství Peru, hlavně v Cuzcké škole a jejích převážně domorodých dílnách. Nejúplnější dochovaná série visí v kostele v Calamarce, asi 60 km od La Paz.",
-       "credit": "Obraz: Archanděl Eliel s arkebuzou, Cuzcká škola, kolem 1690–1720, MALI Museo de Arte de Lima, přes Wikimedia Commons (Google Art Project), volné dílo. Zdroj textu: Wikipedie, „Ángel arcabucero“ (anglicky) a „Ángeles arcabuceros“ (španělsky)."
+       "text": "Andělé malovaní s arkebuzou, ranou palnou zbraní, místo meče, a oblečení jako španělští a andští šlechtici. Tento typ vznikl v Místokrálovství Peru, hlavně ve škole z Cuzca a jejích převážně domorodých dílnách. Nejúplnější dochovaná série visí v kostele v Calamarce, asi 60 km od La Paz.",
+       "credit": "Obraz: Archanděl Eliel s arkebuzou, škola z Cuzca, kolem 1690–1720, MALI Museo de Arte de Lima, přes Wikimedia Commons (Google Art Project), volné dílo. Zdroj textu: Wikipedie, „Ángel arcabucero“ (anglicky) a „Ángeles arcabuceros“ (španělsky)."
       }
-     ]
+     ],
+     "subtitle": "Andělé s arkebuzami"
     },
     "letiel-dei": {
      "text": "Letiel na plátně zosobňuje oxymóron: svírá arkebuzu s tak nadpozemskou jemností, jako by se nacházel uprostřed tvůrčího aktu. Na fotografii však tato lehkost působí spíše jako skrytá hrozba. Postava jedná ve jménu Božím. Avšak hra světla a stínu a její lhostejný pohled působí provokativně. Nedrží zbraň jako vykonavatel Božího příkazu, nýbrž jako ten, kdo si osobuje právo o výstřelu rozhodnout. Křídla už neevokují let, ale těžce visí z ramen jako zrezivělé brnění.",
@@ -2042,27 +2043,29 @@ window.GUIDE = {
        "credit": "Obraz: Ángel Letiel Dei, podle Mistra z Calamarky (originál v kostele v Calamarce, Bolívie; kopie v Toledu, Španělsko), přes Wikimedia Commons, volné dílo."
       },
       {
-       "title": "Ángeles arcabuceros (andělé s arkebuzou)",
-       "artist": "Cuzcká škola a Mistr z Calamarky",
+       "title": "Andělé s arkebuzami (Ángeles arcabuceros)",
+       "artist": "Škola z Cuzca a Mistr z Calamarky",
        "date": "2. polovina 17. století",
        "where": "Místokrálovství Peru; nejúplnější série v kostele v Calamarce, Bolívie",
-       "text": "Andělé malovaní s arkebuzou, ranou palnou zbraní, místo meče, a oblečení jako španělští a andští šlechtici. Tento typ vznikl v Místokrálovství Peru, hlavně v Cuzcké škole a jejích převážně domorodých dílnách. Nejúplnější dochovaná série visí v kostele v Calamarce, asi 60 km od La Paz.",
+       "text": "Andělé malovaní s arkebuzou, ranou palnou zbraní, místo meče, a oblečení jako španělští a andští šlechtici. Tento typ vznikl v Místokrálovství Peru, hlavně ve škole z Cuzca a jejích převážně domorodých dílnách. Nejúplnější dochovaná série visí v kostele v Calamarce, asi 60 km od La Paz.",
        "credit": "Obraz: ozbrojený anděl, Mistr z Calamarky, kolem 1680, farní kostel v Calamarce, Bolívie. Foto © Paul M.R. Maeyaert, přes Wikimedia Commons, CC BY-SA 4.0. Zdroj textu: Wikipedie, „Ángel arcabucero“ (anglicky) a „Ángeles arcabuceros“ (španělsky)."
       }
-     ]
+     ],
+     "subtitle": "Andělé s arkebuzami"
     },
     "zadquiel-dei": {
      "text": "Anděl Zadquiel se zmítá mezi milosrdenstvím a smrtí. Jeho svoboda se přetavuje ve schizma. Je zosobněním archetypální postavy s jasnou vůlí k sebeurčení. V jeho postoji není místo pro laskavost; naopak, jeho pohání přesvědčení, že současný řád se začíná hroutit tak jako dávná dogmata časů minulých.",
      "inspirations": [
       {
-       "title": "Ángeles arcabuceros (andělé s arkebuzou)",
-       "artist": "Cuzcká škola a Mistr z Calamarky",
+       "title": "Andělé s arkebuzami (Ángeles arcabuceros)",
+       "artist": "Škola z Cuzca a Mistr z Calamarky",
        "date": "2. polovina 17. století",
        "where": "Místokrálovství Peru; nejúplnější série v kostele v Calamarce, Bolívie",
-       "text": "Andělé malovaní s arkebuzou, ranou palnou zbraní, místo meče, a oblečení jako španělští a andští šlechtici. Tento typ vznikl v Místokrálovství Peru, hlavně v Cuzcké škole a jejích převážně domorodých dílnách. Nejúplnější dochovaná série visí v kostele v Calamarce, asi 60 km od La Paz.",
+       "text": "Andělé malovaní s arkebuzou, ranou palnou zbraní, místo meče, a oblečení jako španělští a andští šlechtici. Tento typ vznikl v Místokrálovství Peru, hlavně ve škole z Cuzca a jejích převážně domorodých dílnách. Nejúplnější dochovaná série visí v kostele v Calamarce, asi 60 km od La Paz.",
        "credit": "Obraz: Asiel Timor Dei, okruh Mistra z Calamarky, kolem 1680, Museo Nacional de Arte, La Paz, přes Wikimedia Commons, volné dílo. Zdroj textu: Wikipedie, „Ángel arcabucero“ (anglicky) a „Ángeles arcabuceros“ (španělsky)."
       }
-     ]
+     ],
+     "subtitle": "Andělé s arkebuzami"
     },
     "letters-from-mom": {
      "subtitle": "O povídce „Maminčiny dopisy“ Julia Cortázara",
@@ -2185,15 +2188,7 @@ window.GUIDE = {
      "hotspots": [
       {
        "title": "Cigareta",
-       "text": "Julio Cortázar v rozhovorech skoro vždy kouřil: nejdřív byl vidět oblak kouře, teprve potom jeho tvář. Gabriel dal stejný zvyk postavám povídky. Laura a Luis úzkostně čekají na každý další dopis z Buenos Aires a kouřením tu úzkost zabíjejí."
-      }
-     ]
-    },
-    "letters-from-mom-10": {
-     "hotspots": [
-      {
-       "title": "Dopis",
-       "text": "V povídce přináší každý dopis od matky z Buenos Aires neklid: píše v něm o Nicovi, který zemřel, jako by byl stále naživu."
+       "text": "Julio Cortázar v rozhovorech skoro vždy kouřil: nejdřív byl vidět oblak kouře, teprve potom jeho tvář. Gabriel tento zvyk propůjčil i postavám povídky. Laura a Luis úzkostně čekají na každý další dopis z Buenos Aires a kouřením tu úzkost zabíjejí."
       }
      ]
     },
@@ -2202,34 +2197,6 @@ window.GUIDE = {
       {
        "title": "Světlo a pohyb",
        "text": "Ostrá světla na tváři a kolem ní spousta rozmazání a pohybu vytvářejí snovou atmosféru. Zadquiel je anděl smrti, a tak je na rozdíl od ostatních, barevných andělů pojatý temně."
-      }
-     ]
-    },
-    "zadquiel-4": {
-     "hotspots": [
-      {
-       "title": "Slza",
-       "text": "Na některých fotografiích, hlavně na těch na zdi, je vidět slza. Podle Gabriela musí tento anděl z Boží vůle brát lidské životy, i když nechce. Slza ukazuje tento vnitřní konflikt."
-      },
-      {
-       "title": "Světlo a pohyb",
-       "text": "Ostrá světla na tváři a kolem ní spousta rozmazání a pohybu vytvářejí snovou atmosféru. Zadquiel je anděl smrti, a tak je na rozdíl od ostatních, barevných andělů pojatý temně."
-      }
-     ]
-    },
-    "zadquiel-11": {
-     "hotspots": [
-      {
-       "title": "Slza",
-       "text": "Na některých fotografiích, hlavně na těch na zdi, je vidět slza. Podle Gabriela musí tento anděl z Boží vůle brát lidské životy, i když nechce. Slza ukazuje tento vnitřní konflikt."
-      },
-      {
-       "title": "Světlo a pohyb",
-       "text": "Ostrá světla na tváři a kolem ní spousta rozmazání a pohybu vytvářejí snovou atmosféru. Zadquiel je anděl smrti, a tak je na rozdíl od ostatních, barevných andělů pojatý temně."
-      },
-      {
-       "title": "Arkebuza",
-       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
       }
      ]
     },
@@ -2253,7 +2220,7 @@ window.GUIDE = {
       },
       {
        "title": "Ochránce nemocných",
-       "text": "Kvůli uzdravení v Knize Tobiáš je Rafael také ochráncem nemocných. Dodnes po něm bývají pojmenované nemocnice a kliniky."
+       "text": "Díky uzdravení, o kterém vypráví Kniha Tobiáš, je Rafael také ochráncem nemocných. Dodnes po něm bývají pojmenované nemocnice a kliniky."
       },
       {
        "title": "Arkebuza",
@@ -2273,7 +2240,7 @@ window.GUIDE = {
       },
       {
        "title": "Ochránce nemocných",
-       "text": "Kvůli uzdravení v Knize Tobiáš je Rafael také ochráncem nemocných. Dodnes po něm bývají pojmenované nemocnice a kliniky."
+       "text": "Díky uzdravení, o kterém vypráví Kniha Tobiáš, je Rafael také ochráncem nemocných. Dodnes po něm bývají pojmenované nemocnice a kliniky."
       },
       {
        "title": "Arkebuza",
@@ -2289,7 +2256,7 @@ window.GUIDE = {
      "hotspots": [
       {
        "title": "Křídla",
-       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil hodně barevnou paletu."
+       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil velmi pestrou paletu."
       },
       {
        "title": "Světlo a stín",
@@ -2297,31 +2264,11 @@ window.GUIDE = {
       }
      ]
     },
-    "letiel-7": {
-     "hotspots": [
-      {
-       "title": "Křídla",
-       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil hodně barevnou paletu."
-      },
-      {
-       "title": "Arkebuza",
-       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
-      }
-     ]
-    },
     "ophelia-hero": {
      "hotspots": [
       {
-       "title": "Na film",
+       "title": "Focené na film",
        "text": "Většina fotografií vznikla na 35mm film fotoaparátem Yashica FX-3, který Gabrielova matka koupila v roce 1983 na cestě po Španělsku. Gabriel s ním fotí od mládí a přesně ví, co od něj čekat."
-      }
-     ]
-    },
-    "ophelia-4": {
-     "hotspots": [
-      {
-       "title": "Obrácený horizont",
-       "text": "Na mnoha fotografiích je horizont vzhůru nohama. Divák se tak ocitá pod vodou, sdílí Oféliin pohled i její bolest."
       }
      ]
     },
@@ -2330,22 +2277,6 @@ window.GUIDE = {
       {
        "title": "Vidlička",
        "text": "Kontrastní vidlička na červeném pozadí. Pro Gabriela shrnuje celý příběh: není třeba vidět krev ani nic syrového, nechává prostor představivosti."
-      }
-     ]
-    },
-    "saturn-12": {
-     "hotspots": [
-      {
-       "title": "Oblek a špinavé ruce",
-       "text": "Muž má oblek, ale ruce a tvář špinavé: mocní lidé mohou být uvnitř velmi špinaví. Gabriel spojuje Goyův obraz s dnešními elitami, které udělají cokoli, aby si udržely moc."
-      }
-     ]
-    },
-    "saturn-5": {
-     "hotspots": [
-      {
-       "title": "První focení",
-       "text": "Jedno z úplně prvních focení, které napodobuje řeč těla z Goyova obrazu. Projekt se pak vydal abstraktnějším a jemnějším směrem, ale toto focení bylo tak dobré, že ho Gabriel do výstavy zařadil."
       }
      ]
     },
@@ -2369,107 +2300,7 @@ window.GUIDE = {
       }
      ]
     },
-    "noche-terrible-2": {
-     "hotspots": [
-      {
-       "title": "Pražská dlažba",
-       "text": "Gabriel si představil nevěstu opuštěnou v den svatby, jak leží na ulici: opuštěná, zoufalá a zranitelná."
-      }
-     ]
-    },
-    "noche-terrible-4": {
-     "hotspots": [
-      {
-       "title": "Co zbylo",
-       "text": "Svatební šaty, dárek a květiny jsou vše, co ze svatby zbylo."
-      },
-      {
-       "title": "Pražská dlažba",
-       "text": "Gabriel si představil nevěstu opuštěnou v den svatby, jak leží na ulici: opuštěná, zoufalá a zranitelná."
-      }
-     ]
-    },
-    "noche-terrible-end1": {
-     "hotspots": [
-      {
-       "title": "Rozmazání a pohyb",
-       "text": "Fotografie z ateliéru záměrně nejsou ostré, jsou plné pohybu a rozmazání, jako by šlo o snímky ze 30. let, kdy povídka vznikla."
-      }
-     ]
-    },
-    "letters-from-mom-2": {
-     "hotspots": [
-      {
-       "title": "Cigareta",
-       "text": "Julio Cortázar v rozhovorech skoro vždy kouřil: nejdřív byl vidět oblak kouře, teprve potom jeho tvář. Gabriel dal stejný zvyk postavám povídky. Laura a Luis úzkostně čekají na každý další dopis z Buenos Aires a kouřením tu úzkost zabíjejí."
-      }
-     ]
-    },
-    "letters-from-mom-8": {
-     "hotspots": [
-      {
-       "title": "Dopis",
-       "text": "V povídce přináší každý dopis od matky z Buenos Aires neklid: píše v něm o Nicovi, který zemřel, jako by byl stále naživu."
-      }
-     ]
-    },
-    "zadquiel-1": {
-     "hotspots": [
-      {
-       "title": "Světlo a pohyb",
-       "text": "Ostrá světla na tváři a kolem ní spousta rozmazání a pohybu vytvářejí snovou atmosféru. Zadquiel je anděl smrti, a tak je na rozdíl od ostatních, barevných andělů pojatý temně."
-      },
-      {
-       "title": "Arkebuza",
-       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
-      }
-     ]
-    },
-    "zadquiel-2": {
-     "hotspots": [
-      {
-       "title": "Arkebuza",
-       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
-      }
-     ]
-    },
-    "zadquiel-3": {
-     "hotspots": [
-      {
-       "title": "Arkebuza",
-       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
-      }
-     ]
-    },
-    "zadquiel-6": {
-     "hotspots": [
-      {
-       "title": "Arkebuza",
-       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
-      }
-     ]
-    },
-    "zadquiel-9": {
-     "hotspots": [
-      {
-       "title": "Světlo a pohyb",
-       "text": "Ostrá světla na tváři a kolem ní spousta rozmazání a pohybu vytvářejí snovou atmosféru. Zadquiel je anděl smrti, a tak je na rozdíl od ostatních, barevných andělů pojatý temně."
-      },
-      {
-       "title": "Arkebuza",
-       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
-      }
-     ]
-    },
     "raphael-1": {
-     "hotspots": [
-      {
-       "title": "Arkebuza",
-       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
-      }
-     ]
-    },
-    "raphael-2": {
      "hotspots": [
       {
        "title": "Arkebuza",
@@ -2490,118 +2321,6 @@ window.GUIDE = {
       {
        "title": "Zemité barvy",
        "text": "Rafael je anděl poutníků, a tak ho Gabriel oblékl do zemitých barev, světle hnědé a tlumených tónů, jako by se chystal na výlet."
-      }
-     ]
-    },
-    "letiel-5": {
-     "hotspots": [
-      {
-       "title": "Křídla",
-       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil hodně barevnou paletu."
-      },
-      {
-       "title": "Světlo a stín",
-       "text": "Letiel patří k nejbarevnějším andělům s arkebuzou, Gabriel si přesto pohrál se silným kontrastem světla a stínu, aby byl co nejtemnější."
-      },
-      {
-       "title": "Arkebuza",
-       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
-      }
-     ]
-    },
-    "letiel-8": {
-     "hotspots": [
-      {
-       "title": "Křídla",
-       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil hodně barevnou paletu."
-      },
-      {
-       "title": "Arkebuza",
-       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
-      }
-     ]
-    },
-    "letiel-dei11944-1": {
-     "hotspots": [
-      {
-       "title": "Křídla",
-       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil hodně barevnou paletu."
-      }
-     ]
-    },
-    "letiel-dei12289-1": {
-     "hotspots": [
-      {
-       "title": "Křídla",
-       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil hodně barevnou paletu."
-      },
-      {
-       "title": "Světlo a stín",
-       "text": "Letiel patří k nejbarevnějším andělům s arkebuzou, Gabriel si přesto pohrál se silným kontrastem světla a stínu, aby byl co nejtemnější."
-      },
-      {
-       "title": "Arkebuza",
-       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
-      }
-     ]
-    },
-    "letiel-dei-outdoor-337-1": {
-     "hotspots": [
-      {
-       "title": "Křídla",
-       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil hodně barevnou paletu."
-      },
-      {
-       "title": "Arkebuza",
-       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
-      }
-     ]
-    },
-    "ophelia-5": {
-     "hotspots": [
-      {
-       "title": "Obrácený horizont",
-       "text": "Na mnoha fotografiích je horizont vzhůru nohama. Divák se tak ocitá pod vodou, sdílí Oféliin pohled i její bolest."
-      }
-     ]
-    },
-    "ophelia-30-08-2024-2024-833": {
-     "hotspots": [
-      {
-       "title": "Obrácený horizont",
-       "text": "Na mnoha fotografiích je horizont vzhůru nohama. Divák se tak ocitá pod vodou, sdílí Oféliin pohled i její bolest."
-      }
-     ]
-    },
-    "saturn-1": {
-     "hotspots": [
-      {
-       "title": "Vidlička",
-       "text": "Kontrastní vidlička na červeném pozadí. Pro Gabriela shrnuje celý příběh: není třeba vidět krev ani nic syrového, nechává prostor představivosti."
-      }
-     ]
-    },
-    "saturn-2": {
-     "hotspots": [
-      {
-       "title": "Oblek a špinavé ruce",
-       "text": "Muž má oblek, ale ruce a tvář špinavé: mocní lidé mohou být uvnitř velmi špinaví. Gabriel spojuje Goyův obraz s dnešními elitami, které udělají cokoli, aby si udržely moc."
-      }
-     ]
-    },
-    "saturn-4": {
-     "hotspots": [
-      {
-       "title": "První focení",
-       "text": "Jedno z úplně prvních focení, které napodobuje řeč těla z Goyova obrazu. Projekt se pak vydal abstraktnějším a jemnějším směrem, ale toto focení bylo tak dobré, že ho Gabriel do výstavy zařadil."
-      }
-     ]
-    },
-    "saturn-7": {
-     "hotspots": [
-      {
-       "title": "První focení",
-       "text": "Jedno z úplně prvních focení, které napodobuje řeč těla z Goyova obrazu. Projekt se pak vydal abstraktnějším a jemnějším směrem, ale toto focení bylo tak dobré, že ho Gabriel do výstavy zařadil."
       }
      ]
     },
@@ -2701,11 +2420,251 @@ window.GUIDE = {
       }
      ]
     },
-    "noche-terrible-1": {
+    "letters-from-mom-02": {
+     "hotspots": [
+      {
+       "title": "Cigareta",
+       "text": "Julio Cortázar v rozhovorech skoro vždy kouřil: nejdřív byl vidět oblak kouře, teprve potom jeho tvář. Gabriel tento zvyk propůjčil i postavám povídky. Laura a Luis úzkostně čekají na každý další dopis z Buenos Aires a kouřením tu úzkost zabíjejí."
+      }
+     ]
+    },
+    "letters-from-mom-05": {
+     "hotspots": [
+      {
+       "title": "Dopis",
+       "text": "V povídce přináší každý dopis od matky z Buenos Aires neklid: píše v něm o Nicovi, který zemřel, jako by byl stále naživu."
+      }
+     ]
+    },
+    "letters-from-mom-06": {
+     "hotspots": [
+      {
+       "title": "Dopis",
+       "text": "V povídce přináší každý dopis od matky z Buenos Aires neklid: píše v něm o Nicovi, který zemřel, jako by byl stále naživu."
+      }
+     ]
+    },
+    "zadquiel-dei-01": {
+     "hotspots": [
+      {
+       "title": "Světlo a pohyb",
+       "text": "Ostrá světla na tváři a kolem ní spousta rozmazání a pohybu vytvářejí snovou atmosféru. Zadquiel je anděl smrti, a tak je na rozdíl od ostatních, barevných andělů pojatý temně."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "zadquiel-dei-02": {
+     "hotspots": [
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "zadquiel-dei-03": {
+     "hotspots": [
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "zadquiel-dei-04": {
+     "hotspots": [
+      {
+       "title": "Slza",
+       "text": "Na některých fotografiích, hlavně na těch na zdi, je vidět slza. Podle Gabriela musí tento anděl z Boží vůle brát lidské životy, i když sám nechce. Slza ukazuje tento vnitřní konflikt."
+      },
+      {
+       "title": "Světlo a pohyb",
+       "text": "Ostrá světla na tváři a kolem ní spousta rozmazání a pohybu vytvářejí snovou atmosféru. Zadquiel je anděl smrti, a tak je na rozdíl od ostatních, barevných andělů pojatý temně."
+      }
+     ]
+    },
+    "zadquiel-dei-05": {
+     "hotspots": [
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "zadquiel-dei-06": {
+     "hotspots": [
+      {
+       "title": "Slza",
+       "text": "Na některých fotografiích, hlavně na těch na zdi, je vidět slza. Podle Gabriela musí tento anděl z Boží vůle brát lidské životy, i když sám nechce. Slza ukazuje tento vnitřní konflikt."
+      },
+      {
+       "title": "Světlo a pohyb",
+       "text": "Ostrá světla na tváři a kolem ní spousta rozmazání a pohybu vytvářejí snovou atmosféru. Zadquiel je anděl smrti, a tak je na rozdíl od ostatních, barevných andělů pojatý temně."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "zadquiel-dei-07": {
+     "hotspots": [
+      {
+       "title": "Světlo a pohyb",
+       "text": "Ostrá světla na tváři a kolem ní spousta rozmazání a pohybu vytvářejí snovou atmosféru. Zadquiel je anděl smrti, a tak je na rozdíl od ostatních, barevných andělů pojatý temně."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "raphael-32": {
+     "hotspots": [
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "letiel-dei-02": {
+     "hotspots": [
+      {
+       "title": "Křídla",
+       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil velmi pestrou paletu."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "letiel-dei-03": {
+     "hotspots": [
+      {
+       "title": "Křídla",
+       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil velmi pestrou paletu."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "letiel-dei-04": {
+     "hotspots": [
+      {
+       "title": "Křídla",
+       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil velmi pestrou paletu."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "letiel-dei-05": {
+     "hotspots": [
+      {
+       "title": "Křídla",
+       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil velmi pestrou paletu."
+      }
+     ]
+    },
+    "letiel-dei-06": {
+     "hotspots": [
+      {
+       "title": "Křídla",
+       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil velmi pestrou paletu."
+      },
+      {
+       "title": "Světlo a stín",
+       "text": "Letiel patří k nejbarevnějším andělům s arkebuzou, Gabriel si přesto pohrál se silným kontrastem světla a stínu, aby byl co nejtemnější."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "letiel-dei-07": {
+     "hotspots": [
+      {
+       "title": "Křídla",
+       "text": "Na původním obraze má Letiel velmi barevná křídla. Gabriel je spojil s ptáky z té oblasti, papoušky s pestrým peřím, a pro tohoto anděla použil velmi pestrou paletu."
+      },
+      {
+       "title": "Světlo a stín",
+       "text": "Letiel patří k nejbarevnějším andělům s arkebuzou, Gabriel si přesto pohrál se silným kontrastem světla a stínu, aby byl co nejtemnější."
+      },
+      {
+       "title": "Arkebuza",
+       "text": "Stejně jako andělé s arkebuzou z koloniálního Peru a Bolívie nesou Gabrielovi andělé místo meče arkebuzu, ranou palnou zbraň."
+      }
+     ]
+    },
+    "ophelia-02": {
+     "hotspots": [
+      {
+       "title": "Obrácený horizont",
+       "text": "Na mnoha fotografiích je horizont vzhůru nohama. Divák se tak ocitá pod vodou, sdílí Oféliin pohled i její bolest."
+      }
+     ]
+    },
+    "saturn-01": {
+     "hotspots": [
+      {
+       "title": "Vidlička",
+       "text": "Kontrastní vidlička na červeném pozadí. Pro Gabriela shrnuje celý příběh: není třeba vidět krev ani nic syrového, nechává prostor představivosti."
+      }
+     ]
+    },
+    "saturn-02": {
+     "hotspots": [
+      {
+       "title": "Oblek a špinavé ruce",
+       "text": "Muž má oblek, ale ruce a tvář špinavé: mocní lidé mohou být uvnitř velmi špinaví. Gabriel spojuje Goyův obraz s dnešními elitami, které udělají cokoli, aby si udržely moc."
+      }
+     ]
+    },
+    "saturn-04": {
+     "hotspots": [
+      {
+       "title": "První focení",
+       "text": "Jedno z úplně prvních focení, které napodobuje řeč těla z Goyova obrazu. Projekt se pak vydal abstraktnějším a jemnějším směrem, ale toto focení bylo tak dobré, že ho Gabriel do výstavy zařadil."
+      }
+     ]
+    },
+    "saturn-05": {
+     "hotspots": [
+      {
+       "title": "První focení",
+       "text": "Jedno z úplně prvních focení, které napodobuje řeč těla z Goyova obrazu. Projekt se pak vydal abstraktnějším a jemnějším směrem, ale toto focení bylo tak dobré, že ho Gabriel do výstavy zařadil."
+      }
+     ]
+    },
+    "saturn-06": {
+     "hotspots": [
+      {
+       "title": "První focení",
+       "text": "Jedno z úplně prvních focení, které napodobuje řeč těla z Goyova obrazu. Projekt se pak vydal abstraktnějším a jemnějším směrem, ale toto focení bylo tak dobré, že ho Gabriel do výstavy zařadil."
+      }
+     ]
+    },
+    "saturn-07": {
+     "hotspots": [
+      {
+       "title": "Oblek a špinavé ruce",
+       "text": "Muž má oblek, ale ruce a tvář špinavé: mocní lidé mohou být uvnitř velmi špinaví. Gabriel spojuje Goyův obraz s dnešními elitami, které udělají cokoli, aby si udržely moc."
+      }
+     ]
+    },
+    "noche-terrible-01": {
      "hotspots": [
       {
        "title": "Pražská dlažba",
-       "text": "Gabriel si představil nevěstu opuštěnou v den svatby, jak leží na ulici: opuštěná, zoufalá a zranitelná."
+       "text": "Gabriel si představil nevěstu, která v den svatby zůstala sama a leží na ulici: opuštěná, zoufalá a zranitelná."
       },
       {
        "title": "Co zbylo",
@@ -2713,7 +2672,27 @@ window.GUIDE = {
       }
      ]
     },
-    "noche-terrible-end3": {
+    "noche-terrible-02": {
+     "hotspots": [
+      {
+       "title": "Pražská dlažba",
+       "text": "Gabriel si představil nevěstu, která v den svatby zůstala sama a leží na ulici: opuštěná, zoufalá a zranitelná."
+      }
+     ]
+    },
+    "noche-terrible-04": {
+     "hotspots": [
+      {
+       "title": "Co zbylo",
+       "text": "Svatební šaty, dárek a květiny jsou vše, co ze svatby zbylo."
+      },
+      {
+       "title": "Pražská dlažba",
+       "text": "Gabriel si představil nevěstu, která v den svatby zůstala sama a leží na ulici: opuštěná, zoufalá a zranitelná."
+      }
+     ]
+    },
+    "noche-terrible-05": {
      "hotspots": [
       {
        "title": "Rozmazání a pohyb",
@@ -2721,7 +2700,15 @@ window.GUIDE = {
       }
      ]
     },
-    "noche-terrible-end4": {
+    "noche-terrible-06": {
+     "hotspots": [
+      {
+       "title": "Rozmazání a pohyb",
+       "text": "Fotografie z ateliéru záměrně nejsou ostré, jsou plné pohybu a rozmazání, jako by šlo o snímky ze 30. let, kdy povídka vznikla."
+      }
+     ]
+    },
+    "noche-terrible-07": {
      "hotspots": [
       {
        "title": "Rozmazání a pohyb",
@@ -2761,7 +2748,7 @@ window.GUIDE = {
     "menuCollaborators": "Colaboradores",
     "readMore": "Ver más grande",
     "readFull": "Seguir leyendo",
-    "readLess": "Leer menos",
+    "readLess": "Mostrar menos",
     "comingSoon": "Fotografías próximamente",
     "aboutExhibition": "Sobre la exposición",
     "exhibitionLabel": "Exposición",
@@ -2778,7 +2765,7 @@ window.GUIDE = {
     },
     "about": {
      "title": "Gabriel Matula: fotografía a punta de lápiz",
-     "text": "Finales de la década del ‘90, Buenos Aires. Un chico juega a atrapar con el lápiz fragmentos de realidad en un papel. Combina en ese acto la destreza de su padre escultor y la escucha de su madre psicóloga. El destino de Gabriel Matula se empieza a decidir cuando la fotografía es todavía un asunto analógico: un secreto que se revela a oscuras y que funciona como una continuación natural de las historietas que dibuja.\n\nTras graduarse en FADU (Universidad de Buenos Aires) en 2003, aquel juego se convierte en su profesión. Funda su propio estudio y llegan los años del motion graphics, los viajes a Nueva York sumando clientes internacionales, frecuentes colaboraciones para MTV, History Channel y Disney Channel, y el trabajo en postproducción para la industria de Hollywood, donde tiene a cargo, por ejemplo, la iluminación digital de Morgan Freeman y Gerard Butler en la película *Olympus Has Fallen*. El éxito comercial lo incentiva, pero no lo conforma. En 2012, buscando ese punto de no retorno que exigía Kafka, deja Argentina y se arroja sin red a la fotografía pura. Ese salto al vacío empieza a resonar con fuerza en 2015, cuando gana en una de las categorías de los International Photography Awards (IPA) y su retrato premiado es portada del catálogo mundial del certamen.\n\nDesde 2016 su centro de gravedad está en Praga. Ahí, detrás del orden diario con el que dirige su equipo en campañas de moda y publicidad, sobrevive el pulso del fotógrafo de fine art. En su obra, pasado y presente se reconcilian: Matula fusiona la precisión y versatilidad de las herramientas digitales con la textura, la nostalgia y la impronta artesanal de los procesos analógicos, tal como puede verse en Huellas del dolor, su primera muestra individual.\n\nLa cámara deja de ser un oficio terrestre para convertirse en un puente entre la geometría del encuadre y los enigmas de la psiquis. Una mirada que no busca registrar lo que está a la vista, sino atrapar, como hacía con el lápiz, el reverso de las cosas: esa extraña belleza que se esconde detrás de la superficie, y que paradójicamente solo se percibe cuando nos atrevemos a mirarla de frente."
+     "text": "Finales de la década del ’90, Buenos Aires. Un chico juega a atrapar con el lápiz fragmentos de realidad en un papel. Combina en ese acto la destreza de su padre escultor y la escucha de su madre psicóloga. El destino de Gabriel Matula se empieza a decidir cuando la fotografía es todavía un asunto analógico: un secreto que se revela a oscuras y que funciona como una continuación natural de las historietas que dibuja.\n\nTras graduarse en FADU (Universidad de Buenos Aires) en 2003, aquel juego se convierte en su profesión. Funda su propio estudio y llegan los años del motion graphics, los viajes a Nueva York sumando clientes internacionales, frecuentes colaboraciones para MTV, History Channel y Disney Channel, y el trabajo en postproducción para la industria de Hollywood, donde tiene a cargo, por ejemplo, la iluminación digital de Morgan Freeman y Gerard Butler en la película *Olympus Has Fallen*. El éxito comercial lo incentiva, pero no lo conforma. En 2012, buscando ese punto de no retorno que exigía Kafka, deja Argentina y se arroja sin red a la fotografía pura. Ese salto al vacío empieza a resonar con fuerza en 2015, cuando gana en una de las categorías de los International Photography Awards (IPA) y su retrato premiado es portada del catálogo mundial del certamen.\n\nDesde 2016 su centro de gravedad está en Praga. Ahí, detrás del orden diario con el que dirige su equipo en campañas de moda y publicidad, sobrevive el pulso del fotógrafo de fine art. En su obra, pasado y presente se reconcilian: Matula fusiona la precisión y versatilidad de las herramientas digitales con la textura, la nostalgia y la impronta artesanal de los procesos analógicos, tal como puede verse en Huellas del dolor, su primera muestra individual.\n\nLa cámara deja de ser un oficio terrestre para convertirse en un puente entre la geometría del encuadre y los enigmas de la psiquis. Una mirada que no busca registrar lo que está a la vista, sino atrapar, como hacía con el lápiz, el reverso de las cosas: esa extraña belleza que se esconde detrás de la superficie, y que paradójicamente solo se percibe cuando nos atrevemos a mirarla de frente."
     },
     "angels": {
      "title": "Ángeles y demonios",
@@ -2804,7 +2791,8 @@ window.GUIDE = {
        "text": "Ángeles pintados con un arcabuz, una de las primeras armas de fuego, en lugar de una espada, y vestidos como nobles españoles y andinos. El tipo surgió en el Virreinato del Perú, sobre todo en la escuela cuzqueña y sus talleres, en su mayoría indígenas. La serie más completa que se conserva está en la iglesia de Calamarca, a unos 60 km de La Paz.",
        "credit": "Imagen: Arcángel Eliel con arcabuz, escuela cuzqueña, h. 1690–1720, MALI Museo de Arte de Lima, vía Wikimedia Commons (Google Art Project), dominio público. Fuente del texto: Wikipedia, «Ángel arcabucero» (inglés) y «Ángeles arcabuceros» (español)."
       }
-     ]
+     ],
+     "subtitle": "Ángeles arcabuceros"
     },
     "letiel-dei": {
      "text": "En la pintura, Letiel encarna un oxímoron: sostiene el arcabuz con una delicadeza irreal, como si se hallara en pleno acto creativo.\n\nEn la foto, esa ligereza se vuelve una amenaza suspendida. La figura opera bajo la sombra de Dios. La provocación reside en ese claroscuro y en la indiferencia de su mirada. Sostiene el arma no como quien cumple un mandato divino, sino como quien se adueña de la posibilidad del disparo. Las plumas ya no imitan el vuelo, pesan sobre los hombros como una armadura oxidada.",
@@ -2823,7 +2811,8 @@ window.GUIDE = {
        "text": "Ángeles pintados con un arcabuz, una de las primeras armas de fuego, en lugar de una espada, y vestidos como nobles españoles y andinos. El tipo surgió en el Virreinato del Perú, sobre todo en la escuela cuzqueña y sus talleres, en su mayoría indígenas. La serie más completa que se conserva está en la iglesia de Calamarca, a unos 60 km de La Paz.",
        "credit": "Imagen: ángel armado del Maestro de Calamarca, h. 1680, iglesia parroquial de Calamarca, Bolivia. Foto © Paul M.R. Maeyaert, vía Wikimedia Commons, CC BY-SA 4.0. Fuente del texto: Wikipedia, «Ángel arcabucero» (inglés) y «Ángeles arcabuceros» (español)."
       }
-     ]
+     ],
+     "subtitle": "Ángeles arcabuceros"
     },
     "zadquiel-dei": {
      "text": "El ángel Zadquiel se desplaza en un terreno imposible entre la misericordia y la muerte. Su libertad se traduce en disidencia. La figura encarna el arquetipo desde una clara voluntad de empoderamiento. En su postura no hay lugar para la clemencia; lo que la impulsa es la certeza de que el orden contemporáneo, al igual que los viejos dogmas del pasado, comienza a desmoronarse.",
@@ -2836,7 +2825,8 @@ window.GUIDE = {
        "text": "Ángeles pintados con un arcabuz, una de las primeras armas de fuego, en lugar de una espada, y vestidos como nobles españoles y andinos. El tipo surgió en el Virreinato del Perú, sobre todo en la escuela cuzqueña y sus talleres, en su mayoría indígenas. La serie más completa que se conserva está en la iglesia de Calamarca, a unos 60 km de La Paz.",
        "credit": "Imagen: Asiel Timor Dei, círculo del Maestro de Calamarca, h. 1680, Museo Nacional de Arte, La Paz, vía Wikimedia Commons, dominio público. Fuente del texto: Wikipedia, «Ángel arcabucero» (inglés) y «Ángeles arcabuceros» (español)."
       }
-     ]
+     ],
+     "subtitle": "Ángeles arcabuceros"
     },
     "letters-from-mom": {
      "subtitle": "Sobre «Cartas de mamá» de Julio Cortázar",
@@ -2959,15 +2949,7 @@ window.GUIDE = {
      "hotspots": [
       {
        "title": "El cigarrillo",
-       "text": "En las entrevistas Julio Cortázar casi siempre fumaba: primero se veía una nube de humo y después su cara. Gabriel dio esa misma costumbre a los personajes del cuento. Laura y Luis esperan con ansiedad cada nueva carta de Buenos Aires, y fumar es su manera de matar la ansiedad."
-      }
-     ]
-    },
-    "letters-from-mom-10": {
-     "hotspots": [
-      {
-       "title": "La carta",
-       "text": "En el cuento cada carta de la madre desde Buenos Aires trae inquietud: habla de Nico, que ha muerto, como si siguiera vivo."
+       "text": "En las entrevistas Julio Cortázar casi siempre fumaba: primero se veía una nube de humo y después su cara. Gabriel trasladó esa misma costumbre a los personajes del cuento. Laura y Luis esperan con ansiedad cada nueva carta de Buenos Aires, y fumar es su manera de matar la ansiedad."
       }
      ]
     },
@@ -2976,34 +2958,6 @@ window.GUIDE = {
       {
        "title": "Luz y movimiento",
        "text": "Puntos de luz nítidos en el rostro y mucho desenfoque y movimiento alrededor, para crear una atmósfera onírica. Zadquiel es el ángel de la muerte, por eso, a diferencia de los otros ángeles, tan coloridos, este es oscuro."
-      }
-     ]
-    },
-    "zadquiel-4": {
-     "hotspots": [
-      {
-       "title": "La lágrima",
-       "text": "En algunas fotos, sobre todo las de la pared, aparece una lágrima. Según la lectura de Gabriel, este ángel tiene que quitar vidas humanas por voluntad de Dios, aunque no quiera. La lágrima muestra ese conflicto interior."
-      },
-      {
-       "title": "Luz y movimiento",
-       "text": "Puntos de luz nítidos en el rostro y mucho desenfoque y movimiento alrededor, para crear una atmósfera onírica. Zadquiel es el ángel de la muerte, por eso, a diferencia de los otros ángeles, tan coloridos, este es oscuro."
-      }
-     ]
-    },
-    "zadquiel-11": {
-     "hotspots": [
-      {
-       "title": "La lágrima",
-       "text": "En algunas fotos, sobre todo las de la pared, aparece una lágrima. Según la lectura de Gabriel, este ángel tiene que quitar vidas humanas por voluntad de Dios, aunque no quiera. La lágrima muestra ese conflicto interior."
-      },
-      {
-       "title": "Luz y movimiento",
-       "text": "Puntos de luz nítidos en el rostro y mucho desenfoque y movimiento alrededor, para crear una atmósfera onírica. Zadquiel es el ángel de la muerte, por eso, a diferencia de los otros ángeles, tan coloridos, este es oscuro."
-      },
-      {
-       "title": "El arcabuz",
-       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
       }
      ]
     },
@@ -3023,11 +2977,11 @@ window.GUIDE = {
      "hotspots": [
       {
        "title": "El pez",
-       "text": "En el Libro de Tobías un pez salta del río Tigris para atacar al joven Tobías. Rafael le dice que lo atrape y guarde su hiel, que más tarde cura la ceguera de su padre. Por eso Rafael aparece tan a menudo pintado con un pez en la mano."
+       "text": "En el Libro de Tobías un pez salta del río Tigris para atacar al joven Tobías. Rafael le dice que lo atrape y guarde su hiel, que más tarde curará la ceguera de su padre. Por eso Rafael aparece tan a menudo pintado con un pez en la mano."
       },
       {
        "title": "Protector de los enfermos",
-       "text": "Por la curación del Libro de Tobías, Rafael es también el protector de los enfermos. Todavía hoy hay hospitales y clínicas que llevan su nombre."
+       "text": "Por la curación que narra el Libro de Tobías, Rafael es también el protector de los enfermos. Todavía hoy hay hospitales y clínicas que llevan su nombre."
       },
       {
        "title": "El arcabuz",
@@ -3043,11 +2997,11 @@ window.GUIDE = {
      "hotspots": [
       {
        "title": "El pez",
-       "text": "En el Libro de Tobías un pez salta del río Tigris para atacar al joven Tobías. Rafael le dice que lo atrape y guarde su hiel, que más tarde cura la ceguera de su padre. Por eso Rafael aparece tan a menudo pintado con un pez en la mano."
+       "text": "En el Libro de Tobías un pez salta del río Tigris para atacar al joven Tobías. Rafael le dice que lo atrape y guarde su hiel, que más tarde curará la ceguera de su padre. Por eso Rafael aparece tan a menudo pintado con un pez en la mano."
       },
       {
        "title": "Protector de los enfermos",
-       "text": "Por la curación del Libro de Tobías, Rafael es también el protector de los enfermos. Todavía hoy hay hospitales y clínicas que llevan su nombre."
+       "text": "Por la curación que narra el Libro de Tobías, Rafael es también el protector de los enfermos. Todavía hoy hay hospitales y clínicas que llevan su nombre."
       },
       {
        "title": "El arcabuz",
@@ -3071,31 +3025,11 @@ window.GUIDE = {
       }
      ]
     },
-    "letiel-7": {
-     "hotspots": [
-      {
-       "title": "Las alas",
-       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
-      },
-      {
-       "title": "El arcabuz",
-       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
-      }
-     ]
-    },
     "ophelia-hero": {
      "hotspots": [
       {
-       "title": "En película",
+       "title": "Fotografía en película",
        "text": "La mayoría de las fotos se tomaron en película de 35 mm con una Yashica FX-3, una cámara que la madre de Gabriel compró en un viaje a España en 1983. La usa desde su juventud y sabe exactamente qué esperar de ella."
-      }
-     ]
-    },
-    "ophelia-4": {
-     "hotspots": [
-      {
-       "title": "El horizonte invertido",
-       "text": "En muchas de las fotos el horizonte está al revés. Te sitúa bajo el agua, compartiendo el punto de vista de Ofelia y su dolor."
       }
      ]
     },
@@ -3104,22 +3038,6 @@ window.GUIDE = {
       {
        "title": "El tenedor",
        "text": "Un tenedor de alto contraste sobre fondo rojo. Para Gabriel resume toda la historia: no hace falta ver sangre ni nada crudo, deja espacio a la imaginación."
-      }
-     ]
-    },
-    "saturn-12": {
-     "hotspots": [
-      {
-       "title": "Traje y manos sucias",
-       "text": "El hombre lleva traje, pero tiene las manos y la cara sucias: la gente poderosa puede estar muy sucia por dentro. Gabriel relaciona el cuadro de Goya con las élites actuales, que harán lo que sea por mantenerse en el poder."
-      }
-     ]
-    },
-    "saturn-5": {
-     "hotspots": [
-      {
-       "title": "La primera sesión",
-       "text": "Una de las primeras sesiones, que recrea el lenguaje corporal del cuadro de Goya. Después el proyecto fue hacia algo más abstracto y sutil, pero esta sesión era demasiado buena para dejarla fuera."
       }
      ]
     },
@@ -3143,107 +3061,7 @@ window.GUIDE = {
       }
      ]
     },
-    "noche-terrible-2": {
-     "hotspots": [
-      {
-       "title": "Adoquines de Praga",
-       "text": "Gabriel imaginó a la novia abandonada el día de su boda, tirada en la calle: abandonada, desesperada y vulnerable."
-      }
-     ]
-    },
-    "noche-terrible-4": {
-     "hotspots": [
-      {
-       "title": "Lo que queda",
-       "text": "El vestido de novia, el regalo y las flores son todo lo que queda de la boda."
-      },
-      {
-       "title": "Adoquines de Praga",
-       "text": "Gabriel imaginó a la novia abandonada el día de su boda, tirada en la calle: abandonada, desesperada y vulnerable."
-      }
-     ]
-    },
-    "noche-terrible-end1": {
-     "hotspots": [
-      {
-       "title": "Desenfoque y movimiento",
-       "text": "Las fotos de estudio no son nítidas a propósito, llenas de movimiento y desenfoque, como si fueran imágenes de los años treinta, cuando se escribió el cuento."
-      }
-     ]
-    },
-    "letters-from-mom-2": {
-     "hotspots": [
-      {
-       "title": "El cigarrillo",
-       "text": "En las entrevistas Julio Cortázar casi siempre fumaba: primero se veía una nube de humo y después su cara. Gabriel dio esa misma costumbre a los personajes del cuento. Laura y Luis esperan con ansiedad cada nueva carta de Buenos Aires, y fumar es su manera de matar la ansiedad."
-      }
-     ]
-    },
-    "letters-from-mom-8": {
-     "hotspots": [
-      {
-       "title": "La carta",
-       "text": "En el cuento cada carta de la madre desde Buenos Aires trae inquietud: habla de Nico, que ha muerto, como si siguiera vivo."
-      }
-     ]
-    },
-    "zadquiel-1": {
-     "hotspots": [
-      {
-       "title": "Luz y movimiento",
-       "text": "Puntos de luz nítidos en el rostro y mucho desenfoque y movimiento alrededor, para crear una atmósfera onírica. Zadquiel es el ángel de la muerte, por eso, a diferencia de los otros ángeles, tan coloridos, este es oscuro."
-      },
-      {
-       "title": "El arcabuz",
-       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
-      }
-     ]
-    },
-    "zadquiel-2": {
-     "hotspots": [
-      {
-       "title": "El arcabuz",
-       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
-      }
-     ]
-    },
-    "zadquiel-3": {
-     "hotspots": [
-      {
-       "title": "El arcabuz",
-       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
-      }
-     ]
-    },
-    "zadquiel-6": {
-     "hotspots": [
-      {
-       "title": "El arcabuz",
-       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
-      }
-     ]
-    },
-    "zadquiel-9": {
-     "hotspots": [
-      {
-       "title": "Luz y movimiento",
-       "text": "Puntos de luz nítidos en el rostro y mucho desenfoque y movimiento alrededor, para crear una atmósfera onírica. Zadquiel es el ángel de la muerte, por eso, a diferencia de los otros ángeles, tan coloridos, este es oscuro."
-      },
-      {
-       "title": "El arcabuz",
-       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
-      }
-     ]
-    },
     "raphael-1": {
-     "hotspots": [
-      {
-       "title": "El arcabuz",
-       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
-      }
-     ]
-    },
-    "raphael-2": {
      "hotspots": [
       {
        "title": "El arcabuz",
@@ -3264,118 +3082,6 @@ window.GUIDE = {
       {
        "title": "Colores tierra",
        "text": "Rafael es el ángel de los viajeros, por eso Gabriel lo vistió con colores tierra, marrones claros y tonos desaturados, como si fuera de excursión."
-      }
-     ]
-    },
-    "letiel-5": {
-     "hotspots": [
-      {
-       "title": "Las alas",
-       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
-      },
-      {
-       "title": "Luz y sombra",
-       "text": "Letiel es uno de los ángeles arcabuceros más coloridos, pero Gabriel jugó con un fuerte contraste de luz y sombra para hacerlo lo más oscuro posible."
-      },
-      {
-       "title": "El arcabuz",
-       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
-      }
-     ]
-    },
-    "letiel-8": {
-     "hotspots": [
-      {
-       "title": "Las alas",
-       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
-      },
-      {
-       "title": "El arcabuz",
-       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
-      }
-     ]
-    },
-    "letiel-dei11944-1": {
-     "hotspots": [
-      {
-       "title": "Las alas",
-       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
-      }
-     ]
-    },
-    "letiel-dei12289-1": {
-     "hotspots": [
-      {
-       "title": "Las alas",
-       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
-      },
-      {
-       "title": "Luz y sombra",
-       "text": "Letiel es uno de los ángeles arcabuceros más coloridos, pero Gabriel jugó con un fuerte contraste de luz y sombra para hacerlo lo más oscuro posible."
-      },
-      {
-       "title": "El arcabuz",
-       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
-      }
-     ]
-    },
-    "letiel-dei-outdoor-337-1": {
-     "hotspots": [
-      {
-       "title": "Las alas",
-       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
-      },
-      {
-       "title": "El arcabuz",
-       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
-      }
-     ]
-    },
-    "ophelia-5": {
-     "hotspots": [
-      {
-       "title": "El horizonte invertido",
-       "text": "En muchas de las fotos el horizonte está al revés. Te sitúa bajo el agua, compartiendo el punto de vista de Ofelia y su dolor."
-      }
-     ]
-    },
-    "ophelia-30-08-2024-2024-833": {
-     "hotspots": [
-      {
-       "title": "El horizonte invertido",
-       "text": "En muchas de las fotos el horizonte está al revés. Te sitúa bajo el agua, compartiendo el punto de vista de Ofelia y su dolor."
-      }
-     ]
-    },
-    "saturn-1": {
-     "hotspots": [
-      {
-       "title": "El tenedor",
-       "text": "Un tenedor de alto contraste sobre fondo rojo. Para Gabriel resume toda la historia: no hace falta ver sangre ni nada crudo, deja espacio a la imaginación."
-      }
-     ]
-    },
-    "saturn-2": {
-     "hotspots": [
-      {
-       "title": "Traje y manos sucias",
-       "text": "El hombre lleva traje, pero tiene las manos y la cara sucias: la gente poderosa puede estar muy sucia por dentro. Gabriel relaciona el cuadro de Goya con las élites actuales, que harán lo que sea por mantenerse en el poder."
-      }
-     ]
-    },
-    "saturn-4": {
-     "hotspots": [
-      {
-       "title": "La primera sesión",
-       "text": "Una de las primeras sesiones, que recrea el lenguaje corporal del cuadro de Goya. Después el proyecto fue hacia algo más abstracto y sutil, pero esta sesión era demasiado buena para dejarla fuera."
-      }
-     ]
-    },
-    "saturn-7": {
-     "hotspots": [
-      {
-       "title": "La primera sesión",
-       "text": "Una de las primeras sesiones, que recrea el lenguaje corporal del cuadro de Goya. Después el proyecto fue hacia algo más abstracto y sutil, pero esta sesión era demasiado buena para dejarla fuera."
       }
      ]
     },
@@ -3475,11 +3181,251 @@ window.GUIDE = {
       }
      ]
     },
-    "noche-terrible-1": {
+    "letters-from-mom-02": {
+     "hotspots": [
+      {
+       "title": "El cigarrillo",
+       "text": "En las entrevistas Julio Cortázar casi siempre fumaba: primero se veía una nube de humo y después su cara. Gabriel trasladó esa misma costumbre a los personajes del cuento. Laura y Luis esperan con ansiedad cada nueva carta de Buenos Aires, y fumar es su manera de matar la ansiedad."
+      }
+     ]
+    },
+    "letters-from-mom-05": {
+     "hotspots": [
+      {
+       "title": "La carta",
+       "text": "En el cuento cada carta de la madre desde Buenos Aires trae inquietud: habla de Nico, que ha muerto, como si siguiera vivo."
+      }
+     ]
+    },
+    "letters-from-mom-06": {
+     "hotspots": [
+      {
+       "title": "La carta",
+       "text": "En el cuento cada carta de la madre desde Buenos Aires trae inquietud: habla de Nico, que ha muerto, como si siguiera vivo."
+      }
+     ]
+    },
+    "zadquiel-dei-01": {
+     "hotspots": [
+      {
+       "title": "Luz y movimiento",
+       "text": "Puntos de luz nítidos en el rostro y mucho desenfoque y movimiento alrededor, para crear una atmósfera onírica. Zadquiel es el ángel de la muerte, por eso, a diferencia de los otros ángeles, tan coloridos, este es oscuro."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "zadquiel-dei-02": {
+     "hotspots": [
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "zadquiel-dei-03": {
+     "hotspots": [
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "zadquiel-dei-04": {
+     "hotspots": [
+      {
+       "title": "La lágrima",
+       "text": "En algunas fotos, sobre todo las de la pared, aparece una lágrima. Según la lectura de Gabriel, este ángel tiene que quitar vidas humanas por voluntad de Dios, aunque no quiera. La lágrima muestra ese conflicto interior."
+      },
+      {
+       "title": "Luz y movimiento",
+       "text": "Puntos de luz nítidos en el rostro y mucho desenfoque y movimiento alrededor, para crear una atmósfera onírica. Zadquiel es el ángel de la muerte, por eso, a diferencia de los otros ángeles, tan coloridos, este es oscuro."
+      }
+     ]
+    },
+    "zadquiel-dei-05": {
+     "hotspots": [
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "zadquiel-dei-06": {
+     "hotspots": [
+      {
+       "title": "La lágrima",
+       "text": "En algunas fotos, sobre todo las de la pared, aparece una lágrima. Según la lectura de Gabriel, este ángel tiene que quitar vidas humanas por voluntad de Dios, aunque no quiera. La lágrima muestra ese conflicto interior."
+      },
+      {
+       "title": "Luz y movimiento",
+       "text": "Puntos de luz nítidos en el rostro y mucho desenfoque y movimiento alrededor, para crear una atmósfera onírica. Zadquiel es el ángel de la muerte, por eso, a diferencia de los otros ángeles, tan coloridos, este es oscuro."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "zadquiel-dei-07": {
+     "hotspots": [
+      {
+       "title": "Luz y movimiento",
+       "text": "Puntos de luz nítidos en el rostro y mucho desenfoque y movimiento alrededor, para crear una atmósfera onírica. Zadquiel es el ángel de la muerte, por eso, a diferencia de los otros ángeles, tan coloridos, este es oscuro."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "raphael-32": {
+     "hotspots": [
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "letiel-dei-02": {
+     "hotspots": [
+      {
+       "title": "Las alas",
+       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "letiel-dei-03": {
+     "hotspots": [
+      {
+       "title": "Las alas",
+       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "letiel-dei-04": {
+     "hotspots": [
+      {
+       "title": "Las alas",
+       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "letiel-dei-05": {
+     "hotspots": [
+      {
+       "title": "Las alas",
+       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
+      }
+     ]
+    },
+    "letiel-dei-06": {
+     "hotspots": [
+      {
+       "title": "Las alas",
+       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
+      },
+      {
+       "title": "Luz y sombra",
+       "text": "Letiel es uno de los ángeles arcabuceros más coloridos, pero Gabriel jugó con un fuerte contraste de luz y sombra para hacerlo lo más oscuro posible."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "letiel-dei-07": {
+     "hotspots": [
+      {
+       "title": "Las alas",
+       "text": "En la pintura original las alas de Letiel son muy coloridas. Gabriel las relacionó con las aves de la región, loros de plumas vivas, y usó una paleta muy colorida para este ángel."
+      },
+      {
+       "title": "Luz y sombra",
+       "text": "Letiel es uno de los ángeles arcabuceros más coloridos, pero Gabriel jugó con un fuerte contraste de luz y sombra para hacerlo lo más oscuro posible."
+      },
+      {
+       "title": "El arcabuz",
+       "text": "Como los ángeles arcabuceros pintados en el Perú y la Bolivia coloniales, los ángeles de Gabriel llevan un arcabuz, una de las primeras armas de fuego, en lugar de una espada."
+      }
+     ]
+    },
+    "ophelia-02": {
+     "hotspots": [
+      {
+       "title": "El horizonte invertido",
+       "text": "En muchas de las fotos el horizonte está al revés. Sitúa al espectador bajo el agua, compartiendo el punto de vista de Ofelia y su dolor."
+      }
+     ]
+    },
+    "saturn-01": {
+     "hotspots": [
+      {
+       "title": "El tenedor",
+       "text": "Un tenedor de alto contraste sobre fondo rojo. Para Gabriel resume toda la historia: no hace falta ver sangre ni nada crudo, deja espacio a la imaginación."
+      }
+     ]
+    },
+    "saturn-02": {
+     "hotspots": [
+      {
+       "title": "Traje y manos sucias",
+       "text": "El hombre lleva traje, pero tiene las manos y la cara sucias: la gente poderosa puede estar muy sucia por dentro. Gabriel relaciona el cuadro de Goya con las élites actuales, que harán lo que sea por mantenerse en el poder."
+      }
+     ]
+    },
+    "saturn-04": {
+     "hotspots": [
+      {
+       "title": "La primera sesión",
+       "text": "Una de las primeras sesiones, que recrea el lenguaje corporal del cuadro de Goya. Después el proyecto derivó hacia algo más abstracto y sutil, pero esta sesión era demasiado buena para dejarla fuera."
+      }
+     ]
+    },
+    "saturn-05": {
+     "hotspots": [
+      {
+       "title": "La primera sesión",
+       "text": "Una de las primeras sesiones, que recrea el lenguaje corporal del cuadro de Goya. Después el proyecto derivó hacia algo más abstracto y sutil, pero esta sesión era demasiado buena para dejarla fuera."
+      }
+     ]
+    },
+    "saturn-06": {
+     "hotspots": [
+      {
+       "title": "La primera sesión",
+       "text": "Una de las primeras sesiones, que recrea el lenguaje corporal del cuadro de Goya. Después el proyecto derivó hacia algo más abstracto y sutil, pero esta sesión era demasiado buena para dejarla fuera."
+      }
+     ]
+    },
+    "saturn-07": {
+     "hotspots": [
+      {
+       "title": "Traje y manos sucias",
+       "text": "El hombre lleva traje, pero tiene las manos y la cara sucias: la gente poderosa puede estar muy sucia por dentro. Gabriel relaciona el cuadro de Goya con las élites actuales, que harán lo que sea por mantenerse en el poder."
+      }
+     ]
+    },
+    "noche-terrible-01": {
      "hotspots": [
       {
        "title": "Adoquines de Praga",
-       "text": "Gabriel imaginó a la novia abandonada el día de su boda, tirada en la calle: abandonada, desesperada y vulnerable."
+       "text": "Gabriel imaginó a la novia, que se quedó sola el día de su boda, tirada en la calle: abandonada, desesperada y vulnerable."
       },
       {
        "title": "Lo que queda",
@@ -3487,7 +3433,27 @@ window.GUIDE = {
       }
      ]
     },
-    "noche-terrible-end3": {
+    "noche-terrible-02": {
+     "hotspots": [
+      {
+       "title": "Adoquines de Praga",
+       "text": "Gabriel imaginó a la novia, que se quedó sola el día de su boda, tirada en la calle: abandonada, desesperada y vulnerable."
+      }
+     ]
+    },
+    "noche-terrible-04": {
+     "hotspots": [
+      {
+       "title": "Lo que queda",
+       "text": "El vestido de novia, el regalo y las flores son todo lo que queda de la boda."
+      },
+      {
+       "title": "Adoquines de Praga",
+       "text": "Gabriel imaginó a la novia, que se quedó sola el día de su boda, tirada en la calle: abandonada, desesperada y vulnerable."
+      }
+     ]
+    },
+    "noche-terrible-05": {
      "hotspots": [
       {
        "title": "Desenfoque y movimiento",
@@ -3495,7 +3461,15 @@ window.GUIDE = {
       }
      ]
     },
-    "noche-terrible-end4": {
+    "noche-terrible-06": {
+     "hotspots": [
+      {
+       "title": "Desenfoque y movimiento",
+       "text": "Las fotos de estudio no son nítidas a propósito, llenas de movimiento y desenfoque, como si fueran imágenes de los años treinta, cuando se escribió el cuento."
+      }
+     ]
+    },
+    "noche-terrible-07": {
      "hotspots": [
       {
        "title": "Desenfoque y movimiento",
