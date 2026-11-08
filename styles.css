@@ -690,3 +690,14 @@ html:lang(cs) {
   --display: "tp-cz-display", Georgia, serif;
   --body: "tp-cz-body", "Helvetica Neue", Arial, sans-serif;
 }
+
+/* Close buttons: one drawn X, centred */
+.fs-close, .sheet-close, .iv-close { display: inline-grid; place-items: center; line-height: 0; }
+/* Side panel: every detail open */
+.fs-list.open li { border-top: 1px solid var(--line); padding-bottom: 12px; }
+.fs-list.open button { border-top: 0; padding: 14px 0 6px; min-height: 0; }
+.fs-list.open .t { font-size: 18px; }
+.fs-list.open .note p { margin: 0 0 .5em; font-size: 15px; line-height: 1.5; color: var(--ash); }
+.fs-list.open li.active .t { text-decoration: underline; text-underline-offset: 4px; }
+.fs-list.open li.active .note p { color: inherit; }
+.fs.has-hs .sheet.listing { overflow-y: auto; }

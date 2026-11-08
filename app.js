@@ -502,15 +502,22 @@
   // selected the panel lists the details. Elsewhere it is an overlay that hides when closed.
   var sideMq = matchMedia("(min-width: 900px) and (orientation: landscape)");
   function sideMode() { return sideMq.matches && curHs.length > 0; }
-  function showList() {
+  // On the side panel every detail is shown open: its title and its text. A tap on a dot
+  // (or on an item) marks that item and scrolls it into view.
+  function showList(active) {
     $("sheetTitle").textContent = T.inThisPhoto;
-    $("sheetText").innerHTML = '<ul class="fs-list">' + curHs.map(function (p, i) {
-      return '<li><button type="button" data-i="' + i + '">' + (p.preview ? sk([60]) : esc(p.title)) + "</button></li>";
+    $("sheetText").innerHTML = '<ul class="fs-list open">' + curHs.map(function (p, i) {
+      return '<li' + (i === active ? ' class="active"' : "") + '><button type="button" data-i="' + i + '">' +
+        (p.preview ? sk([60]) : '<span class="t">' + esc(p.title) + "</span>") + "</button>" +
+        (p.preview ? sk([100, 94, 70]) : p.text ? '<div class="note">' + paras(p.text) + "</div>" : "") + "</li>";
     }).join("") + "</ul>";
     sheet.hidden = false; sheet.classList.add("listing"); fit();
+    [].forEach.call(fsDots.children, function (d, k) { d.classList.toggle("active", k === active); });
+    if (active != null) { var li = $("sheetText").querySelectorAll("li")[active]; if (li) li.scrollIntoView({ block: "nearest" }); }
   }
   sideMq.addEventListener("change", function () { if (cur) { fit(); if (sheet.hidden || sheet.classList.contains("listing")) hideSheet(); } });
   function showSheet(i) {
+    if (cur && sideMode() && dotsOn) { showList(i); return; }
     var p = curHs[i];
     sheet.classList.remove("listing");
     if (p.preview) { $("sheetTitle").innerHTML = sk([55]); $("sheetText").innerHTML = sk([100, 94, 70]); }
@@ -520,7 +527,7 @@
     fit();
   }
   function hideSheet() {
-    if (cur && sideMode() && dotsOn) { showList(); [].forEach.call(fsDots.children, function (d) { d.classList.remove("active"); }); return; }
+    if (cur && sideMode() && dotsOn) { showList(null); return; }
     sheet.hidden = true;
     [].forEach.call(fsDots.children, function (d) { d.classList.remove("active"); });
     fit();
