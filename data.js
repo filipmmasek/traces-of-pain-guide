@@ -2013,6 +2013,7 @@ window.GUIDE = {
    },
    "projects": {
     "raphael-dei": {
+     "name": "Raphael Dei",
      "text": "Archanděl léčitel a ochránce poutníků se zjevuje bez jakéhokoli soucitu. Snímek se zaměřuje na napětí roucha a na téměř neznatelně pootevřená ústa. Synkretismus tu nabývá mezní podoby smyslnosti, vnitřního sváru identity zrozené z po sobě jdoucích kulturních vrstev: žena, která se odmítá nechat spoutat zeměpisnými souřadnicemi. Raphael už neléčí bolest poutí; napodobuje toho, kdo nejprve potřebuje trýzeň rozjitřit, aby ji poté utišil.",
      "inspirations": [
       {
@@ -2034,6 +2035,7 @@ window.GUIDE = {
      "subtitle": "Andělé s arkebuzami"
     },
     "letiel-dei": {
+     "name": "Letiel Dei",
      "text": "Letiel na plátně zosobňuje oxymóron: svírá arkebuzu s tak nadpozemskou jemností, jako by se nacházel uprostřed tvůrčího aktu. Na fotografii však tato lehkost působí spíše jako skrytá hrozba. Postava jedná ve jménu Božím. Avšak hra světla a stínu a její lhostejný pohled působí provokativně. Nedrží zbraň jako vykonavatel Božího příkazu, nýbrž jako ten, kdo si osobuje právo o výstřelu rozhodnout. Křídla už neevokují let, ale těžce visí z ramen jako zrezivělé brnění.",
      "inspirations": [
       {
@@ -2054,6 +2056,7 @@ window.GUIDE = {
      "subtitle": "Andělé s arkebuzami"
     },
     "zadquiel-dei": {
+     "name": "Zadquiel Dei",
      "text": "Anděl Zadquiel se zmítá mezi milosrdenstvím a smrtí. Jeho svoboda se přetavuje ve schizma. Je zosobněním archetypální postavy s jasnou vůlí k sebeurčení. V jeho postoji není místo pro laskavost; naopak, jeho pohání přesvědčení, že současný řád se začíná hroutit tak jako dávná dogmata časů minulých.",
      "inspirations": [
       {
@@ -2068,6 +2071,7 @@ window.GUIDE = {
      "subtitle": "Andělé s arkebuzami"
     },
     "letters-from-mom": {
+     "name": "Kouř opětované lásky",
      "subtitle": "O povídce „Maminčiny dopisy“ Julia Cortázara",
      "quote": "A vnitřní neklid, potřeba bezodkladně napsat odpověď, jako když znovu zavřeme dveře.",
      "quoteBy": "Julio Cortázar",
@@ -2081,6 +2085,7 @@ window.GUIDE = {
      ]
     },
     "terrible-night": {
+     "name": "Trpké líbánky",
      "subtitle": "O povídce „Strašná noc“ Roberta Arlta",
      "quote": "Ve tři odpoledne se Julia, vleže na posteli, s očima jako angorák, kapesníkem vymáchaným v octě a se dvěma plátky brambor na spáncích, nechá utěšovat svými přítelkyněmi.",
      "quoteBy": "Roberto Arlt",
@@ -2095,6 +2100,7 @@ window.GUIDE = {
      ]
     },
     "ophelia": {
+     "name": "Vodní zrcadla",
      "subtitle": "O obrazu *Ofélie* Johna E. Millaise",
      "quote": "Oféliino utonutí funguje jako konceptuální spouštěč této výstavy: výjimka, která potvrzuje bolest.",
      "text": "Na slavném prerafaelitském plátně Johna Everetta Millaise je smrt Shakespearovy postavy pojata jako lyrická kapitulace, estetické rozplynutí těla v proudu. Fotografická reinterpretace zbavuje scénu této romantické umírněnosti, aby vzbudila podezření. Pohled z ptačí perspektivy odmítá mechanickou nezúčastněnost dronu a zkoumá v paměti fotografického umění starší, řemeslné způsoby, jak dosáhnout odstupu. Voda už není poetickým útočištěm, stává se vězením. Ofélie se nepropadá do šílenství, spíš jako by natrvalo ustrnula v nesnesitelném okamžiku jasnozřivosti.\n\nVodou nasáklé krajky a vlasy vznášející se na hladině ztrácejí auru tragické krásy a proměňují se v pouhý záznam utonutí. Jakmile mizí odstup, záběr nutí diváka, aby se spolu s ní potopil v průsečíku odrazů a pozastavil čas těsně před koncem.",
@@ -2112,6 +2118,7 @@ window.GUIDE = {
      ]
     },
     "saturn": {
+     "name": "Olověné hodiny",
      "subtitle": "O Goyově obrazu *Saturn požírající svého syna*",
      "text": "Tato série fotografií přesouvá mytologický kanibalismus do kanceláří nynější beztrestnosti. Gabriel Matula obléká monstrum do obleku a kravaty. Hledáček objektivu míří na subjekt vyznačující se ledově chladnou, bojovnou elegancí, který zosobňuje tichou dravost dnešních elit uprostřed opotřebovaných vidliček a zátiší. K vyvolání provokativního dojmu už není třeba žádné další zjevné znetvoření; bohatě stačí děsivá úspornost těla, jež se živí zranitelností druhých, aby si zachovalo svou nadvládu.\n\nTo, co bylo u Goyi výkřikem primitivního děsu, zde dostává podobu platnosti systému, který se odhaluje v celé své absurditě: požírá budoucnost, aby uchoval status quo. Jinak řečeno, čas požírá subjekt, ale ještě předtím subjekt zcela vymazává budoucnost.",
      "inspirations": [
@@ -2124,6 +2131,7 @@ window.GUIDE = {
      ]
     },
     "the-duel": {
+     "name": "Duel",
      "inspirations": [
       {
        "title": "Souboj s klacky (Duelo a garrotazos)",

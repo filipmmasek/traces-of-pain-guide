@@ -101,7 +101,11 @@
       return '<span style="width:' + w + '%"></span>';
     }).join("") + "</div>";
   }
+  // Photo details ("In this photo") are switched off until their texts are approved (filip, Nov 9).
+  // Set to true to show them again: the list on project pages, the dots and the details in full screen.
+  var SHOW_PHOTO_DETAILS = false;
   function hotspotsOf(w) {
+    if (!SHOW_PHOTO_DETAILS) return [];
     if (w.hotspots.length) return w.hotspots;
     if (P && P.hotspots[w.id]) return P.hotspots[w.id].map(function (p) { return { x: p.x, y: p.y, preview: true }; });
     return [];
