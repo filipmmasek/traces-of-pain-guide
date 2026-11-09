@@ -1,0 +1,10 @@
+// Cloudflare Workers Builds config for tracesofpain.com (static site, no Worker code).
+// "previews" is required by `wrangler preview`, which Cloudflare runs for branch / pull request builds.
+{
+  "name": "traces-of-pain-guide",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "."
+  },
+  "previews": {}
+}

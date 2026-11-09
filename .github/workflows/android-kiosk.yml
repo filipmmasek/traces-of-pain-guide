@@ -1,0 +1,70 @@
+# Builds the Android kiosk app for the venue tablets, with the current website inside it.
+# Download: https://github.com/filipmmasek/traces-of-pain-guide/releases/download/kiosk-app/traces-of-pain-kiosk.apk
+name: Android kiosk app
+
+on:
+  push:
+    branches: [main, "claude/**"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: android-kiosk-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: "8.14.3"
+
+      - name: Put the website inside the app
+        run: python3 android/bundle_site.py
+
+      - name: Signing key
+        env:
+          KIOSK_KEYSTORE: ${{ secrets.KIOSK_KEYSTORE }}
+        run: |
+          if [ -n "$KIOSK_KEYSTORE" ]; then
+            echo "$KIOSK_KEYSTORE" | base64 -d > "$RUNNER_TEMP/kiosk.keystore"
+            echo "KIOSK_KEYSTORE_FILE=$RUNNER_TEMP/kiosk.keystore" >> "$GITHUB_ENV"
+          else
+            echo "::warning::Secret KIOSK_KEYSTORE is not set: this APK uses a throwaway key and cannot be installed over an older one."
+          fi
+
+      - name: Build APK
+        env:
+          VERSION_CODE: ${{ github.run_number }}
+          KIOSK_KEYSTORE_PASSWORD: ${{ secrets.KIOSK_KEYSTORE_PASSWORD }}
+        run: gradle -p android --no-daemon assembleRelease
+
+      - name: Name the APK
+        run: cp android/app/build/outputs/apk/release/app-release.apk traces-of-pain-kiosk.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: traces-of-pain-kiosk-${{ github.run_number }}
+          path: traces-of-pain-kiosk.apk
+          retention-days: 30
+
+      - name: Publish the download link
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete kiosk-app --yes --cleanup-tag || true
+          gh release create kiosk-app traces-of-pain-kiosk.apk \
+            --target "${{ github.sha }}" \
+            --title "Traces of Pain kiosk app 1.0.${{ github.run_number }}" \
+            --notes "Android kiosk app for the venue tablets, built from ${GITHUB_REF_NAME} at ${GITHUB_SHA::7}. Install steps: android/README.md"
