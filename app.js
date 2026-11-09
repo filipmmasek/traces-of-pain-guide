@@ -223,7 +223,8 @@
   function qrBlock(p) {
     if (typeof window.qrcode !== "function") return "";
     if (!KIOSK) try { if (sessionStorage.getItem("tp-from-qr")) return ""; } catch (e) {}
-    var url = location.origin + location.pathname + "?qr=1#project-" + p.id;
+    // Always the main site, even on the GitHub Pages copy (filip, Nov 9).
+    var url = "https://tracesofpain.com/?qr=1#project-" + p.id;
     var q = window.qrcode(0, "M"); q.addData(url); q.make();
     // Light modules drawn on the dark page (an inverted code), so it sits quietly in the layout.
     var n = q.getModuleCount(), m = 2, d = "";
