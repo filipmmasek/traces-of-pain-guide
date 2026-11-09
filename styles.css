@@ -231,7 +231,6 @@ body.on-work main { padding-bottom: 120px; }
 .credits-list li { border-top: 1px solid var(--line); padding-top: 14px; }
 
 /* Password screen (gate.js) */
-html:not(.unlocked) body > :not(#gate) { display: none !important; }
 #gate { position: fixed; inset: 0; z-index: 50; display: grid; place-items: center; padding: 16px; background: var(--wall); }
 .gate-box { width: min(380px, 100%); display: grid; gap: 14px; }
 .gate-box h1 { font-size: clamp(44px, 9vw, 72px); line-height: .95; margin-bottom: 18px; }
@@ -611,6 +610,9 @@ a, button { transition: color .25s var(--ease), background-color .25s var(--ease
 .collab-list .collab { display: grid; grid-template-columns: minmax(140px, 1fr) 2fr; gap: 16px; align-items: baseline; padding: 14px 0; text-decoration: none; color: inherit; }
 .collab-list .role { font: 400 11px/1.3 var(--body); letter-spacing: .18em; text-transform: uppercase; color: var(--ash); }
 .collab-list .name { font: 300 19px/1.3 var(--body); }
+/* Names are Czech (š, č, ý, ř...) in every language: the Adobe DIN 2014 kit lacks those letters,
+   so the whole list of names uses the Czech look-alike (Barlow), never a mix of two fonts. */
+.collab-list .name { font-family: "tp-cz-body", "Helvetica Neue", Arial, sans-serif; }
 .collab-list a.collab .name::after { content: " \2197\FE0E"; font-size: 13px; color: var(--ash); }
 @media (max-width: 560px) { .collab-list .collab { grid-template-columns: 1fr; gap: 4px; } }
 

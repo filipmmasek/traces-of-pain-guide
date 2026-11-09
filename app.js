@@ -219,15 +219,12 @@
     return '<a' + (dir === "next" ? ' class="next"' : "") + ' href="#project-' + p.id + '">' + (dir === "prev" ? img + txt : txt + img) + "</a>";
   }
 
-  // QR code that opens this exact photo page on a visitor's phone. While the preview password is on,
-  // the code carries the key so visitors skip the password screen.
+  // QR code that opens this exact photo page on a visitor's phone. ?k=1 marks the visit as coming
+  // from a QR code (gate.js), so the phone does not show a QR of its own.
   function qrBlock(p) {
     if (typeof window.qrcode !== "function") return "";
     if (!KIOSK) try { if (sessionStorage.getItem("tp-from-qr")) return ""; } catch (e) {}
-    var url = location.origin + location.pathname, key = null;
-    try { key = localStorage.getItem("tp-key"); } catch (e) {}
-    if (key) url += "?k=" + encodeURIComponent(key);
-    url += "#project-" + p.id;
+    var url = location.origin + location.pathname + "?k=1#project-" + p.id;
     var q = window.qrcode(0, "M"); q.addData(url); q.make();
     // Light modules drawn on the dark page (an inverted code), so it sits quietly in the layout.
     var n = q.getModuleCount(), m = 2, d = "";
