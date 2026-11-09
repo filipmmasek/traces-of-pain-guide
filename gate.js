@@ -1,8 +1,9 @@
-// Start-up flags. The site is public (no password since Nov 9, 2026).
+// Kiosk mode and QR-visitor detection. (This file used to hold the preview password screen, now removed.)
 (function () {
   "use strict";
+  var HASH = "5c78c8e7160e76ba9b6c41f74247bb7ba4887f5c06faecd6b9a009785b248c72";
+  var KEY = "tp-unlocked";
   var root = document.documentElement;
-  root.classList.add("unlocked");
   // Kiosk mode for the venue tablets: open the site once with ?kiosk=1 (?kiosk=0 turns it off).
   // The tablet remembers it, along with the page it was opened on, which it returns to when idle.
   try {
@@ -16,13 +17,13 @@
       localStorage.removeItem("tp-kiosk"); localStorage.removeItem("tp-kiosk-home"); localStorage.removeItem("tp-kiosk-lang");
     }
     if (localStorage.getItem("tp-kiosk") === "1") root.classList.add("kiosk");
-    // Left over from the old password screen.
-    localStorage.removeItem("tp-key"); localStorage.removeItem("tp-unlocked");
   } catch (e) {}
   // Visitors who arrive by scanning a QR code are on their own phone: remember that so no QR is shown.
-  // Older printed or cached codes carry ?k=<old password>: still counts as a QR visit, then tidy the URL.
-  if (/[?&]k=/.test(location.search)) {
+  // (?qr=1 on new codes; ?k= is what older codes carried while the site had a password.)
+  if (/[?&](qr|k)=/.test(location.search)) {
     try { sessionStorage.setItem("tp-from-qr", "1"); } catch (e) {}
     history.replaceState(null, "", location.pathname + location.hash);
   }
+  // The preview password is gone: clear what the old password screen saved.
+  try { localStorage.removeItem("tp-unlocked"); localStorage.removeItem("tp-key"); } catch (e) {}
 })();

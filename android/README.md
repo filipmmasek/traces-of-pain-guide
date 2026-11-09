@@ -83,7 +83,7 @@ Staff menu > **Release tablet after the exhibition**, then uninstall the app nor
 
 - Code: `android/app/src/main/java/com/tracesofpain/kiosk/`. Plain Java, no libraries.
 - The site is served inside the app from its real GitHub Pages address, so local storage, the
-  old `?k=pain` QR flag and the Adobe Fonts domain check behave as on the website.
+  password (passed as `?k=pain`) and the Adobe Fonts domain check behave as on the website.
 - `android/bundle_site.py` copies the site into `assets/site/` with a manifest of git blob ids;
   `SiteStore.included()` must exclude the same files.
 - Signing: the workflow signs with the key in the repository secrets `KIOSK_KEYSTORE` (base64 of a
