@@ -59,12 +59,18 @@ jobs:
           path: traces-of-pain-kiosk.apk
           retention-days: 30
 
+      # Only main publishes the download link, so test builds of branches never replace the real app
+      # and two builds can never race on the same release (that made main's run fail on Nov 10).
       - name: Publish the download link
+        if: github.ref == 'refs/heads/main'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release delete kiosk-app --yes --cleanup-tag || true
-          gh release create kiosk-app traces-of-pain-kiosk.apk \
-            --target "${{ github.sha }}" \
-            --title "Traces of Pain kiosk app 1.0.${{ github.run_number }}" \
-            --notes "Android kiosk app for the venue tablets, built from ${GITHUB_REF_NAME} at ${GITHUB_SHA::7}. Install steps: android/README.md"
+          title="Traces of Pain kiosk app 1.0.${{ github.run_number }}"
+          notes="Android kiosk app for the venue tablets, built from ${GITHUB_REF_NAME} at ${GITHUB_SHA::7}. Install steps: android/README.md"
+          if gh release view kiosk-app >/dev/null 2>&1; then
+            gh release upload kiosk-app traces-of-pain-kiosk.apk --clobber
+            gh release edit kiosk-app --title "$title" --notes "$notes"
+          else
+            gh release create kiosk-app traces-of-pain-kiosk.apk --target "${{ github.sha }}" --title "$title" --notes "$notes"
+          fi
