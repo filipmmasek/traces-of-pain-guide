@@ -2782,6 +2782,7 @@ window.GUIDE = {
    },
    "projects": {
     "raphael-dei": {
+     "name": "Raphael Dei",
      "text": "El arcángel de la medicina y guardián de los viajeros desciende aquí desprovisto de piedad. La imagen se concentra en la tensión del ropaje y en la boca que apenas se entreabre. El sincretismo se vuelve un erotismo fronterizo, la fricción de una identidad nacida de sucesivas capas de migración: una mujer que se niega a ser domesticada por el mapa. Raphael ya no cura el dolor de los caminos; imita el gesto de quien, para calmar el tormento, necesita exacerbarlo.",
      "inspirations": [
       {
@@ -2803,6 +2804,7 @@ window.GUIDE = {
      "subtitle": "Ángeles arcabuceros"
     },
     "letiel-dei": {
+     "name": "Letiel Dei",
      "text": "En la pintura, Letiel encarna un oxímoron: sostiene el arcabuz con una delicadeza irreal, como si se hallara en pleno acto creativo.\n\nEn la foto, esa ligereza se vuelve una amenaza suspendida. La figura opera bajo la sombra de Dios. La provocación reside en ese claroscuro y en la indiferencia de su mirada. Sostiene el arma no como quien cumple un mandato divino, sino como quien se adueña de la posibilidad del disparo. Las plumas ya no imitan el vuelo, pesan sobre los hombros como una armadura oxidada.",
      "inspirations": [
       {
@@ -2823,6 +2825,7 @@ window.GUIDE = {
      "subtitle": "Ángeles arcabuceros"
     },
     "zadquiel-dei": {
+     "name": "Zadquiel Dei",
      "text": "El ángel Zadquiel se desplaza en un terreno imposible entre la misericordia y la muerte. Su libertad se traduce en disidencia. La figura encarna el arquetipo desde una clara voluntad de empoderamiento. En su postura no hay lugar para la clemencia; lo que la impulsa es la certeza de que el orden contemporáneo, al igual que los viejos dogmas del pasado, comienza a desmoronarse.",
      "inspirations": [
       {
@@ -2837,6 +2840,7 @@ window.GUIDE = {
      "subtitle": "Ángeles arcabuceros"
     },
     "letters-from-mom": {
+     "name": "Humo de amor correspondido",
      "subtitle": "Sobre «Cartas de mamá» de Julio Cortázar",
      "quote": "Y desazón, y una necesidad de contestar enseguida, como quien vuelve a cerrar una puerta.",
      "quoteBy": "Julio Cortázar",
@@ -2850,6 +2854,7 @@ window.GUIDE = {
      ]
     },
     "terrible-night": {
+     "name": "Luna de hiel",
      "subtitle": "Sobre «Noche terrible» de Roberto Arlt",
      "quote": "A las tres de la tarde, Julia, tendida en la cama; los ojos hinchados como duraznos, un pañuelo empapado de vinagre y dos rodajas de papa en las sienes, recibirá los consuelos de sus amigas.",
      "quoteBy": "Roberto Arlt",
@@ -2864,6 +2869,7 @@ window.GUIDE = {
      ]
     },
     "ophelia": {
+     "name": "Espejos de agua",
      "subtitle": "Sobre la pintura *Ofelia*, de Millais",
      "quote": "El hundimiento de Ofelia funciona como el detonante conceptual de esta muestra: la excepción que confirma la pena.",
      "text": "En el célebre lienzo prerrafaelista de John Everett Millais, la muerte del personaje de Shakespeare se presenta como una capitulación lírica, una disolución estética del cuerpo en la corriente. La reinterpretación fotográfica despoja a la escena de esa complacencia romántica para activar el dispositivo de la sospecha. La perspectiva aérea rehúye la frialdad maquinal del dron y explora en la memoria del oficio métodos más antiguos y artesanales para tomar distancia del suelo.\n\nEl agua deja de ser un refugio poético y se convierte en una cárcel. Más que abandonarse a la locura, Ofelia yace suspendida en un instante intolerable de lucidez. Los encajes empapados y el cabello flotante pierden su aura de belleza trágica para transformarse en el registro de una asfixia. Al anular la distancia, el encuadre obliga al espectador a hundirse con ella en un cruce de reflejos, suspendiendo el tiempo justo antes del fin.",
@@ -2881,6 +2887,7 @@ window.GUIDE = {
      ]
     },
     "saturn": {
+     "name": "Horas de plomo",
      "subtitle": "Sobre la pintura *Saturno devorando a su hijo*, de Goya",
      "text": "Esta serie fotográfica traslada la antropofagia mitológica a los despachos de la impunidad contemporánea. Gabriel Matula viste al monstruo de traje y corbata. Frente a la lente, un sujeto de elegancia gélida y marcial encarna la voracidad silenciosa de las élites actuales entre tenedores sobreexigidos y naturalezas muertas. La provocación ya no necesita de ninguna mutilación explícita; reside en la escalofriante parsimonia de un cuerpo que se alimenta de la vulnerabilidad ajena para prolongar su hegemonía.\n\nLo que en Goya era un grito de horror primitivo, aquí se transforma en la vigencia de un sistema que encarna un gesto absurdo: consumir el porvenir para perpetuar el statu quo. En otras palabras, el tiempo devora al sujeto, pero antes, el sujeto erradica el futuro.",
      "inspirations": [
