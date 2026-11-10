@@ -116,7 +116,7 @@ final class SiteStore {
     }
 
     File tempFile() throws IOException {
-        return File.createTempFile("dl", ".tmp", objDir);
+        return File.createTempFile("download", ".tmp", objDir); // Java needs a prefix of 3+ characters
     }
 
     InputStream open(String path) throws IOException {
