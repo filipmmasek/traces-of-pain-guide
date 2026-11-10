@@ -54,6 +54,8 @@ final class Updater {
     private static final String[] CORE = {
             "index.html", "data.js", "app.js", "gate.js", "styles.css", "qr.html", "vendor/qrcode.js"
     };
+    /** Minutes after a change on GitHub when files that GitHub Pages still does not have are skipped. */
+    private static final long GIVE_UP_MISSING_MIN = 20;
     private static final Pattern IMG = Pattern.compile("img/[A-Za-z0-9_./%\\- ]+?\\.(?:jpe?g|png|webp|gif|svg)");
 
     private final SiteStore store;
@@ -163,6 +165,7 @@ final class Updater {
             if (!store.has(e.getValue())) missing.add(e.getKey());
         }
         int done = 0, waiting = 0;
+        List<String> notFound = new ArrayList<>();
         for (String path : missing) {
             String sha = next.files.get(path);
             setStatus("Downloading update: " + (done + 1) + " of " + missing.size(), false, false);
@@ -170,7 +173,7 @@ final class Updater {
             try {
                 File tmp = download(pagesUrl(path) + "?v=" + sha.substring(0, 10));
                 if (tmp == null) {
-                    waiting++;
+                    notFound.add(path);
                     continue;
                 }
                 String got = SiteStore.gitBlobSha(tmp);
@@ -188,6 +191,15 @@ final class Updater {
                     return;
                 }
                 waiting++;
+            }
+        }
+        if (!notFound.isEmpty()) {
+            // A file GitHub Pages does not serve at all (e.g. a config file) must not hold back the update forever.
+            // Right after a change Pages may simply not have it yet, so wait a while before giving up on it.
+            if (minutesSince(date) < GIVE_UP_MISSING_MIN) {
+                waiting += notFound.size();
+            } else {
+                for (String path : notFound) next.files.remove(path);
             }
         }
         if (waiting > 0) {
@@ -367,6 +379,18 @@ final class Updater {
         SharedPreferences.Editor ed = prefs.edit().putString("status", s);
         if (finished) ed.putLong("lastCheck", System.currentTimeMillis()).putBoolean("retry", retry);
         ed.apply();
+    }
+
+    /** Minutes since a GitHub date like 2026-11-08T17:06:22Z (large if it cannot be read). */
+    static long minutesSince(String iso) {
+        try {
+            SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", Locale.ROOT);
+            f.setTimeZone(java.util.TimeZone.getTimeZone("UTC"));
+            Date d = f.parse(iso);
+            return d == null ? Long.MAX_VALUE : (System.currentTimeMillis() - d.getTime()) / 60_000L;
+        } catch (Exception e) {
+            return Long.MAX_VALUE;
+        }
     }
 
     static String fmtDate(String iso) {
