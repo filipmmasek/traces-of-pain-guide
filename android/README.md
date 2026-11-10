@@ -17,7 +17,9 @@ workflow "Android kiosk app"), and replaces the file at that link.
   `main` and downloads only the changed files from https://filipmmasek.github.io/traces-of-pain-guide/
   (tracesofpain.com is never used, because the venue blocks it). Each file is checked against GitHub.
   The new version is switched on only when every file has arrived, and the screen reloads after
-  2 minutes without touches, so nobody sees a half-updated page. If api.github.com is blocked, a
+  2 minutes without touches (or at once when staff close the menu), so nobody sees a half-updated
+  page. A file that GitHub Pages still does not have 20 minutes after a change is skipped instead of
+  holding back the update. If api.github.com is blocked, a
   quick update still fetches the texts, code and new photos straight from GitHub Pages.
 - **Kiosk:** full screen, Back stays inside the guide, links to other sites are blocked, the screen
   stays on, and the app starts by itself when the tablet is switched on. The site's own kiosk mode

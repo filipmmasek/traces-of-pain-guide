@@ -9,8 +9,13 @@ import os
 import shutil
 import subprocess
 
-EXCLUDE_PREFIX = ("android/", ".github/")
-EXCLUDE = {".gitignore", ".nojekyll", "README.md", "CNAME", "admin.html", "admin.js", "admin.css"}
+EXCLUDE_PREFIX = ("android/",)
+EXCLUDE = {"README.md", "wrangler.jsonc", "CNAME", "admin.html", "admin.js", "admin.css"}
+
+
+def hidden(path):
+    """Hosting settings such as .github/, .nojekyll and .assetsignore: GitHub Pages does not serve them."""
+    return path.startswith(".") or "/." in path
 
 root = subprocess.check_output(["git", "rev-parse", "--show-toplevel"], text=True).strip()
 assets = os.path.join(root, "android", "app", "src", "main", "assets")
@@ -25,7 +30,7 @@ for entry in out.split("\0"):
         continue
     meta, path = entry.split("\t", 1)
     mode, sha, _stage = meta.split()
-    if mode.startswith("120") or path.startswith(EXCLUDE_PREFIX) or path in EXCLUDE:
+    if mode.startswith("120") or path.startswith(EXCLUDE_PREFIX) or hidden(path) or path in EXCLUDE:
         continue
     files[path] = sha
     dest = os.path.join(site, path)

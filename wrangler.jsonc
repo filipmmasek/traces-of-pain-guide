@@ -1,8 +1,14 @@
 // Cloudflare Workers Builds config for tracesofpain.com (static site, no Worker code).
 // "previews" is required by `wrangler preview`, which Cloudflare runs for branch / pull request builds.
+// The build command writes .assetsignore (what Cloudflare must not publish) at build time. It is
+// deliberately not committed: GitHub Pages does not serve hidden files, and kiosk apps already on the
+// tablets wait for every file in the repository, so a committed .assetsignore stops their updates.
 {
   "name": "traces-of-pain-guide",
   "compatibility_date": "2026-11-01",
+  "build": {
+    "command": "printf '.git\\n.github\\nandroid\\nwrangler.jsonc\\n.assetsignore\\n' > .assetsignore"
+  },
   "assets": {
     "directory": "."
   },

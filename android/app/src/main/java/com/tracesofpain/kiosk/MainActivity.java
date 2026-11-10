@@ -269,8 +269,10 @@ public class MainActivity extends Activity implements Updater.Listener {
 
     @Override
     public void onSiteUpdated() {
-        // Shown to the next visitor: reload once nobody has touched the screen for a while.
+        // Shown to the next visitor: reload once nobody has touched the screen for a while,
+        // or as soon as staff close the menu.
         reloadPending = true;
+        main.post(this::refreshMenuStatus);
     }
 
     @Override
@@ -424,6 +426,8 @@ public class MainActivity extends Activity implements Updater.Listener {
         menuDialog.setOnDismissListener(x -> {
             menuStatus = null;
             hideSystemUi();
+            // Staff just looked at the menu (often after "Update website now"): show the new version right away.
+            if (reloadPending) loadStart();
         });
         menuDialog.show();
     }

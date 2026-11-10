@@ -77,11 +77,12 @@ final class SiteStore {
 
     /** Files of the website that belong in the offline copy (same rule as android/bundle_site.py). */
     static boolean included(String path) {
-        if (path.startsWith("android/") || path.startsWith(".github/")) return false;
+        if (path.startsWith("android/")) return false;
+        // Hidden files (.github/, .nojekyll, .assetsignore…) are hosting settings that GitHub Pages does not serve.
+        if (path.startsWith(".") || path.contains("/.")) return false;
         switch (path) {
-            case ".gitignore":
-            case ".nojekyll":
             case "README.md":
+            case "wrangler.jsonc":
             case "CNAME":
             case "admin.html":
             case "admin.js":
